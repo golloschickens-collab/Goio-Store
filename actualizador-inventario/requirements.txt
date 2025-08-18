@@ -1,5 +1,1 @@
-# Agrega aquí las dependencias de Python que tu agente necesite.
-# Por ejemplo:
-# requests
-# beautifulsoup4
-# shopify-api-python
+ShopifyAPI
