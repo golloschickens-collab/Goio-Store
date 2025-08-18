@@ -1,0 +1,11 @@
+{
+  "run": [
+    {
+      "method": "shell.run",
+      "params": {
+        "path": "goio-agents-pinokio",
+        "command": "node run.js"
+      }
+    }
+  ]
+}

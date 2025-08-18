@@ -1,0 +1,4 @@
+{
+  "supervisor_interval_ms": 60000,
+  "agents": ["creative", "listings", "metrics", "growth", "research", "supplier_sync"]
+}

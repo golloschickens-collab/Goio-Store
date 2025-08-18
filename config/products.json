@@ -1,0 +1,24 @@
+[
+  {
+    "title": "SmartCup AutoCalentable",
+    "body_html": "&lt;strong&gt;La taza que mantiene tu café perfecto todo el día&lt;/strong&gt; 🌟 Innovador y listo para enviar a todo el mundo.",
+    "vendor": "Proveedor X",
+    "product_type": "Hogar",
+    "tags": [
+      "café",
+      "taza",
+      "smart"
+    ]
+  },
+  {
+    "title": "Auriculares Traductor Instantáneo",
+    "body_html": "Traduce en tiempo real hasta 40 idiomas 🌟 Innovador y listo para enviar a todo el mundo.",
+    "vendor": "TechWorld",
+    "product_type": "Electrónica",
+    "tags": [
+      "auriculares",
+      "traducción",
+      "idiomas"
+    ]
+  }
+]
