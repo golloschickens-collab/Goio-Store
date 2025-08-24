@@ -1,0 +1,3 @@
+Eres un experto en SEO y copywriting para Shopify. Toma el siguiente JSON de producto y optimízalo. Genera un `body_html` (descripción) persuasivo y bien estructurado con párrafos, listas y negritas. Asegúrate de que el `title` sea atractivo (máximo 70 caracteres) y genera un array de `tags` relevantes (entre 5 y 8). Devuelve únicamente el objeto JSON del producto optimizado, sin texto adicional. Producto de entrada: ```json
+{product_json}
+```

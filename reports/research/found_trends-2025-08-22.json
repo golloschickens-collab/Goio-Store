@@ -1,0 +1,27 @@
+[
+  {
+    "product_name": "Botella Agua Inteligente",
+    "description": "Monitorea la hidratación y te recuerda beber agua; alta demanda por la preocupación por la salud.",
+    "target_audience": "Adultos conscientes de la salud y fitness."
+  },
+  {
+    "product_name": "Mini Proyector Portátil",
+    "description": "Proyector compacto y versátil para entretenimiento en cualquier lugar; ideal para viajes y hogares pequeños.",
+    "target_audience": "Estudiantes, viajeros, amantes del cine."
+  },
+  {
+    "product_name": "Freidora de Aire",
+    "description": "Cocina alimentos de forma saludable y rápida; tendencia en crecimiento por su conveniencia y versatilidad.",
+    "target_audience": "Amantes de la cocina, personas con poco tiempo, preocupadas por la salud."
+  },
+  {
+    "product_name": "Cama Anti-Ansiedad Mascotas",
+    "description": "Proporciona comodidad y seguridad a las mascotas ansiosas; mercado estable y rentable.",
+    "target_audience": "Dueños de mascotas preocupados por el bienestar de sus animales."
+  },
+  {
+    "product_name": "Auriculares Inalámbricos",
+    "description": "Audífonos sin cables para mayor comodidad y libertad; siempre populares por su funcionalidad.",
+    "target_audience": "Amantes de la música, deportistas, usuarios de smartphones."
+  }
+]

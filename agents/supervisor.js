@@ -1,87 +1,84 @@
 // agents/supervisor.js
-import 'dotenv/config';
 import { fork } from 'child_process';
 import path from 'path';
-import fs from 'fs/promises';
+import { config } from '../scripts/config.js'; // Importar nuestra configuración central
 
-console.log('[Supervisor] Iniciando ciclo de supervisión...');
+const CWD = process.cwd();
+const AGENTS_DIR = path.join(CWD, 'agents');
 
-const AGENTS_DIR = path.resolve(process.cwd(), 'agents');
+/**
+ * Runs a single agent script, passing its specific configuration.
+ * @param {string} agentName - The simple name of the agent to run (e.g., 'listing').
+ * @param {object} agentConfig - The configuration block for that specific agent.
+ * @returns {Promise<void>} A promise that resolves when the agent exits, or rejects on error.
+ */
+function runAgent(agentName, agentConfig) {
+  return new Promise((resolve, reject) => {
+    const agentPath = path.join(AGENTS_DIR, `${agentName}.js`);
+    console.log(`\n[Supervisor] ----------------------------------------`);
+    console.log(`[Supervisor] 🚀 Lanzando agente: ${agentName}`);
+    console.log(`[Supervisor] ----------------------------------------`);
 
-async function run() {
-  try {
-    const configPath = path.resolve(process.cwd(), 'config', 'plan.json');
-    const config = JSON.parse(await fs.readFile(configPath, 'utf-8'));
-    const { supervisor_interval_ms, agents: agentNames } = config;
+    // Pasar la configuración específica del agente como un argumento de línea de comandos en formato JSON
+    const child = fork(agentPath, [JSON.stringify(agentConfig)], {
+      env: process.env, // Las variables de entorno ya están cargadas por config.js
+      silent: false
+    });
 
-    console.log(`[Supervisor] Agentes a ejecutar: ${agentNames.join(', ')}`);
+    child.on('error', (err) => {
+      console.error(`[Supervisor] ❌ Error en el agente ${agentName}:`, err);
+      reject(err);
+    });
 
-    for (const agentName of agentNames) {
-      // No ejecutar el propio supervisor en un bucle
-      if (agentName === 'supervisor') continue;
-      
-      
-
-      const agentPath = path.join(AGENTS_DIR, `${agentName}.js`);
-      try {
-        await fs.access(agentPath); // Check if file exists
-        console.log(`[Supervisor] Lanzando agente: ${agentName}`);
-        const child = fork(agentPath, [agentName]);
-
-        child.on('error', (err) => {
-          console.error(`[Supervisor] Error en el agente ${agentName}:`, err);
-        });
-
-        child.on('exit', (code) => {
-          if (code !== 0) {
-            console.warn(`[Supervisor] Agente ${agentName} terminó con código de salida: ${code}`);
-          }
-        });
-      } catch (error) {
-        console.warn(`[Supervisor] No se encontró el script para el agente '${agentName}' en ${agentPath}`);
+    child.on('exit', (code) => {
+      if (code !== 0) {
+        console.warn(`[Supervisor] ⚠️  Agente ${agentName} terminó con código de error: ${code}`);
+      } else {
+        console.log(`[Supervisor] ✅ Agente ${agentName} completado con éxito.`);
       }
+      resolve();
+    });
+  });
+}
+
+/**
+ * Extrae el nombre simple del agente del nombre completo.
+ * E.g., "Agent.ProductManager" -> "productmanager"
+ * @param {string} fullAgentName
+ * @returns {string}
+ */
+function getSimpleName(fullAgentName) {
+    const parts = fullAgentName.split('.');
+    return parts.length > 1 ? parts[1].toLowerCase() : fullAgentName.toLowerCase();
+}
+
+
+/**
+ * Main supervisor loop.
+ */
+async function run() {
+  console.log('[Supervisor] 🎬 Iniciando ciclo de supervisión basado en config.js...');
+
+  try {
+    const agentsToRun = config.agentes;
+    const agentNames = agentsToRun.map(agent => agent.nombre);
+
+    console.log(`[Supervisor] 📋 Plan de ejecución: ${agentNames.join(' -> ')}`);
+
+    for (const agent of agentsToRun) {
+      const simpleName = getSimpleName(agent.nombre);
+      
+      if (simpleName === 'supervisor') continue;
+
+      // Ahora pasamos la configuración completa del agente a runAgent
+      await runAgent(simpleName, agent);
     }
 
-    if (supervisor_interval_ms > 0) {
-        setTimeout(run, supervisor_interval_ms);
-        console.log(`[Supervisor] Próxima ejecución en ${supervisor_interval_ms / 1000} segundos.`);
-    } else {
-        console.log('[Supervisor] Ciclo único completado. No se re-ejecutará.');
-    }
+    console.log('\n[Supervisor] 🏁 Ciclo de supervisión completado.');
 
   } catch (error) {
-    console.error('[Supervisor] Error fatal en el ciclo de supervisión:', error);
+    console.error('[Supervisor] ❌ Error fatal en el ciclo de supervisión:', error);
   }
 }
 
-// Antes de iniciar, crear los archivos de config si no existen
-async function setupConfig() {
-    const configDir = path.resolve(process.cwd(), 'config');
-    const planPath = path.join(configDir, 'plan.json');
-    const productsPath = path.join(configDir, 'products.json');
-
-    try {
-        await fs.mkdir(configDir, { recursive: true });
-
-        try {
-            await fs.access(planPath);
-        } catch {
-            console.log('[Supervisor] Creando config/plan.json de ejemplo.');
-            await fs.writeFile(planPath, JSON.stringify({
-                "supervisor_interval_ms": 60000,
-                "agents": ["creative", "listings", "metrics", "growth", "research", "supplier_sync"]
-            }, null, 2));
-        }
-
-        try {
-            await fs.access(productsPath);
-        } catch {
-            console.log('[Supervisor] Creando config/products.json vacío.');
-            await fs.writeFile(productsPath, '[]');
-        }
-    } catch (error) {
-        console.error('[Supervisor] No se pudo crear la configuración inicial:', error);
-    }
-}
-
-setupConfig().then(run);
+run();

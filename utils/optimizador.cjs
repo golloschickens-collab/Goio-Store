@@ -1,63 +1,86 @@
-const axios = require('axios');
+const { GoogleGenerativeAI } = require('@google/generative-ai');
+const fs = require('fs').promises;
+const path = require('path');
 
-// Leemos la API Key de las variables de entorno.
-// Es más seguro que tenerla directamente en el código.
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const CWD = process.cwd();
 
-async function optimizarProducto(producto) {
-  // Si no hay API Key, no podemos continuar.
-  if (!GEMINI_API_KEY) {
-    console.warn('⚠️ Advertencia: Falta la variable de entorno GEMINI_API_KEY. No se puede optimizar el producto. Usando descripción original.');
-    return producto;
+let apiConfig = null;
+
+async function getApiConfig() {
+  if (apiConfig) return apiConfig;
+  try {
+    const keysPath = path.join(CWD, 'config', 'keys.json');
+    const keysFile = await fs.readFile(keysPath, 'utf8');
+    const keys = JSON.parse(keysFile);
+
+    const promptPath = path.join(CWD, 'prompts', 'listing_optimizer_prompt.txt');
+    const promptTemplate = await fs.readFile(promptPath, 'utf8');
+
+    apiConfig = { apiKey: keys.google_api_key, promptTemplate };
+    return apiConfig;
+  } catch (error) {
+    console.error('❌ Error al cargar la configuración para el optimizador:', error);
+    return null;
+  }
+}
+
+async function optimizarProducto(productoOriginal) {
+  const config = await getApiConfig();
+  if (!config) {
+    console.warn('⚠️ Advertencia: No se pudo cargar la configuración de la API. Usando producto original.');
+    return productoOriginal;
   }
 
-  // El prompt que le enviaremos a Gemini.
-  const prompt = `Eres un experto en marketing y copywriter para ecommerce. Tu tarea es tomar el siguiente título y descripción de un producto y transformarlos en una descripción de venta irresistible, persuasiva y optimizada para SEO.
+  const { apiKey, promptTemplate } = config;
+  const genAI = new GoogleGenerativeAI(apiKey);
+  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash-latest' });
 
-  **Reglas:**
-  - Usa un tono entusiasta y profesional.
-  - Destaca los 2-3 beneficios más importantes para el cliente.
-  - Incluye una llamada a la acción clara (ej: "¡Compra ahora y transforma tu vida!").
-  - Formatea la salida en HTML simple (párrafos <p>, negritas <b>, listas <ul><li>).
-  - No excedas las 150 palabras.
-
-  **Producto a Optimizar:**
-  - Título: ${producto.title}
-  - Descripción Original: ${producto.body_html}
-
-  **Tu Nueva Descripción Optimizada (solo el HTML):**`;
+  // Usamos el nombre del producto original para el prompt
+  const finalPrompt = promptTemplate.replace('{product_json}', JSON.stringify({ title: productoOriginal.product_name, body_html: productoOriginal.description }, null, 2));
 
   try {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${GEMINI_API_KEY}`;
-    
-    const response = await axios.post(url, {
-      contents: [{
-        parts: [{
-          text: prompt
-        }]
-      }]
-    }, {
-      headers: {
-        'Content-Type': 'application/json'
+    const result = await model.generateContent(finalPrompt);
+    const response = await result.response;
+    let text = response.text();
+
+    // Limpieza robusta de la respuesta de la IA
+    const jsonMatch = text.match(/```json\n([\s\S]*?)\n```/);
+    if (jsonMatch && jsonMatch[1]) {
+      text = jsonMatch[1];
+    } else {
+      // Si no hay bloque de código, intentar encontrar el primer { y el último }
+      const firstBrace = text.indexOf('{');
+      const lastBrace = text.lastIndexOf('}');
+      if (firstBrace !== -1 && lastBrace !== -1) {
+        text = text.substring(firstBrace, lastBrace + 1);
       }
-    });
+    }
 
-    // Extraemos el texto generado por Gemini.
-    const enriched = response.data.candidates[0].content.parts[0].text;
+    // Parseo y validación
+    const optimizedData = JSON.parse(text);
 
-    console.log(`✨ Producto "${producto.title}" optimizado con IA.`);
-    return { ...producto, body_html: enriched };
+    // Asegurarse de que los campos esenciales existan
+    if (!optimizedData.title || !optimizedData.body_html) {
+        console.warn(`[Optimizador] La IA devolvió un objeto JSON incompleto. Usando datos originales.`);
+        return productoOriginal;
+    }
+
+    console.log(`✨ Producto "${optimizedData.title}" optimizado con IA.`);
+    // Devolver un objeto consistente que `listing.js` espera
+    return {
+        title: optimizedData.title,
+        body_html: optimizedData.body_html,
+        tags: optimizedData.tags || []
+    };
 
   } catch (error) {
-    console.error(`❌ Error al llamar a la API de Gemini para optimizar "${producto.title}":`);
-    // Imprimimos el error que nos da la API para más detalles.
-    if (error.response) {
-      console.error(JSON.stringify(error.response.data, null, 2));
-    } else {
-      console.error(error.message);
-    }
-    // Si hay un error, devolvemos el producto original para no detener el flujo.
-    return producto;
+    console.error(`❌ Error al procesar la respuesta de la IA para "${productoOriginal.product_name}":`, error.message);
+    // Devolver un objeto válido con los datos originales para no detener el flujo
+    return {
+        title: productoOriginal.product_name,
+        body_html: productoOriginal.description,
+        tags: []
+    };
   }
 }
 

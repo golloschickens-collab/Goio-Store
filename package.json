@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "build": "npm install && pip install -r requirements.txt",
+    "start": "node start.js",
+    "start-empire": "node start.js",
+    "start:dev": "node agents/supervisor.js",
+    "start:prod": "cross-env SHOPIFY_ENV=prod node agents/supervisor.js",
     "dev": "npx @shopify/cli@latest shopify theme dev --port 9393",
     "dev:prod": "npx @shopify/cli@latest shopify theme dev --store $SHOP_PROD --port 9494",
     "push": "npx @shopify/cli@latest theme push --allow-live",
@@ -22,13 +27,20 @@
     "abandoned:dev": "npx cross-env SHOPIFY_ENV=dev node scripts/abandoned-checkouts.js",
     "abandoned:prod": "npx cross-env SHOPIFY_ENV=prod node scripts/abandoned-checkouts.js",
     "postventa:dev": "npx cross-env SHOPIFY_ENV=dev node scripts/post-sale.js",
-    "postventa:prod": "npx cross-env SHOPIFY_ENV=prod node scripts/post-sale.js",
+    "postventa:prod": "cross-env SHOPIFY_ENV=prod node scripts/post-sale.js",
+    "abandoned:test": "node scripts/abandoned-checkouts.js --dry-run",
+    "abandoned:run": "node scripts/abandoned-checkouts.js",
+    "shorts:generate": "node scripts/generate-shorts.js",
+    "orchestrate:deploy-product": "node scripts/orquestador.js publish-product ops/products-to-upload/cama-ansiedad-mascotas.md",
+    "audit:store": "node scripts/store-audit.js",
     "autofix": "node autoFixer.js"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "axios": "^1.11.0",
+    "commander": "^12.0.0",
     "dayjs": "^1.11.11",
-    "dotenv": "^16.6.1",
+    "dotenv": "^16.4.5",
     "graphql-request": "^7.2.0",
     "node-fetch": "3.3.2",
     "papaparse": "^5.4.1",
@@ -39,3 +51,4 @@
     "cross-env": "^7.0.3"
   }
 }
+

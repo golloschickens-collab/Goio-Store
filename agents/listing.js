@@ -1,24 +1,20 @@
-import 'dotenv/config';
 import { GraphQLClient, gql } from 'graphql-request';
 import slugify from 'slugify';
-import fs from 'fs/promises';
+import { promises as fs } from 'fs';
 import path from 'path';
 import { optimizarProducto } from '../utils/optimizador.cjs';
+import { config as globalConfig } from '../scripts/config.js'; // Importar la configuración global
 
-const shop = process.env.SHOPIFY_STORE;
-const token = process.env.SHOPIFY_ADMIN_TOKEN;
-const endpoint = `https://${shop}/admin/api/2024-07/graphql.json`;
-
-if (!shop || !token) {
-  console.warn('[Listing] Falta SHOPIFY_STORE o SHOPIFY_ADMIN_TOKEN en .env – se omite el agente.');
+// --- Configuración y Validación Inicial ---
+if (!process.argv[2]) {
+  console.error('[Listing] Error Crítico: Este agente debe ser ejecutado por el supervisor y recibir una configuración.');
   process.exit(1);
 }
 
-const client = new GraphQLClient(endpoint, {
-  headers: { 'X-Shopify-Access-Token': token }
-});
+const agentConfig = JSON.parse(process.argv[2]);
+console.log('[Listing] Órdenes recibidas del supervisor:', agentConfig.tareas);
 
-// --- GraphQL Queries and Mutations ---
+// --- Funciones de Lógica de Negocio (sin cambios) ---
 const Q_BY_HANDLE = gql`
   query ($handle: String!) { productByHandle(handle: $handle) { id handle title } }
 `;
@@ -41,45 +37,29 @@ const M_UPDATE = gql`
   }
 `;
 
-const M_CREATE_MEDIA = gql`
-  mutation productCreateMedia($media: [CreateMediaInput!]!, $productId: ID!) {
-    productCreateMedia(media: $media, productId: $productId) {
-      media { alt mediaContentType status }
-      mediaUserErrors { field message }
-      product { id }
-    }
-  }
-`;
-
-function toHandle(title, id) {
-  return slugify(`${title}-${id}`, { lower: true, strict: true });
+function toHandle(title) {
+  return slugify(title, { lower: true, strict: true });
 }
 
-export async function upsertListing(product) {
-  // 1) Construye input base
-  const handle = toHandle(product.title, product.id);
-
-  // La descripción ahora viene del producto optimizado
-  const descriptionHtml = product.body_html;
-
+async function upsertListing(product, client) {
+  const handle = toHandle(product.title);
   const baseInput = {
     title: product.title,
     handle,
-    descriptionHtml,
+    descriptionHtml: product.body_html,
     tags: product.tags || [],
-    vendor: 'Gollos',
-    status: 'DRAFT'
+    vendor: 'Goio',
+    status: 'DRAFT' // Siempre se crean como borrador
   };
 
-  // 2) ¿Existe?
   const found = await client.request(Q_BY_HANDLE, { handle }).catch(() => null);
   const exists = !!found?.productByHandle?.id;
 
-  // 3) Crea o actualiza
-  console.log(`[Listing] ${exists ? 'Actualizando' : 'Creando'} producto con IA: ${product.title}`);
-  const res = exists
-    ? await client.request(M_UPDATE, { input: { ...baseInput, id: found.productByHandle.id } })
-    : await client.request(M_CREATE, { input: baseInput });
+  console.log(`[Listing] ${exists ? 'Actualizando' : 'Creando'} producto: ${product.title}`);
+  const mutation = exists ? M_UPDATE : M_CREATE;
+  const input = exists ? { ...baseInput, id: found.productByHandle.id } : baseInput;
+  
+  const res = await client.request(mutation, { input });
 
   const userErrors = (exists ? res.productUpdate?.userErrors : res.productCreate?.userErrors) || [];
   if (userErrors.length) {
@@ -93,44 +73,61 @@ export async function upsertListing(product) {
   return productId;
 }
 
-// --- Main execution block ---
+// --- Bucle Principal de Ejecución ---
 async function run() {
   console.log('[Listing] Iniciando agente de listings...');
-  
-  // 1. Leer productos de la configuración
-  const productsPath = path.resolve(process.cwd(), 'config', 'products.json');
-  let productsToProcess;
-  try {
-    const productsFile = await fs.readFile(productsPath, 'utf-8');
-    productsToProcess = JSON.parse(productsFile);
-    if (!Array.isArray(productsToProcess) || productsToProcess.length === 0) {
-      console.log('[Listing] No hay productos en config/products.json para procesar. Terminando.');
-      return;
-    }
-  } catch (error) {
-    console.error('[Listing] No se pudo leer o parsear config/products.json:', error);
+
+  // Determinar en qué tienda operar basado en la configuración recibida
+  // Por ahora, priorizamos la tienda 'principal' si está asignada, según la tarea.
+  const targetStoreName = agentConfig.tiendas.includes('principal') ? 'principal' : agentConfig.tiendas[0];
+  if (!targetStoreName) {
+    console.error('[Listing] Error: No se ha asignado ninguna tienda a este agente en config.js');
     return;
   }
 
-  console.log(`[Listing] Se encontraron ${productsToProcess.length} productos para procesar.`);
+  const storeDetails = globalConfig.entorno.tiendas.find(t => t.nombre === targetStoreName);
+  if (!storeDetails) {
+    console.error(`[Listing] Error: No se encontraron los detalles para la tienda '${targetStoreName}' en la configuración global.`);
+    return;
+  }
 
-  // 2. Procesar cada producto
+  console.log(`[Listing] ✅ Operando en la tienda: ${storeDetails.dominio} (Entorno: ${storeDetails.entorno})`);
+
+  // Crear el cliente de GraphQL con las credenciales correctas
+  const endpoint = `https://${storeDetails.dominio}/admin/api/2024-10/graphql.json`;
+  const client = new GraphQLClient(endpoint, {
+    headers: { 'X-Shopify-Access-Token': storeDetails.api_key }
+  });
+  
+  // El resto de la lógica para encontrar y procesar productos sigue igual
+  const researchDir = path.resolve(process.cwd(), 'reports', 'research');
+  const trendFiles = (await fs.readdir(researchDir))
+      .filter(file => file.startsWith('found_trends-'))
+      .sort()
+      .reverse();
+
+  if (trendFiles.length === 0) {
+      console.log('[Listing] No se encontraron reportes de tendencias para procesar. Terminando.');
+      return;
+  }
+
+  const latestTrendReportPath = path.join(researchDir, trendFiles[0]);
+  const productsToProcess = JSON.parse(await fs.readFile(latestTrendReportPath, 'utf-8'));
+
+  console.log(`[Listing] Se encontraron ${productsToProcess.length} nuevas oportunidades en: ${trendFiles[0]}`);
+
   for (const product of productsToProcess) {
-    // 2a. Optimizar con IA
-    console.log(`[Listing] Optimizando "${product.title}" con IA...`);
+    console.log(`[Listing] Optimizando "${product.product_name}" con IA...`);
     const optimizedProduct = await optimizarProducto(product);
 
-    if (!optimizedProduct.body_html || optimizedProduct.body_html === product.body_html) {
-        console.warn(`[Listing] La optimización no generó una nueva descripción para "${product.title}". Saltando subida a Shopify.`);
+    if (!optimizedProduct || !optimizedProduct.body_html) {
+        console.warn(`[Listing] La optimización no generó una nueva descripción para "${product.product_name}". Saltando subida a Shopify.`);
         continue;
     }
 
-    // 2b. Crear/Actualizar en Shopify
-    const productId = await upsertListing(optimizedProduct);
+    const productId = await upsertListing(optimizedProduct, client);
 
-    // 2c. Lógica de Media y Distritos (si aplica)
     if (productId) {
-      // Aquí iría la lógica de media y distritos si fuera necesario
       console.log(`[Listing] Procesamiento completo para el producto ID: ${productId}`);
     }
     console.log('---');
