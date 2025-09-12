@@ -1,0 +1,5 @@
+{
+  "accessToken": "QS8m8s9DaJ5XV7vWhna4NmZB6iI2ByGWZcST7eDM49RYSqjBdFEDJfaKxaBEH2M1p46kjIGihFxzF18iTpF7HtikFmVSXZCRYdcS87H0KI73Y1FZBIZBqpuGu9eKMNjFx8HBOlLqL1IAgGpqDCScacTO4GHS",
+  "scope": "write_products,read_products,write_inventory,read_inventory,read_analytics,read_orders,write_orders,write_content,read_content",
+  "shop": "goio-store.myshopify.com"
+}

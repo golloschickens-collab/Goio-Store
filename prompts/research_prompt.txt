@@ -1,0 +1,1 @@
+Actúa como un analista de investigación de mercado. Para el producto '{product_title}', investiga y resume las tendencias actuales del mercado. Incluye: 1. Público objetivo principal. 2. Tres competidores directos o indirectos. 3. Dos tendencias de contenido en redes sociales (TikTok, Instagram) relacionadas con este tipo de producto.

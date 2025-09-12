@@ -1,0 +1,54 @@
+{
+  "name": "goio-store",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "npm install && pip install -r requirements.txt",
+    "start": "node start.js",
+    "start-empire": "node start.js",
+    "start:dev": "node agents/supervisor.js",
+    "start:prod": "cross-env SHOPIFY_ENV=prod node agents/supervisor.js",
+    "dev": "npx @shopify/cli@latest shopify theme dev --port 9393",
+    "dev:prod": "npx @shopify/cli@latest shopify theme dev --store $SHOP_PROD --port 9494",
+    "push": "npx @shopify/cli@latest theme push --allow-live",
+    "finder": "node scripts/product-finder.js",
+    "pricing": "node scripts/pricing-engine.js",
+    "seed": "node scripts/seed-products.js",
+    "abandoned": "node scripts/abandoned-checkouts.js",
+    "postventa": "node scripts/post-sale.js",
+    "webhooks": "node scripts/register-webhooks.js",
+    "check:dev": "npx cross-env SHOPIFY_ENV=dev node scripts/check-shopify-connection.js",
+    "diag:prod": "cross-env SHOPIFY_ENV=prod node scripts/diag-auth.js",
+    "products:list": "cross-env SHOPIFY_ENV=prod node scripts/list-products.js",
+    "webhooks:dev": "npx cross-env SHOPIFY_ENV=dev node scripts/register-webhooks.js",
+    "webhooks:prod": "npx cross-env SHOPIFY_ENV=prod node scripts/register-webhooks.js",
+    "seed:dev": "npx cross-env SHOPIFY_ENV=dev node scripts/seed-products.js",
+    "seed:prod": "cross-env SHOPIFY_ENV=prod node scripts/seed-products.js",
+    "abandoned:dev": "npx cross-env SHOPIFY_ENV=dev node scripts/abandoned-checkouts.js",
+    "abandoned:prod": "npx cross-env SHOPIFY_ENV=prod node scripts/abandoned-checkouts.js",
+    "postventa:dev": "npx cross-env SHOPIFY_ENV=dev node scripts/post-sale.js",
+    "postventa:prod": "cross-env SHOPIFY_ENV=prod node scripts/post-sale.js",
+    "abandoned:test": "node scripts/abandoned-checkouts.js --dry-run",
+    "abandoned:run": "node scripts/abandoned-checkouts.js",
+    "shorts:generate": "node scripts/generate-shorts.js",
+    "orchestrate:deploy-product": "node scripts/orquestador.js publish-product ops/products-to-upload/cama-ansiedad-mascotas.md",
+    "audit:store": "node scripts/store-audit.js",
+    "autofix": "node autoFixer.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.11.0",
+    "commander": "^12.0.0",
+    "dayjs": "^1.11.11",
+    "dotenv": "^16.4.5",
+    "graphql-request": "^7.2.0",
+    "node-fetch": "3.3.2",
+    "papaparse": "^5.4.1",
+    "slugify": "^1.6.6",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
+

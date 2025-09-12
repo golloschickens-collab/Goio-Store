@@ -1,0 +1,27 @@
+[
+  {
+    "product_name": "Botella de Agua Inteligente",
+    "description": "Monitoriza la hidratación y te recuerda beber agua; alta demanda en la búsqueda de estilos de vida saludables.",
+    "target_audience": "Personas conscientes de su salud y fitness, usuarios de apps fitness."
+  },
+  {
+    "product_name": "Mini Proyector Portátil",
+    "description": "Ligero y fácil de transportar, ideal para entretenimiento en cualquier lugar; creciente popularidad en viajes y entretenimiento doméstico.",
+    "target_audience": "Estudiantes, viajeros, amantes del cine, gamers."
+  },
+  {
+    "product_name": "Organizador de Cocina Inteligente",
+    "description": "Maximiza el espacio y optimiza la organización en la cocina; tendencia creciente en la búsqueda de eficiencia doméstica.",
+    "target_audience": "Amas de casa, personas que buscan optimizar su espacio, entusiastas de la organización."
+  },
+  {
+    "product_name": "Juguetes Interactivos para Mascotas",
+    "description": "Ofrecen estimulación mental y física para las mascotas; mercado estable y rentable con alta demanda.",
+    "target_audience": "Dueños de mascotas, especialmente perros y gatos."
+  },
+  {
+    "product_name": "Auriculares Inalámbricos",
+    "description": "Comodidad y libertad de movimiento; alta demanda en el mercado de la tecnología portátil.",
+    "target_audience": "Amantes de la música, deportistas, usuarios de smartphones."
+  }
+]

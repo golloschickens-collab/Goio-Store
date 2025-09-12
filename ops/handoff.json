@@ -1,0 +1,9 @@
+{
+  "ukm": "UKM#001",
+  "stage": "REWORK",
+  "next_actor": "COPILOT",
+  "notes": "Script 'abandoned-checkouts.js' aún incompleto. Necesita implementación de lógica principal.",
+  "todo": ["Completar `scripts/abandoned-checkouts.js`"],
+  "blocked": false,
+  "block_reason": ""
+}

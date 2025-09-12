@@ -1,0 +1,10 @@
+{
+  "supervisor_interval_ms": 0,
+  "agents": [
+    "research",
+    "creative",
+    "listing",
+    "growth",
+    "publisher"
+  ]
+}
