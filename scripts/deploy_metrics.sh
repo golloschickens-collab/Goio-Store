@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Despliegue automatizado de métricas (host + docker) en múltiples servidores
+# Despliegue automatizado de mÃ©tricas (host + docker) en mÃºltiples servidores
 # Requisitos en el equipo de control: ssh, scp, acceso por llave a los hosts
 
 set -euo pipefail
@@ -35,14 +35,14 @@ usage() {
 Uso: $0 [opciones]
 
 Acciones:
-  (por defecto)    Despliega collector + systemd timer y arranca medición
+  (por defecto)    Despliega collector + systemd timer y arranca mediciÃ³n
   --undeploy, -u   Detiene timer/servicio y los deshabilita (con --purge elimina binarios y units)
   --parse          Ejecuta el parser en cada host y (opcional) descarga artefactos
 
 Opciones:
   --hosts "h1:2m,h2:5m"   Lista de hosts (con delay) a operar
   --user <ssh_user>        Usuario SSH (por defecto: \$SSH_USER o root)
-  --download <dir>         Directorio local al que descargar summary (sólo con --parse)
+  --download <dir>         Directorio local al que descargar summary (sÃ³lo con --parse)
   --purge                  Con --undeploy, elimina /usr/local/bin/collect_metrics.sh, parser y units
 
 Ejemplos:
@@ -77,7 +77,7 @@ while [[ $# -gt 0 ]]; do
     --user) SSH_USER="$2"; shift 2 ;;
     --download) DOWNLOAD_DIR="$2"; shift 2 ;;
     -h|--help) usage; exit 0 ;;
-    *) warn "Opción desconocida: $1"; usage; exit 1 ;;
+    *) warn "OpciÃ³n desconocida: $1"; usage; exit 1 ;;
   esac
 done
 
@@ -92,10 +92,10 @@ deploy_host() {
   log "[deploy] Host=$host delay=$delay"
 
   # Copia de artefactos
-  scp "${SCP_OPTS[@]}" "$COLLECT_SH" "$SERVICE_UNIT" "$TIMER_UNIT" "$PARSER_PY" "$target:/tmp/" || { err "scp falló ($host)"; return 1; }
+  scp "${SCP_OPTS[@]}" "$COLLECT_SH" "$SERVICE_UNIT" "$TIMER_UNIT" "$PARSER_PY" "$target:/tmp/" || { err "scp fallÃ³ ($host)"; return 1; }
 
-  # Instalación remota
-  ssh "${SSH_OPTS[@]}" "$target" bash -s <<EOF || { err "ssh/instalación falló ($host)"; return 1; }
+  # InstalaciÃ³n remota
+  ssh "${SSH_OPTS[@]}" "$target" bash -s <<EOF || { err "ssh/instalaciÃ³n fallÃ³ ($host)"; return 1; }
 set -euo pipefail
 
 export DEBIAN_FRONTEND=noninteractive
@@ -115,7 +115,7 @@ grep -q '^RandomizedDelaySec=' /etc/systemd/system/goio-metrics.timer || \
 
 systemctl daemon-reload
 systemctl enable --now goio-metrics.timer
-# Ejecución inicial para validar
+# EjecuciÃ³n inicial para validar
 systemctl start goio-metrics.service || true
 
 echo "STATUS(timer):"
@@ -132,7 +132,7 @@ EOF
 undeploy_host() {
   local host="$1" target="$SSH_USER@$1"
   log "[undeploy] Host=$host (purge=$PURGE)"
-  ssh "${SSH_OPTS[@]}" "$target" bash -s <<EOF || { err "ssh/undeploy falló ($host)"; return 1; }
+  ssh "${SSH_OPTS[@]}" "$target" bash -s <<EOF || { err "ssh/undeploy fallÃ³ ($host)"; return 1; }
 set -euo pipefail
 systemctl disable --now goio-metrics.timer || true
 systemctl stop goio-metrics.service || true
@@ -148,7 +148,7 @@ EOF
 parse_host() {
   local host="$1" target="$SSH_USER@$1"
   log "[parse] Host=$host"
-  ssh "${SSH_OPTS[@]}" "$target" bash -s <<'EOF' || { err "ssh/parse falló ($host)"; return 1; }
+  ssh "${SSH_OPTS[@]}" "$target" bash -s <<'EOF' || { err "ssh/parse fallÃ³ ($host)"; return 1; }
 set -euo pipefail
 if ! command -v python3 >/dev/null 2>&1; then echo "python3 no encontrado"; exit 1; fi
 python3 /usr/local/bin/goio-parse-metrics.py --logs /var/log/goio-metrics --out /var/log/goio-metrics/summary
@@ -163,7 +163,7 @@ EOF
 
 main() {
   local ok=0 fail=0
-  log "Operación=${ACTION} hosts=${#HOSTS[@]} (SSH_USER=$SSH_USER)"
+  log "OperaciÃ³n=${ACTION} hosts=${#HOSTS[@]} (SSH_USER=$SSH_USER)"
   for entry in "${HOSTS[@]}"; do
     IFS=":" read -r host delay <<<"$entry"
     case "$ACTION" in
