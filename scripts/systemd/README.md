@@ -1,10 +1,10 @@
-# Servicios systemd y Webhooks/Métricas
+# Servicios systemd y Webhooks/MÃ©tricas
 
 ## Archivos
-- `palacio-worker.service`: worker continuo que ejecuta la cola periódicamente.
+- `palacio-worker.service`: worker continuo que ejecuta la cola periÃ³dicamente.
 - `palacio-webhooks.service`: servidor HTTP con `/webhook/task`, `/health`, `/metrics`.
 
-## Instalación
+## InstalaciÃ³n
 ```bash
 sudo cp /srv/apps/palacio-central/scripts/systemd/palacio-*.service /etc/systemd/system/
 sudo systemctl daemon-reload
@@ -23,7 +23,7 @@ Edita variables (tokens, puertos) en los unit files si es necesario y reinicia.
 - API_TOKEN (requerido para POST /webhook/task si se define)
 - METRICS_TOKEN (requerido para GET /metrics si se define)
 
-## Pruebas rápidas
+## Pruebas rÃ¡pidas
 ```bash
 curl -s http://127.0.0.1:3002/health | jq .
 curl -s -H "Authorization: Bearer <METRICS_TOKEN>" http://127.0.0.1:3002/metrics
