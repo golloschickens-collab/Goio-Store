@@ -49,7 +49,6 @@ jobs:
           SSH_USER: ${{ inputs.ssh_user }}
         run: |
           set -euo pipefail
-          cd palacio-central
           chmod +x scripts/deploy_metrics.sh
           ACTION="${{ inputs.action }}"
           HOSTS="${{ inputs.hosts }}"
@@ -72,5 +71,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: metrics-summaries
-          path: palacio-central/${{ inputs.download_dir }}/
+          path: ${{ inputs.download_dir }}/
           if-no-files-found: warn
