@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Parser de métricas (host + docker) desde /var/log/goio-metrics/*.log
+Parser de mÃ©tricas (host + docker) desde /var/log/goio-metrics/*.log
 
 Genera:
-- CSV consolidado con métricas clave por snapshot
+- CSV consolidado con mÃ©tricas clave por snapshot
 - Resumen Markdown (p50/p95/p99 de CPU iowait, memoria, load1)
 
 Uso:
@@ -26,15 +26,15 @@ RE_ROOTFS = re.compile(r"\s(\d+)%\s+/\s*$")
 
 
 def parse_iostat(lines):
-    """Devuelve (iowait_pct, idle_pct) usando el ÚLTIMO bloque avg-cpu de iostat en el archivo."""
+    """Devuelve (iowait_pct, idle_pct) usando el ÃšLTIMO bloque avg-cpu de iostat en el archivo."""
     idx = 0
     last = None
     while idx < len(lines):
         if lines[idx].strip().startswith('avg-cpu:'):
-            # Encabezados en la misma línea después de 'avg-cpu:'
+            # Encabezados en la misma lÃ­nea despuÃ©s de 'avg-cpu:'
             headers_line = lines[idx].split(':', 1)[-1]
             headers = [h.strip().lstrip('%') for h in headers_line.split()]
-            # Buscar la línea de valores (siguiente línea no vacía)
+            # Buscar la lÃ­nea de valores (siguiente lÃ­nea no vacÃ­a)
             j = idx + 1
             while j < len(lines) and not lines[j].strip():
                 j += 1
@@ -60,7 +60,7 @@ def parse_docker_stats(block_lines):
     """
     if not block_lines:
         return ("", None, None)
-    # Detectar header (línea con 'CPU %') y luego parsear líneas siguientes
+    # Detectar header (lÃ­nea con 'CPU %') y luego parsear lÃ­neas siguientes
     top = ("", 0.0)
     total = 0.0
     header_found = False
@@ -86,7 +86,7 @@ def parse_docker_stats(block_lines):
         if cpu > top[1]:
             top = (name_guess, cpu)
     if top[1] == 0.0:
-        # No se logró parsear; devolver vacíos
+        # No se logrÃ³ parsear; devolver vacÃ­os
         return ("", None, total if total > 0 else None)
     return (top[0], top[1], total)
 
@@ -108,7 +108,7 @@ def parse_log(filepath: Path):
         lines = f.readlines()
 
     # timestamp y host
-    for ln in lines[:50]:  # primeras líneas
+    for ln in lines[:50]:  # primeras lÃ­neas
         m = RE_TS.search(ln)
         if m:
             data['timestamp'] = m.group('ts').strip()
@@ -141,7 +141,7 @@ def parse_log(filepath: Path):
                 pass
             break
 
-    # rootfs usage (df -h, línea de montado /)
+    # rootfs usage (df -h, lÃ­nea de montado /)
     for ln in lines:
         m = RE_ROOTFS.search(ln)
         if m:
@@ -156,7 +156,7 @@ def parse_log(filepath: Path):
     if io:
         data['cpu_iowait_pct'], data['cpu_idle_pct'] = io
 
-    # docker stats block: entre línea "--- docker: stats (no-stream) ---" y la siguiente sección
+    # docker stats block: entre lÃ­nea "--- docker: stats (no-stream) ---" y la siguiente secciÃ³n
     docker_block = []
     in_block = False
     for ln in lines:
@@ -165,7 +165,7 @@ def parse_log(filepath: Path):
             docker_block = []
             continue
         if in_block and ln.strip().startswith('---'):
-            # Próxima sección
+            # PrÃ³xima secciÃ³n
             break
         if in_block:
             docker_block.append(ln)
@@ -234,7 +234,7 @@ def main():
     root_stats = percentiles(col('rootfs_use_pct'))
 
     md = [
-        '# Resumen de métricas',
+        '# Resumen de mÃ©tricas',
         '',
         f"Muestras: {len(rows)}",
         '',
