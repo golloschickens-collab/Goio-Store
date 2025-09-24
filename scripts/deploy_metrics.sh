@@ -22,8 +22,14 @@ HOSTS=(
 
 # Config SSH
 SSH_USER="${SSH_USER:-root}"
-SSH_OPTS=("-o" "BatchMode=yes" "-o" "StrictHostKeyChecking=accept-new" "-o" "ConnectTimeout=10")
-SCP_OPTS=("-q")
+SSH_PORT="${SSH_PORT:-22}"
+SSH_PROXYJUMP="${SSH_PROXYJUMP:-}"
+SSH_OPTS=("-o" "BatchMode=yes" "-o" "StrictHostKeyChecking=accept-new" "-o" "ConnectTimeout=10" "-p" "$SSH_PORT")
+SCP_OPTS=("-q" "-P" "$SSH_PORT")
+if [[ -n "$SSH_PROXYJUMP" ]]; then
+  SSH_OPTS+=("-J" "$SSH_PROXYJUMP")
+  SCP_OPTS+=("-o" "ProxyJump=$SSH_PROXYJUMP")
+fi
 if [[ "${DEBUG_SSH:-}" == "1" ]]; then
   SSH_OPTS=("-v" "${SSH_OPTS[@]}")
   SCP_OPTS=("-v" "${SCP_OPTS[@]}")

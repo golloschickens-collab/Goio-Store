@@ -15,6 +15,14 @@ on:
         description: Usuario SSH
         required: true
         default: root
+      ssh_port:
+        description: Puerto SSH del destino
+        required: false
+        default: '22'
+      ssh_bastion:
+        description: ProxyJump/bastion (opcional), ej. user@bastion:22
+        required: false
+        default: ''
       purge:
         description: Con undeploy, eliminar binarios/units
         required: false
@@ -27,6 +35,14 @@ on:
         description: Carpeta local para descarga de summaries
         required: false
         default: metrics-artifacts
+      fail_if_preflight_fails:
+        description: Fallar si ningún host está accesible en el preflight
+        required: false
+        default: 'true'
+      tailscale_enable:
+        description: Conectar el runner a Tailscale (requiere secreto TAILSCALE_AUTHKEY)
+        required: false
+        default: 'false'
 
 jobs:
   operate:
@@ -37,49 +53,89 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: IP pública del runner (para whitelist)
+        shell: bash
+        run: |
+          echo "IP pública (IPv4): $(curl -s https://api.ipify.org)"
+
       - name: Setup SSH agent
         uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: |
             ${{ secrets.METRICS_SSH_KEY }}
 
+      - name: Conectar Tailscale (opcional)
+        if: ${{ inputs.tailscale_enable == 'true' }}
+        shell: bash
+        env:
+          TS_AUTHKEY: ${{ secrets.TAILSCALE_AUTHKEY }}
+        run: |
+          set -euo pipefail
+          if [[ -z "${TS_AUTHKEY:-}" ]]; then
+            echo "Falta el secreto TAILSCALE_AUTHKEY; desactiva tailscale_enable o define el secreto." >&2
+            exit 1
+          fi
+          curl -fsSL https://tailscale.com/install.sh | sh
+          sudo nohup /usr/sbin/tailscaled >/tmp/tailscaled.log 2>&1 &
+          # --accept-dns=false para no tocar la resolución del runner
+          sudo tailscale up --authkey="$TS_AUTHKEY" --hostname="gha-metrics-${{ github.run_id }}" --accept-dns=false --timeout=30s
+
       - name: Ejecutar operación de métricas
         shell: bash
         env:
           SSH_USER: ${{ inputs.ssh_user }}
+          SSH_PORT: ${{ inputs.ssh_port }}
+          SSH_PROXYJUMP: ${{ inputs.ssh_bastion }}
           DEBUG_SSH: "1"
-        run: |
+                run: |
           set -euo pipefail
           chmod +x scripts/deploy_metrics.sh
+
           ACTION="${{ inputs.action }}"
           HOSTS="${{ inputs.hosts }}"
           DL_DIR="${{ inputs.download_dir }}"
+
+          # --- Construir argumentos para el script ---
           PURGE_FLAG=""
           if [[ "$ACTION" == "undeploy" && "${{ inputs.purge }}" == "true" ]]; then
             PURGE_FLAG="--purge"
           fi
+
           DOWNLOAD_FLAG=""
           if [[ "$ACTION" == "parse" && "${{ inputs.download_artifacts }}" == "true" ]]; then
             mkdir -p "$DL_DIR"
             DOWNLOAD_FLAG="--download $DL_DIR"
           fi
+
           ACTION_FLAG=""
           if [[ "$ACTION" == "undeploy" ]]; then
             ACTION_FLAG="--undeploy"
           elif [[ "$ACTION" == "parse" ]]; then
             ACTION_FLAG="--parse"
           fi
-          echo "== Preflight: comprobando conectividad SSH (puerto 22)"
+
+          # --- Preflight: Comprobar conectividad SSH ---
+          PORT="${{ inputs.ssh_port }}"
+          echo "== Preflight: comprobando conectividad SSH (puerto ${PORT})"
           IFS=',' read -ra HOST_LIST <<< "$HOSTS"
+          reachable=0
           for entry in "${HOST_LIST[@]}"; do
             host="${entry%%:*}"
             printf -- "- %s: " "$host"
-            if timeout 5 bash -c ">/dev/tcp/$host/22" 2>/dev/null; then
+            # Usar netcat (nc) para una comprobación más robusta
+            if nc -z -w 5 "$host" "$PORT"; then
               echo "OK"
+              reachable=$((reachable+1))
             else
-              echo "FAIL (no se pudo abrir TCP/22)"
+              echo "FAIL (no se pudo abrir TCP/${PORT})"
             fi
           done
+
+          if [[ "${{ inputs.fail_if_preflight_fails }}" == "true" && $reachable -eq 0 ]]; then
+            echo "Error: Ningún host es alcanzable en el puerto ${PORT}. Abre el acceso en el firewall o usa bastion/Tailscale y reintenta." >&2
+            exit 1
+          fi
+
           echo "== Acción: $ACTION"
           echo "== Hosts:  $HOSTS"
           ./scripts/deploy_metrics.sh --hosts "$HOSTS" $PURGE_FLAG $ACTION_FLAG $DOWNLOAD_FLAG
