@@ -73,7 +73,7 @@ jobs:
           IFS=',' read -ra HOST_LIST <<< "$HOSTS"
           for entry in "${HOST_LIST[@]}"; do
             host="${entry%%:*}"
-            printf "- %s: " "$host"
+            printf -- "- %s: " "$host"
             if timeout 5 bash -c ">/dev/tcp/$host/22" 2>/dev/null; then
               echo "OK"
             else
