@@ -47,6 +47,7 @@ jobs:
         shell: bash
         env:
           SSH_USER: ${{ inputs.ssh_user }}
+          DEBUG_SSH: "1"
         run: |
           set -euo pipefail
           chmod +x scripts/deploy_metrics.sh
@@ -68,6 +69,17 @@ jobs:
           elif [[ "$ACTION" == "parse" ]]; then
             ACTION_FLAG="--parse"
           fi
+          echo "== Preflight: comprobando conectividad SSH (puerto 22)"
+          IFS=',' read -ra HOST_LIST <<< "$HOSTS"
+          for entry in "${HOST_LIST[@]}"; do
+            host="${entry%%:*}"
+            printf "- %s: " "$host"
+            if timeout 5 bash -c ">/dev/tcp/$host/22" 2>/dev/null; then
+              echo "OK"
+            else
+              echo "FAIL (no se pudo abrir TCP/22)"
+            fi
+          done
           echo "== Acción: $ACTION"
           echo "== Hosts:  $HOSTS"
           ./scripts/deploy_metrics.sh --hosts "$HOSTS" $PURGE_FLAG $ACTION_FLAG $DOWNLOAD_FLAG

@@ -24,6 +24,10 @@ HOSTS=(
 SSH_USER="${SSH_USER:-root}"
 SSH_OPTS=("-o" "BatchMode=yes" "-o" "StrictHostKeyChecking=accept-new" "-o" "ConnectTimeout=10")
 SCP_OPTS=("-q")
+if [[ "${DEBUG_SSH:-}" == "1" ]]; then
+  SSH_OPTS=("-v" "${SSH_OPTS[@]}")
+  SCP_OPTS=("-v" "${SCP_OPTS[@]}")
+fi
 
 # Flags
 ACTION="deploy"  # deploy | undeploy | parse
