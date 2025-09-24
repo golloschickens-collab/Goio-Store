@@ -62,9 +62,15 @@ jobs:
             mkdir -p "$DL_DIR"
             DOWNLOAD_FLAG="--download $DL_DIR"
           fi
+          ACTION_FLAG=""
+          if [[ "$ACTION" == "undeploy" ]]; then
+            ACTION_FLAG="--undeploy"
+          elif [[ "$ACTION" == "parse" ]]; then
+            ACTION_FLAG="--parse"
+          fi
           echo "== Acción: $ACTION"
           echo "== Hosts:  $HOSTS"
-          ./scripts/deploy_metrics.sh --hosts "$HOSTS" $PURGE_FLAG $ACTION $DOWNLOAD_FLAG
+          ./scripts/deploy_metrics.sh --hosts "$HOSTS" $PURGE_FLAG $ACTION_FLAG $DOWNLOAD_FLAG
 
       - name: Subir artefactos de métricas
         if: ${{ inputs.action == 'parse' && inputs.download_artifacts == 'true' }}
