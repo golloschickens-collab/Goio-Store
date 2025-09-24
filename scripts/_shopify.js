@@ -1,28 +1,42 @@
 import dotenv from 'dotenv';
-import { existsSync } from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
+// --- Robust path resolution ---
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+// Resolve path to .env file located in the parent directory of `scripts`
+const envPath = path.resolve(__dirname, '../.env');
+
+// Determine the environment (prod or dev)
 const env = process.env.SHOPIFY_ENV || 'prod';
-const candidates = [`.env.${env}`, '.env.local', '.env'];
-const chosen = candidates.find(p => existsSync(p));
-dotenv.config({ path: chosen });
 
-// 👇 Log mínimo para diagnóstico (no imprime token)
-console.log(`[ENV] SHOPIFY_ENV=${env} | .env usado=${chosen}`);
+// Load the .env file from the resolved path
+dotenv.config({ path: envPath });
 
-export const shop  = process.env.SHOPIFY_STORE_DOMAIN;
-export const token = process.env.SHOPIFY_ACCESS_TOKEN;
-export const API   = process.env.SHOPIFY_API_VERSION || '2024-07';
+let shop, token;
 
-if (!shop || !token) {
-  console.error('❌ Faltan SHOPIFY_STORE_DOMAIN o SHOPIFY_ACCESS_TOKEN');
+if (env === 'prod') {
+  shop = process.env.SHOPIFY_DOMAIN_PROD;
+  token = process.env.SHOPIFY_ADMIN_TOKEN_PROD;
+  console.log(`[ENV] Using PRODUCTION environment for Shopify: ${shop}`);
+} else if (env === 'dev') {
+  shop = process.env.SHOPIFY_DOMAIN_DEV;
+  token = process.env.SHOPIFY_ADMIN_TOKEN_DEV;
+  console.log(`[ENV] Using DEVELOPMENT environment for Shopify: ${shop}`);
+} else {
+  console.error(`❌ SHOPIFY_ENV '${env}' no es válido. Usa 'prod' o 'dev'.`);
   process.exit(1);
 }
 
-// Si pides PROD, exige que realmente use .env.prod
-if (env === 'prod' && !(chosen && chosen.endsWith('.env.prod'))) {
-  throw new Error(`Esperaba .env.prod pero se cargó: ${chosen}. Crea .env.prod o ejecuta con SHOPIFY_ENV=prod`);
+if (!shop || !token) {
+  console.error(`❌ No se encontraron las credenciales para el entorno '${env}' en tu archivo .env en la ruta ${envPath}`);
+  console.error(`Asegúrate de que las variables SHOPIFY_DOMAIN_${env.toUpperCase()} y SHOPIFY_ADMIN_TOKEN_${env.toUpperCase()} existan.`);
+  process.exit(1);
 }
 
-export const api         = (p) => `https://${shop}/admin/api/${API}/${p}`;
-export const headers     = { 'X-Shopify-Access-Token': token };
+export const API = process.env.SHOPIFY_API_VERSION || '2024-07';
+
+export const api = (p) => `https://${shop}/admin/api/${API}/${p}`;
+export const headers = { 'X-Shopify-Access-Token': token };
 export const headersJSON = { ...headers, 'Content-Type': 'application/json' };

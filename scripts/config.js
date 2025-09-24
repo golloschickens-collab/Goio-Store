@@ -7,11 +7,13 @@ dotenv.config({ path: path.resolve(process.cwd(), '.env') });
 const {
     // Credenciales de Tienda Principal (Producción)
     SHOPIFY_DOMAIN_PROD,
+    SHOPIFY_ADMIN_TOKEN_PROD,
     SHOPIFY_API_KEY_PROD,
+
 
     // Credenciales de Tienda de Desarrollo
     SHOPIFY_DOMAIN_DEV,
-    SHOPIFY_API_KEY_DEV,
+    SHOPIFY_ADMIN_TOKEN_DEV,
 
     // Otras APIs
     FACEBOOK_PAGE_ID,
@@ -20,11 +22,11 @@ const {
 } = process.env;
 
 // --- Validación de Variables Críticas ---
-if (!SHOPIFY_DOMAIN_PROD || !SHOPIFY_API_KEY_PROD) {
-    throw new Error("Credenciales de producción de Shopify no definidas. Asegúrate de tener SHOPIFY_DOMAIN_PROD y SHOPIFY_API_KEY_PROD en .env");
+if (!SHOPIFY_DOMAIN_PROD || !SHOPIFY_ADMIN_TOKEN_PROD) {
+    throw new Error("Credenciales de producción de Shopify no definidas. Asegúrate de tener SHOPIFY_DOMAIN_PROD y SHOPIFY_ADMIN_TOKEN_PROD en .env");
 }
-if (!SHOPIFY_DOMAIN_DEV || !SHOPIFY_API_KEY_DEV) {
-    throw new Error("Credenciales de desarrollo de Shopify no definidas. Asegúrate de tener SHOPIFY_DOMAIN_DEV y SHOPIFY_API_KEY_DEV en .env");
+if (!SHOPIFY_DOMAIN_DEV || !SHOPIFY_ADMIN_TOKEN_DEV) {
+    throw new Error("Credenciales de desarrollo de Shopify no definidas. Asegúrate de tener SHOPIFY_DOMAIN_DEV y SHOPIFY_ADMIN_TOKEN_DEV en .env");
 }
 if (!GEMINI_API_KEY) {
     console.warn("Advertencia: GEMINI_API_KEY no está definida. Los agentes que la necesiten fallarán.");
@@ -39,6 +41,7 @@ export const config = {
       {
         nombre: "principal",
         dominio: SHOPIFY_DOMAIN_PROD,
+        admin_token: SHOPIFY_ADMIN_TOKEN_PROD,
         api_key: SHOPIFY_API_KEY_PROD,
         entorno: "producción",
         validaciones: [
@@ -50,7 +53,7 @@ export const config = {
       {
         nombre: "goio-dev",
         dominio: SHOPIFY_DOMAIN_DEV,
-        api_key: SHOPIFY_API_KEY_DEV,
+        admin_token: SHOPIFY_ADMIN_TOKEN_DEV,
         entorno: "desarrollo",
         validaciones: [
           "Permitir pruebas de flujo sin publicar productos",

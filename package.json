@@ -33,6 +33,8 @@
     "shorts:generate": "node scripts/generate-shorts.js",
     "orchestrate:deploy-product": "node scripts/orquestador.js publish-product ops/products-to-upload/cama-ansiedad-mascotas.md",
     "audit:store": "node scripts/store-audit.js",
+    "verify:prompts": "node scripts/verify_prompts.js",
+    "audit:prompts": "node scripts/audit_prompts.js",
     "autofix": "node autoFixer.js"
   },
   "dependencies": {
@@ -41,6 +43,7 @@
     "commander": "^12.0.0",
     "dayjs": "^1.11.11",
     "dotenv": "^16.4.5",
+    "express": "^5.1.0",
     "graphql-request": "^7.2.0",
     "node-fetch": "3.3.2",
     "papaparse": "^5.4.1",
@@ -51,4 +54,3 @@
     "cross-env": "^7.0.3"
   }
 }
-

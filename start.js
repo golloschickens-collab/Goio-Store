@@ -15,8 +15,7 @@ console.log(`[Arranque] 🚀 Lanzando al supervisor desde: ${supervisorPath}`);
 
 const supervisorProcess = spawn('node', [supervisorPath], {
   // stdio: 'inherit' permite que el subproceso (supervisor) imprima directamente en esta terminal
-  stdio: 'inherit',
-  shell: true
+  stdio: 'inherit'
 });
 
 supervisorProcess.on('close', (code) => {

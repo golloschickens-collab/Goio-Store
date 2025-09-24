@@ -1,10 +1,16 @@
+# ==================================================================================
+# !! WORKFLOW DESACTIVADO !!
+# Esta tarea ha sido migrada a un cron job en el servidor de Hetzner para
+# eliminar los costos de GitHub Actions.
+# NO REACTIVAR.
+# ==================================================================================
 # Forzar re-evaluación
 name: Ejecutar agentes
 
-on:
-  schedule:
-    - cron: '0 6 * * *'  # Ejecuta todos los días a las 6am
-  workflow_dispatch:
+# on:
+#   schedule:
+#     - cron: '0 6 * * *'  # Ejecuta todos los días a las 6am
+#   workflow_dispatch:
 
 jobs:
   run-agents:

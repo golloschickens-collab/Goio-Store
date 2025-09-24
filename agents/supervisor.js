@@ -1,27 +1,50 @@
 // agents/supervisor.js
+import express from 'express';
 import { fork } from 'child_process';
 import path from 'path';
 import { config } from '../scripts/config.js'; // Importar nuestra configuración central
 
+// --- Configuración del Servidor Web ---
+const app = express();
+const PORT = process.env.PORT || 3002;
+const METRICS_TOKEN = process.env.METRICS_TOKEN;
+
+// Middleware para parsear JSON (útil para futuros endpoints)
+app.use(express.json());
+
+// Endpoint de Métricas para Prometheus
+app.get('/metrics', (req, res) => {
+  // Validar el token de autorización
+  if (METRICS_TOKEN && req.headers.authorization !== `Bearer ${METRICS_TOKEN}`) {
+    return res.status(401).send('Unauthorized: Se requiere un token de métricas válido.');
+  }
+  
+  // Aquí se agregarían las métricas reales en formato Prometheus
+  // Por ahora, es un placeholder
+  res.set('Content-Type', 'text/plain');
+  res.send('# Aca iran las metricas de Prometheus\napp_online 1\n');
+});
+
+// Endpoint de Health Check
+app.get('/health', (req, res) => {
+  res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() });
+});
+
+
+// --- Lógica de Orquestación de Agentes ---
 const CWD = process.cwd();
 const AGENTS_DIR = path.join(CWD, 'agents');
 
-/**
- * Runs a single agent script, passing its specific configuration.
- * @param {string} agentName - The simple name of the agent to run (e.g., 'listing').
- * @param {object} agentConfig - The configuration block for that specific agent.
- * @returns {Promise<void>} A promise that resolves when the agent exits, or rejects on error.
- */
 function runAgent(agentName, agentConfig) {
   return new Promise((resolve, reject) => {
     const agentPath = path.join(AGENTS_DIR, `${agentName}.js`);
-    console.log(`\n[Supervisor] ----------------------------------------`);
+    console.log(`
+[Supervisor] ----------------------------------------`);
     console.log(`[Supervisor] 🚀 Lanzando agente: ${agentName}`);
     console.log(`[Supervisor] ----------------------------------------`);
 
-    // Pasar la configuración específica del agente como un argumento de línea de comandos en formato JSON
     const child = fork(agentPath, [JSON.stringify(agentConfig)], {
-      env: process.env, // Las variables de entorno ya están cargadas por config.js
+      env: process.env,
       silent: false
     });
 
@@ -41,22 +64,12 @@ function runAgent(agentName, agentConfig) {
   });
 }
 
-/**
- * Extrae el nombre simple del agente del nombre completo.
- * E.g., "Agent.ProductManager" -> "productmanager"
- * @param {string} fullAgentName
- * @returns {string}
- */
 function getSimpleName(fullAgentName) {
     const parts = fullAgentName.split('.');
     return parts.length > 1 ? parts[1].toLowerCase() : fullAgentName.toLowerCase();
 }
 
-
-/**
- * Main supervisor loop.
- */
-async function run() {
+async function runAgentCycle() {
   console.log('[Supervisor] 🎬 Iniciando ciclo de supervisión basado en config.js...');
 
   try {
@@ -70,7 +83,6 @@ async function run() {
       
       if (simpleName === 'supervisor') continue;
 
-      // Ahora pasamos la configuración completa del agente a runAgent
       await runAgent(simpleName, agent);
     }
 
@@ -81,4 +93,16 @@ async function run() {
   }
 }
 
-run();
+// --- Arranque del Servidor y Ciclo de Agentes ---
+app.listen(PORT, () => {
+  console.log(`[Supervisor] 🌐 Servidor web escuchando en http://localhost:${PORT}`);
+  console.log(`[Supervisor]    - Endpoint de métricas: /metrics`);
+  console.log(`[Supervisor]    - Endpoint de salud: /health`);
+  
+  // Ejecutar el ciclo de agentes una vez, justo después de que el servidor arranque.
+  // No bloquea el servidor, solo se ejecuta en segundo plano.
+  console.log('[Supervisor] 🚀 El servidor está listo. Lanzando el ciclo de agentes inicial...');
+  runAgentCycle().catch(error => {
+    console.error('[Supervisor] ❌ Falló el ciclo de agentes inicial:', error);
+  });
+});
