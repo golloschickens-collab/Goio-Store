@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # Despliegue automatizado de mÃ©tricas (host + docker) en mÃºltiples servidores
-# Requisitos en el equipo de control: ssh, scp, acceso por llave a los hosts
+#  # Copia de artefactos usando tar+ssh (más compatible que SCP)
+  log "Transferring files via tar+ssh..."
+  tar -czf - "$COLLECT_SH" "$SERVICE_UNIT" "$TIMER_UNIT" "$PARSER_PY" | ssh "${SSH_OPTS[@]}" "$target" "cd /tmp && tar -xzf - --strip-components=2" || { err "transfer falló ($host)"; return 1; }equisitos en el equipo de control: ssh, scp, acceso por llave a los hosts
 
 set -euo pipefail
 
