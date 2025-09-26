@@ -65,5 +65,16 @@ jobs:
           fi
           
           echo "=== DEPLOYING ==="
-          chmod +x palacio-central/scripts/deploy_metrics.sh
-          ./palacio-central/scripts/deploy_metrics.sh --hosts "${{ inputs.hosts }}"
+          ls -la
+          echo "Looking for palacio-central:"
+          ls -la palacio-central/ || echo "palacio-central not found"
+          echo "Contents of current directory:"
+          find . -name "deploy_metrics.sh" -type f
+          
+          if [ -f "palacio-central/scripts/deploy_metrics.sh" ]; then
+            chmod +x palacio-central/scripts/deploy_metrics.sh
+            ./palacio-central/scripts/deploy_metrics.sh --hosts "${{ inputs.hosts }}"
+          else
+            echo "❌ deploy_metrics.sh not found"
+            exit 1
+          fi
