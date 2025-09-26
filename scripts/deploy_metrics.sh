@@ -1,6 +1,31 @@
 #!/usr/bin/env bash
-# Despliegue automatizado de mÃ©tricas (host + docker) en mÃºltiples servidores
-# Requisitos en el equipo de control: ssh, scp, acceso por llave a los hosts
+# Despliegue automatizado de mÃ©tricas (host + docker) en mÃºltiples servidore# Función alternativa para transferir archivos cuando SCP falla
+transfer_file_ssh() {
+  local local_file="$1" remote_path="$2" target="$3"
+  log "Transferring $(basename "$local_file") via SSH+base64"
+  
+  # Encode y transfer via SSH 
+  if command -v base64 >/dev/null 2>&1; then
+    base64_content=$(base64 -w 0 "$local_file" 2>/dev/null || base64 "$local_file")
+    ssh "${SSH_OPTS[@]}" "$target" "echo '$base64_content' | base64 -d > '$remote_path'"
+  else
+    # Fallback usando cat + quoted content
+    ssh "${SSH_OPTS[@]}" "$target" "cat > '$remote_path'" < "$local_file"
+  fi
+}
+
+deploy_host() {
+  local host="$1" delay="$2" target="$SSH_USER@$1"
+  log "[deploy] Host=$host delay=$delay"
+
+  # Copia de artefactos - probar SCP primero, luego SSH+base64
+  if ! scp "${SCP_OPTS[@]}" "$COLLECT_SH" "$SERVICE_UNIT" "$TIMER_UNIT" "$PARSER_PY" "$target:/tmp/" 2>/dev/null; then
+    log "[deploy] SCP failed, trying SSH+base64 method..."
+    transfer_file_ssh "$COLLECT_SH" "/tmp/collect_metrics.sh" "$target" || { err "transfer falló ($host)"; return 1; }
+    transfer_file_ssh "$SERVICE_UNIT" "/tmp/goio-metrics.service" "$target" || { err "transfer falló ($host)"; return 1; }
+    transfer_file_ssh "$TIMER_UNIT" "/tmp/goio-metrics.timer" "$target" || { err "transfer falló ($host)"; return 1; }
+    transfer_file_ssh "$PARSER_PY" "/tmp/parse_metrics.py" "$target" || { err "transfer falló ($host)"; return 1; }
+  fiequisitos en el equipo de control: ssh, scp, acceso por llave a los hosts
 
 set -euo pipefail
 
