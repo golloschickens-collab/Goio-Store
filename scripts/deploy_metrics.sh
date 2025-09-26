@@ -16,16 +16,17 @@ PARSER_PY="$SCRIPT_DIR/parse_metrics.py"
 
 # Mapa host -> RandomizedDelaySec para distribuir carga (por defecto)
 HOSTS=(
-  "ai-masterkernel:2m"
-  "goio-store:5m"
-  "eco-eterno:7m"
-  "gollos-server-1:9m"
+  "157.180.83.237:2m"
+  "78.156.195.120:5m"
+  "91.98.36.86:7m"
+  "91.98.114.207:9m"
 )
 
 # Config SSH
 SSH_USER="${SSH_USER:-root}"
 SSH_PORT="${SSH_PORT:-22}"
-SSH_PROXYJUMP="${SSH_PROXYJUMP:-}"
+SSH_BASTION="${SSH_BASTION:-}"
+SSH_PROXYJUMP="${SSH_PROXYJUMP:-$SSH_BASTION}"
 SSH_OPTS=("-o" "BatchMode=yes" "-o" "StrictHostKeyChecking=accept-new" "-o" "ConnectTimeout=10" "-p" "$SSH_PORT")
 SCP_OPTS=("-q" "-P" "$SSH_PORT")
 if [[ -n "$SSH_PROXYJUMP" ]]; then
@@ -40,7 +41,10 @@ fi
 # Flags
 ACTION="deploy"  # deploy | undeploy | parse
 PURGE=false
-DOWNLOAD_DIR=""
+DOWNLOAD_DIR="metrics-artifacts"
+DOWNLOAD_ARTIFACTS=true
+TAILSCALE_ENABLE=false
+FAIL_IF_PREFLIGHT_FAILS=false
 
 usage() {
   cat <<USAGE
@@ -52,10 +56,13 @@ Acciones:
   --parse          Ejecuta el parser en cada host y (opcional) descarga artefactos
 
 Opciones:
-  --hosts "h1:2m,h2:5m"   Lista de hosts (con delay) a operar
-  --user <ssh_user>        Usuario SSH (por defecto: \$SSH_USER o root)
-  --download <dir>         Directorio local al que descargar summary (sÃ³lo con --parse)
-  --purge                  Con --undeploy, elimina /usr/local/bin/collect_metrics.sh, parser y units
+  --hosts "h1:2m,h2:5m"           Lista de hosts (con delay) a operar
+  --user <ssh_user>               Usuario SSH (por defecto: \$SSH_USER o root)
+  --download <dir>                Directorio local al que descargar summary (por defecto: metrics-artifacts)
+  --download-artifacts <true|false>  Habilitar/deshabilitar descarga de artefactos (por defecto: true)
+  --tailscale-enable <true|false> Habilitar/deshabilitar soporte Tailscale (por defecto: false)
+  --fail-if-preflight-fails <true|false>  Fallar si preflight checks fallan (por defecto: false)
+  --purge                         Con --undeploy, elimina /usr/local/bin/collect_metrics.sh, parser y units
 
 Ejemplos:
   $0                              # despliegue
@@ -88,6 +95,9 @@ while [[ $# -gt 0 ]]; do
     --hosts) parse_hosts_arg "$2"; shift 2 ;;
     --user) SSH_USER="$2"; shift 2 ;;
     --download) DOWNLOAD_DIR="$2"; shift 2 ;;
+    --download-artifacts) DOWNLOAD_ARTIFACTS="$2"; shift 2 ;;
+    --tailscale-enable) TAILSCALE_ENABLE="$2"; shift 2 ;;
+    --fail-if-preflight-fails) FAIL_IF_PREFLIGHT_FAILS="$2"; shift 2 ;;
     -h|--help) usage; exit 0 ;;
     *) warn "OpciÃ³n desconocida: $1"; usage; exit 1 ;;
   esac
@@ -102,6 +112,14 @@ fi
 deploy_host() {
   local host="$1" delay="$2" target="$SSH_USER@$1"
   log "[deploy] Host=$host delay=$delay"
+
+  # Preflight checks
+  if [[ "$FAIL_IF_PREFLIGHT_FAILS" == "true" ]]; then
+    log "[preflight] Checking connectivity to $host"
+    if ! ssh "${SSH_OPTS[@]}" "$target" "echo 'Preflight OK'" >/dev/null 2>&1; then
+      err "Preflight check failed for $host"; return 1
+    fi
+  fi
 
   # Copia de artefactos
   scp "${SCP_OPTS[@]}" "$COLLECT_SH" "$SERVICE_UNIT" "$TIMER_UNIT" "$PARSER_PY" "$target:/tmp/" || { err "scp fallÃ³ ($host)"; return 1; }
@@ -167,7 +185,7 @@ python3 /usr/local/bin/goio-parse-metrics.py --logs /var/log/goio-metrics --out 
 tar -C /var/log/goio-metrics -czf /tmp/goio-metrics-summary.tgz summary || true
 echo "/tmp/goio-metrics-summary.tgz"
 EOF
-  if [[ -n "$DOWNLOAD_DIR" ]]; then
+  if [[ "$DOWNLOAD_ARTIFACTS" == "true" && -n "$DOWNLOAD_DIR" ]]; then
     mkdir -p "$DOWNLOAD_DIR/$host"
     scp "${SCP_OPTS[@]}" "$target:/tmp/goio-metrics-summary.tgz" "$DOWNLOAD_DIR/$host/" || warn "No se pudo descargar summary ($host)"
   fi
@@ -176,6 +194,7 @@ EOF
 main() {
   local ok=0 fail=0
   log "OperaciÃ³n=${ACTION} hosts=${#HOSTS[@]} (SSH_USER=$SSH_USER)"
+  log "Config: DOWNLOAD_ARTIFACTS=$DOWNLOAD_ARTIFACTS TAILSCALE_ENABLE=$TAILSCALE_ENABLE FAIL_IF_PREFLIGHT_FAILS=$FAIL_IF_PREFLIGHT_FAILS"
   for entry in "${HOSTS[@]}"; do
     IFS=":" read -r host delay <<<"$entry"
     case "$ACTION" in
