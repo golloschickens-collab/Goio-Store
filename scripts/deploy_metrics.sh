@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
-# Despliegue automatizado de mÃ©tricas (host + docker) en mÃºltiples servidores
-#  # Copia de artefactos usando tar+ssh (más compatible que SCP)
-  log "Transferring files via tar+ssh..."
-  tar -czf - "$COLLECT_SH" "$SERVICE_UNIT" "$TIMER_UNIT" "$PARSER_PY" | ssh "${SSH_OPTS[@]}" "$target" "cd /tmp && tar -xzf - --strip-components=2" || { err "transfer falló ($host)"; return 1; }equisitos en el equipo de control: ssh, scp, acceso por llave a los hosts
+# Despliegue automatizado de métricas (host + docker) en múltiples servidores
+# Requisitos en el equipo de control: ssh, rsync, acceso por llave a los hosts
 
 set -euo pipefail
 
@@ -27,14 +25,11 @@ SSH_USER="${SSH_USER:-root}"
 SSH_PORT="${SSH_PORT:-22}"
 SSH_PROXYJUMP="${SSH_PROXYJUMP:-}"
 SSH_OPTS=("-o" "BatchMode=yes" "-o" "StrictHostKeyChecking=accept-new" "-o" "ConnectTimeout=10" "-p" "$SSH_PORT")
-SCP_OPTS=("-q" "-P" "$SSH_PORT")
 if [[ -n "$SSH_PROXYJUMP" ]]; then
   SSH_OPTS+=("-J" "$SSH_PROXYJUMP")
-  SCP_OPTS+=("-o" "ProxyJump=$SSH_PROXYJUMP")
 fi
 if [[ "${DEBUG_SSH:-}" == "1" ]]; then
   SSH_OPTS=("-v" "${SSH_OPTS[@]}")
-  SCP_OPTS=("-v" "${SCP_OPTS[@]}")
 fi
 
 # Flags
@@ -47,14 +42,14 @@ usage() {
 Uso: $0 [opciones]
 
 Acciones:
-  (por defecto)    Despliega collector + systemd timer y arranca mediciÃ³n
+  (por defecto)    Despliega collector + systemd timer y arranca medición
   --undeploy, -u   Detiene timer/servicio y los deshabilita (con --purge elimina binarios y units)
   --parse          Ejecuta el parser en cada host y (opcional) descarga artefactos
 
 Opciones:
   --hosts "h1:2m,h2:5m"   Lista de hosts (con delay) a operar
   --user <ssh_user>        Usuario SSH (por defecto: \$SSH_USER o root)
-  --download <dir>         Directorio local al que descargar summary (sÃ³lo con --parse)
+  --download <dir>         Directorio local al que descargar summary (sólo con --parse)
   --purge                  Con --undeploy, elimina /usr/local/bin/collect_metrics.sh, parser y units
 
 Ejemplos:
@@ -82,18 +77,18 @@ parse_hosts_arg() {
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
-    --undeploy|-u) ACTION="undeploy"; shift ;;
-    --parse) ACTION="parse"; shift ;;
-    --purge) PURGE=true; shift ;;
-    --hosts) parse_hosts_arg "$2"; shift 2 ;;
-    --user) SSH_USER="$2"; shift 2 ;;
-    --download) DOWNLOAD_DIR="$2"; shift 2 ;;
-    -h|--help) usage; exit 0 ;;
-    *) warn "OpciÃ³n desconocida: $1"; usage; exit 1 ;;
+    --undeploy|-u) ACTION="undeploy"; shift ;; 
+    --parse) ACTION="parse"; shift ;; 
+    --purge) PURGE=true; shift ;; 
+    --hosts) parse_hosts_arg "$2"; shift 2 ;; 
+    --user) SSH_USER="$2"; shift 2 ;; 
+    --download) DOWNLOAD_DIR="$2"; shift 2 ;; 
+    -h|--help) usage; exit 0 ;; 
+    *) warn "Opción desconocida: $1"; usage; exit 1 ;; 
   esac
 done
 
-need ssh; need scp
+need ssh; need rsync
 
 if [[ ! -f "$COLLECT_SH" || ! -f "$SERVICE_UNIT" || ! -f "$TIMER_UNIT" ]]; then
   err "No se encuentran los archivos requeridos en $SCRIPT_DIR"; exit 1
@@ -104,10 +99,11 @@ deploy_host() {
   log "[deploy] Host=$host delay=$delay"
 
   # Copia de artefactos
-  scp "${SCP_OPTS[@]}" "$COLLECT_SH" "$SERVICE_UNIT" "$TIMER_UNIT" "$PARSER_PY" "$target:/tmp/" || { err "scp fallÃ³ ($host)"; return 1; }
+  log "Copiando artefactos con rsync..."
+  rsync -az --info=progress2 --no-motd -e "ssh ${SSH_OPTS[*]}" "$COLLECT_SH" "$SERVICE_UNIT" "$TIMER_UNIT" "$PARSER_PY" "$target:/tmp/" || { err "rsync falló ($host)"; return 1; }
 
-  # InstalaciÃ³n remota
-  ssh "${SSH_OPTS[@]}" "$target" bash -s <<EOF || { err "ssh/instalaciÃ³n fallÃ³ ($host)"; return 1; }
+  # Instalación remota
+  ssh "${SSH_OPTS[@]}" "$target" bash -s <<EOF || { err "ssh/instalación falló ($host)"; return 1; }
 set -euo pipefail
 
 export DEBIAN_FRONTEND=noninteractive
@@ -123,11 +119,11 @@ install -D -m 0644 /tmp/goio-metrics.timer /etc/systemd/system/goio-metrics.time
 # Ajuste de RandomizedDelaySec
 sed -i "s/^RandomizedDelaySec=.*/RandomizedDelaySec=$delay/" /etc/systemd/system/goio-metrics.timer || true
 grep -q '^RandomizedDelaySec=' /etc/systemd/system/goio-metrics.timer || \
-  sed -i "/\\[Timer\\]/a RandomizedDelaySec=$delay" /etc/systemd/system/goio-metrics.timer
+  sed -i "/\[Timer\]/a RandomizedDelaySec=$delay" /etc/systemd/system/goio-metrics.timer
 
 systemctl daemon-reload
 systemctl enable --now goio-metrics.timer
-# EjecuciÃ³n inicial para validar
+# Ejecución inicial para validar
 systemctl start goio-metrics.service || true
 
 echo "STATUS(timer):"
@@ -144,7 +140,7 @@ EOF
 undeploy_host() {
   local host="$1" target="$SSH_USER@$1"
   log "[undeploy] Host=$host (purge=$PURGE)"
-  ssh "${SSH_OPTS[@]}" "$target" bash -s <<EOF || { err "ssh/undeploy fallÃ³ ($host)"; return 1; }
+  ssh "${SSH_OPTS[@]}" "$target" bash -s <<EOF || { err "ssh/undeploy falló ($host)"; return 1; }
 set -euo pipefail
 systemctl disable --now goio-metrics.timer || true
 systemctl stop goio-metrics.service || true
@@ -160,7 +156,7 @@ EOF
 parse_host() {
   local host="$1" target="$SSH_USER@$1"
   log "[parse] Host=$host"
-  ssh "${SSH_OPTS[@]}" "$target" bash -s <<'EOF' || { err "ssh/parse fallÃ³ ($host)"; return 1; }
+  ssh "${SSH_OPTS[@]}" "$target" bash -s <<'EOF' || { err "ssh/parse falló ($host)"; return 1; }
 set -euo pipefail
 if ! command -v python3 >/dev/null 2>&1; then echo "python3 no encontrado"; exit 1; fi
 python3 /usr/local/bin/goio-parse-metrics.py --logs /var/log/goio-metrics --out /var/log/goio-metrics/summary
@@ -169,13 +165,14 @@ echo "/tmp/goio-metrics-summary.tgz"
 EOF
   if [[ -n "$DOWNLOAD_DIR" ]]; then
     mkdir -p "$DOWNLOAD_DIR/$host"
-    scp "${SCP_OPTS[@]}" "$target:/tmp/goio-metrics-summary.tgz" "$DOWNLOAD_DIR/$host/" || warn "No se pudo descargar summary ($host)"
+    log "Descargando summary con rsync..."
+    rsync -az --info=progress2 --no-motd -e "ssh ${SSH_OPTS[*]}" "$target:/tmp/goio-metrics-summary.tgz" "$DOWNLOAD_DIR/$host/" || warn "No se pudo descargar summary ($host)"
   fi
 }
 
 main() {
   local ok=0 fail=0
-  log "OperaciÃ³n=${ACTION} hosts=${#HOSTS[@]} (SSH_USER=$SSH_USER)"
+  log "Operación=${ACTION} hosts=${#HOSTS[@]} (SSH_USER=$SSH_USER)"
   for entry in "${HOSTS[@]}"; do
     IFS=":" read -r host delay <<<"$entry"
     case "$ACTION" in
@@ -193,4 +190,3 @@ main() {
 }
 
 main "$@"
- 
