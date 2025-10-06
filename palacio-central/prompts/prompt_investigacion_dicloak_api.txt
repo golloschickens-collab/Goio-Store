@@ -1,0 +1,124 @@
+# PROMPT MAESTRO: INVESTIGACIÓN DICLOAK API INTEGRATION
+# Para: Agente Especial de Investigación Técnica
+# Objetivo: Determinar viabilidad de integración DiCloak con agentes automatizados
+
+## CONTEXTO IMPERIAL
+Soy el Rey de 3 imperios digitales (Gollos Chickens, Goio-Store, Eco-Eterno) buscando automatización total con agentes IA. Tengo acceso a cuentas premium alquiladas a través de DiCloak (navegador anti-detección) y necesito determinar si mis agentes pueden operar a través de estas cuentas en lugar de usar APIs costosas.
+
+## MISIÓN CRÍTICA
+Investiga EXHAUSTIVAMENTE si es posible integrar agentes automatizados con DiCloak para acceder a cuentas alquiladas y ejecutar tareas de forma programática.
+
+## ÁREAS DE INVESTIGACIÓN PRIORITARIAS
+
+### 1. CAPACIDADES TÉCNICAS DICLOAK
+- ¿DiCloak tiene API oficial o no oficial disponible?
+- ¿Soporta automatización via Selenium/Puppeteer/Playwright?
+- ¿Permite control programático de perfiles de navegador?
+- ¿Tiene integración con herramientas de automatización?
+- ¿Qué protocolos de comunicación utiliza internamente?
+
+### 2. MÉTODOS DE INTEGRACIÓN POSIBLES
+- API REST oficial de DiCloak (si existe)
+- WebDriver/ChromeDriver integration
+- Selenium Grid compatibility
+- Puppeteer headless browser control
+- Browser extension communication
+- Desktop automation (AutoHotkey, PyAutoGUI)
+- Command line interface (CLI) availability
+
+### 3. AUTOMATIZACIÓN DE PERFILES
+- ¿Cómo abrir/cerrar perfiles específicos programáticamente?
+- ¿Gestión de sesiones automática?
+- ¿Control de proxies y fingerprints?
+- ¿Sincronización entre múltiples perfiles?
+- ¿Limitaciones de perfiles simultáneos?
+
+### 4. SEGURIDAD Y DETECCIÓN
+- ¿Riesgos de detección por automatización?
+- ¿Mejores prácticas para evitar bans?
+- ¿Rotación de user agents y comportamiento humano?
+- ¿Delays y patrones de navegación naturales?
+- ¿Protección contra huellas digitales de bots?
+
+### 5. CASOS DE USO ESPECÍFICOS
+- **ChatGPT Plus**: Envío de prompts y recepción de respuestas
+- **Canva Pro**: Creación automatizada de diseños
+- **CapCut Pro**: Edición de videos programática
+- **Redes Sociales**: Publicación automática de contenido
+- **Google Drive**: Gestión de archivos y documentos
+
+### 6. ALTERNATIVAS Y WORKAROUNDS
+- Browser automation sin API oficial
+- Screen scraping y OCR integration
+- Virtual display/headless operation
+- Remote desktop automation
+- API de terceros que interactúen con DiCloak
+
+### 7. IMPLEMENTACIÓN TÉCNICA
+- Lenguajes de programación compatibles (Python, JavaScript, etc.)
+- Bibliotecas y frameworks recomendados
+- Arquitectura de integración óptima
+- Manejo de errores y recuperación automática
+- Logging y monitoreo de operaciones
+
+### 8. COSTOS Y LIMITACIONES
+- ¿Restricciones en el uso de cuentas alquiladas?
+- ¿Políticas del proveedor sobre automatización?
+- ¿Límites de uso por cuenta/día?
+- ¿Términos de servicio que debemos considerar?
+
+## DELIVERABLES REQUERIDOS
+
+### REPORTE TÉCNICO DETALLADO:
+1. **Viabilidad general** (Sí/No/Parcial) con justificación
+2. **Métodos de integración disponibles** (ranking por facilidad)
+3. **Código de ejemplo** para conexión básica
+4. **Arquitectura recomendada** para nuestros imperios
+5. **Plan de implementación paso a paso**
+6. **Riesgos identificados** y mitigaciones
+7. **Estimación de tiempo de desarrollo**
+8. **ROI comparado con APIs tradicionales**
+
+### PRUEBAS DE CONCEPTO:
+- Script básico de automatización con DiCloak
+- Ejemplo de apertura/cierre de perfil específico
+- Test de navegación automatizada a ChatGPT/Canva
+- Verificación de detección anti-bot
+
+### RECOMENDACIONES ESTRATÉGICAS:
+- ¿Proceder con DiCloak o mantener APIs?
+- Híbrido: ¿Qué servicios por DiCloak y cuáles por API?
+- Timeline de migración recomendado
+- Métricas de éxito a monitorear
+
+## METODOLOGÍA DE INVESTIGACIÓN
+
+1. **Documentación oficial**: Buscar APIs, SDKs, documentación técnica
+2. **Comunidades técnicas**: Reddit, Stack Overflow, GitHub
+3. **Videos y tutoriales**: YouTube, cursos especializados
+4. **Pruebas directas**: Testing con DiCloak si es posible
+5. **Foros de automatización**: Communities de web scraping
+6. **Repositorios GitHub**: Proyectos open source relacionados
+
+## CRITERIOS DE ÉXITO
+
+### MÍNIMO VIABLE:
+- Abrir perfil DiCloak programáticamente
+- Navegar a sitio web específico
+- Ejecutar acción básica (click, input text)
+- Cerrar perfil limpiamente
+
+### OBJETIVO IMPERIAL:
+- Control total programático de múltiples perfiles
+- Automatización completa de flujos de trabajo
+- Integración seamless con nuestros agentes existentes
+- Escalabilidad para 3 imperios simultáneos
+
+## URGENCIA: MÁXIMA PRIORIDAD
+Este análisis determinará nuestra arquitectura de automatización completa. Los resultados definirán si ahorramos $1,320 anuales y escalamos más rápido.
+
+## FORMATO DE RESPUESTA
+Proporciona un análisis estructurado, técnico pero comprensible, con ejemplos de código donde sea posible y recomendaciones accionables inmediatas.
+
+---
+**REY**: Esperando tu investigación completa para tomar decisión estratégica final sobre arquitectura de automatización imperial. 👑

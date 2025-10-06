@@ -1,0 +1,37 @@
+[
+  {
+    "hora": "08:00",
+    "tema": "broaster_pechuga",
+    "copy": "🔥 ¿ANTOJO DE PECHUGA BROASTER PERFECTA?\n\n🍗 Pechuga Broaster jugosa por dentro, CRUJIENTE por fuera\n💰 Solo S/16 - La mejor calidad de Lima Norte\n📍 Delivery RÁPIDO en San Martín de Porres\n🚀 ¡Ordena YA! WhatsApp: 961234567\n\n#GollosChickens #PechugaBroaster #DeliveryLima #SanMartinDePortes",
+    "imagen_concepto": "Pechuga broaster dorada en plato con guarniciones",
+    "estado": "listo"
+  },
+  {
+    "hora": "12:00",
+    "tema": "combo_familiar",
+    "copy": "👨‍👩‍👧‍👦 COMBO FAMILIAR PERFECTO PARA TODOS\n\n🍗 8 piezas de pollo + papas + ensalada + arroz + gaseosa Pepsi 1.5L\n💰 Solo S/55 - ¡Alcanza para toda la familia!\n📍 Delivery express en 25 minutos\n🚀 ¡Ordena YA! WhatsApp: 961234567\n\n#GollosChickens #ComboFamiliar #AlmuerzoCompleto #SanMartinDePortes",
+    "imagen_concepto": "Combo familiar completo con 8 piezas de pollo y guarniciones",
+    "estado": "listo"
+  },
+  {
+    "hora": "15:30",
+    "tema": "alitas_especiales",
+    "copy": "🔥 ALITAS ESPECIALES - ¡LA PROMOCIÓN MÁS PEDIDA!\n\n🍗 6 alitas jugosas + papas + gaseosa\n💰 Solo S/20 - ¡Precio increíble!\n📍 Delivery a tu puerta en minutos\n🚀 ¡Ordena YA! WhatsApp: 961234567\n\n#GollosChickens #AlitasEspeciales #PromocionEspecial #LimaNorte",
+    "imagen_concepto": "6 alitas doradas con papas fritas y gaseosa",
+    "estado": "listo"
+  },
+  {
+    "hora": "19:00",
+    "tema": "combo_doble_alitas",
+    "copy": "🌙 COMBO DOBLE ALITAS - ¡LO MEJOR DE DOS MUNDOS!\n\n🍗 5 alitas broaster + 5 alitas BBQ + papas + gaseosa\n💰 Solo S/30 - Variedad perfecta\n📍 Llevamos hasta tu casa en San Martín de Porres\n🚀 ¡Ordena YA! WhatsApp: 961234567\n\n#GollosChickens #ComboDobleAlitas #VariedadPerfecta #CenaSabrosa",
+    "imagen_concepto": "Combo con alitas broaster y BBQ, papas y bebida",
+    "estado": "listo"
+  },
+  {
+    "hora": "21:30",
+    "tema": "salchipapa_noche",
+    "copy": "🌙 ANTOJO NOCTURNO: SALCHIPAPA A LA POBRE\n\n🌭 La salchipapa MÁS COMPLETA de Pucallpa\n💰 Solo S/18 - Perfecta para la noche\n📍 Delivery hasta las 12 AM\n🚀 ¡Ordena YA! WhatsApp: 961234567\n\n#GollosChickens #SalchipapaALaPobre #AntojoNocturno #DeliveryTarde",
+    "imagen_concepto": "Salchipapa A La Pobre con todos los ingredientes",
+    "estado": "listo"
+  }
+]

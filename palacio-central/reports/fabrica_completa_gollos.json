@@ -1,0 +1,86 @@
+{
+  "fecha_ejecucion": "2025-09-30T23:18:23.215726",
+  "total_posts": 4,
+  "posts_generados": [
+    {
+      "numero": 1,
+      "tipo": "comparativo_precios",
+      "copy": {
+        "titulo": "🔥 GOLLOS vs KFC: ¡MISMA CALIDAD, MEJOR PRECIO!",
+        "copy_principal": "🐔 Combo Familiar Gollos: S/55\n🍗 KFC Bucket similar: S/75\n\n💰 ¡AHORRA S/20 sin sacrificar sabor!\n📍 Especialistas en Lima Norte\n🚚 Delivery 25-35 min garantizado\n\n#GollosChickens #LimaNorte #MejorPrecio",
+        "hashtags": [
+          "#GollosChickens",
+          "#LimaNorte",
+          "#MejorPrecio",
+          "#DeliveryRapido",
+          "#SanMartinDePortes"
+        ],
+        "cta": "Pide ahora: +51 939 431 887"
+      },
+      "imagen": "temp/imagenes_gollos/gollos_comparativo_precios_1_placeholder.txt",
+      "prompt_usado": "\n            Professional food advertising comparison image, split screen layout:\n            LEFT SIDE: \"GOLLOS CHICKENS\" logo, crispy fried chicken pieces, price \"S/ 55\" in large orange text\n            RIGHT SIDE: \"KFC\" logo, similar chicken, price \"S/ 75\" crossed out in red\n            CENTER: Large \"VS\" text, \"AHORRA S/ 20\" in green highlight\n            BOTTOM: \"Lima Norte Especialistas\" text, phone \"+51 939 431 887\"\n            Style: Clean modern food photography, warm lighting, professional restaurant quality\n            Colors: Orange #FF6B35, red #E74C3C, green #27AE60, white background\n            Quality: 4K, commercial advertising, food photography\n            ",
+      "fecha_generacion": "2025-09-30T23:18:17.077867"
+    },
+    {
+      "numero": 2,
+      "tipo": "velocidad_delivery",
+      "copy": {
+        "titulo": "⚡ MIENTRAS OTROS TARDAN 1 HORA, NOSOTROS...",
+        "copy_principal": "⏰ Gollos Chickens: 25-35 minutos\n🐌 Otras marcas: 45-90 minutos\n\n🎯 Especialistas SOLO Lima Norte\n🔥 Pollo caliente, crujiente, A TIEMPO\n📍 San Martín de Porres y alrededores\n\n¡No esperes más! La rapidez que mereces.\n\n#DeliveryRapido #LimaNorte #GollosChickens",
+        "hashtags": [
+          "#DeliveryRapido",
+          "#LimaNorte",
+          "#GollosChickens",
+          "#ATiempo",
+          "#SanMartin"
+        ],
+        "cta": "Delivery express: +51 939 431 887"
+      },
+      "imagen": "temp/imagenes_gollos/gollos_velocidad_delivery_2_placeholder.txt",
+      "prompt_usado": "\n            Dynamic delivery speed comparison infographic:\n            MAIN ELEMENT: Large stopwatch/timer showing \"25-35 MIN\" in green\n            BACKGROUND: Blurred motorcycle delivery in motion, Lima Norte streets\n            TEXT OVERLAY: \"MIENTRAS OTROS TARDAN 1 HORA...\" at top\n            BOTTOM SECTION: Small clocks showing \"45-90 min\" for competitors in red\n            GOLLOS LOGO: Prominent in corner with chicken wing icon\n            Style: Motion blur, speed lines, dynamic composition, professional infographic\n            Colors: Green #2ECC71, red #E74C3C, orange #F39C12, dark blue accents\n            Quality: High contrast, bold typography, commercial style\n            ",
+      "fecha_generacion": "2025-09-30T23:18:19.139857"
+    },
+    {
+      "numero": 3,
+      "tipo": "identidad_local",
+      "copy": {
+        "titulo": "🏠 SOMOS DE LIMA NORTE, PARA LIMA NORTE",
+        "copy_principal": "🌍 Marcas internacionales: Recetas genéricas\n🐔 GOLLOS: Sabor pensado para NOSOTROS\n\n✅ Conocemos tus gustos locales\n✅ Delivery optimizado para la zona  \n✅ Precios justos, no de mall\n✅ Atención de vecino a vecino\n\nEl pollo de tu barrio, hecho con amor.\n\n#LimaNorte #SanMartin #Vecinos #Local",
+        "hashtags": [
+          "#LimaNorte",
+          "#SanMartin",
+          "#Vecinos",
+          "#Local",
+          "#GollosChickens"
+        ],
+        "cta": "El pollo de tu barrio: +51 939 431 887"
+      },
+      "imagen": "temp/imagenes_gollos/gollos_identidad_local_3_placeholder.txt",
+      "prompt_usado": "\n            Emotional local identity comparison poster:\n            CENTER: Stylized map outline of Lima Norte (San Martín de Porres, Los Olivos)\n            INSIDE MAP: Local landmarks, typical houses, people silhouettes\n            LEFT TEXT: \"SOMOS DE LIMA NORTE\" in bold local-style font\n            RIGHT SIDE: Faded international brand logos (generic, not specific)\n            BOTTOM: \"PARA LIMA NORTE\" with heart symbol\n            GOLLOS LOGO: Integrated naturally into map\n            Style: Community-focused, warm and welcoming, local pride\n            Colors: Blue #3498DB, orange #E67E22, warm earth tones\n            Quality: Illustration style, community poster aesthetic, authentic\n            ",
+      "fecha_generacion": "2025-09-30T23:18:21.169101"
+    },
+    {
+      "numero": 4,
+      "tipo": "producto_hero",
+      "copy": {
+        "titulo": "🍗 PECHUGA BROASTER: LA PERFECCIÓN CRUJIENTE",
+        "copy_principal": "🔥 Dorada por fuera, jugosa por dentro\n🍗 Pechuga Broaster premium: S/ 16\n⚡ Lista en 10 minutos\n📍 Especialidad Lima Norte\n\nLa pechuga que conquista paladares.\n¡Pruébala una vez y siempre vuelves!\n\n#PechugaBroaster #GollosChickens #LimaNorte",
+        "hashtags": [
+          "#PechugaBroaster",
+          "#GollosChickens",
+          "#LimaNorte",
+          "#Crujiente",
+          "#Premium"
+        ],
+        "cta": "Pide tu pechuga: +51 939 431 887"
+      },
+      "imagen": "temp/imagenes_gollos/gollos_producto_hero_4_placeholder.txt",
+      "prompt_usado": "\n            Hero product shot for social media:\n            MAIN SUBJECT: Perfectly crispy golden fried chicken pieces, steam rising\n            COMPOSITION: Close-up, 3/4 angle, dramatic food photography lighting\n            BACKGROUND: Blurred warm kitchen/restaurant ambiance\n            TEXT OVERLAY: \"PECHUGA BROASTER S/ 16\" in elegant font\n            LOGO: GOLLOS CHICKENS watermark, corner placement\n            GARNISH: Fresh herbs, lemon wedge, professional food styling\n            Style: Restaurant-quality food photography, appetizing, premium\n            Colors: Golden brown chicken, orange accents, warm lighting\n            Quality: 4K resolution, commercial food photography, mouth-watering\n            ",
+      "fecha_generacion": "2025-09-30T23:18:23.215584"
+    }
+  ],
+  "configuracion_facebook": {
+    "page_id": "377626045425378",
+    "listo_publicar": true
+  }
+}

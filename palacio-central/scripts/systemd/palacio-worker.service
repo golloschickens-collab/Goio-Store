@@ -1,0 +1,15 @@
+[Unit]
+Description=Palacio Central - Worker de Tareas
+After=network.target
+
+[Service]
+WorkingDirectory=/srv/apps/palacio-central
+ExecStart=/usr/bin/node src/tasks/worker_loop.mjs
+Restart=always
+Environment=NODE_ENV=production
+Environment=WORKER_INTERVAL_MS=60000
+User=deploy
+Group=deploy
+
+[Install]
+WantedBy=multi-user.target

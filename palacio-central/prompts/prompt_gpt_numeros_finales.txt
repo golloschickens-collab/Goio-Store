@@ -1,0 +1,62 @@
+# 🤖 PROMPT DEFINITIVO PARA AGENTE GPT - NÚMEROS CONFIRMADOS
+
+## 📋 **PROMPT FINAL (COPIA ESTE EXACTO):**
+
+```
+Tengo 2 negocios digitales automatizados con IA que ya encontraron 9 productos tech (ROI 300-516%). Necesito configurar WhatsApp Business API y Shopify API para generar S/48,000 mensuales automáticos.
+
+MIS NÚMEROS CONFIRMADOS:
+• GOLLOS CHICKENS: +51 939431887 (mi número - broaster y pollos)
+• GOIO-STORE: +51 956843866 (número prestado autorizado - productos tech)
+
+CONFIGURACIÓN ESPECÍFICA NECESARIA:
+
+1. WHATSAPP BUSINESS API (45 min):
+   • Registrar +51 939431887 como "Gollos Chickens Premium"
+   • Registrar +51 956843866 como "Goio-Store Tech"
+   • Ambos números ya existen y están autorizados
+   • Obtener Access Token para reemplazar "TU_WHATSAPP_TOKEN_AQUI" en config/keys.json
+
+2. SHOPIFY API (20 min):
+   • Para Goio-Store únicamente (subir automáticamente 9 productos encontrados)
+   • Crear app privada "Goio Imperial Agent"
+   • Permisos: Products, Inventory, Orders (Read/Write)
+   • Obtener API Key, Secret, Shop URL para config/keys.json
+
+CONFIRMACIONES IMPORTANTES:
+- Los mensajes a +51 956843866 llegarán al padre pero se responderán automáticamente
+- El padre no necesita hacer nada, todo es transparente
+- Sistema operará 24/7 sin intervención humana
+- Puedo cambiar el número después sin perder configuración
+
+VERIFICACIÓN OBLIGATORIA:
+- node test_whatsapp_api.js (debe funcionar con ambos números reales)
+- node test_shopify_api.js (debe funcionar para subir productos automáticamente)
+- node activate_all_agents.js (activación final del sistema)
+
+OBJETIVO: S/48,000 mensuales automáticos
+- Gollos Chickens: S/13,000/mes (pedidos WhatsApp automáticos)
+- Goio-Store: S/35,000/mes (productos tech + Shopify automático)
+
+TIEMPO OBJETIVO: 65 minutos total para sistema monetizando 24/7
+
+¿Puedes guiarme paso a paso desde https://business.whatsapp.com hasta tener todo funcionando automáticamente con estos números específicos?
+```
+
+---
+
+## 🔥 **VERSIÓN ULTRA CONCISA:**
+
+```
+2 negocios con números confirmados:
+• Gollos Chickens: +51 939431887 (broaster/pollos)
+• Goio-Store: +51 956843866 (tech/dropshipping - prestado autorizado)
+
+Necesito configurar:
+1. WhatsApp Business API para ambos números (respuestas automáticas 24/7)
+2. Shopify API para Goio-Store (subir 9 productos automáticamente)
+
+Los mensajes a +51 956843866 llegarán al dueño pero se responderán automáticamente por mi sistema IA.
+
+¿Puedes guiarme paso a paso para configurar ambas APIs y generar S/48,000 mensuales automáticos?
+```

@@ -1,0 +1,9 @@
+{
+  "system_mode": "production",
+  "ollama_model": "llama3.1:8b",
+  "sd_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "tts_engine": "pyttsx3",
+  "generation_schedule": ["07:00", "13:00", "19:00"],
+  "auto_post": true,
+  "quality_mode": "fast"
+}

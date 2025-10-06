@@ -1,0 +1,22 @@
+{
+  "mensaje_apertura": {
+    "hora": "17:00",
+    "mensaje": "🐔 ¡GOLLOS CHICKENS ABIERTO!\n\n👨‍🍳 Rey ya está disponible para atención personalizada\n🚚 Delivery activado hasta las 12:00 AM\n📱 Haz tu pedido ahora: escribe \"CARTA\"\n\n¡Los mejores pollos de Lima te esperan! 🏆",
+    "activo": true
+  },
+  "mensaje_cierre_delivery": {
+    "hora": "23:45",
+    "mensaje": "⏰ ÚLTIMO LLAMADO DELIVERY\n\n🚚 Delivery cierra en 15 minutos (12:00 AM)\n🐔 ¡Última oportunidad del día!\n📱 Pedidos rápidos: escribe tu orden\n\nMañana volvemos a las 6:00 PM 🍗",
+    "activo": true
+  },
+  "mensaje_cierre_humano": {
+    "hora": "01:00",
+    "mensaje": "😴 REY SE VA A DESCANSAR\n\n🤖 Asistente automático toma el control 24/7\n📝 Deja tu pedido y lo procesamos mañana\n⏰ Rey regresa a las 5:00 PM\n\n¡Buenas noches! 🌙",
+    "activo": true
+  },
+  "mensaje_matutino": {
+    "hora": "08:00",
+    "mensaje": "☀️ ¡BUENOS DÍAS!\n\n🐔 Gollos Chickens preparándose para el día\n👨‍🍳 Rey regresa a las 5:00 PM  \n🤖 Asistente disponible para tomar pedidos\n\n📋 Escribe \"CARTA\" para ver nuestro menú 🍗",
+    "activo": true
+  }
+}

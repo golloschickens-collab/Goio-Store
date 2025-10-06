@@ -1,0 +1,58 @@
+# 🚀 PROMPT ACTUALIZADO PARA TU AGENTE GPT - ACLARACIÓN DE IMPERIOS
+
+## 📋 **PROMPT CORREGIDO (COPIA ESTE):**
+
+```
+Tengo 3 negocios digitales automatizados con IA que ya encontraron 9 productos (ROI 300-516%). Necesito configurar 2 APIs críticas para generar S/48,000 mensuales automáticos:
+
+MIS 3 IMPERIOS DIGITALES:
+• GOLLOS CHICKENS - Venta de pollos premium (WhatsApp principalmente)
+• GOIO-STORE - Dropshipping tech/lifestyle (WhatsApp + Shopify crítico)  
+• ECO-ETERNO - Contenido religioso/espiritual (WhatsApp principalmente)
+
+CONFIGURACIÓN CRÍTICA NECESARIA:
+
+1. WHATSAPP BUSINESS API (45 min) - PARA LOS 3 IMPERIOS:
+   • +51939431888 → Gollos Chickens (pollos)
+   • +51939431889 → Goio-Store (tech/dropshipping)
+   • +51939431890 → Eco-Eterno (contenido religioso)
+   
+   Necesito: Access Token para reemplazar "TU_WHATSAPP_TOKEN_AQUI" en config/keys.json
+
+2. SHOPIFY API (20 min) - PRINCIPALMENTE PARA GOIO-STORE:
+   • Crear app privada "Goio Imperial Agent"
+   • Permisos: Products, Inventory, Orders (Read/Write)  
+   • Para subir automáticamente los 9 productos encontrados por IA
+   
+   Necesito: API Key, Secret, Shop URL para actualizar config/keys.json
+
+ACLARACIÓN IMPORTANTE: 
+- WhatsApp es para los 3 negocios (respuestas automáticas 24/7)
+- Shopify es principalmente para Goio-Store (donde están los productos tech con ROI alto)
+- Gollos Chickens y Eco-Eterno pueden usar Shopify después, pero no es crítico ahora
+
+VERIFICACIÓN: 
+- node test_whatsapp_api.js (debe funcionar para los 3 números)
+- node test_shopify_api.js (debe funcionar para subir productos automáticamente)
+
+OBJETIVO: S/48,000 mensuales automáticos (S/35k Goio-Store + S/8k Gollos + S/5k Eco-Eterno)
+
+¿Puedes guiarme paso a paso desde el registro hasta tener ambas APIs funcionando para mis 3 imperios?
+```
+
+---
+
+## 🔥 **VERSIÓN MÁS SIMPLE SI PREFIERES:**
+
+```
+Tengo 3 negocios: 
+1. Gollos Chickens (pollos) - WhatsApp +51939431888
+2. Goio-Store (dropshipping tech) - WhatsApp +51939431889 + Shopify 
+3. Eco-Eterno (contenido religioso) - WhatsApp +51939431890
+
+Ya encontré 9 productos tech automáticamente. Solo necesito:
+- WhatsApp Business API para los 3 números (respuestas automáticas)
+- Shopify API para Goio-Store (subir productos automáticamente)
+
+¿Puedes guiarme paso a paso para configurar estas 2 APIs?
+```

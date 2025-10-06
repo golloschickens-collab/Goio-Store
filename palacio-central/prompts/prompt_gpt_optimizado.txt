@@ -1,0 +1,71 @@
+# 🤖 PROMPT OPTIMIZADO PARA AGENTE GPT
+
+## 📋 **COPIA Y PEGA ESTE PROMPT COMPLETO:**
+
+```
+Soy dueño de 3 negocios digitales automatizados con IA que ya están generando productos automáticamente (9 productos encontrados con ROI 300-516%). Solo me faltan 2 configuraciones críticas para empezar a generar S/48,000 mensuales automáticos 24/7.
+
+CONTEXTO TÉCNICO:
+- Sistema: 3 imperios digitales con agentes AI operativos
+- Productos encontrados: 9 automáticamente por IA
+- Base: PostgreSQL + Gemini API funcionando
+- Faltan: WhatsApp Business API + Shopify API
+- Objetivo: Monetización automática 24/7
+
+PASO 1 CRÍTICO - WHATSAPP BUSINESS API (45 min):
+Necesito configurar 3 números de teléfono peruanos para respuestas automáticas:
+- +51939431888 (Gollos Chickens - pollos)
+- +51939431889 (Goio-Store - tech/dropshipping)  
+- +51939431890 (Eco-Eterno - contenido religioso)
+
+REQUERIMIENTOS ESPECÍFICOS PASO 1:
+1. Guíame desde https://business.whatsapp.com/products/business-api
+2. Registro con nombre: "Imperio Digital Goio"
+3. Verificación de los 3 números vía SMS
+4. Obtención del Access Token (debe empezar con "EAA...")
+5. Ubicación exacta del token en el panel
+6. Cómo reemplazar "TU_WHATSAPP_TOKEN_AQUI" en mi config/keys.json
+
+PASO 2 CRÍTICO - SHOPIFY API (20 min):
+Necesito crear app privada para subir productos automáticamente:
+
+REQUERIMIENTOS ESPECÍFICOS PASO 2:
+1. Acceso desde mi panel Shopify admin
+2. Crear app privada: "Goio Imperial Agent"
+3. Permisos exactos: Products, Inventory, Orders (Read/Write)
+4. Obtener API Key, API Secret, Shop URL
+5. Dónde encontrar cada credencial en el panel
+6. Cómo actualizar config/keys.json con valores reales
+
+VERIFICACIÓN OBLIGATORIA:
+Después de cada paso, debo ejecutar en PowerShell:
+- Paso 1: node test_whatsapp_api.js (debe mostrar "SIMULANDO ENVÍO")
+- Paso 2: node test_shopify_api.js (debe mostrar "SIMULANDO CREACIÓN")
+- Final: node activate_all_agents.js (activa sistema completo)
+
+RESULTADO ESPERADO:
+Sistema operando 24/7 generando S/48,000 mensuales automáticamente mediante:
+- WhatsApp respondiendo automáticamente en 3 números
+- Shopify recibiendo productos automáticamente de mis agentes IA
+- 9 productos listos vendiendo con ROI 300-516%
+
+¿Puedes guiarme paso a paso con detalles específicos de cada clic, campo y botón? Necesito instrucciones precisas como si fuera la primera vez que uso estas plataformas.
+
+TIEMPO OBJETIVO: 65 minutos total para tener sistema monetizando automáticamente.
+```
+
+---
+
+## 🔥 **VERSIÓN CORTA PARA GPT (Si prefiere más conciso):**
+
+```
+Tengo sistema automatizado con IA que ya encontró 9 productos (ROI 300-516%). Solo faltan 2 APIs para generar S/48,000 mensuales automáticos:
+
+1. WHATSAPP BUSINESS API: Configurar 3 números peruanos (+51939431888, +51939431889, +51939431890) y obtener Access Token para reemplazar "TU_WHATSAPP_TOKEN_AQUI" en config/keys.json
+
+2. SHOPIFY API: Crear app privada "Goio Imperial Agent" con permisos Products/Inventory/Orders, obtener API Key/Secret/URL para actualizar config/keys.json
+
+VERIFICACIÓN: node test_whatsapp_api.js y node test_shopify_api.js deben funcionar sin errores.
+
+¿Puedes guiarme paso a paso desde el registro hasta tener ambas APIs funcionando? Necesito detalles específicos de cada clic y campo.
+```

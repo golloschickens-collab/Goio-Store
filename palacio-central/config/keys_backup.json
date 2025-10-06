@@ -1,0 +1,100 @@
+{
+  "    "gollos_chickens": {
+      "app_id": "2161243464696662",
+      "app_secret": "CONFIGURAR_DESPUES", 
+      "page_id": "377526054525378",
+      "page_access_token": "EAAeto7T8g1YBPtmaFLZBh0xiQIBZAm7OeGfePwQMgskBwTspDalprnau6LZCrcZCXyMmhb1ZCYj8L8EZCYXlO1rMIPauc1ZCEqK3GBOr1SheKcGZCI84Wntpu155gAepMUzFznsZADXAiwtXBUkE8UiS90rh9FEdna1KeSwzN5z4wyLeFxgsh5xDcQlQbPk0unpre",
+      "page_name": "GollosChickens",
+      "status": "ACTIVO_PAGE_TOKEN",
+      "vencimiento": "2025-11-29"
+    },I_KEY": "AIzaSyBwyfpgalHaSWRcOYc_aCyuWGPxiTJhHbU",
+  "google_api_key": "AIzaSyBwyfpgalHaSWRcOYc_aCyuWGPxiTJhHbU",
+  
+  "facebook": {
+    "gollos_chickens": {
+      "app_id": "2161243464696662",
+      "app_secret": "CONFIGURAR_DESPUES", 
+      "page_id": "377526054525378",
+      "page_access_token": "EAAeto7T8g1YBPtmaFLZBh0xiQIBZAm7OeGfePwQMgskBwTspDalprnau6LZCYrcZCXyMmhb1ZCYj8L8EZCYXlO1rMIPauc1ZCEqK3GBOr1SheKcGZCI84Wntpu155gAepMUzFznsZADXAiwtXBUkE8UiS90rh9FEdna1KeSwzN5z4wyLeFxgsh5xDcQlQbPk0unpre",
+      "page_name": "GollosChickens",
+      "status": "ACTIVO_60_DIAS",
+      "vencimiento": "2025-11-29"
+    },
+    "goio_store": {
+      "app_id": "2161243464696662",
+      "app_secret": "CONFIGURAR_DESPUES",
+      "page_id": "783032478270795", 
+      "page_access_token": "EAAeto7T8g1YBPk6ZASl5sNAhuZAtBGi0D3IclRHNFPhUIcpb7VPkHAV7jcKVi20tyPVxW6ESUkZATuYcivtIiejSkZBm1J6noXUhkyksHEZAxe3ly54f7mGMmw0iKsuwoNnLTznHnePJkZCbzW4Op0XqIISrkzawqa7a1xyiCuGhlTyYXlJGcQ3uSdkh9RbEcB",
+      "page_name": "GoioStore",
+      "status": "CONFIGURADO_FUTURO",
+      "vencimiento": "2025-11-29"
+    },
+    "permisos_configurados": [
+      "pages_manage_posts",
+      "pages_manage_metadata", 
+      "pages_read_engagement",
+      "pages_manage_engagement",
+      "pages_manage_ads"
+    ]
+  },
+  
+  "whatsapp": {
+    "status": "LISTO_PARA_CONFIGURAR",
+    "numero_negocio": "961234567",
+    "nombre_negocio": "Gollos Chickens",
+    "horario_atencion": "17:00-01:00",
+    "zona_delivery": "Pucallpa y alrededores",
+    "respuestas_automaticas": {
+      "saludo": "¡Hola! 🐔 Bienvenido a Gollos Chickens. ¿Te antoja nuestro pollo crujiente? Escribe MENU para ver opciones",
+      "menu": "🍗 MENÚ GOLLOS CHICKENS:\n\n1/4 Pollo + arroz + papas = S/18\nPollo entero + guarniciones = S/45\nPack familiar completo = S/60\n\nEscribe PEDIDO + tu elección",
+      "delivery": "🚚 DELIVERY:\n📍 Toda Pucallpa\n⏰ 25-30 minutos\n💰 Delivery gratis en pedidos +S/30\n\n¿Confirmas tu dirección?",
+      "ausencia": "Gracias por contactarnos. Atendemos de 5 PM a 1 AM. ¡Te responderemos pronto! 🐔"
+    },
+    "access_token": "TU_WHATSAPP_TOKEN_AQUI",
+    "numeros": {
+      "gollos_chickens": "NUMERO_NUEVO_GOLLOS_AQUI",
+      "goio_store": "NUMERO_NUEVO_GOIO_AQUI",
+      "eco_eterno": "NUMERO_NUEVO_GOIO_AQUI"
+    },
+    "webhook_url": "http://localhost:8000/api/webhooks/whatsapp",
+    "numeros_personales": {
+      "rey_personal": "+51939431887",
+      "padre_personal": "+51956843866",
+      "nota": "Números personales - NO TOCAR - mantener separados"
+    },
+    "estrategia": {
+      "fase_1": "Solo Goio-Store con número nuevo",
+      "fase_2": "Gollos Chickens después de validar sistema",
+      "riesgo_mitigado": "Números personales protegidos"
+    }
+  },
+  
+  "shopify": {
+    "goio_store": {
+      "shop_url": "goio-store.myshopify.com",
+      "api_key": "TU_SHOPIFY_API_KEY_AQUI",
+      "api_secret": "TU_SHOPIFY_SECRET_AQUI",
+      "admin_access_token": "TU_ADMIN_ACCESS_TOKEN_AQUI",
+      "app_name": "Imperial AI Agent",
+      "webhooks": {
+        "orders_create": "http://localhost:8000/api/webhooks/shopify/orders",
+        "products_update": "http://localhost:8000/api/webhooks/shopify/products"
+      },
+      "permisos_configurados": [
+        "read_products", "write_products",
+        "read_inventory", "write_inventory", 
+        "read_orders", "write_orders",
+        "read_customers", "write_customers"
+      ]
+    },
+    "gollos_chickens": {
+      "shop_url": "gollos-chickens.myshopify.com",
+      "status": "OPCIONAL_FUTURO",
+      "nota": "Configurar después si se decide expandir"
+    },
+    "webhooks": {
+      "orders": "http://localhost:8000/api/webhooks/shopify/orders",
+      "products": "http://localhost:8000/api/webhooks/shopify/products"
+    }
+  }
+}

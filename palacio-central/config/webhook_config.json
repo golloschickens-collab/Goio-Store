@@ -1,0 +1,9 @@
+{
+  "url": "https://ai-masterkernel.hetzner.com/api/webhooks/whatsapp/gollos",
+  "verify_token": "gollos_chickens_webhook_2025",
+  "fields": [
+    "messages",
+    "message_deliveries",
+    "message_reads"
+  ]
+}

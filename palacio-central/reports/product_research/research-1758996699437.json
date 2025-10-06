@@ -1,0 +1,31 @@
+{
+  "trace_id": "00067f72-4079-4839-a557-40c409e72ad4",
+  "timestamp": "2025-09-27T18:11:37.486Z",
+  "productos_encontrados": [
+    {
+      "imperio": "goio_store",
+      "productos": [],
+      "total_encontrados": 0
+    },
+    {
+      "imperio": "gollos_chickens",
+      "productos": [],
+      "total_encontrados": 0
+    },
+    {
+      "imperio": "eco_eterno",
+      "productos": [],
+      "total_encontrados": 0
+    }
+  ],
+  "cross_selling_opportunities": {
+    "bundles_sugeridos": [],
+    "customer_journeys": []
+  },
+  "acciones_autonomas": [],
+  "requiere_aprobacion": false,
+  "mejoras_propuestas": [
+    "Expandir criterios de búsqueda - solo encontrados 0 productos",
+    "Investigar más productos complementarios para aumentar cross-selling"
+  ]
+}

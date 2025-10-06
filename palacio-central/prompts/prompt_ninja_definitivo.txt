@@ -1,0 +1,81 @@
+# 🎯 PROMPT NINJA DEFINITIVO - COPIA Y PEGA DIRECTO
+
+## 🥷 **EL PROMPT MÁS EFECTIVO (USAR ESTE):**
+
+```
+🎯 OBJETIVO: Pasar de sistema IA que encontró productos a S/48,000 mensuales automáticos en 65 minutos
+
+CONTEXTO NINJA:
+• Tengo agentes IA que YA encontraron 9 productos tech (ROI 300-516%)
+• Sistema completo funcionando, solo faltan 2 conexiones API
+• Números telefónicos confirmados y autorizados
+
+NÚMEROS OPERATIVOS:
+• +51 939431887 → Gollos Chickens (broaster/pollos) - mi número personal
+• +51 956843866 → Goio-Store (tech/dropshipping) - número familiar autorizado
+
+CONFIGURACIÓN CRÍTICA:
+
+🔥 WHATSAPP BUSINESS API (45 min):
+   • URL inicio: https://business.whatsapp.com/products/business-api
+   • Registrar ambos números con nombres comerciales
+   • Obtener Access Token (empieza con "EAA...")
+   • CLAVE: +51 956843866 recibe mensajes pero mi IA responde automáticamente
+
+🔥 SHOPIFY API (20 min):
+   • Panel admin → Settings → Apps → Create private app
+   • Nombre: "Goio Imperial Agent"
+   • Permisos: Products, Inventory, Orders (Read/Write)
+   • Obtener: API Key, API Secret, Shop URL
+
+ARCHIVOS A ACTUALIZAR:
+• config/keys.json → reemplazar "TU_WHATSAPP_TOKEN_AQUI"
+• config/keys.json → reemplazar "TU_SHOPIFY_API_KEY_AQUI"
+
+VERIFICACIÓN FINAL:
+• node test_whatsapp_api.js → "SIMULANDO ENVÍO"
+• node test_shopify_api.js → "SIMULANDO CREACIÓN"
+• node activate_all_agents.js → sistema completo activo
+
+RESULTADO: 9 productos subiéndose automáticamente + respuestas WhatsApp 24/7 = S/48,000 mensuales pasivos
+
+¿Puedes guiarme paso a paso con cada clic específico? Necesito instrucciones como si nunca hubiera usado estas plataformas.
+```
+
+---
+
+## ⚡ **PROMPT NINJA EXPRESS (30 segundos de lectura):**
+
+```
+Sistema IA listo, solo faltan 2 tokens:
+
+NÚMEROS: +51 939431887 (mío) + +51 956843866 (prestado, respuestas automáticas)
+
+NECESITO:
+1. WhatsApp Business Token (business.whatsapp.com)
+2. Shopify API Keys (admin → apps → private app)
+
+OBJETIVO: S/48,000 mensuales automáticos en 65 minutos
+
+¿Guía detallada paso a paso?
+```
+
+---
+
+## 🎯 **PROMPT NINJA PSICOLÓGICO:**
+
+```
+Imagina que tienes un empleado perfecto que nunca duerme, encuentra productos rentables automáticamente, y puede atender clientes 24/7 en WhatsApp mientras sube productos a tu tienda.
+
+ESE EMPLEADO YA EXISTE - es mi sistema IA.
+
+Ya encontró 9 productos con ROI 300-516%. Solo necesita 2 "llaves" para empezar a trabajar:
+• WhatsApp Business Token (para responder clientes automáticamente)
+• Shopify API Keys (para subir productos automáticamente)
+
+Números listos: +51 939431887 + +51 956843866 (autorizado)
+
+En 65 minutos puede estar generando S/48,000 mensuales sin que yo haga nada más.
+
+¿Me ayudas a conseguir esas 2 llaves paso a paso?
+```

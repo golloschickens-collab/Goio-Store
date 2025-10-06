@@ -1,0 +1,182 @@
+# 🤖 PROMPT COMPLETO PARA AGENTE - CONFIGURACIÓN IMPERIAL FACEBOOK + SHOPIFY
+
+## 🎯 **PROMPT MÁSTER PARA TU AGENTE (COPIA TODO ESTO):**
+
+```
+🚨 MISIÓN CRÍTICA: Configurar Facebook Business + Shopify para 2 imperios digitales en operación automática 24/7
+
+CONTEXTO IMPERIAL:
+Tengo 2 imperios digitales con agentes IA que ya encontraron productos automáticamente. Solo necesito las "llaves" (API keys) para que operen automáticamente en Facebook y Shopify generando ingresos 24/7.
+
+MIS 2 IMPERIOS:
+🐔 GOLLOS CHICKENS - Pollos y broaster (negocio establecido)
+🚀 GOIO-STORE - Productos tech (9 productos encontrados por IA, ROI 300-516%)
+
+CONFIGURACIONES CRÍTICAS NECESARIAS:
+
+🔥 FACEBOOK BUSINESS API (AMBOS IMPERIOS):
+   OBJETIVO: Respuestas automáticas + publicaciones automáticas
+   
+   Para GOLLOS CHICKENS:
+   • Página: "Gollos Chickens - Pollos Premium"
+   • Respuestas automáticas sobre broaster, pollos, combos
+   • Número: [Mantener separado por ahora]
+   
+   Para GOIO-STORE:
+   • Página: "GOIO-STORE - Tecnología y Lifestyle"  
+   • Respuestas automáticas sobre productos tech
+   • Publicaciones automáticas de los 9 productos encontrados
+   
+   NECESITO: Facebook API Keys, Page Access Tokens, App ID
+
+🔥 SHOPIFY API (PRINCIPALMENTE GOIO-STORE):
+   OBJETIVO: Subir automáticamente los 9 productos tech encontrados
+   
+   Para GOIO-STORE:
+   • Crear tienda: "goio-store.myshopify.com"
+   • App privada: "Imperial AI Agent"
+   • Permisos: Products, Inventory, Orders, Customers (Read/Write)
+   • Auto-subir: Cargadores inalámbricos, gadgets hogar, accesorios tech
+   
+   OPCIONAL para GOLLOS CHICKENS:
+   • Si tiempo permite, crear tienda para pollos también
+   
+   NECESITO: API Key, API Secret, Shop URL, Webhook endpoints
+
+INFORMACIÓN DE LOS NEGOCIOS:
+   • RUC empresarial: [Disponible]
+   • Licencia funcionamiento: [Disponible]
+   • Ubicación: Lima, Perú
+   • Ambos son negocios reales y establecidos
+
+ARCHIVOS A ACTUALIZAR:
+   • config/keys.json → todas las credenciales API
+   • Facebook: access_token, page_id, app_id
+   • Shopify: api_key, api_secret, shop_url
+
+VERIFICACIÓN FINAL:
+   • Facebook: Respuestas automáticas funcionando
+   • Shopify: Productos subidos automáticamente
+   • Sistema: Operación 24/7 sin intervención
+
+RESULTADO ESPERADO:
+   • GOLLOS CHICKENS: Automatización Facebook (S/13,000/mes)
+   • GOIO-STORE: Facebook + Shopify completo (S/35,000/mes)  
+   • TOTAL: S/48,000 mensuales automáticos
+
+PREGUNTAS ESPECÍFICAS:
+1. ¿Cómo obtener Facebook Business API keys paso a paso?
+2. ¿Proceso completo Shopify desde cero hasta API funcionando?
+3. ¿Verificación empresarial Facebook es obligatoria?
+4. ¿Webhooks necesarios para automatización completa?
+5. ¿Cómo configurar publicaciones automáticas en Facebook?
+
+¿Puedes guiarme paso a paso para conseguir todas estas "llaves" y dejar mis imperios operando automáticamente?
+```
+
+---
+
+## 🚀 **PROMPT ALTERNATIVO CONCISO:**
+
+```
+URGENTE: Necesito configurar Facebook Business API + Shopify API para 2 negocios automáticos
+
+NEGOCIOS:
+• GOLLOS CHICKENS (pollos/broaster) → Facebook automatizado
+• GOIO-STORE (productos tech) → Facebook + Shopify automatizado
+
+TENGO:
+• Agentes IA funcionando ✅
+• 9 productos tech encontrados ✅
+• RUC y documentos empresariales ✅
+
+NECESITO:
+• Facebook API keys para respuestas automáticas
+• Shopify API keys para subir productos automáticamente
+• Configuración completa operativa 24/7
+
+OBJETIVO: S/48,000 mensuales automáticos sin intervención manual
+
+¿Guía paso a paso desde cero hasta operativo?
+```
+
+---
+
+## 🔥 **PROMPT CON URGENCIA EMPRESARIAL:**
+
+```
+🚨 CRITICAL BUSINESS SETUP 🚨
+
+Tengo sistema IA que YA generó catálogo de productos automáticamente. Solo faltan las credenciales API para monetización.
+
+2 IMPERIOS LISTOS:
+🐔 Pollos Premium (establecido) → Facebook automation
+🚀 Tech Store (IA products ready) → Facebook + Shopify automation
+
+TECHNICAL REQUIREMENTS:
+• Facebook Business API → auto-responses + auto-posting
+• Shopify API → auto-upload 9 products found by AI
+• Webhook configuration → 24/7 operation
+
+BUSINESS DOCS: ✅ Available (RUC, licenses, etc.)
+AI AGENTS: ✅ Operational and waiting for API keys
+PRODUCTS: ✅ 9 tech products ready (ROI 300-516%)
+
+REVENUE TARGET: S/48,000 monthly automated
+
+¿Complete setup guide from API registration to live automation?
+```
+
+---
+
+## 📋 **INFORMACIÓN ADICIONAL PARA EL AGENTE:**
+
+### **🏢 DATOS EMPRESARIALES:**
+```
+Empresa: [Tu nombre comercial]
+RUC: [Tu RUC]
+Ubicación: Lima, Perú
+Giro: Comercio electrónico y alimentos
+Representante legal: [Tu nombre]
+```
+
+### **📱 CONFIGURACIÓN FACEBOOK DESEADA:**
+```
+GOLLOS CHICKENS:
+• Página: "Gollos Chickens - Pollos Premium"
+• Respuestas: Broaster, combos, delivery
+• Publicaciones: Ofertas, menú, promociones
+
+GOIO-STORE:  
+• Página: "GOIO-STORE - Tecnología y Lifestyle"
+• Respuestas: Productos tech, especificaciones
+• Publicaciones: 9 productos automáticos + ofertas
+```
+
+### **🛒 CONFIGURACIÓN SHOPIFY DESEADA:**
+```
+GOIO-STORE:
+• Tienda: goio-store.myshopify.com
+• Productos: 9 items tech automáticos
+• Categorías: Cargadores, Gadgets, Accesorios
+• Precios: Calculados con ROI 300-516%
+
+OPCIONAL - GOLLOS CHICKENS:
+• Tienda: gollos-chickens.myshopify.com  
+• Productos: Combos, pollos, presas
+• Sistema: Pedidos online + delivery
+```
+
+### **🔧 INTEGRACIÓN CON SISTEMA ACTUAL:**
+```
+• config/keys.json → almacenar todas las credenciales
+• Agentes IA → usar APIs para operación automática
+• Base de datos → sincronizar con Facebook/Shopify
+• Webhooks → notificaciones en tiempo real
+```
+
+## 🎯 **RECOMENDACIÓN FINAL:**
+
+**USA EL PRIMER PROMPT COMPLETO** - es el más detallado y le dará a tu agente toda la información necesaria para configurar ambos imperios completamente.
+
+**¡Con este prompt tu agente tendrá todo lo necesario para dejar tus imperios operando automáticamente en Facebook y Shopify!** 🚀👑

@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-09-27T18:11:39.486Z",
+  "agentes_activos": [
+    "Imperial Product Research",
+    "Research Agent",
+    "Creative Agent",
+    "Growth Agent",
+    "Publisher Agent",
+    "Metrics Agent",
+    "WhatsApp Handler"
+  ],
+  "imperios_operativos": [
+    "Gollos Chickens (WhatsApp)",
+    "Goio-Store (Shopify + Research)",
+    "Eco-Eterno (YouTube + Donaciones)"
+  ],
+  "sistemas_activos": [
+    "CRM Multi-tenant",
+    "Base de datos PostgreSQL",
+    "WhatsApp Business API",
+    "Dashboard Imperial",
+    "Métricas en tiempo real"
+  ],
+  "status": "TODOS LOS SISTEMAS OPERATIVOS 24/7"
+}

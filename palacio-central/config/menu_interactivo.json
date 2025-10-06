@@ -1,0 +1,56 @@
+{
+  "menu_principal": {
+    "tipo": "list",
+    "titulo": "🐔 GOLLOS CHICKENS",
+    "texto": "¿Qué necesitas hoy?",
+    "opciones": [
+      {
+        "id": "ver_carta",
+        "titulo": "📋 Ver Carta Completa",
+        "descripcion": "Todos nuestros productos y precios"
+      },
+      {
+        "id": "hacer_pedido",
+        "titulo": "🛒 Hacer Pedido",
+        "descripcion": "Realizar un pedido para delivery"
+      },
+      {
+        "id": "info_delivery",
+        "titulo": "🚚 Info Delivery",
+        "descripcion": "Horarios, zonas y costos de envío"
+      },
+      {
+        "id": "hablar_humano",
+        "titulo": "👨‍🍳 Hablar con Rey",
+        "descripcion": "Atención personalizada (5 PM - 1 AM)"
+      }
+    ]
+  },
+  "menu_productos": {
+    "tipo": "list",
+    "titulo": "🍗 NUESTROS PRODUCTOS",
+    "texto": "Selecciona lo que deseas:",
+    "opciones": [
+      {
+        "id": "pollo_entero",
+        "titulo": "🐔 Pollo Entero - S/25.00",
+        "descripcion": "Fresco de granja, criado naturalmente"
+      },
+      {
+        "id": "presas_sueltas",
+        "titulo": "🍗 Presas Sueltas - S/3.50 c/u",
+        "descripcion": "Muslo, encuentro, pecho, ala"
+      },
+      {
+        "id": "combo_familiar",
+        "titulo": "🥘 Combo Familiar - S/45.00",
+        "descripcion": "Pollo + 6 presas + acompañamientos"
+      },
+      {
+        "id": "pollo_brasa",
+        "titulo": "🍖 Pollo a la Brasa - S/30.00",
+        "descripcion": "Con papas y ensalada"
+      }
+    ]
+  }
+}

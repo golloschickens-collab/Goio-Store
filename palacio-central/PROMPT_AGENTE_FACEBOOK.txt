@@ -1,0 +1,60 @@
+PROMPT PARA AGENTE GPT - CONFIGURACIÓN FACEBOOK + WHATSAPP
+===========================================================
+
+Hola, necesito configurar Facebook Business para automatización completa de mi negocio "Gollos Chickens" en Pucallpa, Perú. Aquí están los detalles específicos:
+
+INFORMACIÓN DEL NEGOCIO:
+- Nombre: Gollos Chickens
+- Tipo: Restaurante de pollo broaster y comida rápida
+- Ubicación: San Martín de Porres, Lima, Perú
+- Horario: 10 AM - 12 AM (todos los días)
+- WhatsApp Business: [MI NÚMERO ACTUAL]
+- Delivery: San Martín de Porres y Lima Norte
+
+OBJETIVO:
+Configurar sistema completo donde cuando publique en Facebook, los clientes puedan hacer clic en un botón que los lleve directamente a WhatsApp para hacer pedidos automáticamente.
+
+LO QUE NECESITO CONFIGURAR:
+
+1. PÁGINA DE FACEBOOK:
+   - Optimizar página existente de Gollos Chickens
+   - Agregar botón "Pedir por WhatsApp" prominente
+   - Configurar información completa del negocio
+   - Horarios de atención
+   - Ubicación y zona de delivery
+
+2. CONECTAR WHATSAPP CON FACEBOOK:
+   - Vincular mi WhatsApp Business con la página
+   - Configurar botón automático en posts
+   - Que cada post tenga opción "Enviar mensaje"
+
+3. CONFIGURACIÓN DE POSTS AUTOMÁTICOS:
+   - Botón de WhatsApp en cada publicación
+   - Call-to-action directo para pedidos
+   - Link automático que abra WhatsApp con mensaje predefinido
+
+4. OPTIMIZACIÓN PARA VENTAS:
+   - Configurar catálogo de productos (opcional)
+   - Call-to-actions optimizados
+   - Botones de contacto prominentes
+
+PRODUCTOS PRINCIPALES PARA REFERENCIAR:
+- Pechuga Broaster: S/16
+- Combo Familiar (8 piezas): S/55
+- Alitas Especiales (6 unids): S/20
+- Combo Alitas (10 unids): S/30
+- Hamburguesa Especial: S/16
+- Salchipapa A La Pobre: S/18
+
+RESULTADO ESPERADO:
+Cliente ve post en Facebook → Hace clic "Pedir por WhatsApp" → Se abre WhatsApp con mi número → Sistema responde automáticamente con menú
+
+¿Puedes guiarme paso a paso para configurar todo esto? Necesito instrucciones específicas y detalladas para cada configuración en Facebook Business.
+
+CONTEXTO ADICIONAL:
+- Ya tengo WhatsApp Business configurado en mi móvil
+- Ya tengo página de Facebook creada
+- Necesito conectar ambos para automatización completa
+- Objetivo: Generar ventas automáticas 24/7
+
+Por favor, dame las instrucciones paso a paso más detalladas posibles para lograr esta automatización completa.

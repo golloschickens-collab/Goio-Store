@@ -1,0 +1,75 @@
+name: Deploy Metrics Alternative
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'Action to execute'
+        required: true
+        default: 'deploy'
+        type: choice
+        options:
+        - deploy
+        - undeploy
+        - parse
+      hosts:
+        description: 'Host list with delays'
+        required: true
+        default: '157.180.83.237:2m,78.156.195.120:5m,91.98.36.86:7m,91.98.114.207:9m'
+        type: string
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.METRICS_SSH_KEY }}
+          
+      - name: Deploy Metrics
+        env:
+          SSH_USER: root
+          DEBUG_SSH: "1"
+        run: |
+          set -euo pipefail
+          
+          echo "=== PREFLIGHT CHECK ==="
+          IFS=',' read -ra HOST_LIST <<< "${{ inputs.hosts }}"
+          reachable=0
+          
+          for entry in "${HOST_LIST[@]}"; do
+            host="${entry%%:*}"
+            printf -- "- %s: " "$host"
+            if timeout 5 bash -c ">/dev/tcp/$host/22" 2>/dev/null; then
+              echo "OK"
+              reachable=$((reachable+1))
+            else
+              echo "FAIL"
+            fi
+          done
+          
+          echo "Hosts reachable: $reachable/${#HOST_LIST[@]}"
+          
+          if [[ $reachable -eq 0 ]]; then
+            echo "⚠️ No hosts reachable. Need to open SSH port 22"
+            echo "Run these commands:"
+            for entry in "${HOST_LIST[@]}"; do
+              host="${entry%%:*}"
+              echo "ssh root@$host 'ufw allow 22/tcp'"
+            done
+            exit 1
+          fi
+          
+          echo "=== DEPLOYING ==="
+          
+          if [ -f "scripts/deploy_metrics.sh" ]; then
+            chmod +x scripts/deploy_metrics.sh
+            ./scripts/deploy_metrics.sh --hosts "${{ inputs.hosts }}"
+          else
+            echo "❌ deploy_metrics.sh not found"
+            exit 1
+          fi

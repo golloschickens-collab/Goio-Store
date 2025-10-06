@@ -1,0 +1,226 @@
+# PROMPT MAESTRO: AUDITORÍA COMPLETA INFRAESTRUCTURA HETZNER
+# Para: Agente Especial de Investigación de Sistemas
+# Objetivo: Auditoría exhaustiva del estado actual de servidores en Hetzner
+
+## CONTEXTO IMPERIAL
+Soy el Rey de 3 imperios digitales operando desde infraestructura Hetzner. Necesito una auditoría completa del estado actual antes de planificar migración adicional desde laptop local. Ya tengo 4 servidores activos con servicios parcialmente migrados.
+
+## SERVIDORES OBJETIVO PARA AUDITORÍA
+
+### INVENTARIO CONOCIDO (desde consola Hetzner):
+```
+🖥️ SERVIDORES ACTIVOS:
+├── 3× CPX11 (2 vCPU/2GB RAM/40GB):
+│   ├── goio-store (ash-dc1, US-East, IP: 78.156.195.120)
+│   ├── eco-eterno (fsn1-dc14, EU-Central)  
+│   └── gollos-server-1 (nbg1-dc3, EU-Central, IP: 91.98.114.207)
+│
+└── 1× CCX33 (8 vCPU/32GB RAM/240GB):
+    └── ai-masterkernel (hel1-dc2, EU-Central, IP: 157.180.83.237)
+```
+
+## MISIÓN CRÍTICA: AUDITORÍA SSH COMPLETA
+
+### ACCESO SSH DISPONIBLE:
+- **Usuario**: root
+- **Puerto**: 22 (verificar si cambiado)
+- **Autenticación**: SSH keys (metrics_deploy_key o similar)
+- **IPs conocidas**: Ver inventario arriba
+
+### COMANDOS DE AUDITORÍA OBLIGATORIOS:
+
+**1. INFORMACIÓN BÁSICA DEL SISTEMA:**
+```bash
+# Identificación del servidor
+hostname
+uname -a
+lsb_release -a || cat /etc/os-release
+uptime
+date
+```
+
+**2. RECURSOS Y RENDIMIENTO:**
+```bash
+# CPU y memoria
+nproc
+free -h
+cat /proc/meminfo | grep -E "(MemTotal|MemAvailable|SwapTotal)"
+top -b -n1 | head -10
+htop --version 2>/dev/null && echo "htop disponible"
+```
+
+**3. ALMACENAMIENTO Y ESPACIO:**
+```bash
+# Disco y particiones
+df -h
+lsblk
+du -sh /var/lib/docker 2>/dev/null || echo "Docker no encontrado"
+du -sh /var/log/* 2>/dev/null | sort -hr | head -10
+```
+
+**4. DOCKER STACK COMPLETO:**
+```bash
+# Estado de Docker
+docker --version 2>/dev/null || echo "Docker no instalado"
+docker-compose --version 2>/dev/null || echo "Docker Compose no instalado"
+systemctl is-active docker 2>/dev/null || echo "Docker service no activo"
+
+# Contenedores corriendo
+docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}" 2>/dev/null
+
+# Estadísticas en vivo
+docker stats --no-stream 2>/dev/null
+
+# Uso de espacio Docker
+docker system df -v 2>/dev/null
+
+# Redes Docker
+docker network ls 2>/dev/null
+
+# Volúmenes Docker
+docker volume ls 2>/dev/null
+```
+
+**5. SERVICIOS Y PUERTOS:**
+```bash
+# Servicios systemd activos
+systemctl list-units --type=service --state=active | grep -E "(nginx|apache|postgres|redis|ollama|n8n)"
+
+# Puertos abiertos
+netstat -tlnp 2>/dev/null || ss -tlnp
+```
+
+**6. SEGURIDAD Y CONFIGURACIÓN:**
+```bash
+# SSH configuración
+cat /etc/ssh/sshd_config | grep -E "(PasswordAuthentication|PermitRootLogin|PubkeyAuthentication|Port)"
+
+# Firewall
+ufw status 2>/dev/null || echo "UFW no configurado"
+iptables -L 2>/dev/null | head -20
+
+# Fail2ban
+systemctl is-active fail2ban 2>/dev/null || echo "Fail2ban no activo"
+```
+
+**7. LOGS CRÍTICOS:**
+```bash
+# Tamaño de logs
+journalctl --disk-usage 2>/dev/null
+du -sh /var/log/ 2>/dev/null
+
+# Errores recientes
+journalctl -p err --since "24 hours ago" --no-pager | tail -20 2>/dev/null
+```
+
+**8. OLLAMA Y AI (para ai-masterkernel):**
+```bash
+# Estado de Ollama
+systemctl is-active ollama 2>/dev/null || echo "Ollama service no encontrado"
+ps aux | grep ollama
+curl -s http://localhost:11434/api/tags 2>/dev/null | head -20 || echo "Ollama API no responde"
+
+# Modelos descargados
+ls -la ~/.ollama/models/ 2>/dev/null || echo "Directorio modelos no encontrado"
+```
+
+### ANÁLISIS REQUERIDO POR SERVIDOR:
+
+**PARA CADA SERVIDOR, PROPORCIONA:**
+
+1. **Estado General**:
+   - ✅/❌ Servidor accesible via SSH
+   - ✅/❌ Sistema operativo actualizado
+   - ✅/❌ Recursos suficientes (CPU/RAM/Disco)
+
+2. **Docker Stack**:
+   - ✅/❌ Docker instalado y funcionando
+   - Lista de contenedores corriendo
+   - Uso de recursos por contenedor
+   - Problemas identificados
+
+3. **Servicios Específicos**:
+   - **ai-masterkernel**: Estado de Ollama, modelos disponibles
+   - **goio-store**: Servicios Shopify/e-commerce corriendo
+   - **eco-eterno**: Servicios de contenido religioso
+   - **gollos-server-1**: Servicios de broastería/WhatsApp
+
+4. **Problemas Críticos**:
+   - Errores en logs
+   - Servicios caídos
+   - Espacio en disco bajo
+   - Memoria/CPU saturada
+
+5. **Oportunidades de Optimización**:
+   - Contenedores innecesarios
+   - Logs grandes para limpiar
+   - Servicios duplicados
+   - Rightsizing recomendado
+
+### DELIVERABLES REQUERIDOS:
+
+**REPORTE POR SERVIDOR**:
+```
+## SERVIDOR: [nombre]
+**IP**: [IP]
+**Estado**: ✅ Operativo / ❌ Problemas
+**Uptime**: [uptime]
+**Recursos**: CPU: [%] | RAM: [used/total] | Disco: [used/total]
+
+### Docker Stack:
+- Contenedores activos: [número]
+- Servicios principales: [lista]
+- Problemas: [si hay]
+
+### Servicios Críticos:
+- [servicio]: ✅/❌ [estado]
+- [servicio]: ✅/❌ [estado]
+
+### Quick Wins Identificados:
+- [optimización 1]
+- [optimización 2]
+
+### Próximos Pasos:
+- [acción requerida 1]
+- [acción requerida 2]
+```
+
+**RESUMEN EJECUTIVO**:
+- Estado general de la infraestructura
+- Problemas críticos que requieren atención inmediata
+- Servicios funcionando correctamente
+- Capacidad disponible para nuevos servicios
+- Recomendaciones de consolidación/migración
+
+### METODOLOGÍA DE CONEXIÓN:
+
+**Si tienes acceso SSH directo:**
+```bash
+# Conectar a cada servidor
+ssh -i ~/.ssh/metrics_deploy_key root@157.180.83.237  # ai-masterkernel
+ssh -i ~/.ssh/metrics_deploy_key root@78.156.195.120  # goio-store
+ssh -i ~/.ssh/metrics_deploy_key root@[IP_eco_eterno]  # eco-eterno
+ssh -i ~/.ssh/metrics_deploy_key root@91.98.114.207   # gollos-server-1
+```
+
+**Si no tienes acceso directo:**
+- Solicitar credenciales SSH al Rey
+- Usar herramientas de gestión remota
+- Coordinar acceso via Hetzner console
+
+### URGENCIA: MÁXIMA PRIORIDAD
+Esta auditoría determinará:
+1. ¿Qué servicios ya están migrados?
+2. ¿Qué falta por migrar desde laptop?
+3. ¿Dónde debe ir Ollama para el trabajo con VS Code remoto?
+4. ¿Qué optimizaciones son necesarias antes de DiCloak?
+
+### ENTREGABLES FINALES:
+1. **Estado actual detallado** de cada servidor
+2. **Mapa de servicios** corriendo en cada ubicación
+3. **Plan de consolidación** para optimizar costos
+4. **Roadmap de migración** restante desde laptop
+5. **Recomendaciones** para implementar VS Code + Ollama remoto
+
+---
+**REY**: Necesito esta auditoría completa para tomar decisiones estratégicas sobre la migración final a Hetzner y implementación de DiCloak. 👑

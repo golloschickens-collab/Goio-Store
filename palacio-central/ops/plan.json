@@ -1,0 +1,41 @@
+{
+  "initiative": "Fase 4: Optimización de Venta Orgánica",
+  "feature": "Implementación de Integraciones de API en `publisher.js`",
+  "strategy_owner": "Gemini",
+  "implementation_owner": "Copilot",
+  "goal": "Habilitar al agente `publisher.js` para publicar contenido en redes sociales y crear productos en `goio-dev` mediante la integración de APIs.",
+  "requirements": {
+    "task_description": "Implementar las funciones de integración con APIs de Facebook/Instagram y Shopify dentro del agente `publisher.js`.",
+    "api_integrations": {
+      "facebook_instagram": {
+        "description": "Integración con Facebook Graph API para publicación de posts.",
+        "credentials_needed": [
+          "FACEBOOK_PAGE_ID",
+          "FACEBOOK_ACCESS_TOKEN"
+        ],
+        "functionalities": [
+          "Publicar un post de texto con una imagen (si se proporciona URL) en una página de Facebook.",
+          "Publicar un post de texto con una imagen (si se proporciona URL) en un perfil de Instagram (vinculado a la página de Facebook)."
+        ]
+      },
+      "shopify_goio_dev": {
+        "description": "Integración con Shopify Admin API para creación de productos en `goio-dev`.",
+        "credentials_needed": [
+          "SHOPIFY_DEV_STORE_DOMAIN",
+          "SHOPIFY_DEV_ACCESS_TOKEN"
+        ],
+        "functionalities": [
+          "Crear un nuevo producto en `goio-dev` con título, descripción (body_html), precio y URL de imagen."
+        ]
+      }
+    },
+    "credential_handling": "Las credenciales deben cargarse de forma segura desde variables de entorno (ej. `.env.dev` o `config/keys.json`). Copilot debe asegurarse de no hardcodear credenciales."
+  },
+  "acceptance_criteria": [
+    "Copilot debe implementar las funciones de publicación en redes sociales y creación de productos en `publisher.js`.",
+    "Las credenciales deben ser manejadas de forma segura (usando variables de entorno).",
+    "Copilot debe documentar la implementación en `ops/build_log.md`.",
+    "Se debe poder verificar la publicación de un post de prueba en Facebook/Instagram (con un mensaje de confirmación en consola).",
+    "Se debe poder verificar la creación de un producto de prueba en `goio-dev` (con un mensaje de confirmación en consola)."
+  ]
+}

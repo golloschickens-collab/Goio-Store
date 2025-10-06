@@ -1,0 +1,17 @@
+[Unit]
+Description=Palacio Central - Webhooks y MÃ©tricas
+After=network.target
+
+[Service]
+WorkingDirectory=/srv/apps/palacio-central
+ExecStart=/usr/bin/node src/server/webhooks_metrics.mjs
+Restart=always
+Environment=NODE_ENV=production
+Environment=PORT=3002
+Environment=API_TOKEN=changeme-api
+Environment=METRICS_TOKEN=changeme-metrics
+User=deploy
+Group=deploy
+
+[Install]
+WantedBy=multi-user.target

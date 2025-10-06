@@ -1,0 +1,123 @@
+# 🥷 PROMPTS NINJA PARA AGENTE GPT - CONFIGURACIÓN IMPERIAL
+
+## 🚀 **PROMPT NINJA COMPLETO (ULTRA EFECTIVO):**
+
+```
+🎯 MISIÓN CRÍTICA: Configurar 2 APIs en 65 minutos para generar S/48,000 mensuales automáticos
+
+MI SISTEMA ACTUAL:
+✅ 9 productos tech encontrados automáticamente (ROI 300-516%)
+✅ Agentes IA operativos 24/7
+✅ Base de datos PostgreSQL funcionando
+❌ Solo faltan 2 configuraciones para monetizar
+
+NÚMEROS CONFIRMADOS:
+• +51 939431887 → Gollos Chickens (broaster/pollos) - MI NÚMERO
+• +51 956843866 → Goio-Store (productos tech) - PRESTADO DEL PADRE
+
+CONFIGURACIÓN NINJA NECESARIA:
+
+🔥 FASE 1: WHATSAPP BUSINESS API (45 min)
+   URL: https://business.whatsapp.com/products/business-api
+   OBJETIVO: Obtener Access Token
+   NOMBRES: "Gollos Chickens Premium" y "Goio-Store Tech"
+   REEMPLAZAR: "TU_WHATSAPP_TOKEN_AQUI" en config/keys.json
+   CLAVE: Los mensajes al +51 956843866 llegan al padre pero se responden automáticamente
+
+🔥 FASE 2: SHOPIFY API (20 min)
+   RUTA: [mi-tienda].myshopify.com/admin → Settings → Apps
+   OBJETIVO: API Key + Secret + Shop URL
+   APP: "Goio Imperial Agent"
+   PERMISOS: Products, Inventory, Orders (Read/Write)
+   REEMPLAZAR: Claves en config/keys.json
+
+VERIFICACIÓN NINJA:
+✅ node test_whatsapp_api.js → debe mostrar "SIMULANDO ENVÍO"
+✅ node test_shopify_api.js → debe mostrar "SIMULANDO CREACIÓN"
+✅ node activate_all_agents.js → activación final
+
+RESULTADO: Sistema operando 24/7 generando S/48,000/mes sin intervención
+
+⚡ NECESITO: Guía paso a paso con cada clic, botón y campo específico como si fuera mi primera vez.
+```
+
+---
+
+## ⚡ **PROMPT NINJA ULTRA CONCISO:**
+
+```
+URGENTE: 2 APIs para S/48,000 mensuales automáticos
+
+NÚMEROS: +51 939431887 (mío) + +51 956843866 (prestado autorizado)
+
+FASE 1: WhatsApp Business API → Access Token
+FASE 2: Shopify API → API Key + Secret
+
+El +51 956843866 recibe mensajes pero mi IA responde automáticamente.
+
+¿Guía detallada paso a paso desde cero? 65 minutos objetivo.
+```
+
+---
+
+## 🎯 **PROMPT NINJA CON CONTEXTO EMOCIONAL:**
+
+```
+Tengo un sistema IA que YA encontró 9 productos rentables automáticamente. Estoy a 65 minutos de generar S/48,000 mensuales sin trabajar.
+
+Solo necesito conectar 2 APIs:
+1. WhatsApp (+51 939431887 mío + +51 956843866 prestado) → respuestas automáticas
+2. Shopify → subir productos automáticamente
+
+Mi sistema IA hará todo el trabajo. Solo necesito las credenciales.
+
+¿Me ayudas a conseguir estas 2 configuraciones paso a paso? Es la diferencia entre seguir trabajando manualmente vs generar riqueza automática 24/7.
+```
+
+---
+
+## 🔥 **PROMPT NINJA RESULTADOS-ORIENTADO:**
+
+```
+OBJETIVO CLARO: De 0 a S/48,000 mensuales automáticos en 65 minutos
+
+MI SITUACIÓN:
+• Sistema IA funcionando ✅
+• 9 productos identificados ✅
+• Solo faltan 2 conexiones API ❌
+
+NÚMEROS LISTOS:
+• +51 939431887 (Pollos/Broaster)
+• +51 956843866 (Tech - prestado, respuestas automáticas)
+
+NECESITO EXACTAMENTE:
+1. WhatsApp Business API Token (45 min)
+2. Shopify API Keys (20 min)
+
+POST-CONFIGURACIÓN: node activate_all_agents.js = sistema completo operativo
+
+¿Paso a paso detallado desde las URLs hasta tener tokens funcionando?
+```
+
+---
+
+## 🥷 **PROMPT NINJA CON URGENCIA:**
+
+```
+🚨 CRITICAL: 65 minutos para automatizar S/48,000 mensuales
+
+STATUS: IA encontró 9 productos (ROI 300-516%) ✅
+BLOCKER: Faltan 2 API tokens ❌
+
+NÚMEROS VERIFIED:
++51 939431887 (personal)
++51 956843866 (familiar autorizado - respuestas automáticas)
+
+NEED:
+• WhatsApp Business Token → config/keys.json
+• Shopify API Keys → config/keys.json
+
+VALIDATION: test scripts confirmarán funcionalidad
+
+⏰ TIME CRITICAL: ¿Guía step-by-step desde business.whatsapp.com?
+```

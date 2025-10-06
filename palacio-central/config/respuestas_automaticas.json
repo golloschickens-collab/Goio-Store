@@ -1,0 +1,38 @@
+{
+  "saludo_automatico": {
+    "trigger": [
+      "hola",
+      "buenos días",
+      "buenas tardes",
+      "buenas noches"
+    ],
+    "respuesta": "🐔 ¡Hola! Bienvenido a GOLLOS CHICKENS\nLos mejores pollos de Lima 🏆\n\n⏰ ATENCIÓN:\n• 🤖 Bot: 24/7 (siempre disponible)  \n• 👨‍🍳 Rey: 5:00 PM - 1:00 AM\n\n📋 Escribe \"CARTA\" para ver nuestro menú\n🚚 Escribe \"DELIVERY\" para info de envíos\n📱 ¿En qué puedo ayudarte?"
+  },
+  "menu_automatico": {
+    "trigger": [
+      "carta",
+      "menu",
+      "menú",
+      "precios"
+    ],
+    "respuesta": "🐔 GOLLOS CHICKENS - CARTA COMPLETA 🍗\n\n✅ POLLO ENTERO FRESCO - S/25.00\n   Pollo fresco de granja, criado naturalmente\n   \n✅ PRESAS SUELTAS - S/3.50 c/u  \n   Muslo, encuentro, pecho, ala jugosas\n   \n✅ COMBO FAMILIAR - S/45.00\n   Pollo entero + 6 presas + papas + ensalada\n   \n✅ POLLO A LA BRASA - S/30.00\n   Con papas doradas y ensalada fresca\n   \n✅ POLLO PICANTE - S/28.00  \n   Con salsa especial de la casa\n\n🛒 PEDIR: \"Quiero 1 pollo entero + 4 presas\"\n🚚 DELIVERY GRATIS en toda Lima"
+  },
+  "horarios_automatico": {
+    "trigger": [
+      "horario",
+      "hora",
+      "atienden",
+      "abierto"
+    ],
+    "respuesta": "⏰ HORARIOS GOLLOS CHICKENS\n\n🤖 ASISTENTE AUTOMÁTICO: 24/7\n   - Toma pedidos las 24 horas\n   - Respuestas inmediatas\n   \n👨‍🍳 ATENCIÓN HUMANA (Rey): 5:00 PM - 1:00 AM\n   - Consultas especiales\n   - Atención personalizada\n   \n🚚 DELIVERY: 6:00 PM - 12:00 AM\n   - Envíos gratuitos toda Lima\n   - 30-45 minutos promedio"
+  },
+  "delivery_automatico": {
+    "trigger": [
+      "delivery",
+      "envío",
+      "envio",
+      "domicilio"
+    ],
+    "respuesta": "🚚 DELIVERY GOLLOS CHICKENS\n\n✅ COBERTURA: Toda Lima Metropolitana  \n💰 COSTO: GRATIS (sin costo adicional)\n⏰ HORARIOS: 6:00 PM - 12:00 AM\n🕐 TIEMPO: 30-45 minutos\n\n📍 ZONAS:\n• Lima Centro: 30 min\n• Miraflores, San Isidro: 35 min\n• Surco, La Molina: 40 min  \n• Otras zonas: 45 min\n\n💳 PAGO:\n• 💵 Efectivo  \n• 📱 Yape: 939-431-887\n• 📱 Plin: 939-431-887\n\nPara pedir: Envía tu pedido + dirección"
+  }
+}

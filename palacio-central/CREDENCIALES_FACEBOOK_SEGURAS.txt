@@ -1,0 +1,59 @@
+🔐 CREDENCIALES FACEBOOK API - GOLLOS CHICKENS + GOIO STORE
+================================================================
+
+📅 FECHA GENERACIÓN: 30 de septiembre de 2025
+⏰ DURACIÓN: 60 días (válido hasta 29 de noviembre de 2025)
+👤 USUARIO: Rey Melgar
+🎯 PROPÓSITO: Automatización completa de posts para ambas páginas
+
+🔑 PAGE ACCESS TOKEN (60 DÍAS) - CORRECTO:
+========================================
+EAAeto7T8g1YBPtmaFLZBh0xiQIBZAm7OeGfePwQMgskBwTspDalprnau6LZCYrcZCXyMmhb1ZCYj8L8EZCYXlO1rMIPauc1ZCEqK3GBOr1SheKcGZCI84Wntpu155gAepMUzFznsZADXAiwtXBUkE8UiS90rh9FEdna1KeSwzN5z4wyLeFxgsh5xDcQlQbPk0unpre
+
+✅ TIPO: Page Access Token (CORRECTO)
+✅ PÁGINA: Gollos Chickens  
+✅ PERMISOS: Publicación automática habilitada
+
+📊 PÁGINAS AUTORIZADAS:
+=====================
+✅ GollosChickens (ID: 377526054525378)
+   - Página principal para delivery de pollo
+   - Ubicación: Pucallpa, Perú
+   - WhatsApp: 961234567
+
+✅ GoioStore (ID: 783032478270795)  
+   - E-commerce para Shopify
+   - Productos: Tecnología y Lifestyle
+   - Mercado: Internacional
+
+🛡️ PERMISOS CONFIGURADOS:
+========================
+✅ pages_manage_posts - Publicar automáticamente
+✅ pages_read_engagement - Leer estadísticas  
+✅ pages_manage_engagement - Gestionar comentarios
+✅ pages_read_user_content - Acceso a contenido
+✅ instagram_basic - Instagram básico
+✅ instagram_content_publish - Publicar en Instagram
+
+💰 PROYECCIÓN DE INGRESOS:
+=========================
+🐔 Gollos Chickens: S/48,000/mes
+🛍️ Goio Store: S/100,000+/mes
+💸 TOTAL OBJETIVO: S/148,000/mes
+
+🚨 IMPORTANTE - RENOVACIÓN:
+==========================
+📅 VENCE: 29 de noviembre de 2025
+🔄 RENOVAR: Repetir proceso antes del vencimiento
+📋 NOTA: Para token permanente necesitas papeles de empresa
+
+🔒 SEGURIDAD:
+============
+- Token guardado en múltiples ubicaciones
+- Acceso solo para automatización Gollos/Goio
+- No compartir con terceros
+- Usar solo en sistema local seguro
+
+===================================================
+Rey Melgar - Automatización Empresarial Completa
+===================================================

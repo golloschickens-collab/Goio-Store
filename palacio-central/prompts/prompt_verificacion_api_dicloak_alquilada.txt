@@ -1,0 +1,156 @@
+# PROMPT URGENTE: VERIFICACIÓN API DICLOAK EN CUENTA ALQUILADA
+# Para: Agente Especial de Investigación Técnica
+# Objetivo: Determinar si cuenta DiCloak alquilada permite acceso API
+
+## CONTEXTO CRÍTICO
+El Rey tiene una cuenta DiCloak alquilada mensualmente a través de un proveedor. Antes de proceder con la implementación completa, necesitamos verificar si esta cuenta específica permite el acceso a la API local que identificamos en la investigación anterior.
+
+## MISIÓN URGENTE: VERIFICACIÓN PRÁCTICA
+
+### ACCESO A LA CUENTA DICLOAK ALQUILADA
+- **Tipo de cuenta**: Alquilada mensualmente por proveedor
+- **Acceso**: A través de credenciales proporcionadas por el proveedor
+- **Objetivo**: Verificar disponibilidad y configuración de API local
+
+### VERIFICACIONES OBLIGATORIAS:
+
+**1. ACCESO A CONFIGURACIÓN DE API:**
+```
+1. Abrir DiCloak con las credenciales alquiladas
+2. Navegar a: More > Settings > Open API
+3. Verificar si está disponible la opción "Open API"
+4. Capturar screenshot de la configuración disponible
+```
+
+**2. HABILITACIÓN DE API LOCAL:**
+```
+Si la opción existe:
+1. Activar "Open API" 
+2. Verificar URL local generada (debería ser http://127.0.0.1:5210/openapi)
+3. Copiar API Key generada
+4. Verificar si hay restricciones o limitaciones visibles
+```
+
+**3. PRUEBA DE CONECTIVIDAD API:**
+```
+Con API habilitada, probar:
+1. Abrir navegador/terminal
+2. Acceder a: http://127.0.0.1:5210/openapi
+3. Verificar si responde el servidor local
+4. Probar endpoint básico como: GET /v1/env (listar perfiles)
+```
+
+**4. VERIFICACIÓN DE PERFILES:**
+```
+En la interfaz DiCloak:
+1. Verificar cuántos perfiles están disponibles
+2. ¿Se pueden crear nuevos perfiles?
+3. ¿Hay límites de perfiles simultáneos?
+4. ¿Los perfiles existentes son modificables?
+```
+
+**5. GESTIÓN DE PROXIES:**
+```
+Revisar sección de proxies:
+1. ¿Están preconfigurados proxies?
+2. ¿Se pueden añadir/modificar proxies?
+3. ¿Qué tipos de proxy están disponibles?
+4. ¿Hay limitaciones de uso de proxies?
+```
+
+### PRUEBA TÉCNICA ESPECÍFICA:
+
+**Si la API está disponible, realizar prueba básica:**
+
+```bash
+# Probar conectividad básica
+curl -H "X-API-KEY: [API_KEY_OBTENIDA]" "http://127.0.0.1:5210/openapi/v1/env"
+
+# Si funciona, probar operación de perfil
+curl -X PATCH -H "X-API-KEY: [API_KEY]" "http://127.0.0.1:5210/openapi/v1/env/[PERFIL_ID]/open"
+```
+
+### LIMITACIONES A INVESTIGAR:
+
+**1. Restricciones de la cuenta alquilada:**
+- ¿La API está disponible en el plan alquilado?
+- ¿Hay límites de requests por minuto/hora?
+- ¿Se pueden hacer modificaciones de configuración?
+- ¿El proveedor tiene restricciones específicas?
+
+**2. Persistencia de configuraciones:**
+- ¿Las configuraciones se mantienen entre sesiones?
+- ¿Los cambios en API afectan otros usuarios de la cuenta?
+- ¿Se pueden guardar configuraciones personalizadas?
+
+**3. Compatibilidad con automatización:**
+- ¿Los perfiles soportan automation flags?
+- ¿Hay detección anti-automatización en la propia cuenta?
+- ¿Los proxies son compatibles con automation?
+
+### ESCENARIOS POSIBLES Y ACCIONES:
+
+**ESCENARIO A - API TOTALMENTE DISPONIBLE:**
+- ✅ API habilitada sin restricciones
+- ✅ Se pueden crear/modificar perfiles
+- ✅ Proxies configurables
+- **Acción**: Proceder con implementación completa
+
+**ESCENARIO B - API DISPONIBLE CON LIMITACIONES:**
+- ⚠️ API disponible pero con restricciones
+- ⚠️ Límites en número de perfiles/requests
+- ⚠️ Algunas funciones bloqueadas
+- **Acción**: Evaluar si limitaciones son aceptables para nuestro uso
+
+**ESCENARIO C - API NO DISPONIBLE:**
+- ❌ Opción API no visible o deshabilitada
+- ❌ Cuenta alquilada sin permisos API
+- ❌ Restricciones del proveedor
+- **Acción**: Explorar alternativas (upgrade, proveedor diferente, etc.)
+
+### DELIVERABLES REQUERIDOS:
+
+**REPORTE INMEDIATO:**
+```
+## VERIFICACIÓN API DICLOAK - CUENTA ALQUILADA
+
+### Estado de API:
+- ✅/❌ Opción API disponible en configuración
+- ✅/❌ API local funcional en http://127.0.0.1:5210
+- ✅/❌ API Key obtenida y funcional
+
+### Capacidades Confirmadas:
+- Perfiles disponibles: [número]
+- Perfiles creables: ✅/❌
+- Proxies configurables: ✅/❌
+- Limitaciones detectadas: [lista]
+
+### Prueba Técnica:
+- Endpoint /v1/env responde: ✅/❌
+- Operación abrir/cerrar perfil: ✅/❌
+- Código de respuesta HTTP: [código]
+- Errores encontrados: [si hay]
+
+### Restricciones Identificadas:
+- [Limitación 1]
+- [Limitación 2]
+- [Limitación 3]
+
+### Recomendación:
+- PROCEDER: ✅/❌
+- ALTERNATIVAS: [si aplica]
+- ACCIONES REQUERIDAS: [lista]
+```
+
+### URGENCIA: CRÍTICA
+Esta verificación determinará si podemos proceder con la arquitectura DiCloak planificada o si necesitamos buscar alternativas. El resultado afectará directamente la estrategia de automatización imperial.
+
+### INSTRUCCIONES ESPECÍFICAS:
+1. **Acceder ÚNICAMENTE a la configuración de API**
+2. **NO modificar perfiles existentes** sin autorización
+3. **Documentar TODO** con screenshots
+4. **Reportar inmediatamente** cualquier restricción encontrada
+5. **Si API no está disponible**, investigar opciones de upgrade
+
+---
+**REY**: Esta verificación es CRÍTICA para decidir la arquitectura final de automatización. Necesito saber si nuestra cuenta alquilada soporta la integración API o si debo buscar alternativas. 👑

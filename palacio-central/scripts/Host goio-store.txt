@@ -1,0 +1,6 @@
+Host goio-store
+  HostName 178.156.195.120
+  User root
+  IdentityFile C:\Users\<tu_usuario>\.ssh\goio_hetzner_key
+  IdentitiesOnly yes
+  StrictHostKeyChecking no

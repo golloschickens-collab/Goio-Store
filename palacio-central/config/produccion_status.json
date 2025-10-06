@@ -1,0 +1,32 @@
+{
+  "timestamp": "2025-09-27T18:26:36.786Z",
+  "status": "READY_FOR_PRODUCTION",
+  "integraciones_pendientes": [
+    {
+      "servicio": "WhatsApp Business API",
+      "prioridad": "CRÍTICA",
+      "impacto_roi": "300%",
+      "numeros_necesarios": [
+        "+51 939431888",
+        "+51 939431889",
+        "+51 939431890"
+      ]
+    },
+    {
+      "servicio": "Shopify API",
+      "prioridad": "CRÍTICA",
+      "impacto_roi": "400%",
+      "productos_listos": 9
+    },
+    {
+      "servicio": "YouTube API",
+      "prioridad": "ALTA",
+      "impacto_roi": "S/15,000/mes",
+      "contenido_target": "religioso/motivacional"
+    }
+  ],
+  "productos_encontrados": 9,
+  "bundles_creados": 3,
+  "roi_promedio": "380%",
+  "estado_agentes": "OPERATIVO_24_7"
+}

@@ -1,0 +1,60 @@
+# 🤖 PROMPT FINAL PARA AGENTE GPT - NÚMEROS REALES
+
+## 📋 **PROMPT ACTUALIZADO (COPIA ESTE):**
+
+```
+Tengo 2 negocios digitales automatizados con IA que ya encontraron 9 productos (ROI 300-516%). Necesito configurar WhatsApp Business API y Shopify API para generar S/48,000 mensuales automáticos.
+
+MI SITUACIÓN REAL:
+• GOLLOS CHICKENS - Venta de broaster y pollos (YA TENGO: +51 939431887)
+• GOIO-STORE - Dropshipping tech/lifestyle (NECESITO: número prestado del padre)
+
+CONFIGURACIÓN ESPECÍFICA:
+
+1. WHATSAPP BUSINESS API (45 min):
+   • Gollos Chickens: +51 939431887 (mi número actual - ya existe)
+   • Goio-Store: Número de mi padre (me lo prestará temporalmente)
+   
+   PREGUNTA IMPORTANTE: ¿Los mensajes llegarán al WhatsApp de mi padre pero se responderán automáticamente por mi sistema? ¿Él no tendrá que hacer nada?
+   
+   Necesito: Access Token para reemplazar "TU_WHATSAPP_TOKEN_AQUI" en config/keys.json
+
+2. SHOPIFY API (20 min):
+   • Para Goio-Store únicamente (subir automáticamente los 9 productos encontrados)
+   • Crear app privada "Goio Imperial Agent"
+   • Permisos: Products, Inventory, Orders (Read/Write)
+   
+   Necesito: API Key, Secret, Shop URL para actualizar config/keys.json
+
+ACLARACIONES NECESARIAS:
+- Mi número +51 939431887 ya atiende Gollos Chickens, ¿puedo configurarlo para respuestas automáticas?
+- ¿El número de mi padre recibirá mensajes pero mi sistema responderá automáticamente?
+- ¿Mi padre necesita hacer algo o todo es transparente para él?
+- ¿Puedo cambiar después el número de mi padre por uno propio sin perder configuración?
+
+VERIFICACIÓN:
+- node test_whatsapp_api.js (debe funcionar con números reales)
+- node test_shopify_api.js (debe funcionar para subir productos)
+
+OBJETIVO: S/48,000 mensuales automáticos (S/35k Goio-Store + S/13k Gollos Chickens)
+
+¿Puedes guiarme paso a paso considerando mi situación real de números?
+```
+
+---
+
+## 🔥 **VERSIÓN CORTA Y DIRECTA:**
+
+```
+Tengo 2 negocios:
+1. Gollos Chickens (broaster/pollos) - MI NÚMERO: +51 939431887 
+2. Goio-Store (dropshipping tech) - NÚMERO DE MI PADRE: [lo conseguiré]
+
+PREGUNTA CLAVE: ¿Si uso el número de mi padre para Goio-Store, los mensajes llegarán a su WhatsApp pero se responderán automáticamente por mi sistema IA? ¿Él no tendrá que hacer nada?
+
+Necesito configurar:
+- WhatsApp Business API para ambos números (respuestas automáticas)
+- Shopify API para Goio-Store (subir productos automáticamente)
+
+¿Puedes guiarme paso a paso explicando cómo funciona lo del número prestado?
+```

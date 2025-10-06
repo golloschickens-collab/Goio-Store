@@ -1,0 +1,31 @@
+# ==================================================================================
+# !! WORKFLOW DESACTIVADO !!
+# Esta tarea ha sido migrada a un cron job en el servidor de Hetzner para
+# eliminar los costos de GitHub Actions.
+# NO REACTIVAR.
+# ==================================================================================
+# Forzar re-evaluación
+name: Ejecutar agentes
+
+# on:
+#   schedule:
+#     - cron: '0 6 * * *'  # Ejecuta todos los días a las 6am
+#   workflow_dispatch:
+
+jobs:
+  run-agents:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar dependencias
+        run: pip install -r actualizador-inventario/requirements.txt
+
+      - name: Ejecutar agente
+        run: python actualizador-inventario/main.py

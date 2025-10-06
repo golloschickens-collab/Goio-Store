@@ -1,0 +1,225 @@
+{
+  "trace_id": "a112523c-87ec-433f-a4e4-fe6d6926cdd0",
+  "timestamp": "2025-09-27T18:16:50.203Z",
+  "productos_encontrados": [
+    {
+      "imperio": "goio_store",
+      "productos": [
+        {
+          "name": "Tiras LED Inteligentes (RGBIC con App Control)",
+          "category": "home",
+          "price_supplier": 25,
+          "price_suggested": 100,
+          "roi_proyectado": 3,
+          "trends_score": 78,
+          "competition_level": "medio",
+          "seasonality": "todo el año",
+          "target_match": "alto",
+          "investment_required": 50,
+          "profit_projection_monthly": 1500
+        },
+        {
+          "name": "Mini Humidificador USB Portátil con Luz LED",
+          "category": "lifestyle",
+          "price_supplier": 20,
+          "price_suggested": 80,
+          "roi_proyectado": 3,
+          "trends_score": 82,
+          "competition_level": "medio",
+          "seasonality": "todo el año",
+          "target_match": "alto",
+          "investment_required": 50,
+          "profit_projection_monthly": 1000
+        },
+        {
+          "name": "Cargador Inalámbrico Plegable 3 en 1 para Múltiples Dispositivos",
+          "category": "electronics",
+          "price_supplier": 40,
+          "price_suggested": 160,
+          "roi_proyectado": 3,
+          "trends_score": 85,
+          "competition_level": "medio",
+          "seasonality": "todo el año",
+          "target_match": "alto",
+          "investment_required": 75,
+          "profit_projection_monthly": 1500
+        }
+      ],
+      "total_encontrados": 3
+    },
+    {
+      "imperio": "gollos_chickens",
+      "productos": [
+        {
+          "name": "Sellador de Alimentos al Vacío Eléctrico Automático Compacto",
+          "category": "kitchen, food-accessories",
+          "price_supplier": 25,
+          "price_suggested": 129,
+          "roi_proyectado": 5.16,
+          "trends_score": 78,
+          "competition_level": "medio",
+          "seasonality": "todo el año",
+          "target_match": "alto",
+          "investment_required": 100,
+          "profit_projection_monthly": 1800,
+          "notes": "Ideal para familias que compran a granel, preparan comidas con antelación o desean reducir el desperdicio de alimentos. También atrae a quienes experimentan con cocción Sous-Vide. El precio sugerido permite una excelente percepción de valor."
+        },
+        {
+          "name": "Cortador de Verduras Multifuncional 8 en 1 con Contenedor y Cuchillas Intercambiables",
+          "category": "kitchen, food-accessories",
+          "price_supplier": 18,
+          "price_suggested": 90,
+          "roi_proyectado": 5,
+          "trends_score": 82,
+          "competition_level": "medio",
+          "seasonality": "todo el año",
+          "target_match": "alto",
+          "investment_required": 100,
+          "profit_projection_monthly": 2000,
+          "notes": "Un ahorrador de tiempo esencial para familias. Agiliza la preparación de ensaladas, guisos y otras comidas, promoviendo una alimentación más saludable. La clave es destacar la seguridad, la facilidad de limpieza y la versatilidad de las cuchillas."
+        },
+        {
+          "name": "Set de Forros Reutilizables de Silicona para Freidora de Aire (2-3 unidades)",
+          "category": "kitchen, food-accessories",
+          "price_supplier": 7,
+          "price_suggested": 35,
+          "roi_proyectado": 5,
+          "trends_score": 90,
+          "competition_level": "medio",
+          "seasonality": "todo el año",
+          "target_match": "alto",
+          "investment_required": 80,
+          "profit_projection_monthly": 1500,
+          "notes": "Con la explosión de popularidad de las freidoras de aire, este accesorio es un 'must-have'. Ofrece limpieza fácil, es ecológico y prolonga la vida útil de la freidora. El alto score de Google Trends en 'freidora de aire' sugiere un mercado masivo."
+        }
+      ],
+      "total_encontrados": 3
+    },
+    {
+      "imperio": "eco_eterno",
+      "productos": [
+        {
+          "name": "Diario de Gratitud y Manifestación (con Guía Espiritual)",
+          "category": "books, wellness",
+          "price_supplier": 12,
+          "price_suggested": 54,
+          "roi_proyectado": 3.5,
+          "trends_score": 78,
+          "volumen_busqueda_latam": "2,500 - 4,000/mes (Perú/LATAM para 'diario de gratitud', 'manifestacion journal')",
+          "competition_level": "medio",
+          "seasonality": "todo el año (picos ligeros inicio de año)",
+          "target_match": "alto",
+          "investment_required": 45,
+          "profit_projection_monthly": 1200
+        },
+        {
+          "name": "Cojín de Meditación Zafu (con relleno de trigo sarraceno)",
+          "category": "meditation, wellness",
+          "price_supplier": 20,
+          "price_suggested": 90,
+          "roi_proyectado": 3.5,
+          "trends_score": 80,
+          "volumen_busqueda_latam": "1,000 - 2,000/mes (Perú/LATAM para 'cojin meditacion', 'zafu')",
+          "competition_level": "medio-bajo",
+          "seasonality": "todo el año",
+          "target_match": "alto",
+          "investment_required": 60,
+          "profit_projection_monthly": 1350
+        },
+        {
+          "name": "Set de Cristales de Sanación (Intención: Armonía y Claridad)",
+          "category": "wellness",
+          "price_supplier": 18,
+          "price_suggested": 81,
+          "roi_proyectado": 3.5,
+          "trends_score": 75,
+          "volumen_busqueda_latam": "800 - 2,000/mes (Perú/LATAM para 'cristales de sanacion', 'set de cristales')",
+          "competition_level": "medio",
+          "seasonality": "todo el año",
+          "target_match": "alto",
+          "investment_required": 50,
+          "profit_projection_monthly": 1230
+        }
+      ],
+      "total_encontrados": 3
+    }
+  ],
+  "cross_selling_opportunities": {
+    "bundles_sugeridos": [
+      {
+        "nombre": "Bundle: Santuario de Bienestar en Casa",
+        "imperios_involucrados": [
+          "goio_store",
+          "eco_eterno"
+        ],
+        "productos": [
+          "Mini Humidificador USB Portátil con Luz LED (goio_store)",
+          "Diario de Gratitud y Manifestación (eco_eterno)",
+          "Set de Cristales de Sanación (eco_eterno)"
+        ],
+        "roi_bundle": 3.8,
+        "target": "Personas interesadas en bienestar, meditación, self-care y creación de ambientes relajantes."
+      },
+      {
+        "nombre": "Bundle: Espacio Zen Moderno",
+        "imperios_involucrados": [
+          "goio_store",
+          "eco_eterno"
+        ],
+        "productos": [
+          "Tiras LED Inteligentes (RGBIC con App Control) (goio_store)",
+          "Cojín de Meditación Zafu (con relleno de trigo sarraceno) (eco_eterno)"
+        ],
+        "roi_bundle": 3.8,
+        "target": "Individuos tech-savvy que buscan crear un ambiente relajante y moderno para el hogar o sus prácticas de mindfulness."
+      },
+      {
+        "nombre": "Bundle: Vida Saludable y Consciente",
+        "imperios_involucrados": [
+          "gollos_chickens",
+          "eco_eterno"
+        ],
+        "productos": [
+          "Cortador de Verduras Multifuncional 8 en 1 con Contenedor y Cuchillas Intercambiables (gollos_chickens)",
+          "Diario de Gratitud y Manifestación (con Guía Espiritual) (eco_eterno)"
+        ],
+        "roi_bundle": 4.3,
+        "target": "Personas enfocadas en un estilo de vida saludable, que buscan herramientas para mejorar tanto su alimentación como su bienestar mental y emocional."
+      }
+    ],
+    "customer_journeys": [
+      {
+        "nombre_journey": "Del Bienestar Mental al Ambiente Ideal",
+        "entrada": "eco_eterno (e.g., compra de Diario de Gratitud o Set de Cristales)",
+        "path_sugerido": [
+          "goio_store (Sugerencia: Mini Humidificador USB Portátil con Luz LED o Tiras LED Inteligentes para complementar el espacio de meditación/journaling)",
+          "gollos_chickens (Sugerencia: Cortador de Verduras Multifuncional, apelando al concepto de 'bienestar holístico' que incluye alimentación saludable)"
+        ],
+        "conversion_estimada": "20-25% (para goio_store) | 10-15% (para gollos_chickens)"
+      },
+      {
+        "nombre_journey": "Del Hogar Inteligente al Cuidado Personal",
+        "entrada": "goio_store (e.g., compra de Tiras LED Inteligentes o Mini Humidificador USB Portátil)",
+        "path_sugerido": [
+          "eco_eterno (Sugerencia: Cojín de Meditación Zafu o Diario de Gratitud, para transformar el espacio tecnológico en un refugio de bienestar)",
+          "gollos_chickens (Sugerencia: Sellador de Alimentos al Vacío Eléctrico, si el cliente valora la eficiencia y la tecnología en el hogar, esto se extiende a la cocina)"
+        ],
+        "conversion_estimada": "15-20% (para eco_eterno) | 8-12% (para gollos_chickens)"
+      },
+      {
+        "nombre_journey": "De la Cocina Eficiente al Equilibrio Personal",
+        "entrada": "gollos_chickens (e.g., compra de Cortador de Verduras o Sellador de Alimentos al Vacío)",
+        "path_sugerido": [
+          "eco_eterno (Sugerencia: Diario de Gratitud y Manifestación o Set de Cristales de Sanación, reforzando el concepto de un estilo de vida integral: cuerpo y mente sanos)",
+          "goio_store (Sugerencia: Mini Humidificador USB Portátil con Luz LED, para mejorar el ambiente general del hogar, incluyendo la cocina o espacios personales después de cocinar)"
+        ],
+        "conversion_estimada": "10-15% (para eco_eterno) | 7-10% (para goio_store)"
+      }
+    ]
+  },
+  "acciones_autonomas": [],
+  "requiere_aprobacion": false,
+  "mejoras_propuestas": [
+    "Mejorar ROI promedio en goio_store: actual 3.00, objetivo >3.5"
+  ]
+}

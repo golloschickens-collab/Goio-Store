@@ -1,0 +1,67 @@
+{
+  "fecha_analisis": "2025-09-30T23:16:07.711576",
+  "competidores_analizados": [
+    "kfc",
+    "popeyes",
+    "rey_broaster",
+    "cholita_burger"
+  ],
+  "insights": {
+    "oportunidades_mercado": [
+      "KFC/Popeyes: Precios muy altos - OPORTUNIDAD precio/calidad",
+      "Rey Broaster: Imagen básica - OPORTUNIDAD marketing premium",
+      "Cholita Burger: Limitado a burgers - OPORTUNIDAD especialización pollo",
+      "TODOS: Enfoque masivo - OPORTUNIDAD nicho Lima Norte"
+    ],
+    "diferenciadores_clave": [
+      "ÚNICO en enfoque Lima Norte específico",
+      "ÚNICO en delivery 25-35 min garantizado",
+      "ÚNICO en WhatsApp automatizado 24/7",
+      "MEJOR relación precio/calidad vs KFC/Popeyes",
+      "MÁS premium que Rey Broaster a precio similar"
+    ],
+    "estrategias_recomendadas": [
+      "Posicionar como 'Premium local accesible'",
+      "Atacar precios altos de KFC/Popeyes",
+      "Aprovechar identidad Lima Norte vs marcas genéricas",
+      "Destacar rapidez delivery vs competencia",
+      "Marketing hiperlocal vs campañas masivas"
+    ]
+  },
+  "contenido_sugerido": [
+    {
+      "tipo": "comparativo_precios",
+      "titulo": "🔥 GOLLOS vs KFC: ¡MISMA CALIDAD, MEJOR PRECIO!",
+      "copy": "🐔 Combo Familiar Gollos: S/55\n🍗 KFC Bucket: S/75\n\n💰 ¡AHORRA S/20 sin sacrificar sabor!\n📍 Especialistas en Lima Norte\n🚚 Delivery 25-35 min garantizado",
+      "visual": "Comparación lado a lado con precios",
+      "cta": "WhatsApp +51 939 431 887"
+    },
+    {
+      "tipo": "velocidad_delivery",
+      "titulo": "⚡ MIENTRAS OTROS TARDAN 1 HORA...",
+      "copy": "⏰ Gollos Chickens: 25-35 minutos\n🐌 Otras marcas: 45-90 minutos\n\n🎯 Especialistas SOLO Lima Norte\n🔥 Pollo caliente, crujiente, A TIEMPO\n📍 San Martín de Porres y alrededores",
+      "visual": "Cronómetro vs competencia",
+      "cta": "Pide YA: +51 939 431 887"
+    },
+    {
+      "tipo": "identidad_local",
+      "titulo": "🏠 SOMOS DE LIMA NORTE, PARA LIMA NORTE",
+      "copy": "🌍 KFC/Popeyes: Recetas internacionales\n🐔 GOLLOS: Sabor pensado para nosotros\n\n✅ Conocemos tus gustos locales\n✅ Delivery optimizado para la zona\n✅ Precios justos, no de mall",
+      "visual": "Mapa Lima Norte vs logos internacionales",
+      "cta": "El pollo de tu barrio: +51 939 431 887"
+    }
+  ],
+  "gollos_positioning": {
+    "nombre": "Gollos Chickens",
+    "especialidad": "Pollo broaster artesanal Lima Norte",
+    "precio_promedio": "S/ 16-55",
+    "propuesta_valor": "Calidad artesanal + Precios justos + Enfoque local",
+    "ventajas_competitivas": [
+      "Enfoque específico Lima Norte",
+      "Delivery rápido 25-35 min",
+      "WhatsApp 24/7 automatizado",
+      "Precios competitivos",
+      "Atención personalizada"
+    ]
+  }
+}

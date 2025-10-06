@@ -1,0 +1,74 @@
+{
+  "GEMINI_API_KEY": "AIzaSyBwyfpgalHaSWRcOYc_aCyuWGPxiTJhHbU",
+  "google_api_key": "AIzaSyBwyfpgalHaSWRcOYc_aCyuWGPxiTJhHbU",
+  
+  "facebook": {
+    "gollos_chickens": {
+      "app_id": "TU_APP_ID_GOLLOS_AQUI",
+      "app_secret": "TU_APP_SECRET_GOLLOS_AQUI", 
+      "page_id": "TU_PAGE_ID_GOLLOS_AQUI",
+      "page_access_token": "TU_PAGE_TOKEN_GOLLOS_AQUI",
+      "page_name": "Gollos Chickens - Pollos Premium"
+    },
+    "goio_store": {
+      "app_id": "TU_APP_ID_GOIO_AQUI",
+      "app_secret": "TU_APP_SECRET_GOIO_AQUI",
+      "page_id": "TU_PAGE_ID_GOIO_AQUI", 
+      "page_access_token": "TU_PAGE_TOKEN_GOIO_AQUI",
+      "page_name": "GOIO-STORE - Tecnología y Lifestyle"
+    },
+    "permisos_configurados": [
+      "pages_manage_posts",
+      "pages_manage_metadata", 
+      "pages_read_engagement",
+      "pages_manage_engagement",
+      "pages_manage_ads"
+    ]
+  },
+  
+  "whatsapp": {
+    "status": "PENDIENTE",
+    "access_token": "TU_WHATSAPP_TOKEN_AQUI",
+    "numeros": {
+      "gollos_chickens": "NUMERO_NUEVO_GOLLOS_AQUI",
+      "goio_store": "NUMERO_NUEVO_GOIO_AQUI",
+      "eco_eterno": "NUMERO_NUEVO_GOIO_AQUI"
+    },
+    "webhook_url": "http://localhost:8000/api/webhooks/whatsapp",
+    "numeros_personales": {
+      "rey_personal": "+51939431887",
+      "padre_personal": "+51956843866",
+      "nota": "Números personales - NO TOCAR - mantener separados"
+    },
+    "estrategia": {
+      "fase_1": "Solo Goio-Store con número nuevo",
+      "fase_2": "Gollos Chickens después de validar sistema",
+      "riesgo_mitigado": "Números personales protegidos"
+    }
+  },
+  
+  "shopify": {
+    "goio_store": {
+      "shop_url": "goio-store.myshopify.com",
+      "api_key": "TU_SHOPIFY_API_KEY_AQUI",
+      "api_secret": "TU_SHOPIFY_SECRET_AQUI",
+      "admin_access_token": "TU_ADMIN_ACCESS_TOKEN_AQUI",
+      "app_name": "Imperial AI Agent",
+      "webhooks": {
+        "orders_create": "http://localhost:8000/api/webhooks/shopify/orders",
+        "products_update": "http://localhost:8000/api/webhooks/shopify/products"
+      },
+      "permisos_configurados": [
+        "read_products", "write_products",
+        "read_inventory", "write_inventory", 
+        "read_orders", "write_orders",
+        "read_customers", "write_customers"
+      ]
+    },
+    "gollos_chickens": {
+      "shop_url": "gollos-chickens.myshopify.com",
+      "status": "OPCIONAL_FUTURO",
+      "nota": "Configurar después si se decide expandir"
+    }
+  }
+}

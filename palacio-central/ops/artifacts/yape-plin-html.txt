@@ -1,0 +1,7 @@
+<h3>Paga por Yape o Plin</h3>
+<p>Escanea el siguiente QR o paga al número <b>+51 939 431 887</b>.</p>
+<img src="https://api.qrserver.com/v1/create-qr-code/?data=939431887&size=200x200" alt="QR Yape/Plin" style="width:200px;height:200px;" />
+<p>Envía tu comprobante por WhatsApp:</p>
+<a href="https://wa.me/51939431887" target="_blank" style="background:#25D366;color:white;padding:10px 20px;border-radius:5px;text-decoration:none;font-weight:bold;display:inline-block;">
+  Contactar por WhatsApp
+</a>

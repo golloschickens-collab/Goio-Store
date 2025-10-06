@@ -1,0 +1,80 @@
+# =============================================================================
+# CRM AUTÓNOMO - GITIGNORE
+# =============================================================================
+
+# Archivos de configuración sensibles
+.env
+.env.local
+.env.production
+.env.staging
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Datos de desarrollo local
+data/
+tmp/
+temp/
+
+# Archivos de backup
+backup/
+*.sql
+*.dump
+
+# Certificados y claves
+*.pem
+*.key
+*.crt
+*.p12
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-*
+
+# Docker
+.dockerignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Node.js (si se añade frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Datos persistentes de Docker (si se montan localmente)
+postgres_data/
+redis_data/
+metabase_data/
+
+# Archivos de configuración local de servicios
+metabase.db*
+postgres.conf
+redis.conf
+
+# Archivos de testing
+.coverage
+.pytest_cache/
+.tox/
+
+# Archivos de documentación temporales
+*.tmp.md
+*.draft.md

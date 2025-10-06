@@ -1,0 +1,71 @@
+{
+  "GEMINI_API_KEY": "AIzaSyBwyfpgalHaSWRcOYc_aCyuWGPxiTJhHbU",
+  "google_api_key": "AIzaSyBwyfpgalHaSWRcOYc_aCyuWGPxiTJhHbU",
+  "facebook": {
+    "gollos_chickens": {
+      "app_id": "10985552895072623",
+      "app_secret": "f10f5f0fca147551647cb3af5efffc2f",
+      "page_id": "377626045425378",
+      "page_access_token": "EAAPnIMcT6W8BPmtRZC2k5Ypm4YpZAzCn2hAoQlfzrqpXZBkYhLnHpi545BT0o6E7toD0is2nItytDb894Gi6xEcpOUDDQvyE8nNZAc67PAmaRD47ZAU65FgmZBRRnPy5qjZCVcE9776d89ZBTOfJn667bwURFVIbKKbShLi9ZCZAwnutRbCNvZAkQqpLoa9LcW6nxCKZAOIKnV93TUh4HY6cjwoT",
+      "page_name": "GollosChickens",
+      "status": "PAGE_TOKEN_ACTUALIZADO",
+      "vencimiento": "2025-11-30",
+      "token_duracion": "60_dias_long_lived"
+    },
+    "goio_store": {
+      "app_id": "2161243464696662",
+      "app_secret": "CONFIGURAR_DESPUES",
+      "page_id": "783032478270795",
+      "page_access_token": "EAAeto7T8g1YBPtmaFLZBh0xiQIBZAm7OeGfePwQMgskBwTspDalprnau6LZCrcZCXyMmhb1ZCYj8L8EZCYXlO1rMIPauc1ZCEqK3GBOr1SheKcGZCI84Wntpu155gAepMUzFznsZADXAiwtXBUkE8UiS90rh9FEdna1KeSwzN5z4wyLeFxgsh5xDcQlQbPk0unpre",
+      "page_name": "GoioStore",
+      "status": "CONFIGURADO_FUTURO",
+      "vencimiento": "2025-11-29"
+    },
+    "permisos_configurados": [
+      "pages_manage_posts",
+      "pages_manage_metadata",
+      "pages_read_engagement",
+      "pages_manage_engagement",
+      "pages_manage_ads"
+    ]
+  },
+  "whatsapp": {
+    "status": "NUMERO_CONFIRMADO_LISTO_VINCULAR",
+    "numero_negocio": "939431887",
+    "numero_completo": "+51939431887",
+    "nombre_negocio": "Gollos Chickens",
+    "horario_atencion": "17:00-01:00",
+    "ubicacion_actual": "Asociación Los Nísperos Mz.V Lte.1, San Martín de Porres",
+    "referencia": "Paradero Las Vaquitas",
+    "zona_delivery": "Radio 5km desde Los Nísperos",
+    "estrategia": "expansion_basada_en_datos",
+    "respuestas_automaticas": {
+      "saludo": "¡Hola! 🐔 Bienvenido a Gollos Chickens Los Nísperos. 16 años de experiencia. ¿Te antoja nuestro pollo crujiente? Escribe CARTA para ver opciones",
+      "carta": "🍗 CARTA GOLLOS CHICKENS LOS NÍSPEROS:\n\n• Pechuga Broaster Premium: S/16\n• Combo Familiar (8 piezas): S/55\n• Alitas Especiales (6 unid.): S/20\n• Combo Doble Alitas: S/30\n• Hamburguesa Especial: S/16\n• Salchipapa a la Pobre: S/18\n\n🚚 GRATIS en pedidos +S/30\nEscribe PEDIDO + tu elección",
+      "delivery": "🚚 DELIVERY DESDE LOS NÍSPEROS:\n📍 Asociación Los Nísperos Mz.V Lte.1\n🚌 Por Paradero Las Vaquitas\n⏰ 25-35 minutos en radio 5km\n💰 Delivery GRATIS en pedidos +S/30\n\n¿Confirmas tu dirección exacta?",
+      "ubicacion": "📍 NUESTRA UBICACIÓN:\nAsociación Los Nísperos Mz.V Lte.1\nSan Martín de Porres\nReferencia: Paradero Las Vaquitas\n🏆 16 años sirviendo Lima Norte",
+      "ausencia": "Gracias por contactar Gollos Chickens Lima Norte. Atendemos de 5 PM a 1 AM. ¡Te responderemos pronto! 🐔"
+    },
+    "webhook_configurado": false,
+    "business_api_configurada": false
+  },
+  "shopify": {
+    "gollos_chickens": {
+      "shop_url": "TU_SHOP_URL_AQUI",
+      "access_token": "TU_ACCESS_TOKEN_AQUI",
+      "api_key": "TU_API_KEY_AQUI",
+      "api_secret": "TU_API_SECRET_AQUI"
+    },
+    "goio_store": {
+      "shop_url": "TU_SHOP_URL_GOIO_AQUI",
+      "access_token": "TU_ACCESS_TOKEN_GOIO_AQUI",
+      "api_key": "TU_API_KEY_GOIO_AQUI",
+      "api_secret": "TU_API_SECRET_GOIO_AQUI"
+    }
+  },
+  "aws": {
+    "access_key_id": "TU_AWS_ACCESS_KEY",
+    "secret_access_key": "TU_AWS_SECRET_KEY",
+    "region": "us-east-1"
+  }
+}
