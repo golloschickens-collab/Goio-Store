@@ -16,9 +16,9 @@ async function findAndAnalyzeTrends() {
     const keysPath = path.join(CWD, 'config', 'keys.json');
     const keysFile = await fs.readFile(keysPath, 'utf8');
     const keys = JSON.parse(keysFile);
-    const genAI = new GoogleGenerativeAI(keys.google_api_key);
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash-latest' });
-    console.log('[Research] Cliente de IA de Google inicializado.');
+  const genAI = new GoogleGenerativeAI(keys.google_api_key);
+  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  console.log('[Research] Cliente de IA de Google inicializado.');
 
     // 2. Leer los resultados de búsqueda de un archivo temporal
     const searchResultsPath = path.join(CWD, 'temp', 'search_results.json');
@@ -46,18 +46,27 @@ async function findAndAnalyzeTrends() {
       ${JSON.stringify(searchResults, null, 2)}
     `;
 
-    console.log('[Research] Analizando resultados con IA para extraer ideas de productos...');
-    const result = await model.generateContent(analysisPrompt);
-    const response = await result.response;
-    let text = response.text();
-
-    // 4. Limpiar y parsear la respuesta de la IA
-    const jsonMatch = text.match(/```json\n([\s\S]*?)\n```/);
-    if (jsonMatch && jsonMatch[1]) {
-      text = jsonMatch[1];
+    let foundProducts = [];
+    try {
+      console.log('[Research] Analizando resultados con IA para extraer ideas de productos...');
+      const result = await model.generateContent(analysisPrompt);
+      const response = await result.response;
+      let text = response.text();
+      const jsonMatch = text.match(/```json\n([\s\S]*?)\n```/);
+      if (jsonMatch && jsonMatch[1]) {
+        text = jsonMatch[1];
+      }
+      foundProducts = JSON.parse(text);
+      console.log(`[Research] IA ha identificado ${foundProducts.length} productos potenciales.`);
+    } catch (iaError) {
+      console.warn('[Research] ⚠️ IA no disponible, generando ideas heurísticas.', iaError.message || iaError);
+      const terms = Array.isArray(searchResults) ? searchResults : [];
+      foundProducts = terms.slice(0, 5).map((term, index) => ({
+        product_name: `${term} Kit ${index + 1}`,
+        description: `Oferta rápida inspirada en la tendencia “${term}”. Incluye recursos digitales y accesorios complementarios listos para vender online.`,
+        target_audience: 'Compradores digitales que siguen tendencias virales'
+      }));
     }
-    const foundProducts = JSON.parse(text);
-    console.log(`[Research] IA ha identificado ${foundProducts.length} productos potenciales.`);
 
     // 5. Guardar los productos encontrados
     const reportDir = path.join(CWD, 'reports', 'research');

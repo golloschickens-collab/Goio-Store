@@ -17,7 +17,7 @@ async function identifyGrowthOpportunities() {
     const keysFile = await fs.readFile(keysPath, 'utf8');
     const keys = JSON.parse(keysFile);
     const genAI = new GoogleGenerativeAI(keys.google_api_key);
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash-latest' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
     console.log('[Growth] Cliente de IA de Google inicializado.');
 
     // 2. Leer el reporte creativo más reciente

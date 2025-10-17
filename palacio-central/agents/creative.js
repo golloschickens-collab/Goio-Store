@@ -16,9 +16,9 @@ async function generateCreativeContent() {
     const keysPath = path.join(CWD, 'config', 'keys.json');
     const keysFile = await fs.readFile(keysPath, 'utf8');
     const keys = JSON.parse(keysFile);
-    const genAI = new GoogleGenerativeAI(keys.google_api_key);
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash-latest' });
-    console.log('[Creative] Cliente de IA de Google inicializado.');
+  const genAI = new GoogleGenerativeAI(keys.google_api_key);
+  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  console.log('[Creative] Cliente de IA de Google inicializado.');
 
     // 2. Encontrar y leer el último reporte de tendencias del agente de investigación
     const researchDir = path.join(CWD, 'reports', 'research');
@@ -48,15 +48,21 @@ async function generateCreativeContent() {
     for (const product of products) {
       console.log(`[Creative] Procesando oportunidad: ${product.product_name}`);
       const finalPrompt = promptTemplate.replace('{product_title}', product.product_name);
-      
-      const result = await model.generateContent(finalPrompt);
-      const response = await result.response;
-      const text = response.text();
+
+      let generatedText;
+      try {
+        const result = await model.generateContent(finalPrompt);
+        const response = await result.response;
+        generatedText = response.text();
+      } catch (iaError) {
+        console.warn(`[Creative] ⚠️ IA no disponible para ${product.product_name}. Usando plantilla interna.`);
+        generatedText = `🔥 ${product.product_name} en tendencia\n\nPor qué funciona: ${product.description}\n\nIdea de contenido:\n• Reel mostrando antes/después usando ${product.product_name}\n• CTA: "Desliza para ver cómo elevar tu día con este kit"\n• Hashtags: #${product.product_name.replace(/\s+/g, '')} #TendenciasGOIO #HechoParaTi`;
+      }
 
       creativeOutputs.push({
         productName: product.product_name,
         original_description: product.description,
-        creativeContent: text,
+        creativeContent: generatedText,
       });
       console.log(`[Creative] Contenido generado para: ${product.product_name}`);
     }

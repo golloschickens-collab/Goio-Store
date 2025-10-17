@@ -48,8 +48,8 @@ RUN mkdir -p logs/imperial/supervisor \
 # ============================================
 FROM node:20-alpine
 
-# Instalar curl para healthchecks
-RUN apk add --no-cache curl
+# Instalar curl para healthchecks y Python3 para scripts de agentes
+RUN apk add --no-cache curl python3 py3-pip
 
 # Variables de entorno base
 ENV NODE_ENV=production \
