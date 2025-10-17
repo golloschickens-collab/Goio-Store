@@ -1,0 +1,80 @@
+# 🔱 GCLOUD IGNORE - Archivos excluidos del build
+# Proyecto: Goio Imperios
+
+# Node modules (se instalan en Dockerfile)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Logs y temporales
+logs/
+*.log
+*.log.*
+temp/
+tmp/
+
+# Archivos de desarrollo
+.env
+.env.local
+.env.*.local
+*.env.example
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Tests
+test/
+tests/
+*.test.js
+*.spec.js
+coverage/
+
+# Documentación extensa
+docs/
+README.md
+CHANGELOG.md
+
+# Backups
+*.backup
+*.bak
+backup/
+
+# Docker files (ya están en imagen base)
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Scripts de deployment locales
+gcp_deploy.sh
+*.sh
+
+# Build artifacts
+dist/
+build/
+out/
+
+# Reportes viejos
+reports/
+
+# OpenHands
+OpenHands/
+
+# Mayordomo DB local
+mayordomo/
+
+# Otros proyectos
+goio-store/
+eco-eterno/
+gollos-landing/
+crm/

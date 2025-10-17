@@ -1,0 +1,90 @@
+# 🔱 DOCKERFILE OPTIMIZADO PARA GOOGLE CLOUD RUN
+# Proyecto: Goio Imperios - Palacio Central
+# Fecha: 16 de octubre de 2025
+# Multi-stage build para minimizar tamaño final
+
+# ============================================
+# STAGE 1: Builder - Instalar dependencias
+# ============================================
+FROM node:20-alpine AS builder
+
+# Metadata
+LABEL maintainer="Goio Imperios <dev@goio.store>"
+LABEL description="Backend Palacio Central para Cloud Run"
+LABEL version="1.0.0"
+
+# Variables de build
+ARG NODE_ENV=production
+ENV NODE_ENV=${NODE_ENV}
+
+# Crear usuario no-root para seguridad
+RUN addgroup -g 1001 -S nodejs && \
+    adduser -S nodejs -u 1001
+
+# Directorio de trabajo
+WORKDIR /app
+
+# Copiar package files primero (mejor cache)
+COPY package*.json ./
+
+# Instalar solo dependencias de producción
+RUN npm ci --only=production --ignore-scripts && \
+    npm cache clean --force
+
+# Copiar código fuente
+COPY --chown=nodejs:nodejs . .
+
+# Crear directorios necesarios
+RUN mkdir -p logs/imperial/supervisor \
+             logs/imperial/operations \
+             logs/imperial/marketing \
+             logs/imperial/shop-sync \
+             logs/imperial/ia \
+             reports && \
+    chown -R nodejs:nodejs logs reports
+
+# ============================================
+# STAGE 2: Runner - Imagen final mínima
+# ============================================
+FROM node:20-alpine
+
+# Instalar curl para healthchecks
+RUN apk add --no-cache curl
+
+# Variables de entorno base
+ENV NODE_ENV=production \
+    PORT=8080 \
+    LOG_LEVEL=info \
+    TZ=America/Lima
+
+# Crear usuario no-root
+RUN addgroup -g 1001 -S nodejs && \
+    adduser -S nodejs -u 1001
+
+# Directorio de trabajo
+WORKDIR /app
+
+# Copiar node_modules y código desde builder
+COPY --from=builder --chown=nodejs:nodejs /app/node_modules ./node_modules
+COPY --from=builder --chown=nodejs:nodejs /app/package*.json ./
+COPY --from=builder --chown=nodejs:nodejs /app/agents ./agents
+COPY --from=builder --chown=nodejs:nodejs /app/imperios ./imperios
+COPY --from=builder --chown=nodejs:nodejs /app/config ./config
+COPY --from=builder --chown=nodejs:nodejs /app/utils ./utils
+COPY --from=builder --chown=nodejs:nodejs /app/scripts ./scripts
+COPY --from=builder --chown=nodejs:nodejs /app/start.js ./
+COPY --from=builder --chown=nodejs:nodejs /app/logs ./logs
+COPY --from=builder --chown=nodejs:nodejs /app/reports ./reports
+
+# Cambiar a usuario no-root
+USER nodejs
+
+# Exponer puerto Cloud Run estándar
+EXPOSE 8080
+
+# Healthcheck (Cloud Run lo usa internamente)
+HEALTHCHECK --interval=30s --timeout=5s --start-period=40s --retries=3 \
+    CMD curl -f http://localhost:8080/health || exit 1
+
+# Comando de inicio
+CMD ["node", "start.js"]

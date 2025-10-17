@@ -1,0 +1,95 @@
+name: Deploy to Cloud Run
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+env:
+  PROJECT_ID: goio-imperios-prod
+  SERVICE_NAME: palacio-central
+  REGION: us-central1
+
+jobs:
+  deploy:
+    name: Deploy to Cloud Run
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Google Auth
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Configure Docker for Artifact Registry
+        run: |
+          gcloud auth configure-docker ${{ env.REGION }}-docker.pkg.dev
+
+      - name: Build Docker image
+        run: |
+          docker build \
+            -f Dockerfile.cloudrun \
+            -t ${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/goio-images/${{ env.SERVICE_NAME }}:${{ github.sha }} \
+            -t ${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/goio-images/${{ env.SERVICE_NAME }}:latest \
+            .
+
+      - name: Push Docker image
+        run: |
+          docker push ${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/goio-images/${{ env.SERVICE_NAME }}:${{ github.sha }}
+          docker push ${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/goio-images/${{ env.SERVICE_NAME }}:latest
+
+      - name: Deploy to Cloud Run
+        id: deploy
+        uses: google-github-actions/deploy-cloudrun@v2
+        with:
+          service: ${{ env.SERVICE_NAME }}
+          region: ${{ env.REGION }}
+          image: ${{ env.REGION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/goio-images/${{ env.SERVICE_NAME }}:${{ github.sha }}
+          flags: |
+            --port=8080
+            --memory=512Mi
+            --cpu=1
+            --min-instances=0
+            --max-instances=2
+            --timeout=300
+            --concurrency=80
+            --allow-unauthenticated
+          secrets: |
+            GEMINI_API_KEY=GEMINI_API_KEY:latest
+            SHOPIFY_ADMIN_TOKEN_PROD=SHOPIFY_ADMIN_TOKEN_PROD:latest
+            SHOPIFY_STORE_PROD=SHOPIFY_STORE_PROD:latest
+            META_ACCESS_TOKEN=META_ACCESS_TOKEN:latest
+            FACEBOOK_PAGE_1_ID=FACEBOOK_PAGE_1_ID:latest
+            FACEBOOK_PAGE_2_ID=FACEBOOK_PAGE_2_ID:latest
+            INSTAGRAM_ACCOUNT_ID=INSTAGRAM_ACCOUNT_ID:latest
+          env_vars: |
+            NODE_ENV=production
+            PORT=8080
+            LOG_LEVEL=info
+
+      - name: Show deployment URL
+        run: echo "Deployed to ${{ steps.deploy.outputs.url }}"
+
+      - name: Health check
+        run: |
+          sleep 10
+          curl -f ${{ steps.deploy.outputs.url }}/health || exit 1
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "❌ Deployment failed!"
+          echo "Check logs: https://console.cloud.google.com/run/detail/${{ env.REGION }}/${{ env.SERVICE_NAME }}/logs"
