@@ -18,7 +18,15 @@ const {
     // Otras APIs
     FACEBOOK_PAGE_ID,
     FACEBOOK_ACCESS_TOKEN,
+    // Secret Manager naming (fallback)
+    FACEBOOK_PAGE_1_ID,
+    META_ACCESS_TOKEN,
     GEMINI_API_KEY
+} = process.env;
+
+const {
+  DASHBOARD_ENDPOINT,
+  METRICAS_ENDPOINT
 } = process.env;
 
 // --- Validación de Variables Críticas ---
@@ -105,6 +113,42 @@ export const config = {
         "Tomar contenido creativo de los reportes y publicarlo en Facebook",
       ],
       restricciones: ["Requiere credenciales de Facebook con permisos de publicación"],
+    },
+    {
+      nombre: "Agent.Exploradora",
+      tiendas: [],
+      tareas: [
+        "Recolectar datos externos y métricas de mercado",
+        "Registrar oportunidades estratégicas en reports/exploradoras"
+      ],
+      restricciones: ["Requiere acceso a reports/research para tendencias", "Necesita dashboard imperial disponible"],
+    },
+    {
+      nombre: "Agent.Obrera",
+      tiendas: ["principal"],
+      tareas: [
+        "Ejecutar publicaciones y campañas programadas",
+        "Actualizar métricas operativas del día"
+      ],
+      restricciones: ["Debe respetar políticas de publicación y no publicar en vivo sin autorización"],
+    },
+    {
+      nombre: "Agent.Soldado",
+      tiendas: [],
+      tareas: [
+        "Monitorear seguridad, credenciales y defensa digital",
+        "Rotar credenciales cuando sea requerido"
+      ],
+      restricciones: ["Requiere variables de entorno de credenciales definidas"],
+    },
+    {
+      nombre: "Agent.Nodriza",
+      tiendas: [],
+      tareas: [
+        "Administrar recursos, tokens y credenciales de otros agentes",
+        "Documentar lecciones en reports/nodrizas"
+      ],
+      restricciones: ["Necesita acceso de escritura a logs/imperial/tokens"],
     }
   ],
   checks: [
@@ -115,12 +159,16 @@ export const config = {
   ],
   socialMedia: {
       facebook: {
-          pageId: FACEBOOK_PAGE_ID,
-          accessToken: FACEBOOK_ACCESS_TOKEN,
+          pageId: FACEBOOK_PAGE_1_ID || FACEBOOK_PAGE_ID,
+          accessToken: META_ACCESS_TOKEN || FACEBOOK_ACCESS_TOKEN,
       }
   },
   apiKeys: {
       gemini: GEMINI_API_KEY,
+  },
+  dashboard: {
+      reportEndpoint: DASHBOARD_ENDPOINT || `http://localhost:${process.env.PORT || 3002}/dashboard/report`,
+      metricsEndpoint: METRICAS_ENDPOINT || `http://localhost:${process.env.PORT || 3002}/dashboard/metrics`
   }
 };
 
