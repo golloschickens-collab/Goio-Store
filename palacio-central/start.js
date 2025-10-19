@@ -12,26 +12,51 @@ console.log("\n");
 const CWD = process.cwd();
 
 /**
- * NUEVO FLUJO AUTOMATIZADO:
- * 1. TrendHunter → Busca tendencias
+ * FLUJO ÉLITE - AGENTES QUE GENERAN DINERO REAL:
+ * 
+ * CAPA 1: INTELIGENCIA DE MERCADO
+ * 1. TrendHunter → Busca tendencias globales
  * 2. Research → Analiza oportunidades
- * 3. ImageGenerator → Crea imágenes profesionales (DALL-E 3)
- * 4. ShopifySync → Crea productos en Shopify con imagen
- * 5. Creative → Genera copy persuasivo con URL
- * 6. Publisher → Publica en Facebook con imagen + URL
- * 7. GroupMarketer → Distribuye en grupos (orgánico)
- * 8. Engagement → Responde comentarios 24/7
+ * 3. MarketIntelligence → Espía competencia + predice ventas (NUEVO ÉLITE)
+ * 
+ * CAPA 2: OPTIMIZACIÓN COMERCIAL
+ * 4. PricingGenius → Precio dinámico que maximiza ganancia (NUEVO ÉLITE)
+ * 5. ConversionOptimizer → Elimina fricción en funnel (NUEVO ÉLITE)
+ * 
+ * CAPA 3: CREACIÓN DE ASSETS
+ * 6. ImageGenerator → Imágenes profesionales DALL-E 3
+ * 7. ShopifySync → Crea productos con precio óptimo
+ * 
+ * CAPA 4: DISTRIBUCIÓN AGRESIVA
+ * 8. Creative → Copy que convierte al 10%+
+ * 9. Publisher → Facebook con imagen + URL
+ * 10. GroupMarketer → Venta orgánica en grupos
+ * 
+ * CAPA 5: ENGAGEMENT 24/7
+ * 11. Engagement → Responde comentarios en tiempo real
  */
 
 const AGENT_FLOW = [
+  // CAPA 1: INTELIGENCIA
   { name: 'TrendHunter', script: 'trendhunter.js', wait: true },
   { name: 'Research', script: 'research.js', wait: true },
+  { name: 'MarketIntelligence', script: 'marketintelligence.js', wait: true }, // ÉLITE
+  
+  // CAPA 2: OPTIMIZACIÓN
+  { name: 'PricingGenius', script: 'pricinggenius.js', wait: true }, // ÉLITE
+  { name: 'ConversionOptimizer', script: 'conversionoptimizer.js', wait: true }, // ÉLITE
+  
+  // CAPA 3: ASSETS
   { name: 'ImageGenerator', script: 'imagegenerator.js', wait: true },
   { name: 'ShopifySync', script: 'shopifysync.js', wait: true },
+  
+  // CAPA 4: DISTRIBUCIÓN
   { name: 'Creative', script: 'creative.js', wait: true },
   { name: 'Publisher', script: 'publisher.js', wait: true },
   { name: 'GroupMarketer', script: 'groupmarketer.js', wait: true },
-  { name: 'Engagement', script: 'engagement.js', wait: false } // Corre en paralelo
+  
+  // CAPA 5: ENGAGEMENT
+  { name: 'Engagement', script: 'engagement.js', wait: false } // Paralelo 24/7
 ];
 
 async function executeAgent(agent) {
