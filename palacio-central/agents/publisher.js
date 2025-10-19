@@ -47,29 +47,58 @@ async function publishContent() {
       return;
     }
 
-    // 3. Publicar en Facebook
+    // 3. Publicar en Facebook CON IMAGEN
     for (const item of creativeData) {
-      const message = item.creativeContent; // Usamos el contenido creativo completo
-      console.log(`[Publisher] Intentando publicar en Facebook para ${item.productName}...`);
+      const message = item.creativeContent;
+      const imageUrl = item.imageUrl; // URL de la imagen de Shopify
+      
+      console.log(`[Publisher] 📸 Publicando con IMAGEN para ${item.productName}...`);
       
       try {
-        const fbRes = await fetch(`https://graph.facebook.com/v18.0/${fbConfig.pageId}/feed`, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ message: message, access_token: fbConfig.accessToken })
-        });
+        let fbRes;
+        
+        // Si hay imagen, publicar como PHOTO (no solo texto)
+        if (imageUrl) {
+          fbRes = await fetch(`https://graph.facebook.com/v18.0/${fbConfig.pageId}/photos`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              url: imageUrl,
+              caption: message,
+              access_token: fbConfig.accessToken
+            })
+          });
+        } else {
+          // Fallback: Post solo texto (como antes)
+          fbRes = await fetch(`https://graph.facebook.com/v18.0/${fbConfig.pageId}/feed`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              message: message,
+              access_token: fbConfig.accessToken
+            })
+          });
+        }
         
         const fbResponseJson = await fbRes.json();
 
         if (!fbRes.ok) {
-          console.error(`[Publisher] ❌ Error al publicar en Facebook para ${item.productName}.`);
+          console.error(`[Publisher] ❌ Error al publicar para ${item.productName}.`);
           console.error(`[Publisher] Respuesta de Facebook:`, fbResponseJson);
         } else {
-          console.log(`[Publisher] ✅ Publicado en Facebook para ${item.productName}. Post ID: ${fbResponseJson.id}`);
+          const postId = fbResponseJson.id || fbResponseJson.post_id;
+          const postUrl = `https://www.facebook.com/${postId}`;
+          console.log(`[Publisher] ✅ Publicado con IMAGEN para ${item.productName}`);
+          console.log(`[Publisher] 🔗 Post ID: ${postId}`);
+          console.log(`[Publisher] 🌐 URL: ${postUrl}`);
+          console.log(`[Publisher] 🛒 Shopify: ${item.shopifyUrl}`);
         }
       } catch (e) {
         console.error(`[Publisher] ❌ Fallo la conexión a Facebook para ${item.productName}:`, e);
       }
+      
+      // Rate limiting (Facebook: 200 calls/hour)
+      await new Promise(resolve => setTimeout(resolve, 2000)); // 2s entre posts
     }
 
     console.log('[Publisher] Tarea de publicación completada.');
