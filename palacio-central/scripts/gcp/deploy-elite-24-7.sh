@@ -113,8 +113,14 @@ if [ ! -f "Dockerfile.cloudrun" ]; then
     exit 1
 fi
 
-# Build con Dockerfile específico
-gcloud builds submit --tag $IMAGE_NAME --timeout=10m -f Dockerfile.cloudrun .
+# Renombrar temporalmente para que gcloud lo detecte
+cp Dockerfile.cloudrun Dockerfile
+
+# Build con Dockerfile
+gcloud builds submit --tag $IMAGE_NAME --timeout=10m .
+
+# Limpiar Dockerfile temporal
+rm -f Dockerfile
 
 if [ $? -eq 0 ]; then
     echo -e "${GREEN}✅ Imagen Docker construida exitosamente${NC}"

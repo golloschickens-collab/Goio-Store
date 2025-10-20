@@ -50,25 +50,29 @@ CHANGELOG.md
 *.bak
 backup/
 
-# Docker files (ya están en imagen base)
-Dockerfile
+# Docker files
 docker-compose.yml
 .dockerignore
 
-# Scripts de deployment locales
+# Scripts de deployment locales (mantener scripts necesarios)
 gcp_deploy.sh
-*.sh
 
 # Build artifacts
 dist/
 build/
 out/
 
-# Reportes viejos
-reports/
+# Reportes viejos (mantener estructura vacía)
+reports/*.json
+reports/**/*.json
 
 # OpenHands
 OpenHands/
+
+# NO excluir agentes ELITE críticos
+!agents/marketintelligence.js
+!agents/pricinggenius.js
+!agents/conversionoptimizer.js
 
 # Mayordomo DB local
 mayordomo/
