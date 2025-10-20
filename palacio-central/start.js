@@ -1,15 +1,17 @@
 import { spawn } from 'child_process';
 import path from 'path';
+import http from 'http';
 
 console.log("#############################################");
 console.log("##                                         ##");
-console.log("##  🚀 GOIO STORE - SISTEMA AVANZADO v2.0  ##");
-console.log("##  Venta Orgánica + IA + Automatización  ##");
+console.log("##  🚀 GOIO STORE - SISTEMA ELITE V3.0    ##");
+console.log("##  24/7 Autónomo en Cloud Run            ##");
 console.log("##                                         ##");
 console.log("#############################################");
 console.log("\n");
 
 const CWD = process.cwd();
+const PORT = process.env.PORT || 8080;
 
 /**
  * FLUJO ÉLITE - AGENTES QUE GENERAN DINERO REAL:
@@ -59,17 +61,21 @@ const AGENT_FLOW = [
   { name: 'Engagement', script: 'engagement.js', wait: false } // Paralelo 24/7
 ];
 
+let isExecuting = false;
+let lastExecutionStatus = 'idle';
+let lastExecutionTime = null;
+
 async function executeAgent(agent) {
   return new Promise((resolve, reject) => {
     const agentPath = path.join(CWD, 'agents', agent.script);
     
     console.log(`\n[${agent.name}] 🚀 Iniciando...`);
     
-    const process = spawn('node', [agentPath], {
+    const childProcess = spawn('node', [agentPath], {
       stdio: 'inherit'
     });
     
-    process.on('close', (code) => {
+    childProcess.on('close', (code) => {
       if (code === 0) {
         console.log(`[${agent.name}] ✅ Completado exitosamente.\n`);
         resolve();
@@ -79,7 +85,7 @@ async function executeAgent(agent) {
       }
     });
     
-    process.on('error', (err) => {
+    childProcess.on('error', (err) => {
       console.error(`[${agent.name}] ❌ Error fatal:`, err);
       reject(err);
     });
@@ -87,6 +93,14 @@ async function executeAgent(agent) {
 }
 
 async function runImperialFlow() {
+  if (isExecuting) {
+    console.log("⚠️  Flujo ya en ejecución, ignorando solicitud duplicada");
+    return { success: false, message: 'Already executing' };
+  }
+  
+  isExecuting = true;
+  lastExecutionTime = new Date().toISOString();
+  
   console.log("📋 FLUJO IMPERIAL INICIADO\n");
   console.log("Agentes a ejecutar:");
   AGENT_FLOW.forEach((agent, i) => {
@@ -116,7 +130,10 @@ async function runImperialFlow() {
     console.log("##                                         ##");
     console.log("#############################################\n");
     
-    process.exit(0);
+    lastExecutionStatus = 'success';
+    isExecuting = false;
+    
+    return { success: true, message: 'Flow completed successfully' };
     
   } catch (error) {
     console.log("\n" + "=".repeat(50));
@@ -127,9 +144,60 @@ async function runImperialFlow() {
     console.log("##                                         ##");
     console.log("#############################################\n");
     console.error("Error:", error.message);
-    process.exit(1);
+    
+    lastExecutionStatus = 'error';
+    isExecuting = false;
+    
+    return { success: false, message: error.message };
   }
 }
 
-// Ejecutar flujo
-runImperialFlow();
+// Servidor HTTP para Cloud Run
+const server = http.createServer(async (req, res) => {
+  // Health check endpoint
+  if (req.url === '/health' || req.url === '/') {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({
+      status: 'healthy',
+      service: 'Palacio Central ELITE v3.0',
+      isExecuting,
+      lastExecutionStatus,
+      lastExecutionTime,
+      uptime: process.uptime()
+    }));
+    return;
+  }
+  
+  // Execute endpoint (llamado por Cloud Scheduler)
+  if (req.url === '/execute' && req.method === 'POST') {
+    console.log("\n🔔 Solicitud de ejecución recibida de Cloud Scheduler");
+    
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({
+      message: 'Execution started',
+      timestamp: new Date().toISOString()
+    }));
+    
+    // Ejecutar flujo en background (no bloqueante)
+    runImperialFlow().then(result => {
+      console.log("Resultado de ejecución:", result);
+    }).catch(err => {
+      console.error("Error en ejecución:", err);
+    });
+    
+    return;
+  }
+  
+  // Endpoint no encontrado
+  res.writeHead(404, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify({ error: 'Not found' }));
+});
+
+// Iniciar servidor
+server.listen(PORT, () => {
+  console.log(`\n🌐 Servidor HTTP escuchando en puerto ${PORT}`);
+  console.log(`✅ Sistema ELITE v3.0 listo para recibir comandos de Cloud Scheduler\n`);
+  console.log(`Endpoints disponibles:`);
+  console.log(`  • GET  /health   → Health check`);
+  console.log(`  • POST /execute  → Ejecutar flujo de agentes\n`);
+});
