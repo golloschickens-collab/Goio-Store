@@ -22,7 +22,7 @@ const TIENDAS = [
     {
         nombre: '🌍 Goio Global',
         domain: 'goio-global.myshopify.com',
-        token: process.env.SHOPIFY_ADMIN_TOKEN_GLOBAL || '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',
+        token: process.env.SHOPIFY_ADMIN_TOKEN_GLOBAL || '[SHOPIFY_TOKEN_REDACTED]',
         descripcion: 'Tienda internacional USA'
     },
     {

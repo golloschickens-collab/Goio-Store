@@ -24,7 +24,7 @@ console.log('');
 const CONFIG = {
     shopify: {
         store: 'skhqgs-2j.myshopify.com',
-        token: process.env.SHOPIFY_ADMIN_TOKEN_PERU || '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',
+        token: process.env.SHOPIFY_ADMIN_TOKEN_PERU || '[SHOPIFY_TOKEN_REDACTED]',
         apiVersion: '2024-01'
     },
     gemini: {

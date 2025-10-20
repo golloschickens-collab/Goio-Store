@@ -1,4 +1,4 @@
-﻿import fs from "fs"; import path from "path";
+import fs from "fs"; import path from "path";
 const PRODUCT_ID=process.env.PRODUCT_ID; const R=+(process.env.REELS_PER_PRODUCT||1); const I=+(process.env.IMAGES_PER_PRODUCT||2);
 setTimeout(()=>{ console.error("[Creative] timeout"); process.exit(1); }, 120000);
 (async()=>{
