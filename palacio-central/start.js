@@ -40,13 +40,13 @@ const PORT = process.env.PORT || 8080;
 
 const AGENT_FLOW = [
   // CAPA 1: INTELIGENCIA
-  { name: 'TrendHunter', script: 'trendhunter.js', wait: true },
-  { name: 'Research', script: 'research.js', wait: true },
-  { name: 'MarketIntelligence', script: 'marketintelligence.js', wait: true }, // ÉLITE
+  // { name: 'TrendHunter', script: 'trendhunter.js', wait: true }, // DESHABILITADO: SSL error con Google Trends
+  // { name: 'Research', script: 'research.js', wait: true }, // DESHABILITADO: Depende de TrendHunter
+  { name: 'MarketIntelligence', script: 'marketintelligence.js', wait: true }, // ÉLITE - Análisis de competencia
   
   // CAPA 2: OPTIMIZACIÓN
-  { name: 'PricingGenius', script: 'pricinggenius.js', wait: true }, // ÉLITE
-  { name: 'ConversionOptimizer', script: 'conversionoptimizer.js', wait: true }, // ÉLITE
+  { name: 'PricingGenius', script: 'pricinggenius.js', wait: true }, // ÉLITE - Precio dinámico
+  { name: 'ConversionOptimizer', script: 'conversionoptimizer.js', wait: true }, // ÉLITE - CRO
   
   // CAPA 3: ASSETS
   { name: 'ImageGenerator', script: 'imagegenerator.js', wait: true },
