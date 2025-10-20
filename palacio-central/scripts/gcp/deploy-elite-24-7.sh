@@ -106,7 +106,15 @@ echo ""
 # 6. Build de la imagen Docker
 echo -e "${YELLOW}🐳 Paso 5/8: Construyendo imagen Docker con agentes ELITE...${NC}"
 echo "   (Esto puede tomar 3-5 minutos...)"
-gcloud builds submit --tag $IMAGE_NAME --timeout=10m
+
+# Verificar que existe Dockerfile
+if [ ! -f "Dockerfile.cloudrun" ]; then
+    echo -e "${RED}❌ Dockerfile.cloudrun no encontrado${NC}"
+    exit 1
+fi
+
+# Build con Dockerfile específico
+gcloud builds submit --tag $IMAGE_NAME --timeout=10m -f Dockerfile.cloudrun .
 
 if [ $? -eq 0 ]; then
     echo -e "${GREEN}✅ Imagen Docker construida exitosamente${NC}"

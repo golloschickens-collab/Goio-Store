@@ -48,9 +48,12 @@ RUN mkdir -p logs/imperial/supervisor \
 # ============================================
 FROM node:20-alpine
 
-# Instalar curl para healthchecks y Python3 para scripts de agentes
-RUN apk add --no-cache curl python3 py3-pip && \
-    pip3 install --no-cache-dir pytrends --break-system-packages
+# Instalar curl para healthchecks y Python3 para scripts de agentes ELITE
+RUN apk add --no-cache curl python3 py3-pip gcc musl-dev python3-dev && \
+    pip3 install --no-cache-dir --break-system-packages \
+        pytrends \
+        requests \
+        google-generativeai
 
 # Variables de entorno base
 ENV NODE_ENV=production \
@@ -73,9 +76,16 @@ COPY --from=builder --chown=nodejs:nodejs /app/imperios ./imperios
 COPY --from=builder --chown=nodejs:nodejs /app/config ./config
 COPY --from=builder --chown=nodejs:nodejs /app/utils ./utils
 COPY --from=builder --chown=nodejs:nodejs /app/scripts ./scripts
+COPY --from=builder --chown=nodejs:nodejs /app/prompts ./prompts
 COPY --from=builder --chown=nodejs:nodejs /app/start.js ./
 COPY --from=builder --chown=nodejs:nodejs /app/logs ./logs
 COPY --from=builder --chown=nodejs:nodejs /app/reports ./reports
+
+# Verificar que agentes ELITE existen
+RUN test -f agents/marketintelligence.js && \
+    test -f agents/pricinggenius.js && \
+    test -f agents/conversionoptimizer.js || \
+    (echo "ERROR: Agentes ELITE no encontrados" && exit 1)
 
 # Cambiar a usuario no-root
 USER nodejs
