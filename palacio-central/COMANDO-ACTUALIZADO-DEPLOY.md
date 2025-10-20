@@ -30,3 +30,5 @@ cd palacio-central
 
 Cuando termine, verás:
 🔥 SISTEMA ELITE V3.0 DESPLEGADO EXITOSAMENTE
+
+c:\Goio mayordomo\palacio-central\EJECUTAR-PLAN-AHORA.md

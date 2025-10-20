@@ -1,0 +1,53 @@
+{
+  "trace_id": "CONQUISTA-001-FASE-2-3",
+  "timestamp_inicio": "2025-10-12T09:57:34.250Z",
+  "canales_activos": [
+    "INSTAGRAM",
+    "FACEBOOK"
+  ],
+  "canal_pendiente": "WHATSAPP",
+  "metricas": {
+    "instagram": {
+      "stories_publicadas": 0,
+      "visualizaciones_estimadas": 0,
+      "dms_recibidos": 0,
+      "clicks_estimados": 0
+    },
+    "facebook": {
+      "posts_publicados": 0,
+      "alcance_estimado": 0,
+      "comentarios": 0,
+      "clicks_estimados": 0
+    },
+    "whatsapp": {
+      "status": "PENDIENTE_VERIFICACION_META",
+      "templates_preparados": 5,
+      "fecha_activacion": null
+    }
+  },
+  "fase_actual": "FASE_2_3_ACTIVA",
+  "productos_prioritarios": [
+    {
+      "nombre": "Botella Eco-Friendly Smart",
+      "precio": "$29.99",
+      "url": "https://skhqgs-2j.myshopify.com/products/botella-eco-friendly-smart"
+    },
+    {
+      "nombre": "Camiseta Orgánica Premium",
+      "precio": "$48.99",
+      "url": "https://skhqgs-2j.myshopify.com/products/camiseta-organica-premium"
+    },
+    {
+      "nombre": "Kit Home Office Completo",
+      "precio": "$29.99",
+      "url": "https://skhqgs-2j.myshopify.com/products/kit-home-office-completo"
+    }
+  ],
+  "proximos_pasos": {
+    "inmediato": "Publicar Instagram Story + Facebook Post",
+    "1_hora": "Registrar métricas Instagram",
+    "2_horas": "Registrar métricas Facebook",
+    "6_horas": "Verificar primera venta en Shopify",
+    "pendiente": "Activar WhatsApp cuando Meta apruebe"
+  }
+}

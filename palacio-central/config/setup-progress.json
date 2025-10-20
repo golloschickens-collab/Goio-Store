@@ -1,0 +1,11 @@
+{
+  "shopify_partners": true,
+  "development_store": true,
+  "admin_api": true,
+  "token_received": true,
+  "stripe_account": false,
+  "stripe_connection": false,
+  "env_configuration": false,
+  "testing": false,
+  "sync_execution": false
+}

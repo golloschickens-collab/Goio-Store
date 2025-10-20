@@ -1,0 +1,45 @@
+{
+  "fecha": "2025-10-12T05:06:06.766Z",
+  "score": 100,
+  "total_productos": 13,
+  "checklist": {
+    "productos": {
+      "status": "ok",
+      "detalles": []
+    },
+    "imagenes": {
+      "status": "ok",
+      "detalles": []
+    },
+    "precios": {
+      "status": "ok",
+      "detalles": []
+    },
+    "descripciones": {
+      "status": "pending",
+      "detalles": []
+    },
+    "inventario": {
+      "status": "ok",
+      "detalles": []
+    },
+    "pagos": {
+      "status": "manual",
+      "detalles": "Verificar manualmente en admin"
+    },
+    "dominio": {
+      "status": "ok",
+      "detalles": {
+        "nombre": "My Store",
+        "dominio": "skhqgs-2j.myshopify.com",
+        "email": "golloschickens@gmail.com"
+      }
+    },
+    "seo": {
+      "status": "ok",
+      "detalles": []
+    }
+  },
+  "problemas": "Ninguno",
+  "recomendaciones": []
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "order_id": "order_001_1760044409615",
+    "order_number": "1001",
+    "customer": "María González",
+    "email": "maria.gonzalez@email.com",
+    "products": "Kit Home Office Ergonómico",
+    "amount": "PEN 349.90",
+    "status": "sent",
+    "message_sent": "🎉 *¡NUEVO PEDIDO CONFIRMADO!*\n\n📦 *Pedido:* #1001\n👤 *Cliente:* María González\n📧 *Email:* maria.gonzalez@email.com\n💰 *Total:* PEN 349.90\n\n*Productos:*\n• Kit Home Office Ergonómico (1x)\n\n🕐 *Fecha:* 9/10/2025, 4:13:29 p. m.\n\n🚚 *Próximos pasos:*\n✅ Procesar pago\n✅ Preparar envío\n✅ Contactar cliente\n\n_Goio Store - Notificación automática_",
+    "whatsapp_id": "msg_1760044409791_3fxme4",
+    "timestamp": "9/10/2025, 4:13:29 p. m."
+  },
+  {
+    "order_id": "order_002_1760044409617",
+    "order_number": "1002",
+    "customer": "Carlos Rodríguez",
+    "email": "carlos.rodriguez@email.com",
+    "products": "Purificador de Aire GO, Botella Smart GO",
+    "amount": "PEN 289.80",
+    "status": "sent",
+    "message_sent": "🎉 *¡NUEVO PEDIDO CONFIRMADO!*\n\n📦 *Pedido:* #1002\n👤 *Cliente:* Carlos Rodríguez\n📧 *Email:* carlos.rodriguez@email.com\n💰 *Total:* PEN 289.80\n\n*Productos:*\n• Purificador de Aire GO (1x)\n• Botella Smart GO (1x)\n\n🕐 *Fecha:* 9/10/2025, 4:13:29 p. m.\n\n🚚 *Próximos pasos:*\n✅ Procesar pago\n✅ Preparar envío\n✅ Contactar cliente\n\n_Goio Store - Notificación automática_",
+    "whatsapp_id": "msg_1760044410858_x1o6kr",
+    "timestamp": "9/10/2025, 4:13:30 p. m."
+  },
+  {
+    "order_id": "order_003_1760044409617",
+    "order_number": "1003",
+    "customer": "Ana Mendoza",
+    "email": "ana.mendoza@email.com",
+    "products": "Mega Combo Goio - Todo en 1",
+    "amount": "PEN 1487.00",
+    "status": "sent",
+    "message_sent": "🎉 *¡NUEVO PEDIDO CONFIRMADO!*\n\n📦 *Pedido:* #1003\n👤 *Cliente:* Ana Mendoza\n📧 *Email:* ana.mendoza@email.com\n💰 *Total:* PEN 1487.00\n\n*Productos:*\n• Mega Combo Goio - Todo en 1 (1x)\n\n🕐 *Fecha:* 9/10/2025, 4:13:29 p. m.\n\n🚚 *Próximos pasos:*\n✅ Procesar pago\n✅ Preparar envío\n✅ Contactar cliente\n\n_Goio Store - Notificación automática_",
+    "whatsapp_id": "msg_1760044411877_4d1048",
+    "timestamp": "9/10/2025, 4:13:31 p. m."
+  }
+]

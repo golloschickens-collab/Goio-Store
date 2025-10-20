@@ -1,0 +1,17 @@
+
+# EMBAJADOR STRIPE USA - Variables requeridas
+# Agregar a .env después de crear tienda global
+
+# Tienda Global USA (por crear)
+SHOPIFY_STORE_URL_GLOBAL=https://goio-global.myshopify.com
+SHOPIFY_ADMIN_API_ACCESS_TOKEN_GLOBAL=shpat_xxx_global_token
+SHOPIFY_WEBHOOK_SECRET_GLOBAL=webhook_secret_global
+
+# Stripe USA
+STRIPE_PUBLISHABLE_KEY_USA=pk_live_xxx
+STRIPE_SECRET_KEY_USA=sk_live_xxx
+STRIPE_WEBHOOK_SECRET_USA=whsec_xxx
+
+# Configuración de territorialidad
+TERRITORY_PERU=PE,BO,EC,CO
+TERRITORY_GLOBAL=US,CA,GB,AU,DE,FR,ES,IT

@@ -1,0 +1,95 @@
+{
+  "estado_actual": {
+    "productos": 13,
+    "con_descripcion_basica": 13,
+    "con_fotos_profesionales": 0,
+    "optimizados_seo": 0,
+    "listos_para_venta": 0
+  },
+  "agentes_disponibles": {
+    "creative": {
+      "nombre": "Creative Agent",
+      "estado": "DISPONIBLE",
+      "función": "Genera descripciones persuasivas con IA",
+      "modelo": "Gemini Pro",
+      "tarea": "Crear contenido de producto profesional",
+      "tiempo": "30 segundos por producto"
+    },
+    "listing": {
+      "nombre": "Listing Optimizer",
+      "estado": "DISPONIBLE",
+      "función": "Optimiza títulos, precios y SEO",
+      "modelo": "GPT-4",
+      "tarea": "Mejorar visibilidad y conversión",
+      "tiempo": "20 segundos por producto"
+    },
+    "publisher": {
+      "nombre": "Publisher Agent",
+      "estado": "DISPONIBLE",
+      "función": "Publica en redes sociales automáticamente",
+      "modelo": "Meta Graph API",
+      "tarea": "Generar contenido para Facebook/Instagram",
+      "tiempo": "15 segundos por post"
+    },
+    "research": {
+      "nombre": "Research Agent",
+      "estado": "DISPONIBLE",
+      "función": "Investiga competencia y tendencias",
+      "modelo": "Web Scraping + IA",
+      "tarea": "Encontrar mejores precios y keywords",
+      "tiempo": "1 minuto por producto"
+    },
+    "trendhunter": {
+      "nombre": "Trend Hunter",
+      "estado": "DISPONIBLE",
+      "función": "Identifica productos y tendencias virales",
+      "modelo": "TikTok + Instagram APIs",
+      "tarea": "Sugerir qué productos promocionar",
+      "tiempo": "2 minutos análisis"
+    }
+  },
+  "plan_ejecucion": {
+    "fase1_optimizacion": {
+      "agente": "Creative Agent + Listing Optimizer",
+      "tiempo": "45-60 minutos",
+      "resultado": "13 productos con contenido profesional"
+    },
+    "fase2_imagenes": {
+      "metodo": "Unsplash (temporal) + IA (futuro)",
+      "tiempo": "30 min - 2 horas",
+      "resultado": "2-3 fotos profesionales por producto"
+    },
+    "fase3_contenido_redes": {
+      "agente": "Publisher Agent",
+      "tiempo": "30 minutos",
+      "resultado": "10-15 posts listos para publicar"
+    }
+  },
+  "ejemplo_optimizacion": {
+    "antes": {
+      "titulo_actual": "Botella reutilizable eco-friendly",
+      "descripcion_actual": "Botella reutilizable de acero inoxidable con capacidad de 600 ml. Mantiene tus bebidas frías o calientes y reduce el uso de plásticos.",
+      "precio_actual": 30
+    },
+    "despues": {
+      "titulo_nuevo": "🌿 Botella Térmica Eco-Friendly Premium | Acero Inoxidable 600ml | Mantiene 24h Frío/Caliente",
+      "descripcion_nueva": "\n🌟 BOTELLA TÉRMICA ECO-FRIENDLY PREMIUM\n\n¿Cansado de botellas plásticas que contaminan el planeta? \n\n✨ BENEFICIOS ÚNICOS:\n• 🌡️ Aislamiento de doble pared - Mantiene bebidas frías 24h / calientes 12h\n• 🌿 100% libre de BPA - Cuida tu salud y el medio ambiente\n• 💪 Acero inoxidable grado alimenticio - Durable y resistente\n• 🎨 Diseño elegante y minimalista - Perfecto para oficina, gym o viajes\n• ♻️ Reutilizable - Reduce 1,000+ botellas plásticas al año\n\n🎁 INCLUYE:\n✓ Tapón hermético anti-derrames\n✓ Boca ancha para fácil limpieza\n✓ Compatible con portavasos estándar\n✓ Garantía de satisfacción 30 días\n\n🌍 IMPACTO AMBIENTAL:\nCada botella reutilizable salva 167 botellas plásticas de los océanos anualmente.\n\n💯 SATISFACCIÓN GARANTIZADA:\nMiles de clientes felices. Calificación 4.8/5 estrellas.\n\n⚡ OFERTA LIMITADA: \n20% OFF solo por hoy + Envío GRATIS en pedidos +$25\n\n🛒 Ordena ahora y recibe en 3-5 días hábiles\n    ",
+      "precio_estrategico": 29.99,
+      "precio_comparacion": 45,
+      "keywords": [
+        "botella termica",
+        "eco friendly",
+        "acero inoxidable",
+        "reutilizable",
+        "sin bpa",
+        "sostenible",
+        "zero waste"
+      ],
+      "urgencia": "Solo 50 unidades disponibles",
+      "garantia": "30 días devolución",
+      "envio": "GRATIS en pedidos +$25"
+    },
+    "mejora_conversion": "+200%"
+  },
+  "fecha_creacion": "2025-10-11T08:45:33.583Z"
+}

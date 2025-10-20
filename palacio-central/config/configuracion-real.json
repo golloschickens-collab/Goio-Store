@@ -1,0 +1,34 @@
+{
+  "shopify": {
+    "shop_url": "TU_TIENDA.myshopify.com",
+    "access_token": "TU_ADMIN_API_ACCESS_TOKEN_AQUI",
+    "api_key": "TU_API_KEY_AQUI",
+    "api_secret": "TU_API_SECRET_AQUI",
+    "webhook_secret": "TU_WEBHOOK_SECRET_AQUI"
+  },
+  "pagos": {
+    "shopify_payments": true,
+    "stripe_backup": false,
+    "manual_payments": true,
+    "paypal": false,
+    "configurado": false
+  },
+  "productos": {
+    "total_catalogo": 0,
+    "publicados": 0,
+    "draft": 0,
+    "activos_para_venta": 0,
+    "con_imagenes": 0,
+    "con_inventario": 0
+  },
+  "fulfillment": {
+    "tipo": "dropshipping",
+    "processing_time": "1-3 business days",
+    "shipping_configurado": false,
+    "costos_envio": {
+      "local": 0,
+      "nacional": 15,
+      "gratis_desde": 100
+    }
+  }
+}

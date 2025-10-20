@@ -60,12 +60,18 @@ async function findAndAnalyzeTrends() {
       console.log(`[Research] IA ha identificado ${foundProducts.length} productos potenciales.`);
     } catch (iaError) {
       console.warn('[Research] ⚠️ IA no disponible, generando ideas heurísticas.', iaError.message || iaError);
-      const terms = Array.isArray(searchResults) ? searchResults : [];
-      foundProducts = terms.slice(0, 5).map((term, index) => ({
-        product_name: `${term} Kit ${index + 1}`,
-        description: `Oferta rápida inspirada en la tendencia “${term}”. Incluye recursos digitales y accesorios complementarios listos para vender online.`,
-        target_audience: 'Compradores digitales que siguen tendencias virales'
-      }));
+      const items = Array.isArray(searchResults) ? searchResults : [];
+      foundProducts = items.slice(0, 5).map((item, index) => {
+        const productName = item.title || item.product_name || `Producto Trending ${index + 1}`;
+        const description = item.snippet || item.description || 'Producto innovador basado en tendencias actuales';
+        return {
+          product_name: productName,
+          description: description,
+          target_audience: 'Compradores online que buscan productos innovadores',
+          source: item.link || 'trending'
+        };
+      });
+      console.log(`[Research] Generados ${foundProducts.length} productos con método heurístico.`);
     }
 
     // 5. Guardar los productos encontrados

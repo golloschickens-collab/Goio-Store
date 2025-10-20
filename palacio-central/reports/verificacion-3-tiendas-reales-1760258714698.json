@@ -1,0 +1,70 @@
+{
+  "fecha": "2025-10-12T08:45:14.698Z",
+  "agente_externo": "Reporte confirmado",
+  "tiendas": [
+    {
+      "tienda": "1️⃣ My Store (Backend)",
+      "productos": 13,
+      "activos": 13,
+      "borrador": 0,
+      "imagenes": 64,
+      "productos_especiales": [
+        {
+          "tipo": "Robot Aspiradora (problema reportado)",
+          "titulo": "🌟 Robot Aspiradora Slim Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "robot-aspiradora-slim",
+          "imagenes": 5,
+          "status": "active"
+        },
+        {
+          "tipo": "Set Aromaterapia (problema reportado)",
+          "titulo": "🌟 Set Aromaterapia Relax Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "set-aromaterapia-relax",
+          "imagenes": 5,
+          "status": "active"
+        }
+      ],
+      "estado": "ACTIVA",
+      "frontend": "skhqgs-2j.myshopify.com",
+      "backend": "skhqgs-2j.myshopify.com"
+    },
+    {
+      "tienda": "2️⃣ Goio™ Store (Frontend)",
+      "productos": 13,
+      "activos": 13,
+      "borrador": 0,
+      "imagenes": 64,
+      "productos_especiales": [
+        {
+          "tipo": "Robot Aspiradora (problema reportado)",
+          "titulo": "🌟 Robot Aspiradora Slim Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "robot-aspiradora-slim",
+          "imagenes": 5,
+          "status": "active"
+        },
+        {
+          "tipo": "Set Aromaterapia (problema reportado)",
+          "titulo": "🌟 Set Aromaterapia Relax Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "set-aromaterapia-relax",
+          "imagenes": 5,
+          "status": "active"
+        }
+      ],
+      "estado": "ACTIVA",
+      "frontend": "goiostore.com",
+      "backend": "skhqgs-2j.myshopify.com"
+    },
+    {
+      "tienda": "3️⃣ Goio Global",
+      "productos": 0,
+      "estado": "VACÍA",
+      "frontend": "goio.store"
+    }
+  ],
+  "verificacion": {
+    "my_store_goio_store_misma_tienda": true,
+    "total_tiendas_reales": 3,
+    "backends_shopify": 2,
+    "dominios_personalizados": 2
+  }
+}

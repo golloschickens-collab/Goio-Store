@@ -1,0 +1,86 @@
+{
+  "fecha": "2025-10-12T07:16:57.550Z",
+  "productos": 13,
+  "total_imagenes": 64,
+  "tasa_exito": "98.5%",
+  "detalles": [
+    {
+      "producto": "Botella reutilizable eco-friendly",
+      "categoria": "botella",
+      "exitosas": 5,
+      "total": 5
+    },
+    {
+      "producto": "Botella Smart GO – Nunca olvides hidratarte",
+      "categoria": "botella",
+      "exitosas": 5,
+      "total": 5
+    },
+    {
+      "producto": "Cafetera Cold Brew Express",
+      "categoria": "cafe",
+      "exitosas": 4,
+      "total": 5
+    },
+    {
+      "producto": "Camiseta verde orgánica",
+      "categoria": "ropa",
+      "exitosas": 5,
+      "total": 5
+    },
+    {
+      "producto": "Kit Home Office Ergonómico – Productividad sin dolor",
+      "categoria": "electronico",
+      "exitosas": 5,
+      "total": 5
+    },
+    {
+      "producto": "Lámpara LED Ambiente Premium",
+      "categoria": "electronico",
+      "exitosas": 5,
+      "total": 5
+    },
+    {
+      "producto": "Mini Proyector HD Portátil",
+      "categoria": "electronico",
+      "exitosas": 5,
+      "total": 5
+    },
+    {
+      "producto": "Organizador Modular de Closet",
+      "categoria": "hogar",
+      "exitosas": 5,
+      "total": 5
+    },
+    {
+      "producto": "Purificador de Aire GO – Respira mejor en 5 min",
+      "categoria": "electronico",
+      "exitosas": 5,
+      "total": 5
+    },
+    {
+      "producto": "Robot Aspiradora Slim",
+      "categoria": "electronico",
+      "exitosas": 5,
+      "total": 5
+    },
+    {
+      "producto": "Set Aromaterapia Relax",
+      "categoria": "hogar",
+      "exitosas": 5,
+      "total": 5
+    },
+    {
+      "producto": "Set Bandas de Resistencia Pro",
+      "categoria": "fitness",
+      "exitosas": 5,
+      "total": 5
+    },
+    {
+      "producto": "Test Product 1760039704476",
+      "categoria": "electronico",
+      "exitosas": 5,
+      "total": 5
+    }
+  ]
+}

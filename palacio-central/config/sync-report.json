@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-10-10T18:03:45.900Z",
+  "mode": "demo",
+  "products_synced": 5,
+  "total_value_base": 15497,
+  "total_value_global": 12475.084999999997,
+  "territories": [
+    "US",
+    "CA",
+    "EU",
+    "AU",
+    "UK"
+  ],
+  "payment_gateway": "Stripe",
+  "status": "demo_completed"
+}

@@ -1,0 +1,22 @@
+{
+  "frequency": "daily",
+  "time": "08:00",
+  "metrics": [
+    "revenue_by_territory",
+    "orders_by_market",
+    "inventory_alerts",
+    "conversion_rates",
+    "ad_performance"
+  ],
+  "alerts": {
+    "low_inventory": 10,
+    "failed_payments": true,
+    "sync_errors": true,
+    "high_abandon_rate": 70
+  },
+  "export_format": [
+    "json",
+    "csv",
+    "email"
+  ]
+}

@@ -1,0 +1,800 @@
+{
+  "fecha": "2025-10-12T08:37:46.160Z",
+  "tiendas": [
+    {
+      "nombre": "🇵🇪 My Store (Peru)",
+      "domain": "skhqgs-2j.myshopify.com",
+      "total_productos": 13,
+      "total_imagenes": 64,
+      "productos_sin_imagenes": 0,
+      "productos_con_problemas": 13,
+      "estado": "PROBLEMAS",
+      "productos": [
+        {
+          "id": 9245926588664,
+          "titulo": "🌟 Botella reutilizable eco-friendly Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "botella-reutilizable-eco-friendly",
+          "total_imagenes": 5,
+          "imagenes": [
+            {
+              "posicion": 1,
+              "id": 47592066711800,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4246221.jpg?v=1760253091",
+              "alt": "Botella reutilizable eco-friendly - Vista principal producto",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:11:31-05:00"
+            },
+            {
+              "posicion": 2,
+              "id": 47592068808952,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-6999097.jpg?v=1760253095",
+              "alt": "Botella reutilizable eco-friendly - Lifestyle outdoor",
+              "width": 1007,
+              "height": 750,
+              "created_at": "2025-10-12T02:11:35-05:00"
+            },
+            {
+              "posicion": 3,
+              "id": 47592070480120,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-3817954.jpg?v=1760253100",
+              "alt": "Botella reutilizable eco-friendly - Close-up detalles",
+              "width": 750,
+              "height": 750,
+              "created_at": "2025-10-12T02:11:40-05:00"
+            },
+            {
+              "posicion": 4,
+              "id": 47592071758072,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-6456304.jpg?v=1760253103",
+              "alt": "Botella reutilizable eco-friendly - En uso gimnasio",
+              "width": 500,
+              "height": 750,
+              "created_at": "2025-10-12T02:11:43-05:00"
+            },
+            {
+              "posicion": 5,
+              "id": 47592072511736,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-5946077.jpg?v=1760253107",
+              "alt": "Botella reutilizable eco-friendly - Flat lay minimalista",
+              "width": 500,
+              "height": 750,
+              "created_at": "2025-10-12T02:11:47-05:00"
+            }
+          ],
+          "problemas": [
+            "Imagen 1: Resolución baja 1125x750",
+            "Imagen 2: Resolución baja 1007x750",
+            "Imagen 3: Resolución baja 750x750",
+            "Imagen 4: Resolución baja 500x750",
+            "Imagen 5: Resolución baja 500x750"
+          ]
+        },
+        {
+          "id": 9249659158776,
+          "titulo": "🌟 Botella Smart GO – Nunca olvides hidratarte Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "botella-inteligente-hidratacin-go",
+          "total_imagenes": 5,
+          "imagenes": [
+            {
+              "posicion": 1,
+              "id": 47592076968184,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4246221_3d78aec4-9487-4a98-bdfe-99319a6bba2a.jpg?v=1760253116",
+              "alt": "Botella Smart GO – Nunca olvides hidratarte - Vista principal producto",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:11:56-05:00"
+            },
+            {
+              "posicion": 2,
+              "id": 47592078344440,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-6999097_a51c7506-b962-4c0a-8d2c-1c82a6e0c03f.jpg?v=1760253120",
+              "alt": "Botella Smart GO – Nunca olvides hidratarte - Lifestyle outdoor",
+              "width": 1007,
+              "height": 750,
+              "created_at": "2025-10-12T02:12:00-05:00"
+            },
+            {
+              "posicion": 3,
+              "id": 47592079917304,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-3817954_29a8215a-a453-48b2-bf53-4faf66a944fc.jpg?v=1760253123",
+              "alt": "Botella Smart GO – Nunca olvides hidratarte - Close-up detalles",
+              "width": 750,
+              "height": 750,
+              "created_at": "2025-10-12T02:12:03-05:00"
+            },
+            {
+              "posicion": 4,
+              "id": 47592081359096,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-6456304_bc4f1771-5d67-42e6-bb8f-acd2e5954f36.jpg?v=1760253126",
+              "alt": "Botella Smart GO – Nunca olvides hidratarte - En uso gimnasio",
+              "width": 500,
+              "height": 750,
+              "created_at": "2025-10-12T02:12:06-05:00"
+            },
+            {
+              "posicion": 5,
+              "id": 47592081981688,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-5946077_b2a31fbb-bff8-4a5e-aeb0-141cd627182e.jpg?v=1760253130",
+              "alt": "Botella Smart GO – Nunca olvides hidratarte - Flat lay minimalista",
+              "width": 500,
+              "height": 750,
+              "created_at": "2025-10-12T02:12:10-05:00"
+            }
+          ],
+          "problemas": [
+            "Imagen 1: Resolución baja 1125x750",
+            "Imagen 2: Resolución baja 1007x750",
+            "Imagen 3: Resolución baja 750x750",
+            "Imagen 4: Resolución baja 500x750",
+            "Imagen 5: Resolución baja 500x750"
+          ]
+        },
+        {
+          "id": 9249659322616,
+          "titulo": "🌟 Cafetera Cold Brew Express Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "cafetera-cold-brew-express",
+          "total_imagenes": 4,
+          "imagenes": [
+            {
+              "posicion": 1,
+              "id": 47592087027960,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-302899.jpg?v=1760253140",
+              "alt": "Cafetera Cold Brew Express - Vista principal",
+              "width": 1124,
+              "height": 750,
+              "created_at": "2025-10-12T02:12:20-05:00"
+            },
+            {
+              "posicion": 2,
+              "id": 47592089846008,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-324028.jpg?v=1760253143",
+              "alt": "Cafetera Cold Brew Express - Café servido",
+              "width": 1123,
+              "height": 750,
+              "created_at": "2025-10-12T02:12:23-05:00"
+            },
+            {
+              "posicion": 3,
+              "id": 47592093581560,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-1459331.jpg?v=1760253150",
+              "alt": "Cafetera Cold Brew Express - Lifestyle mesa desayuno",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:12:30-05:00"
+            },
+            {
+              "posicion": 4,
+              "id": 47592095088888,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-6479606.jpg?v=1760253154",
+              "alt": "Cafetera Cold Brew Express - Setup completo café",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:12:34-05:00"
+            }
+          ],
+          "problemas": [
+            "Imagen 1: Resolución baja 1124x750",
+            "Imagen 2: Resolución baja 1123x750",
+            "Imagen 3: Resolución baja 1125x750",
+            "Imagen 4: Resolución baja 1125x750"
+          ]
+        },
+        {
+          "id": 9245926064376,
+          "titulo": "🌟 Camiseta verde orgánica Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "camiseta-verde-organica",
+          "total_imagenes": 5,
+          "imagenes": [
+            {
+              "posicion": 1,
+              "id": 47592100987128,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-8532616.jpg?v=1760253163",
+              "alt": "Camiseta verde orgánica - Vista principal camiseta",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:12:43-05:00"
+            },
+            {
+              "posicion": 2,
+              "id": 47592103313656,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-3755755.jpg?v=1760253167",
+              "alt": "Camiseta verde orgánica - Lifestyle casual",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:12:47-05:00"
+            },
+            {
+              "posicion": 3,
+              "id": 47592104526072,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-2983464.jpg?v=1760253170",
+              "alt": "Camiseta verde orgánica - Close-up tela orgánica",
+              "width": 526,
+              "height": 750,
+              "created_at": "2025-10-12T02:12:50-05:00"
+            },
+            {
+              "posicion": 4,
+              "id": 47592106721528,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-3755760.jpg?v=1760253174",
+              "alt": "Camiseta verde orgánica - Flat lay fashion",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:12:54-05:00"
+            },
+            {
+              "posicion": 5,
+              "id": 47592108261624,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-3755714.jpg?v=1760253177",
+              "alt": "Camiseta verde orgánica - Estilo natural outdoor",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:12:57-05:00"
+            }
+          ],
+          "problemas": [
+            "Imagen 1: Resolución baja 1125x750",
+            "Imagen 2: Resolución baja 1125x750",
+            "Imagen 3: Resolución baja 526x750",
+            "Imagen 4: Resolución baja 1125x750",
+            "Imagen 5: Resolución baja 1125x750"
+          ]
+        },
+        {
+          "id": 9249659060472,
+          "titulo": "🌟 Kit Home Office Ergonómico – Productividad sin dolor Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "kit-home-office-ergonmico",
+          "total_imagenes": 5,
+          "imagenes": [
+            {
+              "posicion": 1,
+              "id": 47592115732728,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-356056.jpg?v=1760253191",
+              "alt": "Kit Home Office Ergonómico – Productividad sin dolor - Vista principal white background",
+              "width": 1129,
+              "height": 750,
+              "created_at": "2025-10-12T02:13:11-05:00"
+            },
+            {
+              "posicion": 2,
+              "id": 47592117305592,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4009598.jpg?v=1760253194",
+              "alt": "Kit Home Office Ergonómico – Productividad sin dolor - Lifestyle uso diario",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:13:14-05:00"
+            },
+            {
+              "posicion": 3,
+              "id": 47592119533816,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4348078.jpg?v=1760253198",
+              "alt": "Kit Home Office Ergonómico – Productividad sin dolor - Close-up tecnología",
+              "width": 516,
+              "height": 750,
+              "created_at": "2025-10-12T02:13:18-05:00"
+            },
+            {
+              "posicion": 4,
+              "id": 47592122056952,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-18471715.jpg?v=1760253202",
+              "alt": "Kit Home Office Ergonómico – Productividad sin dolor - En acción",
+              "width": 1260,
+              "height": 709,
+              "created_at": "2025-10-12T02:13:22-05:00"
+            },
+            {
+              "posicion": 5,
+              "id": 47592124023032,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4226140.jpg?v=1760253206",
+              "alt": "Kit Home Office Ergonómico – Productividad sin dolor - Setup moderno workspace",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:13:26-05:00"
+            }
+          ],
+          "problemas": [
+            "Imagen 1: Resolución baja 1129x750",
+            "Imagen 2: Resolución baja 1125x750",
+            "Imagen 3: Resolución baja 516x750",
+            "Imagen 4: Resolución baja 1260x709",
+            "Imagen 5: Resolución baja 1125x750"
+          ]
+        },
+        {
+          "id": 9249659191544,
+          "titulo": "🌟 Lámpara LED Ambiente Premium Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "lmpara-led-ambiente-premium",
+          "total_imagenes": 5,
+          "imagenes": [
+            {
+              "posicion": 1,
+              "id": 47592131854584,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-356056_9e4cb038-5886-4223-8141-3248b249c0a7.jpg?v=1760253218",
+              "alt": "Lámpara LED Ambiente Premium - Vista principal white background",
+              "width": 1129,
+              "height": 750,
+              "created_at": "2025-10-12T02:13:38-05:00"
+            },
+            {
+              "posicion": 2,
+              "id": 47592133558520,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4009598_2462b969-3807-4e4b-86b7-538f9af75c1d.jpg?v=1760253222",
+              "alt": "Lámpara LED Ambiente Premium - Lifestyle uso diario",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:13:42-05:00"
+            },
+            {
+              "posicion": 3,
+              "id": 47592136016120,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4348078_3659ed3c-897e-4aa7-ad09-eba787a9ceba.jpg?v=1760253225",
+              "alt": "Lámpara LED Ambiente Premium - Close-up tecnología",
+              "width": 516,
+              "height": 750,
+              "created_at": "2025-10-12T02:13:45-05:00"
+            },
+            {
+              "posicion": 4,
+              "id": 47592137588984,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-18471715_f368b93e-ca1f-4415-a2e3-3bbcd014b426.jpg?v=1760253228",
+              "alt": "Lámpara LED Ambiente Premium - En acción",
+              "width": 1260,
+              "height": 709,
+              "created_at": "2025-10-12T02:13:48-05:00"
+            },
+            {
+              "posicion": 5,
+              "id": 47592140144888,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4226140_845fcdbe-4eeb-42ff-afdb-b8d73fc1b472.jpg?v=1760253232",
+              "alt": "Lámpara LED Ambiente Premium - Setup moderno workspace",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:13:52-05:00"
+            }
+          ],
+          "problemas": [
+            "Imagen 1: Resolución baja 1129x750",
+            "Imagen 2: Resolución baja 1125x750",
+            "Imagen 3: Resolución baja 516x750",
+            "Imagen 4: Resolución baja 1260x709",
+            "Imagen 5: Resolución baja 1125x750"
+          ]
+        },
+        {
+          "id": 9249659224312,
+          "titulo": "🌟 Mini Proyector HD Portátil Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "mini-proyector-hd-porttil",
+          "total_imagenes": 5,
+          "imagenes": [
+            {
+              "posicion": 1,
+              "id": 47592145682680,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-356056_e4f47cb9-7e5f-49fe-822f-25c321a4a545.jpg?v=1760253242",
+              "alt": "Mini Proyector HD Portátil - Vista principal white background",
+              "width": 1129,
+              "height": 750,
+              "created_at": "2025-10-12T02:14:02-05:00"
+            },
+            {
+              "posicion": 2,
+              "id": 47592147747064,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4009598_90dea90e-e98f-4f69-b3d0-aafbac6769b8.jpg?v=1760253245",
+              "alt": "Mini Proyector HD Portátil - Lifestyle uso diario",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:14:05-05:00"
+            },
+            {
+              "posicion": 3,
+              "id": 47592149582072,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4348078_5f8250c5-1e09-4c08-b141-8d7c8155a995.jpg?v=1760253249",
+              "alt": "Mini Proyector HD Portátil - Close-up tecnología",
+              "width": 516,
+              "height": 750,
+              "created_at": "2025-10-12T02:14:09-05:00"
+            },
+            {
+              "posicion": 4,
+              "id": 47592150696184,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-18471715_7193c829-174a-4dfa-a05f-4f50c7e6d74a.jpg?v=1760253252",
+              "alt": "Mini Proyector HD Portátil - En acción",
+              "width": 1260,
+              "height": 709,
+              "created_at": "2025-10-12T02:14:12-05:00"
+            },
+            {
+              "posicion": 5,
+              "id": 47592152465656,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4226140_c0664bde-d42c-470f-9516-e967380bfcc8.jpg?v=1760253256",
+              "alt": "Mini Proyector HD Portátil - Setup moderno workspace",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:14:16-05:00"
+            }
+          ],
+          "problemas": [
+            "Imagen 1: Resolución baja 1129x750",
+            "Imagen 2: Resolución baja 1125x750",
+            "Imagen 3: Resolución baja 516x750",
+            "Imagen 4: Resolución baja 1260x709",
+            "Imagen 5: Resolución baja 1125x750"
+          ]
+        },
+        {
+          "id": 9249659289848,
+          "titulo": "🌟 Organizador Modular de Closet Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "organizador-modular-de-closet",
+          "total_imagenes": 5,
+          "imagenes": [
+            {
+              "posicion": 1,
+              "id": 47592158986488,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-6585758.jpg?v=1760253267",
+              "alt": "Organizador Modular de Closet - Vista principal organizador",
+              "width": 1124,
+              "height": 750,
+              "created_at": "2025-10-12T02:14:27-05:00"
+            },
+            {
+              "posicion": 2,
+              "id": 47592160362744,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-6585743.jpg?v=1760253270",
+              "alt": "Organizador Modular de Closet - Lifestyle interior",
+              "width": 501,
+              "height": 750,
+              "created_at": "2025-10-12T02:14:30-05:00"
+            },
+            {
+              "posicion": 3,
+              "id": 47592163344632,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4202325_7887f8f6-42d2-4a5a-9b72-bf56db2c008a.jpg?v=1760253273",
+              "alt": "Organizador Modular de Closet - Close-up detalles",
+              "width": 500,
+              "height": 750,
+              "created_at": "2025-10-12T02:14:33-05:00"
+            },
+            {
+              "posicion": 4,
+              "id": 47592165114104,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-7262942.jpg?v=1760253277",
+              "alt": "Organizador Modular de Closet - En uso diario",
+              "width": 500,
+              "height": 750,
+              "created_at": "2025-10-12T02:14:37-05:00"
+            },
+            {
+              "posicion": 5,
+              "id": 47592167047416,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-7319069.jpg?v=1760253282",
+              "alt": "Organizador Modular de Closet - Estilo minimalista",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:14:42-05:00"
+            }
+          ],
+          "problemas": [
+            "Imagen 1: Resolución baja 1124x750",
+            "Imagen 2: Resolución baja 501x750",
+            "Imagen 3: Resolución baja 500x750",
+            "Imagen 4: Resolución baja 500x750",
+            "Imagen 5: Resolución baja 1125x750"
+          ]
+        },
+        {
+          "id": 9249659126008,
+          "titulo": "🌟 Purificador de Aire GO – Respira mejor en 5 min Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "purificador-de-aire-compacto-go",
+          "total_imagenes": 5,
+          "imagenes": [
+            {
+              "posicion": 1,
+              "id": 47592174649592,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-356056_30bd1ec0-6e82-4568-8ff3-62521e7ac9ce.jpg?v=1760253291",
+              "alt": "Purificador de Aire GO – Respira mejor en 5 min - Vista principal white background",
+              "width": 1129,
+              "height": 750,
+              "created_at": "2025-10-12T02:14:51-05:00"
+            },
+            {
+              "posicion": 2,
+              "id": 47592176976120,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4009598_53ada635-853d-492c-a348-471c50ee3083.jpg?v=1760253295",
+              "alt": "Purificador de Aire GO – Respira mejor en 5 min - Lifestyle uso diario",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:14:55-05:00"
+            },
+            {
+              "posicion": 3,
+              "id": 47592179171576,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4348078_adf66854-7e02-4768-b9cb-be34a3f82a01.jpg?v=1760253299",
+              "alt": "Purificador de Aire GO – Respira mejor en 5 min - Close-up tecnología",
+              "width": 516,
+              "height": 750,
+              "created_at": "2025-10-12T02:14:59-05:00"
+            },
+            {
+              "posicion": 4,
+              "id": 47592181629176,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-18471715_3595850a-0e82-4f16-a530-3d7471888ebb.jpg?v=1760253302",
+              "alt": "Purificador de Aire GO – Respira mejor en 5 min - En acción",
+              "width": 1260,
+              "height": 709,
+              "created_at": "2025-10-12T02:15:02-05:00"
+            },
+            {
+              "posicion": 5,
+              "id": 47592183267576,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4226140_46bc466f-5f8a-4975-b7bc-25fa031b04ae.jpg?v=1760253305",
+              "alt": "Purificador de Aire GO – Respira mejor en 5 min - Setup moderno workspace",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:15:05-05:00"
+            }
+          ],
+          "problemas": [
+            "Imagen 1: Resolución baja 1129x750",
+            "Imagen 2: Resolución baja 1125x750",
+            "Imagen 3: Resolución baja 516x750",
+            "Imagen 4: Resolución baja 1260x709",
+            "Imagen 5: Resolución baja 1125x750"
+          ]
+        },
+        {
+          "id": 9249659453688,
+          "titulo": "🌟 Robot Aspiradora Slim Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "robot-aspiradora-slim",
+          "total_imagenes": 5,
+          "imagenes": [
+            {
+              "posicion": 1,
+              "id": 47592192442616,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-356056_b8aa4302-a173-43a9-925d-6a8ce04508ac.jpg?v=1760253320",
+              "alt": "Robot Aspiradora Slim - Vista principal white background",
+              "width": 1129,
+              "height": 750,
+              "created_at": "2025-10-12T02:15:20-05:00"
+            },
+            {
+              "posicion": 2,
+              "id": 47592194572536,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4009598_da3fc9b5-a4da-459a-8af2-d5f12036e951.jpg?v=1760253323",
+              "alt": "Robot Aspiradora Slim - Lifestyle uso diario",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:15:23-05:00"
+            },
+            {
+              "posicion": 3,
+              "id": 47592196243704,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4348078_f1f4e1b9-fd86-4b1a-97ee-24f86685012e.jpg?v=1760253326",
+              "alt": "Robot Aspiradora Slim - Close-up tecnología",
+              "width": 516,
+              "height": 750,
+              "created_at": "2025-10-12T02:15:26-05:00"
+            },
+            {
+              "posicion": 4,
+              "id": 47592200274168,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-18471715_2264ceee-f022-47c9-a7fc-9dc0f2902054.jpg?v=1760253330",
+              "alt": "Robot Aspiradora Slim - En acción",
+              "width": 1260,
+              "height": 709,
+              "created_at": "2025-10-12T02:15:30-05:00"
+            },
+            {
+              "posicion": 5,
+              "id": 47592201945336,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4226140_b81266ba-344c-4871-b643-6ef1faa453ef.jpg?v=1760253333",
+              "alt": "Robot Aspiradora Slim - Setup moderno workspace",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:15:33-05:00"
+            }
+          ],
+          "problemas": [
+            "Imagen 1: Resolución baja 1129x750",
+            "Imagen 2: Resolución baja 1125x750",
+            "Imagen 3: Resolución baja 516x750",
+            "Imagen 4: Resolución baja 1260x709",
+            "Imagen 5: Resolución baja 1125x750"
+          ]
+        },
+        {
+          "id": 9249659584760,
+          "titulo": "🌟 Set Aromaterapia Relax Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "set-aromaterapia-relax",
+          "total_imagenes": 5,
+          "imagenes": [
+            {
+              "posicion": 1,
+              "id": 47592209678584,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-6585758_f8068d4d-2593-424a-b117-85f97fbaff0e.jpg?v=1760253347",
+              "alt": "Set Aromaterapia Relax - Vista principal organizador",
+              "width": 1124,
+              "height": 750,
+              "created_at": "2025-10-12T02:15:47-05:00"
+            },
+            {
+              "posicion": 2,
+              "id": 47592211185912,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-6585743_c7abeba0-3c29-43ce-8bcf-c2a6c947f66b.jpg?v=1760253350",
+              "alt": "Set Aromaterapia Relax - Lifestyle interior",
+              "width": 501,
+              "height": 750,
+              "created_at": "2025-10-12T02:15:50-05:00"
+            },
+            {
+              "posicion": 3,
+              "id": 47592213577976,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4202325.jpg?v=1760253354",
+              "alt": "Set Aromaterapia Relax - Close-up detalles",
+              "width": 500,
+              "height": 750,
+              "created_at": "2025-10-12T02:15:54-05:00"
+            },
+            {
+              "posicion": 4,
+              "id": 47592215118072,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-7262942_c6adef9f-4fce-4902-af5f-46f6b79188b7.jpg?v=1760253357",
+              "alt": "Set Aromaterapia Relax - En uso diario",
+              "width": 500,
+              "height": 750,
+              "created_at": "2025-10-12T02:15:57-05:00"
+            },
+            {
+              "posicion": 5,
+              "id": 47592217444600,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-7319069_3be3018f-d029-4d46-8a01-13994ec82657.jpg?v=1760253360",
+              "alt": "Set Aromaterapia Relax - Estilo minimalista",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:16:00-05:00"
+            }
+          ],
+          "problemas": [
+            "Imagen 1: Resolución baja 1124x750",
+            "Imagen 2: Resolución baja 501x750",
+            "Imagen 3: Resolución baja 500x750",
+            "Imagen 4: Resolución baja 500x750",
+            "Imagen 5: Resolución baja 1125x750"
+          ]
+        },
+        {
+          "id": 9249659257080,
+          "titulo": "🌟 Set Bandas de Resistencia Pro Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "set-bandas-de-resistencia-pro",
+          "total_imagenes": 5,
+          "imagenes": [
+            {
+              "posicion": 1,
+              "id": 47592225669368,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4162449.jpg?v=1760253375",
+              "alt": "Set Bandas de Resistencia Pro - Vista principal producto",
+              "width": 500,
+              "height": 750,
+              "created_at": "2025-10-12T02:16:15-05:00"
+            },
+            {
+              "posicion": 2,
+              "id": 47592227930360,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4162451.jpg?v=1760253378",
+              "alt": "Set Bandas de Resistencia Pro - En acción workout",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:16:18-05:00"
+            },
+            {
+              "posicion": 3,
+              "id": 47592231108856,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-3838389.jpg?v=1760253382",
+              "alt": "Set Bandas de Resistencia Pro - Close-up calidad",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:16:22-05:00"
+            },
+            {
+              "posicion": 4,
+              "id": 47592232812792,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-6456228.jpg?v=1760253385",
+              "alt": "Set Bandas de Resistencia Pro - Flat lay gym equipment",
+              "width": 500,
+              "height": 750,
+              "created_at": "2025-10-12T02:16:25-05:00"
+            },
+            {
+              "posicion": 5,
+              "id": 47592235532536,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-6456299.jpg?v=1760253391",
+              "alt": "Set Bandas de Resistencia Pro - Lifestyle fitness activo",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:16:31-05:00"
+            }
+          ],
+          "problemas": [
+            "Imagen 1: Resolución baja 500x750",
+            "Imagen 2: Resolución baja 1125x750",
+            "Imagen 3: Resolución baja 1125x750",
+            "Imagen 4: Resolución baja 500x750",
+            "Imagen 5: Resolución baja 1125x750"
+          ]
+        },
+        {
+          "id": 9249658765560,
+          "titulo": "🌟 Test Product 1760039704476 Premium | Calidad Superior | Envío Gratis +$25",
+          "handle": "test-product-1760039704476",
+          "total_imagenes": 5,
+          "imagenes": [
+            {
+              "posicion": 1,
+              "id": 47592242151672,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-356056_5f2085a8-c099-4abf-bd9f-8dfc801b1ac4.jpg?v=1760253400",
+              "alt": "Test Product 1760039704476 - Vista principal white background",
+              "width": 1129,
+              "height": 750,
+              "created_at": "2025-10-12T02:16:40-05:00"
+            },
+            {
+              "posicion": 2,
+              "id": 47592243560696,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4009598_857c2ea1-30d6-4aa8-8072-4ea8b7047d3e.jpg?v=1760253404",
+              "alt": "Test Product 1760039704476 - Lifestyle uso diario",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:16:44-05:00"
+            },
+            {
+              "posicion": 3,
+              "id": 47592246116600,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4348078_0eead9b6-6f0f-4580-8dd1-da865405e01c.jpg?v=1760253407",
+              "alt": "Test Product 1760039704476 - Close-up tecnología",
+              "width": 516,
+              "height": 750,
+              "created_at": "2025-10-12T02:16:47-05:00"
+            },
+            {
+              "posicion": 4,
+              "id": 47592247755000,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-18471715_c792e970-0748-44f0-980c-6226a6d82a92.jpg?v=1760253411",
+              "alt": "Test Product 1760039704476 - En acción",
+              "width": 1260,
+              "height": 709,
+              "created_at": "2025-10-12T02:16:51-05:00"
+            },
+            {
+              "posicion": 5,
+              "id": 47592248869112,
+              "url": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4226140_3404a21a-23df-4fd9-afbf-8497b446bb96.jpg?v=1760253414",
+              "alt": "Test Product 1760039704476 - Setup moderno workspace",
+              "width": 1125,
+              "height": 750,
+              "created_at": "2025-10-12T02:16:54-05:00"
+            }
+          ],
+          "problemas": [
+            "Imagen 1: Resolución baja 1129x750",
+            "Imagen 2: Resolución baja 1125x750",
+            "Imagen 3: Resolución baja 516x750",
+            "Imagen 4: Resolución baja 1260x709",
+            "Imagen 5: Resolución baja 1125x750"
+          ]
+        }
+      ]
+    },
+    {
+      "nombre": "🌍 Goio Global",
+      "domain": "goio-global.myshopify.com",
+      "total_productos": 0,
+      "productos": [],
+      "estado": "VACÍA"
+    },
+    {
+      "nombre": "🏪 Goio Store",
+      "domain": "goio-store.myshopify.com",
+      "total_productos": 0,
+      "productos": [],
+      "estado": "VACÍA"
+    }
+  ]
+}

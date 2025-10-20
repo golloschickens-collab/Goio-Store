@@ -1,0 +1,22 @@
+{
+  "sku": "GOIO-BH-002",
+  "product": "Botella Térmica Premium GO",
+  "category": "Hidratación",
+  "price": "S/119.90",
+  "images_generated": 5,
+  "image_types": [
+    "hero",
+    "lifestyle",
+    "lifestyle",
+    "detail",
+    "promotional_mockup"
+  ],
+  "optimization": "Shopify Ready",
+  "generation_date": "2025-10-09T22:08:31.322Z",
+  "technical_compliance": {
+    "shopify_compatible": true,
+    "web_optimized": true,
+    "mobile_responsive": true,
+    "seo_friendly": true
+  }
+}

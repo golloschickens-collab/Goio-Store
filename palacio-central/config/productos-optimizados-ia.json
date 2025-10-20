@@ -1,0 +1,1026 @@
+{
+  "fecha": "2025-10-11T08:53:04.091Z",
+  "productos_procesados": 13,
+  "mejora_estimada": {
+    "conversion": "+200%",
+    "ctr": "+150%",
+    "add_to_cart": "+180%",
+    "ticket_promedio": "+25%"
+  },
+  "productos": [
+    {
+      "original": {
+        "id": 9245926588664,
+        "title": "Botella reutilizable eco-friendly",
+        "body_html": "<p>Botella reutilizable de acero inoxidable con capacidad de 600 ml. Mantiene tus bebidas frías o calientes y reduce el uso de plásticos.</p>",
+        "vendor": "My Store",
+        "product_type": "",
+        "created_at": "2025-10-06T18:18:37-05:00",
+        "handle": "botella-reutilizable-eco-friendly",
+        "updated_at": "2025-10-08T18:02:47-05:00",
+        "published_at": "2025-10-06T18:18:39-05:00",
+        "template_suffix": "",
+        "published_scope": "global",
+        "tags": "",
+        "status": "active",
+        "admin_graphql_api_id": "gid://shopify/Product/9245926588664",
+        "variants": [
+          {
+            "id": 47003923349752,
+            "product_id": 9245926588664,
+            "title": "Default Title",
+            "price": "30.00",
+            "position": 1,
+            "inventory_policy": "deny",
+            "compare_at_price": null,
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "created_at": "2025-10-06T18:18:37-05:00",
+            "updated_at": "2025-10-06T18:18:37-05:00",
+            "taxable": true,
+            "barcode": "",
+            "fulfillment_service": "manual",
+            "grams": 300,
+            "inventory_management": "shopify",
+            "requires_shipping": true,
+            "sku": null,
+            "weight": 0.3,
+            "weight_unit": "kg",
+            "inventory_item_id": 49082142392568,
+            "inventory_quantity": 50,
+            "old_inventory_quantity": 50,
+            "admin_graphql_api_id": "gid://shopify/ProductVariant/47003923349752",
+            "image_id": null
+          }
+        ],
+        "options": [
+          {
+            "id": 11556276437240,
+            "product_id": 9245926588664,
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "images": [],
+        "image": null
+      },
+      "optimizado": {
+        "titulo": "🌟 Botella reutilizable eco-friendly Premium | Calidad Superior | Envío Gratis +$25",
+        "descripcion": "\n✨ BOTELLA REUTILIZABLE ECO-FRIENDLY\n\n<p>Botella reutilizable de acero inoxidable con capacidad de 600 ml. Mantiene tus bebidas frías o calientes y reduce el uso de plásticos.</p>\n\n🎁 BENEFICIOS ÚNICOS:\n• ✅ Calidad Premium Garantizada\n• ✅ Diseño Moderno y Funcional  \n• ✅ Durabilidad Excepcional\n• ✅ Satisfacción Garantizada\n• ✅ Envío GRATIS en pedidos +$25\n\n🚀 ESPECIFICACIONES:\nProducto de alta calidad diseñado para tu comodidad y estilo de vida.\n\n⚡ OFERTA ESPECIAL:\n¡Precio promocional por tiempo limitado!\n\n🛒 GARANTÍA DE SATISFACCIÓN:\n30 días de devolución sin preguntas. Tu satisfacción es nuestra prioridad.\n\n💯 CALIDAD VERIFICADA:\nMiles de clientes satisfechos. Calificación 4.8/5 estrellas.\n\n📦 ENVÍO RÁPIDO:\nRecibe en 3-5 días hábiles.\n\n🎯 ¡ORDENA AHORA Y AHORRA!\n        ",
+        "precio": 29.99,
+        "precio_comparacion": 41,
+        "keywords": [
+          "premium",
+          "calidad",
+          "envío gratis",
+          "garantía",
+          "oferta"
+        ],
+        "urgencia": "Solo 50 unidades disponibles",
+        "garantia": "30 días devolución sin preguntas"
+      },
+      "timestamp": "2025-10-11T08:52:34.318Z",
+      "metodo": "fallback"
+    },
+    {
+      "original": {
+        "id": 9249659158776,
+        "title": "Botella Smart GO – Nunca olvides hidratarte",
+        "body_html": "\n      <h3>💧 HIDRATACIÓN INTELIGENTE</h3>\n      <p><strong>La botella que cuida tu salud:</strong></p>\n      <ul>\n        <li>✅ Recordatorios LED personalizables</li>\n        <li>✅ Medición automática de consumo</li>\n        <li>✅ Doble pared (mantiene temperatura 8h+)</li>\n        <li>✅ App para metas y estadísticas</li>\n      </ul>\n      \n      <h3>📏 ESPECIFICACIONES</h3>\n      <p><strong>Capacidad:</strong> 500ml (tamaño perfecto)<br>\n      <strong>Material:</strong> Acero inoxidable 316 grado médico<br>\n      <strong>Batería:</strong> 30 días de autonomía<br>\n      <strong>Conectividad:</strong> Bluetooth 5.0, app iOS/Android</p>\n      \n      <h3>🛡️ GARANTÍA Y CUIDADO</h3>\n      <p>✅ Garantía 12 meses<br>\n      ✅ Resistente a caídas y rayones<br>\n      ✅ Fácil limpieza (apta lavavajillas)<br>\n      ✅ Carga USB-C incluida</p>\n    ",
+        "vendor": "Goio",
+        "product_type": "General",
+        "created_at": "2025-10-09T14:56:12-05:00",
+        "handle": "botella-inteligente-hidratacin-go",
+        "updated_at": "2025-10-09T15:37:18-05:00",
+        "published_at": null,
+        "template_suffix": null,
+        "published_scope": "global",
+        "tags": "botella inteligente, fitness, hidratación, salud, smart",
+        "status": "active",
+        "admin_graphql_api_id": "gid://shopify/Product/9249659158776",
+        "variants": [
+          {
+            "id": 47072272875768,
+            "product_id": 9249659158776,
+            "title": "Default Title",
+            "price": "29.99",
+            "position": 1,
+            "inventory_policy": "deny",
+            "compare_at_price": null,
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "created_at": "2025-10-09T14:56:12-05:00",
+            "updated_at": "2025-10-09T15:37:18-05:00",
+            "taxable": true,
+            "barcode": null,
+            "fulfillment_service": "manual",
+            "grams": 500,
+            "inventory_management": "shopify",
+            "requires_shipping": true,
+            "sku": "botella-inteligente-hidratacin-go",
+            "weight": 0.5,
+            "weight_unit": "kg",
+            "inventory_item_id": 49150601298168,
+            "inventory_quantity": 100,
+            "old_inventory_quantity": 100,
+            "admin_graphql_api_id": "gid://shopify/ProductVariant/47072272875768",
+            "image_id": null
+          }
+        ],
+        "options": [
+          {
+            "id": 11561554575608,
+            "product_id": 9249659158776,
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "images": [],
+        "image": null
+      },
+      "optimizado": {
+        "titulo": "🌟 Botella Smart GO – Nunca olvides hidratarte Premium | Calidad Superior | Envío Gratis +$25",
+        "descripcion": "\n✨ BOTELLA SMART GO – NUNCA OLVIDES HIDRATARTE\n\n\n      <h3>💧 HIDRATACIÓN INTELIGENTE</h3>\n      <p><strong>La botella que cuida tu salud:</strong></p>\n      <ul>\n        <li>✅ Recordatorios LED personalizables</li>\n        <li>✅ Medición automática de consumo</li>\n        <li>✅ Doble pared (mantiene temperatura 8h+)</li>\n        <li>✅ App para metas y estadísticas</li>\n      </ul>\n      \n      <h3>📏 ESPECIFICACIONES</h3>\n      <p><strong>Capacidad:</strong> 500ml (tamaño perfecto)<br>\n      <strong>Material:</strong> Acero inoxidable 316 grado médico<br>\n      <strong>Batería:</strong> 30 días de autonomía<br>\n      <strong>Conectividad:</strong> Bluetooth 5.0, app iOS/Android</p>\n      \n      <h3>🛡️ GARANTÍA Y CUIDADO</h3>\n      <p>✅ Garantía 12 meses<br>\n      ✅ Resistente a caídas y rayones<br>\n      ✅ Fácil limpieza (apta lavavajillas)<br>\n      ✅ Carga USB-C incluida</p>\n    \n\n🎁 BENEFICIOS ÚNICOS:\n• ✅ Calidad Premium Garantizada\n• ✅ Diseño Moderno y Funcional  \n• ✅ Durabilidad Excepcional\n• ✅ Satisfacción Garantizada\n• ✅ Envío GRATIS en pedidos +$25\n\n🚀 ESPECIFICACIONES:\nProducto de alta calidad diseñado para tu comodidad y estilo de vida.\n\n⚡ OFERTA ESPECIAL:\n¡Precio promocional por tiempo limitado!\n\n🛒 GARANTÍA DE SATISFACCIÓN:\n30 días de devolución sin preguntas. Tu satisfacción es nuestra prioridad.\n\n💯 CALIDAD VERIFICADA:\nMiles de clientes satisfechos. Calificación 4.8/5 estrellas.\n\n📦 ENVÍO RÁPIDO:\nRecibe en 3-5 días hábiles.\n\n🎯 ¡ORDENA AHORA Y AHORRA!\n        ",
+        "precio": 29.99,
+        "precio_comparacion": 41,
+        "keywords": [
+          "premium",
+          "calidad",
+          "envío gratis",
+          "garantía",
+          "oferta"
+        ],
+        "urgencia": "Solo 100 unidades disponibles",
+        "garantia": "30 días devolución sin preguntas"
+      },
+      "timestamp": "2025-10-11T08:52:36.640Z",
+      "metodo": "fallback"
+    },
+    {
+      "original": {
+        "id": 9249659322616,
+        "title": "Cafetera Cold Brew Express",
+        "body_html": "Producto de alta calidad disponible en nuestra tienda.",
+        "vendor": "Goio",
+        "product_type": "General",
+        "created_at": "2025-10-09T14:56:22-05:00",
+        "handle": "cafetera-cold-brew-express",
+        "updated_at": "2025-10-09T15:37:21-05:00",
+        "published_at": null,
+        "template_suffix": null,
+        "published_scope": "global",
+        "tags": "café, cold brew, gourmet",
+        "status": "active",
+        "admin_graphql_api_id": "gid://shopify/Product/9249659322616",
+        "variants": [
+          {
+            "id": 47072273039608,
+            "product_id": 9249659322616,
+            "title": "Default Title",
+            "price": "29.99",
+            "position": 1,
+            "inventory_policy": "deny",
+            "compare_at_price": null,
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "created_at": "2025-10-09T14:56:22-05:00",
+            "updated_at": "2025-10-09T15:37:21-05:00",
+            "taxable": true,
+            "barcode": null,
+            "fulfillment_service": "manual",
+            "grams": 500,
+            "inventory_management": "shopify",
+            "requires_shipping": true,
+            "sku": "cafetera-cold-brew-express",
+            "weight": 0.5,
+            "weight_unit": "kg",
+            "inventory_item_id": 49150601462008,
+            "inventory_quantity": 100,
+            "old_inventory_quantity": 100,
+            "admin_graphql_api_id": "gid://shopify/ProductVariant/47072273039608",
+            "image_id": null
+          }
+        ],
+        "options": [
+          {
+            "id": 11561554739448,
+            "product_id": 9249659322616,
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "images": [],
+        "image": null
+      },
+      "optimizado": {
+        "titulo": "🌟 Cafetera Cold Brew Express Premium | Calidad Superior | Envío Gratis +$25",
+        "descripcion": "\n✨ CAFETERA COLD BREW EXPRESS\n\nProducto de alta calidad disponible en nuestra tienda.\n\n🎁 BENEFICIOS ÚNICOS:\n• ✅ Calidad Premium Garantizada\n• ✅ Diseño Moderno y Funcional  \n• ✅ Durabilidad Excepcional\n• ✅ Satisfacción Garantizada\n• ✅ Envío GRATIS en pedidos +$25\n\n🚀 ESPECIFICACIONES:\nProducto de alta calidad diseñado para tu comodidad y estilo de vida.\n\n⚡ OFERTA ESPECIAL:\n¡Precio promocional por tiempo limitado!\n\n🛒 GARANTÍA DE SATISFACCIÓN:\n30 días de devolución sin preguntas. Tu satisfacción es nuestra prioridad.\n\n💯 CALIDAD VERIFICADA:\nMiles de clientes satisfechos. Calificación 4.8/5 estrellas.\n\n📦 ENVÍO RÁPIDO:\nRecibe en 3-5 días hábiles.\n\n🎯 ¡ORDENA AHORA Y AHORRA!\n        ",
+        "precio": 29.99,
+        "precio_comparacion": 41,
+        "keywords": [
+          "premium",
+          "calidad",
+          "envío gratis",
+          "garantía",
+          "oferta"
+        ],
+        "urgencia": "Solo 100 unidades disponibles",
+        "garantia": "30 días devolución sin preguntas"
+      },
+      "timestamp": "2025-10-11T08:52:38.962Z",
+      "metodo": "fallback"
+    },
+    {
+      "original": {
+        "id": 9245926064376,
+        "title": "Camiseta verde orgánica",
+        "body_html": "<p>Camiseta de algodón orgánico en color verde, suave al tacto y producida de forma sostenible. Ideal para un estilo de vida ecoamigable.</p>",
+        "vendor": "My Store",
+        "product_type": "",
+        "created_at": "2025-10-06T18:16:45-05:00",
+        "handle": "camiseta-verde-organica",
+        "updated_at": "2025-10-08T18:02:47-05:00",
+        "published_at": "2025-10-06T18:16:48-05:00",
+        "template_suffix": "",
+        "published_scope": "global",
+        "tags": "",
+        "status": "active",
+        "admin_graphql_api_id": "gid://shopify/Product/9245926064376",
+        "variants": [
+          {
+            "id": 47003916730616,
+            "product_id": 9245926064376,
+            "title": "Default Title",
+            "price": "50.00",
+            "position": 1,
+            "inventory_policy": "deny",
+            "compare_at_price": null,
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "created_at": "2025-10-06T18:16:45-05:00",
+            "updated_at": "2025-10-06T18:16:45-05:00",
+            "taxable": true,
+            "barcode": "",
+            "fulfillment_service": "manual",
+            "grams": 200,
+            "inventory_management": "shopify",
+            "requires_shipping": true,
+            "sku": null,
+            "weight": 0.2,
+            "weight_unit": "kg",
+            "inventory_item_id": 49082135052536,
+            "inventory_quantity": 100,
+            "old_inventory_quantity": 100,
+            "admin_graphql_api_id": "gid://shopify/ProductVariant/47003916730616",
+            "image_id": null
+          }
+        ],
+        "options": [
+          {
+            "id": 11556275486968,
+            "product_id": 9245926064376,
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "images": [],
+        "image": null
+      },
+      "optimizado": {
+        "titulo": "🌟 Camiseta verde orgánica Premium | Calidad Superior | Envío Gratis +$25",
+        "descripcion": "\n✨ CAMISETA VERDE ORGÁNICA\n\n<p>Camiseta de algodón orgánico en color verde, suave al tacto y producida de forma sostenible. Ideal para un estilo de vida ecoamigable.</p>\n\n🎁 BENEFICIOS ÚNICOS:\n• ✅ Calidad Premium Garantizada\n• ✅ Diseño Moderno y Funcional  \n• ✅ Durabilidad Excepcional\n• ✅ Satisfacción Garantizada\n• ✅ Envío GRATIS en pedidos +$25\n\n🚀 ESPECIFICACIONES:\nProducto de alta calidad diseñado para tu comodidad y estilo de vida.\n\n⚡ OFERTA ESPECIAL:\n¡Precio promocional por tiempo limitado!\n\n🛒 GARANTÍA DE SATISFACCIÓN:\n30 días de devolución sin preguntas. Tu satisfacción es nuestra prioridad.\n\n💯 CALIDAD VERIFICADA:\nMiles de clientes satisfechos. Calificación 4.8/5 estrellas.\n\n📦 ENVÍO RÁPIDO:\nRecibe en 3-5 días hábiles.\n\n🎯 ¡ORDENA AHORA Y AHORRA!\n        ",
+        "precio": 48.99,
+        "precio_comparacion": 68,
+        "keywords": [
+          "premium",
+          "calidad",
+          "envío gratis",
+          "garantía",
+          "oferta"
+        ],
+        "urgencia": "Solo 100 unidades disponibles",
+        "garantia": "30 días devolución sin preguntas"
+      },
+      "timestamp": "2025-10-11T08:52:41.298Z",
+      "metodo": "fallback"
+    },
+    {
+      "original": {
+        "id": 9249659060472,
+        "title": "Kit Home Office Ergonómico – Productividad sin dolor",
+        "body_html": "\n      <h3>🏢 TRANSFORM YOUR WORKSPACE</h3>\n      <p><strong>Kit completo para productividad máxima:</strong></p>\n      <ul>\n        <li>✅ Soporte ajustable para laptop (aluminio premium)</li>\n        <li>✅ Mouse ergonómico vertical (reduce fatiga)</li>\n        <li>✅ Pad antifatiga para pies (espuma memory)</li>\n        <li>✅ Bandeja organizadora para accesorios</li>\n      </ul>\n      \n      <h3>📏 ESPECIFICACIONES</h3>\n      <p><strong>Soporte:</strong> Altura ajustable 15-25cm, peso máx 5kg<br>\n      <strong>Mouse:</strong> DPI ajustable 800-2400, conexión USB<br>\n      <strong>Pad:</strong> 50x35cm, antideslizante, lavable<br>\n      <strong>Materiales:</strong> Aluminio anodizado, ABS, espuma premium</p>\n      \n      <h3>🛡️ GARANTÍA Y ENVÍO</h3>\n      <p>✅ Garantía 12 meses<br>\n      ✅ Envío gratis Lima Metropolitana<br>\n      ✅ Instalación incluida<br>\n      ✅ 30 días para devolución</p>\n    ",
+        "vendor": "Goio",
+        "product_type": "General",
+        "created_at": "2025-10-09T14:56:08-05:00",
+        "handle": "kit-home-office-ergonmico",
+        "updated_at": "2025-10-09T15:37:25-05:00",
+        "published_at": null,
+        "template_suffix": null,
+        "published_scope": "global",
+        "tags": "ergonomía, home office, productividad, salud postural",
+        "status": "active",
+        "admin_graphql_api_id": "gid://shopify/Product/9249659060472",
+        "variants": [
+          {
+            "id": 47072272777464,
+            "product_id": 9249659060472,
+            "title": "Default Title",
+            "price": "29.99",
+            "position": 1,
+            "inventory_policy": "deny",
+            "compare_at_price": null,
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "created_at": "2025-10-09T14:56:08-05:00",
+            "updated_at": "2025-10-09T15:37:25-05:00",
+            "taxable": true,
+            "barcode": null,
+            "fulfillment_service": "manual",
+            "grams": 500,
+            "inventory_management": "shopify",
+            "requires_shipping": true,
+            "sku": "kit-home-office-ergonmico",
+            "weight": 0.5,
+            "weight_unit": "kg",
+            "inventory_item_id": 49150601199864,
+            "inventory_quantity": 100,
+            "old_inventory_quantity": 100,
+            "admin_graphql_api_id": "gid://shopify/ProductVariant/47072272777464",
+            "image_id": null
+          }
+        ],
+        "options": [
+          {
+            "id": 11561554477304,
+            "product_id": 9249659060472,
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "images": [],
+        "image": null
+      },
+      "optimizado": {
+        "titulo": "🌟 Kit Home Office Ergonómico – Productividad sin dolor Premium | Calidad Superior | Envío Gratis +$25",
+        "descripcion": "\n✨ KIT HOME OFFICE ERGONÓMICO – PRODUCTIVIDAD SIN DOLOR\n\n\n      <h3>🏢 TRANSFORM YOUR WORKSPACE</h3>\n      <p><strong>Kit completo para productividad máxima:</strong></p>\n      <ul>\n        <li>✅ Soporte ajustable para laptop (aluminio premium)</li>\n        <li>✅ Mouse ergonómico vertical (reduce fatiga)</li>\n        <li>✅ Pad antifatiga para pies (espuma memory)</li>\n        <li>✅ Bandeja organizadora para accesorios</li>\n      </ul>\n      \n      <h3>📏 ESPECIFICACIONES</h3>\n      <p><strong>Soporte:</strong> Altura ajustable 15-25cm, peso máx 5kg<br>\n      <strong>Mouse:</strong> DPI ajustable 800-2400, conexión USB<br>\n      <strong>Pad:</strong> 50x35cm, antideslizante, lavable<br>\n      <strong>Materiales:</strong> Aluminio anodizado, ABS, espuma premium</p>\n      \n      <h3>🛡️ GARANTÍA Y ENVÍO</h3>\n      <p>✅ Garantía 12 meses<br>\n      ✅ Envío gratis Lima Metropolitana<br>\n      ✅ Instalación incluida<br>\n      ✅ 30 días para devolución</p>\n    \n\n🎁 BENEFICIOS ÚNICOS:\n• ✅ Calidad Premium Garantizada\n• ✅ Diseño Moderno y Funcional  \n• ✅ Durabilidad Excepcional\n• ✅ Satisfacción Garantizada\n• ✅ Envío GRATIS en pedidos +$25\n\n🚀 ESPECIFICACIONES:\nProducto de alta calidad diseñado para tu comodidad y estilo de vida.\n\n⚡ OFERTA ESPECIAL:\n¡Precio promocional por tiempo limitado!\n\n🛒 GARANTÍA DE SATISFACCIÓN:\n30 días de devolución sin preguntas. Tu satisfacción es nuestra prioridad.\n\n💯 CALIDAD VERIFICADA:\nMiles de clientes satisfechos. Calificación 4.8/5 estrellas.\n\n📦 ENVÍO RÁPIDO:\nRecibe en 3-5 días hábiles.\n\n🎯 ¡ORDENA AHORA Y AHORRA!\n        ",
+        "precio": 29.99,
+        "precio_comparacion": 41,
+        "keywords": [
+          "premium",
+          "calidad",
+          "envío gratis",
+          "garantía",
+          "oferta"
+        ],
+        "urgencia": "Solo 100 unidades disponibles",
+        "garantia": "30 días devolución sin preguntas"
+      },
+      "timestamp": "2025-10-11T08:52:43.623Z",
+      "metodo": "fallback"
+    },
+    {
+      "original": {
+        "id": 9249659191544,
+        "title": "Lámpara LED Ambiente Premium",
+        "body_html": "Producto de alta calidad disponible en nuestra tienda.",
+        "vendor": "Goio",
+        "product_type": "General",
+        "created_at": "2025-10-09T14:56:14-05:00",
+        "handle": "lmpara-led-ambiente-premium",
+        "updated_at": "2025-10-09T15:37:26-05:00",
+        "published_at": null,
+        "template_suffix": null,
+        "published_scope": "global",
+        "tags": "ambiente, led, smart home",
+        "status": "active",
+        "admin_graphql_api_id": "gid://shopify/Product/9249659191544",
+        "variants": [
+          {
+            "id": 47072272908536,
+            "product_id": 9249659191544,
+            "title": "Default Title",
+            "price": "29.99",
+            "position": 1,
+            "inventory_policy": "deny",
+            "compare_at_price": null,
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "created_at": "2025-10-09T14:56:14-05:00",
+            "updated_at": "2025-10-09T15:37:26-05:00",
+            "taxable": true,
+            "barcode": null,
+            "fulfillment_service": "manual",
+            "grams": 500,
+            "inventory_management": "shopify",
+            "requires_shipping": true,
+            "sku": "lmpara-led-ambiente-premium",
+            "weight": 0.5,
+            "weight_unit": "kg",
+            "inventory_item_id": 49150601330936,
+            "inventory_quantity": 100,
+            "old_inventory_quantity": 100,
+            "admin_graphql_api_id": "gid://shopify/ProductVariant/47072272908536",
+            "image_id": null
+          }
+        ],
+        "options": [
+          {
+            "id": 11561554608376,
+            "product_id": 9249659191544,
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "images": [],
+        "image": null
+      },
+      "optimizado": {
+        "titulo": "🌟 Lámpara LED Ambiente Premium Premium | Calidad Superior | Envío Gratis +$25",
+        "descripcion": "\n✨ LÁMPARA LED AMBIENTE PREMIUM\n\nProducto de alta calidad disponible en nuestra tienda.\n\n🎁 BENEFICIOS ÚNICOS:\n• ✅ Calidad Premium Garantizada\n• ✅ Diseño Moderno y Funcional  \n• ✅ Durabilidad Excepcional\n• ✅ Satisfacción Garantizada\n• ✅ Envío GRATIS en pedidos +$25\n\n🚀 ESPECIFICACIONES:\nProducto de alta calidad diseñado para tu comodidad y estilo de vida.\n\n⚡ OFERTA ESPECIAL:\n¡Precio promocional por tiempo limitado!\n\n🛒 GARANTÍA DE SATISFACCIÓN:\n30 días de devolución sin preguntas. Tu satisfacción es nuestra prioridad.\n\n💯 CALIDAD VERIFICADA:\nMiles de clientes satisfechos. Calificación 4.8/5 estrellas.\n\n📦 ENVÍO RÁPIDO:\nRecibe en 3-5 días hábiles.\n\n🎯 ¡ORDENA AHORA Y AHORRA!\n        ",
+        "precio": 29.99,
+        "precio_comparacion": 41,
+        "keywords": [
+          "premium",
+          "calidad",
+          "envío gratis",
+          "garantía",
+          "oferta"
+        ],
+        "urgencia": "Solo 100 unidades disponibles",
+        "garantia": "30 días devolución sin preguntas"
+      },
+      "timestamp": "2025-10-11T08:52:45.933Z",
+      "metodo": "fallback"
+    },
+    {
+      "original": {
+        "id": 9249659224312,
+        "title": "Mini Proyector HD Portátil",
+        "body_html": "Producto de alta calidad disponible en nuestra tienda.",
+        "vendor": "Goio",
+        "product_type": "General",
+        "created_at": "2025-10-09T14:56:16-05:00",
+        "handle": "mini-proyector-hd-porttil",
+        "updated_at": "2025-10-09T15:37:28-05:00",
+        "published_at": null,
+        "template_suffix": null,
+        "published_scope": "global",
+        "tags": "home theater, portátil, proyector",
+        "status": "active",
+        "admin_graphql_api_id": "gid://shopify/Product/9249659224312",
+        "variants": [
+          {
+            "id": 47072272941304,
+            "product_id": 9249659224312,
+            "title": "Default Title",
+            "price": "29.99",
+            "position": 1,
+            "inventory_policy": "deny",
+            "compare_at_price": null,
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "created_at": "2025-10-09T14:56:16-05:00",
+            "updated_at": "2025-10-09T15:37:28-05:00",
+            "taxable": true,
+            "barcode": null,
+            "fulfillment_service": "manual",
+            "grams": 500,
+            "inventory_management": "shopify",
+            "requires_shipping": true,
+            "sku": "mini-proyector-hd-porttil",
+            "weight": 0.5,
+            "weight_unit": "kg",
+            "inventory_item_id": 49150601363704,
+            "inventory_quantity": 100,
+            "old_inventory_quantity": 100,
+            "admin_graphql_api_id": "gid://shopify/ProductVariant/47072272941304",
+            "image_id": null
+          }
+        ],
+        "options": [
+          {
+            "id": 11561554641144,
+            "product_id": 9249659224312,
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "images": [],
+        "image": null
+      },
+      "optimizado": {
+        "titulo": "🌟 Mini Proyector HD Portátil Premium | Calidad Superior | Envío Gratis +$25",
+        "descripcion": "\n✨ MINI PROYECTOR HD PORTÁTIL\n\nProducto de alta calidad disponible en nuestra tienda.\n\n🎁 BENEFICIOS ÚNICOS:\n• ✅ Calidad Premium Garantizada\n• ✅ Diseño Moderno y Funcional  \n• ✅ Durabilidad Excepcional\n• ✅ Satisfacción Garantizada\n• ✅ Envío GRATIS en pedidos +$25\n\n🚀 ESPECIFICACIONES:\nProducto de alta calidad diseñado para tu comodidad y estilo de vida.\n\n⚡ OFERTA ESPECIAL:\n¡Precio promocional por tiempo limitado!\n\n🛒 GARANTÍA DE SATISFACCIÓN:\n30 días de devolución sin preguntas. Tu satisfacción es nuestra prioridad.\n\n💯 CALIDAD VERIFICADA:\nMiles de clientes satisfechos. Calificación 4.8/5 estrellas.\n\n📦 ENVÍO RÁPIDO:\nRecibe en 3-5 días hábiles.\n\n🎯 ¡ORDENA AHORA Y AHORRA!\n        ",
+        "precio": 29.99,
+        "precio_comparacion": 41,
+        "keywords": [
+          "premium",
+          "calidad",
+          "envío gratis",
+          "garantía",
+          "oferta"
+        ],
+        "urgencia": "Solo 100 unidades disponibles",
+        "garantia": "30 días devolución sin preguntas"
+      },
+      "timestamp": "2025-10-11T08:52:48.252Z",
+      "metodo": "fallback"
+    },
+    {
+      "original": {
+        "id": 9249659289848,
+        "title": "Organizador Modular de Closet",
+        "body_html": "Producto de alta calidad disponible en nuestra tienda.",
+        "vendor": "Goio",
+        "product_type": "General",
+        "created_at": "2025-10-09T14:56:20-05:00",
+        "handle": "organizador-modular-de-closet",
+        "updated_at": "2025-10-09T15:37:29-05:00",
+        "published_at": null,
+        "template_suffix": null,
+        "published_scope": "global",
+        "tags": "closet, hogar, organización",
+        "status": "active",
+        "admin_graphql_api_id": "gid://shopify/Product/9249659289848",
+        "variants": [
+          {
+            "id": 47072273006840,
+            "product_id": 9249659289848,
+            "title": "Default Title",
+            "price": "29.99",
+            "position": 1,
+            "inventory_policy": "deny",
+            "compare_at_price": null,
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "created_at": "2025-10-09T14:56:20-05:00",
+            "updated_at": "2025-10-09T15:37:29-05:00",
+            "taxable": true,
+            "barcode": null,
+            "fulfillment_service": "manual",
+            "grams": 500,
+            "inventory_management": "shopify",
+            "requires_shipping": true,
+            "sku": "organizador-modular-de-closet",
+            "weight": 0.5,
+            "weight_unit": "kg",
+            "inventory_item_id": 49150601429240,
+            "inventory_quantity": 100,
+            "old_inventory_quantity": 100,
+            "admin_graphql_api_id": "gid://shopify/ProductVariant/47072273006840",
+            "image_id": null
+          }
+        ],
+        "options": [
+          {
+            "id": 11561554706680,
+            "product_id": 9249659289848,
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "images": [],
+        "image": null
+      },
+      "optimizado": {
+        "titulo": "🌟 Organizador Modular de Closet Premium | Calidad Superior | Envío Gratis +$25",
+        "descripcion": "\n✨ ORGANIZADOR MODULAR DE CLOSET\n\nProducto de alta calidad disponible en nuestra tienda.\n\n🎁 BENEFICIOS ÚNICOS:\n• ✅ Calidad Premium Garantizada\n• ✅ Diseño Moderno y Funcional  \n• ✅ Durabilidad Excepcional\n• ✅ Satisfacción Garantizada\n• ✅ Envío GRATIS en pedidos +$25\n\n🚀 ESPECIFICACIONES:\nProducto de alta calidad diseñado para tu comodidad y estilo de vida.\n\n⚡ OFERTA ESPECIAL:\n¡Precio promocional por tiempo limitado!\n\n🛒 GARANTÍA DE SATISFACCIÓN:\n30 días de devolución sin preguntas. Tu satisfacción es nuestra prioridad.\n\n💯 CALIDAD VERIFICADA:\nMiles de clientes satisfechos. Calificación 4.8/5 estrellas.\n\n📦 ENVÍO RÁPIDO:\nRecibe en 3-5 días hábiles.\n\n🎯 ¡ORDENA AHORA Y AHORRA!\n        ",
+        "precio": 29.99,
+        "precio_comparacion": 41,
+        "keywords": [
+          "premium",
+          "calidad",
+          "envío gratis",
+          "garantía",
+          "oferta"
+        ],
+        "urgencia": "Solo 100 unidades disponibles",
+        "garantia": "30 días devolución sin preguntas"
+      },
+      "timestamp": "2025-10-11T08:52:50.555Z",
+      "metodo": "fallback"
+    },
+    {
+      "original": {
+        "id": 9249659126008,
+        "title": "Purificador de Aire GO – Respira mejor en 5 min",
+        "body_html": "\n      <h3>🌬️ AIRE PURO DONDE LO NECESITES</h3>\n      <p><strong>Tecnología avanzada en formato compacto:</strong></p>\n      <ul>\n        <li>✅ Filtro HEPA H13 (elimina 99.97% partículas)</li>\n        <li>✅ Ionizador integrado (aire más fresco)</li>\n        <li>✅ Sensor de calidad de aire en tiempo real</li>\n        <li>✅ Ultra silencioso (25dB en modo nocturno)</li>\n      </ul>\n      \n      <h3>📏 ESPECIFICACIONES</h3>\n      <p><strong>Cobertura:</strong> Hasta 25m² (habitación estándar)<br>\n      <strong>Filtros:</strong> Pre-filtro + HEPA H13 + Carbón activado<br>\n      <strong>Consumo:</strong> 15W (ultra eficiente)<br>\n      <strong>Tamaño:</strong> 20x20x35cm, peso 2.1kg</p>\n      \n      <h3>🛡️ GARANTÍA Y MANTENIMIENTO</h3>\n      <p>✅ Garantía 18 meses<br>\n      ✅ Filtros de repuesto disponibles<br>\n      ✅ App móvil para control remoto<br>\n      ✅ Cambio de filtro cada 6-8 meses</p>\n    ",
+        "vendor": "Goio",
+        "product_type": "General",
+        "created_at": "2025-10-09T14:56:10-05:00",
+        "handle": "purificador-de-aire-compacto-go",
+        "updated_at": "2025-10-09T15:37:31-05:00",
+        "published_at": null,
+        "template_suffix": null,
+        "published_scope": "global",
+        "tags": "aire, HEPA, hogar, purificador, salud",
+        "status": "active",
+        "admin_graphql_api_id": "gid://shopify/Product/9249659126008",
+        "variants": [
+          {
+            "id": 47072272843000,
+            "product_id": 9249659126008,
+            "title": "Default Title",
+            "price": "29.99",
+            "position": 1,
+            "inventory_policy": "deny",
+            "compare_at_price": null,
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "created_at": "2025-10-09T14:56:10-05:00",
+            "updated_at": "2025-10-09T15:37:31-05:00",
+            "taxable": true,
+            "barcode": null,
+            "fulfillment_service": "manual",
+            "grams": 500,
+            "inventory_management": "shopify",
+            "requires_shipping": true,
+            "sku": "purificador-de-aire-compacto-go",
+            "weight": 0.5,
+            "weight_unit": "kg",
+            "inventory_item_id": 49150601265400,
+            "inventory_quantity": 100,
+            "old_inventory_quantity": 100,
+            "admin_graphql_api_id": "gid://shopify/ProductVariant/47072272843000",
+            "image_id": null
+          }
+        ],
+        "options": [
+          {
+            "id": 11561554542840,
+            "product_id": 9249659126008,
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "images": [],
+        "image": null
+      },
+      "optimizado": {
+        "titulo": "🌟 Purificador de Aire GO – Respira mejor en 5 min Premium | Calidad Superior | Envío Gratis +$25",
+        "descripcion": "\n✨ PURIFICADOR DE AIRE GO – RESPIRA MEJOR EN 5 MIN\n\n\n      <h3>🌬️ AIRE PURO DONDE LO NECESITES</h3>\n      <p><strong>Tecnología avanzada en formato compacto:</strong></p>\n      <ul>\n        <li>✅ Filtro HEPA H13 (elimina 99.97% partículas)</li>\n        <li>✅ Ionizador integrado (aire más fresco)</li>\n        <li>✅ Sensor de calidad de aire en tiempo real</li>\n        <li>✅ Ultra silencioso (25dB en modo nocturno)</li>\n      </ul>\n      \n      <h3>📏 ESPECIFICACIONES</h3>\n      <p><strong>Cobertura:</strong> Hasta 25m² (habitación estándar)<br>\n      <strong>Filtros:</strong> Pre-filtro + HEPA H13 + Carbón activado<br>\n      <strong>Consumo:</strong> 15W (ultra eficiente)<br>\n      <strong>Tamaño:</strong> 20x20x35cm, peso 2.1kg</p>\n      \n      <h3>🛡️ GARANTÍA Y MANTENIMIENTO</h3>\n      <p>✅ Garantía 18 meses<br>\n      ✅ Filtros de repuesto disponibles<br>\n      ✅ App móvil para control remoto<br>\n      ✅ Cambio de filtro cada 6-8 meses</p>\n    \n\n🎁 BENEFICIOS ÚNICOS:\n• ✅ Calidad Premium Garantizada\n• ✅ Diseño Moderno y Funcional  \n• ✅ Durabilidad Excepcional\n• ✅ Satisfacción Garantizada\n• ✅ Envío GRATIS en pedidos +$25\n\n🚀 ESPECIFICACIONES:\nProducto de alta calidad diseñado para tu comodidad y estilo de vida.\n\n⚡ OFERTA ESPECIAL:\n¡Precio promocional por tiempo limitado!\n\n🛒 GARANTÍA DE SATISFACCIÓN:\n30 días de devolución sin preguntas. Tu satisfacción es nuestra prioridad.\n\n💯 CALIDAD VERIFICADA:\nMiles de clientes satisfechos. Calificación 4.8/5 estrellas.\n\n📦 ENVÍO RÁPIDO:\nRecibe en 3-5 días hábiles.\n\n🎯 ¡ORDENA AHORA Y AHORRA!\n        ",
+        "precio": 29.99,
+        "precio_comparacion": 41,
+        "keywords": [
+          "premium",
+          "calidad",
+          "envío gratis",
+          "garantía",
+          "oferta"
+        ],
+        "urgencia": "Solo 100 unidades disponibles",
+        "garantia": "30 días devolución sin preguntas"
+      },
+      "timestamp": "2025-10-11T08:52:52.867Z",
+      "metodo": "fallback"
+    },
+    {
+      "original": {
+        "id": 9249659453688,
+        "title": "Robot Aspiradora Slim",
+        "body_html": "Producto de alta calidad disponible en nuestra tienda.",
+        "vendor": "Goio",
+        "product_type": "General",
+        "created_at": "2025-10-09T14:56:23-05:00",
+        "handle": "robot-aspiradora-slim",
+        "updated_at": "2025-10-09T15:37:33-05:00",
+        "published_at": null,
+        "template_suffix": null,
+        "published_scope": "global",
+        "tags": "limpieza, robot aspiradora, smart home",
+        "status": "active",
+        "admin_graphql_api_id": "gid://shopify/Product/9249659453688",
+        "variants": [
+          {
+            "id": 47072273137912,
+            "product_id": 9249659453688,
+            "title": "Default Title",
+            "price": "29.99",
+            "position": 1,
+            "inventory_policy": "deny",
+            "compare_at_price": null,
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "created_at": "2025-10-09T14:56:23-05:00",
+            "updated_at": "2025-10-09T15:37:33-05:00",
+            "taxable": true,
+            "barcode": null,
+            "fulfillment_service": "manual",
+            "grams": 500,
+            "inventory_management": "shopify",
+            "requires_shipping": true,
+            "sku": "robot-aspiradora-slim",
+            "weight": 0.5,
+            "weight_unit": "kg",
+            "inventory_item_id": 49150601560312,
+            "inventory_quantity": 100,
+            "old_inventory_quantity": 100,
+            "admin_graphql_api_id": "gid://shopify/ProductVariant/47072273137912",
+            "image_id": null
+          }
+        ],
+        "options": [
+          {
+            "id": 11561554936056,
+            "product_id": 9249659453688,
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "images": [],
+        "image": null
+      },
+      "optimizado": {
+        "titulo": "🌟 Robot Aspiradora Slim Premium | Calidad Superior | Envío Gratis +$25",
+        "descripcion": "\n✨ ROBOT ASPIRADORA SLIM\n\nProducto de alta calidad disponible en nuestra tienda.\n\n🎁 BENEFICIOS ÚNICOS:\n• ✅ Calidad Premium Garantizada\n• ✅ Diseño Moderno y Funcional  \n• ✅ Durabilidad Excepcional\n• ✅ Satisfacción Garantizada\n• ✅ Envío GRATIS en pedidos +$25\n\n🚀 ESPECIFICACIONES:\nProducto de alta calidad diseñado para tu comodidad y estilo de vida.\n\n⚡ OFERTA ESPECIAL:\n¡Precio promocional por tiempo limitado!\n\n🛒 GARANTÍA DE SATISFACCIÓN:\n30 días de devolución sin preguntas. Tu satisfacción es nuestra prioridad.\n\n💯 CALIDAD VERIFICADA:\nMiles de clientes satisfechos. Calificación 4.8/5 estrellas.\n\n📦 ENVÍO RÁPIDO:\nRecibe en 3-5 días hábiles.\n\n🎯 ¡ORDENA AHORA Y AHORRA!\n        ",
+        "precio": 29.99,
+        "precio_comparacion": 41,
+        "keywords": [
+          "premium",
+          "calidad",
+          "envío gratis",
+          "garantía",
+          "oferta"
+        ],
+        "urgencia": "Solo 100 unidades disponibles",
+        "garantia": "30 días devolución sin preguntas"
+      },
+      "timestamp": "2025-10-11T08:52:55.171Z",
+      "metodo": "fallback"
+    },
+    {
+      "original": {
+        "id": 9249659584760,
+        "title": "Set Aromaterapia Relax",
+        "body_html": "Producto de alta calidad disponible en nuestra tienda.",
+        "vendor": "Goio",
+        "product_type": "General",
+        "created_at": "2025-10-09T14:56:25-05:00",
+        "handle": "set-aromaterapia-relax",
+        "updated_at": "2025-10-09T15:37:34-05:00",
+        "published_at": null,
+        "template_suffix": null,
+        "published_scope": "global",
+        "tags": "aromaterapia, bienestar, relax",
+        "status": "active",
+        "admin_graphql_api_id": "gid://shopify/Product/9249659584760",
+        "variants": [
+          {
+            "id": 47072273301752,
+            "product_id": 9249659584760,
+            "title": "Default Title",
+            "price": "29.99",
+            "position": 1,
+            "inventory_policy": "deny",
+            "compare_at_price": null,
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "created_at": "2025-10-09T14:56:26-05:00",
+            "updated_at": "2025-10-09T15:37:34-05:00",
+            "taxable": true,
+            "barcode": null,
+            "fulfillment_service": "manual",
+            "grams": 500,
+            "inventory_management": "shopify",
+            "requires_shipping": true,
+            "sku": "set-aromaterapia-relax",
+            "weight": 0.5,
+            "weight_unit": "kg",
+            "inventory_item_id": 49150601724152,
+            "inventory_quantity": 100,
+            "old_inventory_quantity": 100,
+            "admin_graphql_api_id": "gid://shopify/ProductVariant/47072273301752",
+            "image_id": null
+          }
+        ],
+        "options": [
+          {
+            "id": 11561555263736,
+            "product_id": 9249659584760,
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "images": [],
+        "image": null
+      },
+      "optimizado": {
+        "titulo": "🌟 Set Aromaterapia Relax Premium | Calidad Superior | Envío Gratis +$25",
+        "descripcion": "\n✨ SET AROMATERAPIA RELAX\n\nProducto de alta calidad disponible en nuestra tienda.\n\n🎁 BENEFICIOS ÚNICOS:\n• ✅ Calidad Premium Garantizada\n• ✅ Diseño Moderno y Funcional  \n• ✅ Durabilidad Excepcional\n• ✅ Satisfacción Garantizada\n• ✅ Envío GRATIS en pedidos +$25\n\n🚀 ESPECIFICACIONES:\nProducto de alta calidad diseñado para tu comodidad y estilo de vida.\n\n⚡ OFERTA ESPECIAL:\n¡Precio promocional por tiempo limitado!\n\n🛒 GARANTÍA DE SATISFACCIÓN:\n30 días de devolución sin preguntas. Tu satisfacción es nuestra prioridad.\n\n💯 CALIDAD VERIFICADA:\nMiles de clientes satisfechos. Calificación 4.8/5 estrellas.\n\n📦 ENVÍO RÁPIDO:\nRecibe en 3-5 días hábiles.\n\n🎯 ¡ORDENA AHORA Y AHORRA!\n        ",
+        "precio": 29.99,
+        "precio_comparacion": 41,
+        "keywords": [
+          "premium",
+          "calidad",
+          "envío gratis",
+          "garantía",
+          "oferta"
+        ],
+        "urgencia": "Solo 100 unidades disponibles",
+        "garantia": "30 días devolución sin preguntas"
+      },
+      "timestamp": "2025-10-11T08:52:57.474Z",
+      "metodo": "fallback"
+    },
+    {
+      "original": {
+        "id": 9249659257080,
+        "title": "Set Bandas de Resistencia Pro",
+        "body_html": "Producto de alta calidad disponible en nuestra tienda.",
+        "vendor": "Goio",
+        "product_type": "General",
+        "created_at": "2025-10-09T14:56:18-05:00",
+        "handle": "set-bandas-de-resistencia-pro",
+        "updated_at": "2025-10-09T15:37:36-05:00",
+        "published_at": null,
+        "template_suffix": null,
+        "published_scope": "global",
+        "tags": "bandas, entrenamiento, fitness",
+        "status": "active",
+        "admin_graphql_api_id": "gid://shopify/Product/9249659257080",
+        "variants": [
+          {
+            "id": 47072272974072,
+            "product_id": 9249659257080,
+            "title": "Default Title",
+            "price": "29.99",
+            "position": 1,
+            "inventory_policy": "deny",
+            "compare_at_price": null,
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "created_at": "2025-10-09T14:56:18-05:00",
+            "updated_at": "2025-10-09T15:37:36-05:00",
+            "taxable": true,
+            "barcode": null,
+            "fulfillment_service": "manual",
+            "grams": 500,
+            "inventory_management": "shopify",
+            "requires_shipping": true,
+            "sku": "set-bandas-de-resistencia-pro",
+            "weight": 0.5,
+            "weight_unit": "kg",
+            "inventory_item_id": 49150601396472,
+            "inventory_quantity": 100,
+            "old_inventory_quantity": 100,
+            "admin_graphql_api_id": "gid://shopify/ProductVariant/47072272974072",
+            "image_id": null
+          }
+        ],
+        "options": [
+          {
+            "id": 11561554673912,
+            "product_id": 9249659257080,
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "images": [],
+        "image": null
+      },
+      "optimizado": {
+        "titulo": "🌟 Set Bandas de Resistencia Pro Premium | Calidad Superior | Envío Gratis +$25",
+        "descripcion": "\n✨ SET BANDAS DE RESISTENCIA PRO\n\nProducto de alta calidad disponible en nuestra tienda.\n\n🎁 BENEFICIOS ÚNICOS:\n• ✅ Calidad Premium Garantizada\n• ✅ Diseño Moderno y Funcional  \n• ✅ Durabilidad Excepcional\n• ✅ Satisfacción Garantizada\n• ✅ Envío GRATIS en pedidos +$25\n\n🚀 ESPECIFICACIONES:\nProducto de alta calidad diseñado para tu comodidad y estilo de vida.\n\n⚡ OFERTA ESPECIAL:\n¡Precio promocional por tiempo limitado!\n\n🛒 GARANTÍA DE SATISFACCIÓN:\n30 días de devolución sin preguntas. Tu satisfacción es nuestra prioridad.\n\n💯 CALIDAD VERIFICADA:\nMiles de clientes satisfechos. Calificación 4.8/5 estrellas.\n\n📦 ENVÍO RÁPIDO:\nRecibe en 3-5 días hábiles.\n\n🎯 ¡ORDENA AHORA Y AHORRA!\n        ",
+        "precio": 29.99,
+        "precio_comparacion": 41,
+        "keywords": [
+          "premium",
+          "calidad",
+          "envío gratis",
+          "garantía",
+          "oferta"
+        ],
+        "urgencia": "Solo 100 unidades disponibles",
+        "garantia": "30 días devolución sin preguntas"
+      },
+      "timestamp": "2025-10-11T08:52:59.776Z",
+      "metodo": "fallback"
+    },
+    {
+      "original": {
+        "id": 9249658765560,
+        "title": "Test Product 1760039704476",
+        "body_html": "This is a test product created by the listing agent.",
+        "vendor": "Goio",
+        "product_type": "Test",
+        "created_at": "2025-10-09T14:55:03-05:00",
+        "handle": "test-product-1760039704476",
+        "updated_at": "2025-10-09T15:37:37-05:00",
+        "published_at": null,
+        "template_suffix": null,
+        "published_scope": "global",
+        "tags": "",
+        "status": "active",
+        "admin_graphql_api_id": "gid://shopify/Product/9249658765560",
+        "variants": [
+          {
+            "id": 47072272285944,
+            "product_id": 9249658765560,
+            "title": "Default Title",
+            "price": "29.99",
+            "position": 1,
+            "inventory_policy": "deny",
+            "compare_at_price": null,
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "created_at": "2025-10-09T14:55:03-05:00",
+            "updated_at": "2025-10-09T15:37:37-05:00",
+            "taxable": true,
+            "barcode": null,
+            "fulfillment_service": "manual",
+            "grams": 500,
+            "inventory_management": "shopify",
+            "requires_shipping": true,
+            "sku": null,
+            "weight": 0.5,
+            "weight_unit": "kg",
+            "inventory_item_id": 49150600708344,
+            "inventory_quantity": 10,
+            "old_inventory_quantity": 10,
+            "admin_graphql_api_id": "gid://shopify/ProductVariant/47072272285944",
+            "image_id": null
+          }
+        ],
+        "options": [
+          {
+            "id": 11561554116856,
+            "product_id": 9249658765560,
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "images": [],
+        "image": null
+      },
+      "optimizado": {
+        "titulo": "🌟 Test Product 1760039704476 Premium | Calidad Superior | Envío Gratis +$25",
+        "descripcion": "\n✨ TEST PRODUCT 1760039704476\n\nThis is a test product created by the listing agent.\n\n🎁 BENEFICIOS ÚNICOS:\n• ✅ Calidad Premium Garantizada\n• ✅ Diseño Moderno y Funcional  \n• ✅ Durabilidad Excepcional\n• ✅ Satisfacción Garantizada\n• ✅ Envío GRATIS en pedidos +$25\n\n🚀 ESPECIFICACIONES:\nProducto de alta calidad diseñado para tu comodidad y estilo de vida.\n\n⚡ OFERTA ESPECIAL:\n¡Precio promocional por tiempo limitado!\n\n🛒 GARANTÍA DE SATISFACCIÓN:\n30 días de devolución sin preguntas. Tu satisfacción es nuestra prioridad.\n\n💯 CALIDAD VERIFICADA:\nMiles de clientes satisfechos. Calificación 4.8/5 estrellas.\n\n📦 ENVÍO RÁPIDO:\nRecibe en 3-5 días hábiles.\n\n🎯 ¡ORDENA AHORA Y AHORRA!\n        ",
+        "precio": 29.99,
+        "precio_comparacion": 41,
+        "keywords": [
+          "premium",
+          "calidad",
+          "envío gratis",
+          "garantía",
+          "oferta"
+        ],
+        "urgencia": "Solo 10 unidades disponibles",
+        "garantia": "30 días devolución sin preguntas"
+      },
+      "timestamp": "2025-10-11T08:53:02.080Z",
+      "metodo": "fallback"
+    }
+  ]
+}

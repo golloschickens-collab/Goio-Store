@@ -6,13 +6,19 @@ import { optimizarProducto } from '../utils/optimizador.cjs';
 import { config as globalConfig } from '../scripts/config.js'; // Importar la configuración global
 
 // --- Configuración y Validación Inicial ---
-if (!process.argv[2]) {
-  console.error('[Listing] Error Crítico: Este agente debe ser ejecutado por el supervisor y recibir una configuración.');
-  process.exit(1);
+let agentConfig;
+if (process.argv[2]) {
+  try {
+    agentConfig = JSON.parse(process.argv[2]);
+    console.log('[Listing] Órdenes recibidas del supervisor:', agentConfig.tareas);
+  } catch (error) {
+    console.error('[Listing] Error parseando configuración CLI:', error.message);
+    agentConfig = { tareas: ['subir productos'], tiendas: ['principal'] };
+  }
+} else {
+  console.log('[Listing] Modo directo activado - usando configuración por defecto');
+  agentConfig = { tareas: ['subir productos'], tiendas: ['principal'] };
 }
-
-const agentConfig = JSON.parse(process.argv[2]);
-console.log('[Listing] Órdenes recibidas del supervisor:', agentConfig.tareas);
 
 // --- Funciones de Lógica de Negocio (sin cambios) ---
 const Q_BY_HANDLE = gql`

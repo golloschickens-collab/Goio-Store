@@ -1,0 +1,165 @@
+Archivo: config/configuracion-real.json
+Línea: 4
+Clave: shopify.access_token
+Estado: placeholder
+Acción requerida: Sincronizar el token de acceso Admin API correspondiente en configuracion-real.json con los mismos scopes definidos.
+
+Archivo: config/configuracion-real.json
+Línea: 5
+Clave: shopify.api_key
+Estado: placeholder
+Acción requerida: Sincronizar la API key utilizada por la app centralizada en configuracion-real.json con scopes de productos, inventario y pedidos.
+
+Archivo: config/keys.json
+Línea: 17
+Clave: facebook.goio_store.app_secret
+Estado: placeholder
+Acción requerida: Copiar el App Secret real del Facebook App "Goio Store" desde Meta for Developers → Settings → Basic.
+
+Archivo: config/keys.json
+Línea: 55
+Clave: shopify.gollos_chickens.access_token
+Estado: placeholder
+Acción requerida: Registrar la Admin API access token (password) de la app en gollos-chickens con los mismos scopes de productos e inventario.
+
+Archivo: config/keys.json
+Línea: 56
+Clave: shopify.gollos_chickens.api_key
+Estado: placeholder
+Acción requerida: Registrar la Admin API access token (API key) de la app privada/personalizada en la tienda Shopify gollos-chickens con scopes read_products, write_products, read_inventory, write_inventory, read_fulfillments, write_fulfillments.
+
+Archivo: config/keys.json
+Línea: 61
+Clave: shopify.goio_store.access_token
+Estado: placeholder
+Acción requerida: Capturar la Admin API access token (password) de la app en goio-store con scopes anteriores.
+
+Archivo: config/keys.json
+Línea: 62
+Clave: shopify.goio_store.api_key
+Estado: placeholder
+Acción requerida: Registrar la Admin API access token (API key) de la app para la tienda Shopify goio-store con scopes read_products, write_products, read_inventory, write_inventory, read_orders, write_orders.
+
+Archivo: config/keys.json
+Línea: 67
+Clave: aws.access_key_id
+Estado: placeholder
+Acción requerida: Crear o recuperar una Access Key ID para un usuario IAM con políticas AmazonS3FullAccess, AmazonEC2FullAccess y AmazonSNSFullAccess, según manual imperial.
+
+Archivo: config/keys.json
+Línea: 68
+Clave: aws.secret_access_key
+Estado: placeholder
+Acción requerida: Registrar el Secret Access Key asociado a la Access Key ID anterior de IAM y almacenarlo cifrado.
+
+Archivo: config/social_credentials.json
+Línea: 4
+Clave: meta_business.system_user_id
+Estado: placeholder
+Acción requerida: Localizar el ID numérico del System User activo en Meta Business Manager (Configuración empresarial → Usuarios → Usuarios del sistema) y copiarlo tal cual.
+
+Archivo: config/social_credentials.json
+Línea: 6
+Clave: meta_business.system_user_token
+Estado: placeholder
+Acción requerida: Generar un token de usuario del sistema de larga duración con permisos pages_manage_posts, pages_manage_metadata, pages_read_engagement, instagram_basic, instagram_content_publish, instagram_manage_messages, whatsapp_business_messaging.
+
+Archivo: config/social_credentials.json
+Línea: 8
+Clave: meta_business.webhook.callback_url
+Estado: placeholder
+Acción requerida: Configurar la URL HTTPS pública del webhook imperial (por ejemplo https://api.goio.com/imperio/meta/webhook) asegurando disponibilidad 24/7.
+
+Archivo: config/social_credentials.json
+Línea: 9
+Clave: meta_business.webhook.verify_token
+Estado: placeholder
+Acción requerida: Definir una cadena secreta aleatoria (32+ caracteres) para validación de webhooks y actualizar tanto en Meta como en el backend.
+
+Archivo: config/social_credentials.json
+Línea: 19
+Clave: instagram.gollos_chickens.user_access_token
+Estado: placeholder
+Acción requerida: Obtener un token de usuario de Instagram para @gollos_chickens mediante la app Facebook correspondiente y extenderlo a long-lived.
+
+Archivo: config/social_credentials.json
+Línea: 20
+Clave: instagram.gollos_chickens.long_lived_user_token
+Estado: placeholder
+Acción requerida: Intercambiar el token de usuario por una versión long-lived (60 días) para @gollos_chickens utilizando la API Graph.
+
+Archivo: config/social_credentials.json
+Línea: 52
+Clave: instagram.goio_store.user_access_token
+Estado: placeholder
+Acción requerida: Generar token de usuario de Instagram para @goio_store autorizado por la app correcta y extenderlo.
+
+Archivo: config/social_credentials.json
+Línea: 53
+Clave: instagram.goio_store.long_lived_user_token
+Estado: placeholder
+Acción requerida: Intercambiar el token de @goio_store por un long-lived (60 días) mediante endpoint /access_token.
+
+Archivo: config/social_credentials.json
+Línea: 112
+Clave: facebook.goio_store.app_secret
+Estado: placeholder
+Acción requerida: Copiar el App Secret real del Facebook App "Goio Store" desde Meta for Developers → Settings → Basic.
+
+Archivo: config/social_credentials.json
+Línea: 113
+Clave: facebook.goio_store.page_access_token
+Estado: placeholder
+Acción requerida: Generar un token de página de larga duración para la página de Facebook Goio Store con permisos pages_manage_posts, pages_read_engagement, pages_show_list.
+
+Archivo: config/social_credentials.json
+Línea: 135
+Clave: whatsapp_business.gollos_chickens.waba_id
+Estado: placeholder
+Acción requerida: Ingresar el WABA ID (ID del administrador de WhatsApp Business) asociado a @gollos_chickens desde Meta Business Manager.
+
+Archivo: config/social_credentials.json
+Línea: 136
+Clave: whatsapp_business.gollos_chickens.phone_number_id
+Estado: placeholder
+Acción requerida: Configurar el Phone Number ID del número conectado en WhatsApp Cloud API (Meta Business Manager → WhatsApp → Número).
+
+Archivo: config/social_credentials.json
+Línea: 138
+Clave: whatsapp_business.gollos_chickens.api_key
+Estado: placeholder
+Acción requerida: Copiar el token de acceso (permanent access token) del número de WhatsApp Cloud API usado para @gollos_chickens.
+
+Resumen por sistema:
+- Meta (Facebook/Instagram/WhatsApp):
+  Claves pendientes (13):
+  • facebook.goio_store.app_secret: Copiar el App Secret real del Facebook App "Goio Store" desde Meta for Developers → Settings → Basic.
+  • meta_business.system_user_id: Localizar el ID numérico del System User activo en Meta Business Manager (Configuración empresarial → Usuarios → Usuarios del sistema) y copiarlo tal cual.
+  • meta_business.system_user_token: Generar un token de usuario del sistema de larga duración con permisos pages_manage_posts, pages_manage_metadata, pages_read_engagement, instagram_basic, instagram_content_publish, instagram_manage_messages, whatsapp_business_messaging.
+  • meta_business.webhook.callback_url: Configurar la URL HTTPS pública del webhook imperial (por ejemplo https://api.goio.com/imperio/meta/webhook) asegurando disponibilidad 24/7.
+  • meta_business.webhook.verify_token: Definir una cadena secreta aleatoria (32+ caracteres) para validación de webhooks y actualizar tanto en Meta como en el backend.
+  • instagram.gollos_chickens.user_access_token: Obtener un token de usuario de Instagram para @gollos_chickens mediante la app Facebook correspondiente y extenderlo a long-lived.
+  • instagram.gollos_chickens.long_lived_user_token: Intercambiar el token de usuario por una versión long-lived (60 días) para @gollos_chickens utilizando la API Graph.
+  • instagram.goio_store.user_access_token: Generar token de usuario de Instagram para @goio_store autorizado por la app correcta y extenderlo.
+  • instagram.goio_store.long_lived_user_token: Intercambiar el token de @goio_store por un long-lived (60 días) mediante endpoint /access_token.
+  • facebook.goio_store.page_access_token: Generar un token de página de larga duración para la página de Facebook Goio Store con permisos pages_manage_posts, pages_read_engagement, pages_show_list.
+  • whatsapp_business.gollos_chickens.waba_id: Ingresar el WABA ID (ID del administrador de WhatsApp Business) asociado a @gollos_chickens desde Meta Business Manager.
+  • whatsapp_business.gollos_chickens.phone_number_id: Configurar el Phone Number ID del número conectado en WhatsApp Cloud API (Meta Business Manager → WhatsApp → Número).
+  • whatsapp_business.gollos_chickens.api_key: Copiar el token de acceso (permanent access token) del número de WhatsApp Cloud API usado para @gollos_chickens.
+  Permisos mínimos: pages_manage_posts, pages_manage_metadata, pages_read_engagement, instagram_basic, instagram_content_publish, instagram_manage_messages, whatsapp_business_messaging.
+- Shopify:
+  Claves pendientes (6):
+  • shopify.access_token: Sincronizar el token de acceso Admin API correspondiente en configuracion-real.json con los mismos scopes definidos.
+  • shopify.api_key: Sincronizar la API key utilizada por la app centralizada en configuracion-real.json con scopes de productos, inventario y pedidos.
+  • shopify.gollos_chickens.access_token: Registrar la Admin API access token (password) de la app en gollos-chickens con los mismos scopes de productos e inventario.
+  • shopify.gollos_chickens.api_key: Registrar la Admin API access token (API key) de la app privada/personalizada en la tienda Shopify gollos-chickens con scopes read_products, write_products, read_inventory, write_inventory, read_fulfillments, write_fulfillments.
+  • shopify.goio_store.access_token: Capturar la Admin API access token (password) de la app en goio-store con scopes anteriores.
+  • shopify.goio_store.api_key: Registrar la Admin API access token (API key) de la app para la tienda Shopify goio-store con scopes read_products, write_products, read_inventory, write_inventory, read_orders, write_orders.
+  Scopes requeridos: read_products, write_products, read_inventory, write_inventory, read_orders, write_orders, read_fulfillments, write_fulfillments.
+- AWS/Infraestructura:
+  Claves pendientes (2):
+  • aws.access_key_id: Crear o recuperar una Access Key ID para un usuario IAM con políticas AmazonS3FullAccess, AmazonEC2FullAccess y AmazonSNSFullAccess, según manual imperial.
+  • aws.secret_access_key: Registrar el Secret Access Key asociado a la Access Key ID anterior de IAM y almacenarlo cifrado.
+  Políticas sugeridas: AmazonS3FullAccess, AmazonEC2FullAccess, AmazonSNSFullAccess (ajustar según mínimo privilegio).
+-.env:
+  Todas las variables críticas del .env están completas.

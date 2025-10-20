@@ -1,0 +1,48 @@
+{
+  "territories": {
+    "peru": {
+      "name": "Goio™ Store Perú",
+      "domain": "skhqgs-2j.myshopify.com",
+      "currency": "USD",
+      "markets": [
+        "PE",
+        "BO",
+        "EC",
+        "CO"
+      ],
+      "payment_methods": [
+        "Shopify_Payments",
+        "PayPal"
+      ],
+      "reporting_prefix": "LATAM"
+    },
+    "global": {
+      "name": "Goio™ Global",
+      "domain": "goio-global.myshopify.com",
+      "currency": "USD",
+      "markets": [
+        "US",
+        "CA",
+        "GB",
+        "AU",
+        "DE",
+        "FR",
+        "ES",
+        "IT"
+      ],
+      "payment_methods": [
+        "Stripe",
+        "Apple_Pay",
+        "Google_Pay"
+      ],
+      "reporting_prefix": "GLOBAL"
+    }
+  },
+  "sync_frequency": "daily",
+  "reporting_schedule": "realtime",
+  "alerts": {
+    "inventory_low": 10,
+    "sync_failures": true,
+    "payment_issues": true
+  }
+}

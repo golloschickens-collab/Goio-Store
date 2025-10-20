@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👑 Dashboard Imperial - Goio Store</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/index.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .dashboard-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .dashboard-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .dashboard-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #ffd700, #ffed4e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .dashboard-header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .last-update {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-top: 10px;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .dashboard-section {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title i {
+            color: #ffd700;
+        }
+
+        /* Panel Superior - Estado General */
+        .status-indicators {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .status-indicator {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            border-left: 4px solid #00ff00;
+        }
+
+        .status-indicator.warning {
+            border-left-color: #ffa500;
+        }
+
+        .status-indicator.critical {
+            border-left-color: #ff0000;
+        }
+
+        .status-indicator .icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .status-indicator .value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .status-indicator .label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Embudo Imperial */
+        .funnel-container {
+            height: 300px;
+            position: relative;
+        }
+
+        .funnel-step {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            position: relative;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .funnel-step:nth-child(2) {
+            margin-left: 20px;
+            margin-right: 20px;
+            background: linear-gradient(45deg, #2196F3, #1976D2);
+        }
+
+        .funnel-step:nth-child(3) {
+            margin-left: 40px;
+            margin-right: 40px;
+            background: linear-gradient(45deg, #FF9800, #F57C00);
+        }
+
+        .funnel-step:nth-child(4) {
+            margin-left: 60px;
+            margin-right: 60px;
+            background: linear-gradient(45deg, #9C27B0, #7B1FA2);
+        }
+
+        .funnel-step .percentage {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        /* Tablas */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .data-table th {
+            background: rgba(255, 255, 255, 0.1);
+            font-weight: bold;
+        }
+
+        .data-table tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        /* Mapa de calor */
+        .heatmap-container {
+            display: grid;
+            grid-template-columns: repeat(24, 1fr);
+            gap: 2px;
+            margin-top: 15px;
+        }
+
+        .heatmap-cell {
+            aspect-ratio: 1;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .heatmap-cell:hover {
+            transform: scale(1.1);
+        }
+
+        .heatmap-cell.low {
+            background: rgba(76, 175, 80, 0.3);
+        }
+
+        .heatmap-cell.medium {
+            background: rgba(255, 152, 0, 0.6);
+        }
+
+        .heatmap-cell.high {
+            background: rgba(244, 67, 54, 0.9);
+        }
+
+        /* Alertas */
+        .alerts-container {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .alert-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-left: 4px solid #ff0000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .alert-item.warning {
+            border-left-color: #ffa500;
+        }
+
+        .alert-item.info {
+            border-left-color: #2196F3;
+        }
+
+        .alert-timestamp {
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+
+        /* Chart containers */
+        .chart-container {
+            height: 300px;
+            margin-top: 15px;
+        }
+
+        .chart-container canvas {
+            max-height: 100%;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .status-indicators {
+                grid-template-columns: 1fr;
+            }
+            
+            .dashboard-header h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Animation */
+        .dashboard-section {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Pulse animation for alerts */
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+            }
+        }
+
+        /* Loading spinner */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #ffd700;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header -->
+        <div class="dashboard-header">
+            <h1>👑 Dashboard Imperial - Goio Store</h1>
+            <div class="subtitle">Supervisión Total del Imperio Digital</div>
+            <div class="last-update">
+                <i class="fas fa-clock"></i> Última actualización: <span id="lastUpdate"></span>
+                <span class="loading" id="loadingSpinner" style="display: none;"></span>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+            <!-- 1. Panel Superior - Estado General -->
+            <div class="dashboard-section" style="grid-column: 1 / -1;">
+                <div class="section-title">
+                    <i class="fas fa-tachometer-alt"></i>
+                    Estado General del Imperio
+                </div>
+                <div class="status-indicators" id="statusIndicators">
+                    <!-- Se llenará dinámicamente -->
+                </div>
+            </div>
+
+            <!-- 2. Embudo Imperial -->
+            <div class="dashboard-section">
+                <div class="section-title">
+                    <i class="fas fa-filter"></i>
+                    Embudo Imperial
+                </div>
+                <div class="funnel-container" id="funnelContainer">
+                    <!-- Se llenará dinámicamente -->
+                </div>
+            </div>
+
+            <!-- 3. Tráfico y Creativos -->
+            <div class="dashboard-section">
+                <div class="section-title">
+                    <i class="fas fa-chart-bar"></i>
+                    Tráfico y Creativos
+                </div>
+                <div class="chart-container">
+                    <canvas id="trafficChart"></canvas>
+                </div>
+            </div>
+
+            <!-- 4. Conversión CRO -->
+            <div class="dashboard-section">
+                <div class="section-title">
+                    <i class="fas fa-chart-line"></i>
+                    Conversión CRO
+                </div>
+                <div class="chart-container">
+                    <canvas id="conversionChart"></canvas>
+                </div>
+            </div>
+
+            <!-- 5. Ticket Medio AOV -->
+            <div class="dashboard-section">
+                <div class="section-title">
+                    <i class="fas fa-shopping-cart"></i>
+                    Ticket Medio (AOV)
+                </div>
+                <div class="chart-container">
+                    <canvas id="aovChart"></canvas>
+                </div>
+            </div>
+
+            <!-- 6. Recurrencia y Retención -->
+            <div class="dashboard-section">
+                <div class="section-title">
+                    <i class="fas fa-users"></i>
+                    Recurrencia y Retención
+                </div>
+                <div class="chart-container">
+                    <canvas id="retentionChart"></canvas>
+                </div>
+            </div>
+
+            <!-- 7. Rentabilidad -->
+            <div class="dashboard-section">
+                <div class="section-title">
+                    <i class="fas fa-coins"></i>
+                    Rentabilidad por Canal
+                </div>
+                <div class="chart-container">
+                    <canvas id="profitabilityChart"></canvas>
+                </div>
+            </div>
+
+            <!-- 8. Mapa de Calor - Horas -->
+            <div class="dashboard-section">
+                <div class="section-title">
+                    <i class="fas fa-fire"></i>
+                    Mapa de Calor - Conversión por Hora
+                </div>
+                <div class="heatmap-container" id="heatmapContainer">
+                    <!-- Se llenará dinámicamente -->
+                </div>
+            </div>
+
+            <!-- Tabla Dinámica - Tráfico -->
+            <div class="dashboard-section">
+                <div class="section-title">
+                    <i class="fas fa-table"></i>
+                    Métricas por Canal
+                </div>
+                <table class="data-table" id="trafficTable">
+                    <thead>
+                        <tr>
+                            <th>Canal</th>
+                            <th>CPC</th>
+                            <th>CPV</th>
+                            <th>Impresiones</th>
+                            <th>Clics</th>
+                            <th>CTR</th>
+                        </tr>
+                    </thead>
+                    <tbody id="trafficTableBody">
+                        <!-- Se llenará dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Alertas Automáticas -->
+            <div class="dashboard-section">
+                <div class="section-title">
+                    <i class="fas fa-bell"></i>
+                    Alertas Automáticas
+                    <span id="alertCount" class="pulse" style="background: #ff0000; color: white; border-radius: 50%; padding: 5px 10px; font-size: 0.8rem; margin-left: auto;">0</span>
+                </div>
+                <div class="alerts-container" id="alertsContainer">
+                    <!-- Se llenará dinámicamente -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 📊 DASHBOARD IMPERIAL - JAVASCRIPT CORE
+        class DashboardImperial {
+            constructor() {
+                this.charts = {};
+                this.data = {};
+                this.alerts = [];
+                this.updateInterval = 15000; // 15 segundos para demo
+                
+                this.init();
+            }
+
+            async init() {
+                console.log('🎯 Inicializando Dashboard Imperial...');
+                
+                // Generar datos iniciales
+                this.generateInitialData();
+                
+                // Inicializar componentes
+                this.initStatusIndicators();
+                this.initFunnel();
+                this.initCharts();
+                this.initHeatmap();
+                this.initTrafficTable();
+                this.initAlerts();
+                
+                // Configurar actualización automática
+                this.startAutoUpdate();
+                
+                console.log('✅ Dashboard Imperial iniciado');
+            }
+
+            generateInitialData() {
+                const now = new Date();
+                
+                this.data = {
+                    general: {
+                        trafico: { value: 14554, status: 'good', change: '+12%' },
+                        conversion: { value: 2.2, status: 'good', change: '+0.3%' },
+                        aov: { value: 227.84, status: 'good', change: '+15%' },
+                        revenue24h: { value: 12450, status: 'good', change: '+8%' },
+                        revenue7d: { value: 89300, status: 'good', change: '+22%' },
+                        roi: { value: 308, status: 'excellent', change: '+45%' }
+                    },
+                    funnel: {
+                        visitas: { value: 14554, percentage: 100 },
+                        addToCart: { value: 2910, percentage: 20 },
+                        checkout: { value: 728, percentage: 25 },
+                        compras: { value: 320, percentage: 44 }
+                    },
+                    traffic: {
+                        meta: { cpc: 0.45, cpv: 1.20, impressions: 125000, clicks: 8500, ctr: 6.8 },
+                        tiktok: { cpc: 0.38, cpv: 1.05, impressions: 98000, clicks: 6200, ctr: 6.3 },
+                        google: { cpc: 0.62, cpv: 1.45, impressions: 75000, clicks: 4800, ctr: 6.4 },
+                        organico: { cpc: 0, cpv: 0, impressions: 0, clicks: 3500, ctr: 0 }
+                    },
+                    products: [
+                        { sku: 'GOIO-PA-001', name: 'Purificador Compacto', aov: 199.90, margin: 45, orders: 45 },
+                        { sku: 'GOIO-BH-002', name: 'Botella Premium', aov: 119.90, margin: 52, orders: 38 },
+                        { sku: 'GOIO-AL-001', name: 'Lámpara Inteligente', aov: 179.90, margin: 48, orders: 35 },
+                        { sku: 'GOIO-TC-002', name: 'Termo Smart', aov: 189.90, margin: 46, orders: 28 },
+                        { sku: 'GOIO-AC-001', name: 'Base Carga Universal', aov: 49.90, margin: 65, orders: 52 }
+                    ]
+                };
+            }
+
+            initStatusIndicators() {
+                const container = document.getElementById('statusIndicators');
+                const indicators = [
+                    { 
+                        label: 'Tráfico (visitas/día)', 
+                        value: this.data.general.trafico.value.toLocaleString(), 
+                        icon: '🚦', 
+                        status: this.data.general.trafico.status,
+                        change: this.data.general.trafico.change
+                    },
+                    { 
+                        label: 'Conversión Global', 
+                        value: this.data.general.conversion.value + '%', 
+                        icon: '📈', 
+                        status: this.data.general.conversion.status,
+                        change: this.data.general.conversion.change
+                    },
+                    { 
+                        label: 'Ticket Medio (AOV)', 
+                        value: 'S/' + this.data.general.aov.value, 
+                        icon: '🛒', 
+                        status: this.data.general.aov.status,
+                        change: this.data.general.aov.change
+                    },
+                    { 
+                        label: 'Revenue (24h)', 
+                        value: 'S/' + this.data.general.revenue24h.value.toLocaleString(), 
+                        icon: '💰', 
+                        status: this.data.general.revenue24h.status,
+                        change: this.data.general.revenue24h.change
+                    },
+                    { 
+                        label: 'Revenue (7d)', 
+                        value: 'S/' + this.data.general.revenue7d.value.toLocaleString(), 
+                        icon: '📊', 
+                        status: this.data.general.revenue7d.status,
+                        change: this.data.general.revenue7d.change
+                    },
+                    { 
+                        label: 'ROI Global', 
+                        value: this.data.general.roi.value + '%', 
+                        icon: '🎯', 
+                        status: this.data.general.roi.status,
+                        change: this.data.general.roi.change
+                    }
+                ];
+
+                container.innerHTML = indicators.map(indicator => `
+                    <div class="status-indicator ${indicator.status === 'warning' ? 'warning' : indicator.status === 'critical' ? 'critical' : ''}">
+                        <div class="icon">${indicator.icon}</div>
+                        <div class="value">${indicator.value}</div>
+                        <div class="label">${indicator.label}</div>
+                        <div style="font-size: 0.8rem; color: #4CAF50; margin-top: 5px;">${indicator.change}</div>
+                    </div>
+                `).join('');
+            }
+
+            initFunnel() {
+                const container = document.getElementById('funnelContainer');
+                const steps = [
+                    { name: 'Visitas', value: this.data.funnel.visitas.value, percentage: this.data.funnel.visitas.percentage },
+                    { name: 'Add to Cart', value: this.data.funnel.addToCart.value, percentage: this.data.funnel.addToCart.percentage },
+                    { name: 'Checkout Iniciado', value: this.data.funnel.checkout.value, percentage: this.data.funnel.checkout.percentage },
+                    { name: 'Compras Completadas', value: this.data.funnel.compras.value, percentage: this.data.funnel.compras.percentage }
+                ];
+
+                container.innerHTML = steps.map(step => `
+                    <div class="funnel-step">
+                        <div>${step.name}: ${step.value.toLocaleString()}</div>
+                        <div class="percentage">${step.percentage}% del paso anterior</div>
+                    </div>
+                `).join('');
+            }
+
+            initCharts() {
+                // Gráfico de Tráfico y Creativos
+                this.initTrafficChart();
+                
+                // Gráfico de Conversión
+                this.initConversionChart();
+                
+                // Gráfico de AOV
+                this.initAOVChart();
+                
+                // Gráfico de Retención
+                this.initRetentionChart();
+                
+                // Gráfico de Rentabilidad
+                this.initProfitabilityChart();
+            }
+
+            initTrafficChart() {
+                const ctx = document.getElementById('trafficChart').getContext('2d');
+                this.charts.traffic = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Meta Ads', 'TikTok Ads', 'Google Ads', 'Orgánico'],
+                        datasets: [{
+                            label: 'CTR (%)',
+                            data: [6.8, 6.3, 6.4, 0],
+                            backgroundColor: [
+                                'rgba(59, 89, 152, 0.8)',
+                                'rgba(255, 0, 80, 0.8)',
+                                'rgba(66, 133, 244, 0.8)',
+                                'rgba(76, 175, 80, 0.8)'
+                            ],
+                            borderColor: [
+                                'rgba(59, 89, 152, 1)',
+                                'rgba(255, 0, 80, 1)',
+                                'rgba(66, 133, 244, 1)',
+                                'rgba(76, 175, 80, 1)'
+                            ],
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255, 255, 255, 0.2)' }
+                            },
+                            x: {
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255, 255, 255, 0.2)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            initConversionChart() {
+                const ctx = document.getElementById('conversionChart').getContext('2d');
+                
+                // Generar datos de los últimos 7 días
+                const labels = [];
+                const data = [];
+                for (let i = 6; i >= 0; i--) {
+                    const date = new Date();
+                    date.setDate(date.getDate() - i);
+                    labels.push(date.toLocaleDateString('es-ES', { weekday: 'short' }));
+                    data.push((Math.random() * 2 + 1.5).toFixed(1));
+                }
+
+                this.charts.conversion = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Conversión (%)',
+                            data: data,
+                            borderColor: 'rgba(255, 215, 0, 1)',
+                            backgroundColor: 'rgba(255, 215, 0, 0.2)',
+                            borderWidth: 3,
+                            fill: true,
+                            tension: 0.4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255, 255, 255, 0.2)' }
+                            },
+                            x: {
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255, 255, 255, 0.2)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            initAOVChart() {
+                const ctx = document.getElementById('aovChart').getContext('2d');
+                
+                this.charts.aov = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: this.data.products.map(p => p.sku),
+                        datasets: [{
+                            label: 'AOV (S/)',
+                            data: this.data.products.map(p => p.aov),
+                            backgroundColor: 'rgba(156, 39, 176, 0.8)',
+                            borderColor: 'rgba(156, 39, 176, 1)',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255, 255, 255, 0.2)' }
+                            },
+                            x: {
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255, 255, 255, 0.2)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            initRetentionChart() {
+                const ctx = document.getElementById('retentionChart').getContext('2d');
+                
+                this.charts.retention = new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Clientes Nuevos', 'Clientes Repetidores'],
+                        datasets: [{
+                            data: [69.1, 30.9],
+                            backgroundColor: [
+                                'rgba(76, 175, 80, 0.8)',
+                                'rgba(255, 152, 0, 0.8)'
+                            ],
+                            borderColor: [
+                                'rgba(76, 175, 80, 1)',
+                                'rgba(255, 152, 0, 1)'
+                            ],
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            initProfitabilityChart() {
+                const ctx = document.getElementById('profitabilityChart').getContext('2d');
+                
+                this.charts.profitability = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Meta Ads', 'TikTok Ads', 'Google Ads', 'Email', 'Orgánico'],
+                        datasets: [{
+                            label: 'ROI (%)',
+                            data: [308, 285, 195, 450, 890],
+                            backgroundColor: [
+                                'rgba(59, 89, 152, 0.8)',
+                                'rgba(255, 0, 80, 0.8)',
+                                'rgba(66, 133, 244, 0.8)',
+                                'rgba(255, 193, 7, 0.8)',
+                                'rgba(76, 175, 80, 0.8)'
+                            ],
+                            borderColor: [
+                                'rgba(59, 89, 152, 1)',
+                                'rgba(255, 0, 80, 1)',
+                                'rgba(66, 133, 244, 1)',
+                                'rgba(255, 193, 7, 1)',
+                                'rgba(76, 175, 80, 1)'
+                            ],
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                labels: { color: '#fff' }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255, 255, 255, 0.2)' }
+                            },
+                            x: {
+                                ticks: { color: '#fff' },
+                                grid: { color: 'rgba(255, 255, 255, 0.2)' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            initHeatmap() {
+                const container = document.getElementById('heatmapContainer');
+                
+                // Generar datos para 24 horas
+                const heatmapData = [];
+                for (let hour = 0; hour < 24; hour++) {
+                    const conversionRate = Math.random() * 4 + 0.5; // 0.5% a 4.5%
+                    let intensity = 'low';
+                    if (conversionRate > 2.5) intensity = 'medium';
+                    if (conversionRate > 3.5) intensity = 'high';
+                    
+                    heatmapData.push({
+                        hour: hour,
+                        rate: conversionRate,
+                        intensity: intensity
+                    });
+                }
+
+                container.innerHTML = heatmapData.map(cell => `
+                    <div class="heatmap-cell ${cell.intensity}" title="${cell.hour}:00 - ${cell.rate.toFixed(1)}%">
+                        ${cell.hour}
+                    </div>
+                `).join('');
+            }
+
+            initTrafficTable() {
+                const tbody = document.getElementById('trafficTableBody');
+                const channels = ['Meta Ads', 'TikTok Ads', 'Google Ads', 'Orgánico'];
+                const trafficData = Object.values(this.data.traffic);
+
+                tbody.innerHTML = channels.map((channel, index) => {
+                    const data = trafficData[index];
+                    return `
+                        <tr>
+                            <td><strong>${channel}</strong></td>
+                            <td>S/${data.cpc.toFixed(2)}</td>
+                            <td>S/${data.cpv.toFixed(2)}</td>
+                            <td>${data.impressions.toLocaleString()}</td>
+                            <td>${data.clicks.toLocaleString()}</td>
+                            <td>${data.ctr.toFixed(1)}%</td>
+                        </tr>
+                    `;
+                }).join('');
+            }
+
+            initAlerts() {
+                this.checkAlerts();
+                this.updateAlertsDisplay();
+            }
+
+            checkAlerts() {
+                this.alerts = [];
+                
+                // CVR baja >20% en 24h
+                if (this.data.general.conversion.value < 1.5) {
+                    this.alerts.push({
+                        type: 'critical',
+                        message: 'CVR bajó significativamente: ' + this.data.general.conversion.value + '%',
+                        timestamp: new Date()
+                    });
+                }
+                
+                // AOV cae por debajo de S/100
+                if (this.data.general.aov.value < 100) {
+                    this.alerts.push({
+                        type: 'warning',
+                        message: 'AOV por debajo del umbral: S/' + this.data.general.aov.value,
+                        timestamp: new Date()
+                    });
+                }
+                
+                // Tráfico <200 visitas/día (simulado)
+                if (Math.random() < 0.1) { // 10% chance para demo
+                    this.alerts.push({
+                        type: 'warning',
+                        message: 'Tráfico bajo detectado en Google Ads',
+                        timestamp: new Date()
+                    });
+                }
+                
+                // Checkout falla en más del 5%
+                if (Math.random() < 0.05) { // 5% chance para demo
+                    this.alerts.push({
+                        type: 'critical',
+                        message: 'Fallos en checkout superior al 5%',
+                        timestamp: new Date()
+                    });
+                }
+
+                // Alerta informativa
+                this.alerts.push({
+                    type: 'info',
+                    message: 'Sistema funcionando correctamente - ROI: ' + this.data.general.roi.value + '%',
+                    timestamp: new Date()
+                });
+            }
+
+            updateAlertsDisplay() {
+                const container = document.getElementById('alertsContainer');
+                const alertCount = document.getElementById('alertCount');
+                
+                const criticalAlerts = this.alerts.filter(a => a.type === 'critical').length;
+                alertCount.textContent = criticalAlerts;
+                alertCount.className = criticalAlerts > 0 ? 'pulse' : '';
+
+                container.innerHTML = this.alerts.map(alert => `
+                    <div class="alert-item ${alert.type}">
+                        <div>
+                            <i class="fas fa-${alert.type === 'critical' ? 'exclamation-triangle' : alert.type === 'warning' ? 'exclamation-circle' : 'info-circle'}"></i>
+                        </div>
+                        <div style="flex: 1;">
+                            <div>${alert.message}</div>
+                            <div class="alert-timestamp">${alert.timestamp.toLocaleTimeString('es-ES')}</div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            updateLastUpdateTime() {
+                document.getElementById('lastUpdate').textContent = new Date().toLocaleTimeString('es-ES');
+            }
+
+            startAutoUpdate() {
+                this.updateLastUpdateTime();
+                
+                setInterval(() => {
+                    console.log('🔄 Actualizando Dashboard Imperial...');
+                    
+                    // Mostrar spinner
+                    document.getElementById('loadingSpinner').style.display = 'inline-block';
+                    
+                    // Simular actualización de datos
+                    setTimeout(() => {
+                        this.generateInitialData();
+                        this.initStatusIndicators();
+                        this.initFunnel();
+                        this.initTrafficTable();
+                        this.checkAlerts();
+                        this.updateAlertsDisplay();
+                        this.updateLastUpdateTime();
+                        
+                        // Ocultar spinner
+                        document.getElementById('loadingSpinner').style.display = 'none';
+                        
+                        console.log('✅ Dashboard actualizado');
+                    }, 1000);
+                }, this.updateInterval);
+            }
+        }
+
+        // 🚀 Inicializar Dashboard cuando la página esté lista
+        document.addEventListener('DOMContentLoaded', () => {
+            const dashboard = new DashboardImperial();
+            
+            // Hacer disponible globalmente para debugging
+            window.dashboard = dashboard;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-10-12T12:26:57.082Z",
+  "metricas": {
+    "soldados": {
+      "total": 5,
+      "activos": 5,
+      "elite": 1,
+      "certificados": 0,
+      "rasos": 2,
+      "no_certificados": 2
+    },
+    "operaciones": {
+      "en_curso": 1,
+      "completadas_hoy": 5,
+      "fallidas_hoy": 0,
+      "primera_venta_activa": true
+    },
+    "fortalezas": {
+      "peru": {
+        "status": "OPERATIVA",
+        "uptime": "100%",
+        "ventas_hoy": 0,
+        "operaciones": 8
+      },
+      "global": {
+        "status": "EN_CONSTRUCCION",
+        "uptime": "N/A",
+        "ventas_hoy": 0
+      },
+      "comando": {
+        "status": "ACTIVO",
+        "uptime": "100%",
+        "operaciones": 8
+      }
+    },
+    "sistema": {
+      "cpu_uso": 27.36574293297248,
+      "memoria_uso": 42.29723113825248,
+      "logs_generados": 5,
+      "alertas_criticas": 1
+    }
+  },
+  "alertas_activas": 0,
+  "estado_general": 54
+}

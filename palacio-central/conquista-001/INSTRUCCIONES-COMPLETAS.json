@@ -1,0 +1,43 @@
+{
+  "trace_id": "CONQUISTA-001",
+  "timestamp": "2025-10-12T09:42:44.481Z",
+  "productos": [
+    {
+      "nombre": "Botella Eco-Friendly Smart",
+      "precio": "$29.99",
+      "url": "https://skhqgs-2j.myshopify.com/products/botella-eco-friendly-smart"
+    },
+    {
+      "nombre": "Camiseta Orgánica Premium",
+      "precio": "$48.99",
+      "url": "https://skhqgs-2j.myshopify.com/products/camiseta-organica-premium"
+    },
+    {
+      "nombre": "Kit Home Office Completo",
+      "precio": "$29.99",
+      "url": "https://skhqgs-2j.myshopify.com/products/kit-home-office-completo"
+    }
+  ],
+  "mensajes": {
+    "whatsapp": "🚀 ¡Increíble! Acabo de lanzar mi tienda online con productos eco-friendly premium 🌱\n\n🔥 OFERTA DE LANZAMIENTO (Solo hoy):\n• Botella Eco-Friendly Smart → $29.99 (era $39.99)\n• Camiseta Orgánica Premium → $48.99 (era $59.99)\n• Kit Home Office Completo → $29.99 (era $49.99)\n\n✅ Pago seguro: PayPal + Yape/Plin\n🚚 Envío gratis Lima\n🎁 Regalo sorpresa en primera compra\n\n¿Te interesa algo? Te paso el link directo 👇",
+    "instagram": "🚀 MI NUEVA TIENDA YA ESTÁ AQUÍ\n\nProductos eco-friendly premium\n100% reales, no dropshipping\n\nSWIPE para ver los destacados ➡️\n\nLink en bio o mensaje directo\n\n#emprendimiento #ecofriendly #startupperu #sostenible",
+    "facebook": "🚀 GRAN LANZAMIENTO: Nueva tienda online de productos eco-friendly premium\n\n🌱 MISIÓN: Hacer que lo sostenible sea accesible y premium\n\n✅ LO QUE OFRECEMOS:\n• Productos 100% eco-friendly\n• Calidad premium garantizada\n• Envíos seguros a todo Perú\n• Múltiples opciones de pago\n\n🔥 PRODUCTOS DESTACADOS:\n→ Botellas inteligentes que mantienen temperatura perfecta\n→ Camisetas orgánicas súper cómodas\n→ Kits completos para trabajo desde casa\n\n💰 PRECIOS DE LANZAMIENTO especiales por tiempo limitado\n\n👆 Link en comentarios para ver todo el catálogo"
+  },
+  "cronograma": {
+    "primeros_30_min": [
+      "5 WhatsApp",
+      "Instagram Story",
+      "Facebook Post"
+    ],
+    "primeras_2_horas": [
+      "Responder mensajes",
+      "Compartir en grupos",
+      "Seguimiento FB"
+    ],
+    "primeras_6_horas": [
+      "Monitorear Shopify",
+      "Registrar primera venta",
+      "Notificar Dashboard"
+    ]
+  }
+}

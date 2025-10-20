@@ -1,0 +1,617 @@
+{
+  "generated_at": "2025-10-13T17:19:59.900Z",
+  "root": "C:\\Goio mayordomo\\palacio-central",
+  "entries": [
+    {
+      "file": "config/social_credentials.json",
+      "key": "meta_business.system_user_id",
+      "line": 4,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/social_credentials.json",
+      "key": "meta_business.system_user_token",
+      "line": 6,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/social_credentials.json",
+      "key": "meta_business.webhook.callback_url",
+      "line": 8,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/social_credentials.json",
+      "key": "meta_business.webhook.verify_token",
+      "line": 9,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/social_credentials.json",
+      "key": "instagram.gollos_chickens.user_access_token",
+      "line": 19,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/social_credentials.json",
+      "key": "instagram.gollos_chickens.long_lived_user_token",
+      "line": 20,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/social_credentials.json",
+      "key": "instagram.goio_store.user_access_token",
+      "line": 52,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/social_credentials.json",
+      "key": "instagram.goio_store.long_lived_user_token",
+      "line": 53,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/social_credentials.json",
+      "key": "facebook.gollos_chickens.app_id",
+      "line": 87,
+      "valuePreview": "1098...2623",
+      "status": "vigente"
+    },
+    {
+      "file": "config/social_credentials.json",
+      "key": "facebook.gollos_chickens.app_secret",
+      "line": 88,
+      "valuePreview": "f10f...fc2f",
+      "status": "vigente"
+    },
+    {
+      "file": "config/social_credentials.json",
+      "key": "facebook.gollos_chickens.page_access_token",
+      "line": 89,
+      "valuePreview": "EAAP...jwoT",
+      "status": "vigente"
+    },
+    {
+      "file": "config/social_credentials.json",
+      "key": "facebook.goio_store.app_id",
+      "line": 111,
+      "valuePreview": "2161...6662",
+      "status": "vigente"
+    },
+    {
+      "file": "config/social_credentials.json",
+      "key": "facebook.goio_store.app_secret",
+      "line": 112,
+      "valuePreview": "CONF...PUES",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/social_credentials.json",
+      "key": "facebook.goio_store.page_access_token",
+      "line": 113,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/social_credentials.json",
+      "key": "whatsapp_business.gollos_chickens.waba_id",
+      "line": 135,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/social_credentials.json",
+      "key": "whatsapp_business.gollos_chickens.phone_number_id",
+      "line": 136,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/social_credentials.json",
+      "key": "whatsapp_business.gollos_chickens.api_key",
+      "line": 138,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/keys.json",
+      "key": "GEMINI_API_KEY",
+      "line": 2,
+      "valuePreview": "AIza...hHbU",
+      "status": "vigente"
+    },
+    {
+      "file": "config/keys.json",
+      "key": "google_api_key",
+      "line": 3,
+      "valuePreview": "AIza...hHbU",
+      "status": "vigente"
+    },
+    {
+      "file": "config/keys.json",
+      "key": "facebook.gollos_chickens.app_id",
+      "line": 6,
+      "valuePreview": "1098...2623",
+      "status": "vigente"
+    },
+    {
+      "file": "config/keys.json",
+      "key": "facebook.gollos_chickens.app_secret",
+      "line": 7,
+      "valuePreview": "f10f...fc2f",
+      "status": "vigente"
+    },
+    {
+      "file": "config/keys.json",
+      "key": "facebook.gollos_chickens.page_access_token",
+      "line": 9,
+      "valuePreview": "EAAP...jwoT",
+      "status": "vigente"
+    },
+    {
+      "file": "config/keys.json",
+      "key": "facebook.goio_store.app_id",
+      "line": 16,
+      "valuePreview": "2161...6662",
+      "status": "vigente"
+    },
+    {
+      "file": "config/keys.json",
+      "key": "facebook.goio_store.app_secret",
+      "line": 17,
+      "valuePreview": "CONF...PUES",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/keys.json",
+      "key": "facebook.goio_store.page_access_token",
+      "line": 19,
+      "valuePreview": "EAAe...npre",
+      "status": "vigente"
+    },
+    {
+      "file": "config/keys.json",
+      "key": "shopify.gollos_chickens.access_token",
+      "line": 55,
+      "valuePreview": "TU_A...AQUI",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/keys.json",
+      "key": "shopify.gollos_chickens.api_key",
+      "line": 56,
+      "valuePreview": "TU_A...AQUI",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/keys.json",
+      "key": "shopify.goio_store.access_token",
+      "line": 61,
+      "valuePreview": "TU_A...AQUI",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/keys.json",
+      "key": "shopify.goio_store.api_key",
+      "line": 62,
+      "valuePreview": "TU_A...AQUI",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/keys.json",
+      "key": "aws.access_key_id",
+      "line": 67,
+      "valuePreview": "TU_A..._KEY",
+      "status": "placeholder"
+    },
+    {
+      "file": "config/keys.json",
+      "key": "aws.secret_access_key",
+      "line": 68,
+      "valuePreview": "TU_A..._KEY",
+      "status": "placeholder"
+    },
+    {
+      "file": ".env",
+      "key": "SHOPIFY_DOMAIN_PROD",
+      "line": 6,
+      "valuePreview": "skhq....com",
+      "status": "vigente"
+    },
+    {
+      "file": ".env",
+      "key": "SHOPIFY_ADMIN_TOKEN_PROD",
+      "line": 7,
+      "valuePreview": "shpa...0530",
+      "status": "vigente"
+    },
+    {
+      "file": ".env",
+      "key": "SHOPIFY_DOMAIN_DEV",
+      "line": 11,
+      "valuePreview": "goio....com",
+      "status": "vigente"
+    },
+    {
+      "file": ".env",
+      "key": "SHOPIFY_ADMIN_TOKEN_DEV",
+      "line": 12,
+      "valuePreview": "pend...oken",
+      "status": "vigente"
+    },
+    {
+      "file": ".env",
+      "key": "FACEBOOK_ACCESS_TOKEN",
+      "line": 16,
+      "valuePreview": "EAAP...ofkH",
+      "status": "vigente"
+    },
+    {
+      "file": ".env",
+      "key": "GEMINI_API_KEY",
+      "line": 25,
+      "valuePreview": "AIza...hHbU",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\configuracion-real.json",
+      "key": "shopify.access_token",
+      "line": 4,
+      "valuePreview": "TU_A...AQUI",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\configuracion-real.json",
+      "key": "shopify.api_key",
+      "line": 5,
+      "valuePreview": "TU_A...AQUI",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\imagenes-subidas-log.json",
+      "error": "Bad control character in string literal in JSON at position 207 (line 9 column 28)"
+    },
+    {
+      "file": "config\\keys.json",
+      "key": "GEMINI_API_KEY",
+      "line": 2,
+      "valuePreview": "AIza...hHbU",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\keys.json",
+      "key": "google_api_key",
+      "line": 3,
+      "valuePreview": "AIza...hHbU",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\keys.json",
+      "key": "facebook.gollos_chickens.app_id",
+      "line": 6,
+      "valuePreview": "1098...2623",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\keys.json",
+      "key": "facebook.gollos_chickens.app_secret",
+      "line": 7,
+      "valuePreview": "f10f...fc2f",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\keys.json",
+      "key": "facebook.gollos_chickens.page_access_token",
+      "line": 9,
+      "valuePreview": "EAAP...jwoT",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\keys.json",
+      "key": "facebook.goio_store.app_id",
+      "line": 16,
+      "valuePreview": "2161...6662",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\keys.json",
+      "key": "facebook.goio_store.app_secret",
+      "line": 17,
+      "valuePreview": "CONF...PUES",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\keys.json",
+      "key": "facebook.goio_store.page_access_token",
+      "line": 19,
+      "valuePreview": "EAAe...npre",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\keys.json",
+      "key": "shopify.gollos_chickens.access_token",
+      "line": 55,
+      "valuePreview": "TU_A...AQUI",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\keys.json",
+      "key": "shopify.gollos_chickens.api_key",
+      "line": 56,
+      "valuePreview": "TU_A...AQUI",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\keys.json",
+      "key": "shopify.goio_store.access_token",
+      "line": 61,
+      "valuePreview": "TU_A...AQUI",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\keys.json",
+      "key": "shopify.goio_store.api_key",
+      "line": 62,
+      "valuePreview": "TU_A...AQUI",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\keys.json",
+      "key": "aws.access_key_id",
+      "line": 67,
+      "valuePreview": "TU_A..._KEY",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\keys.json",
+      "key": "aws.secret_access_key",
+      "line": 68,
+      "valuePreview": "TU_A..._KEY",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\keys_actualizado.json",
+      "error": "Bad control character in string literal in JSON at position 1201 (line 37 column 26)"
+    },
+    {
+      "file": "config\\keys_backup.json",
+      "error": "Expected ':' after property name in JSON at position 10 (line 2 column 9)"
+    },
+    {
+      "file": "config\\kit-lanzamiento.json",
+      "error": "Bad control character in string literal in JSON at position 105 (line 4 column 29)"
+    },
+    {
+      "file": "config\\marketing-kit-inmediato.json",
+      "error": "Bad control character in string literal in JSON at position 102 (line 5 column 19)"
+    },
+    {
+      "file": "config\\meta-ads-config.json",
+      "error": "Bad control character in string literal in JSON at position 262 (line 10 column 21)"
+    },
+    {
+      "file": "config\\modo-real-config.json",
+      "error": "Bad control character in string literal in JSON at position 863 (line 24 column 38)"
+    },
+    {
+      "file": "config\\productos-optimizados-ia.json",
+      "error": "Bad control character in string literal in JSON at position 917 (line 26 column 38)"
+    },
+    {
+      "file": "config\\products.json",
+      "error": "Bad control character in string literal in JSON at position 988 (line 39 column 23)"
+    },
+    {
+      "file": "config\\reporte-imagenes-ia-profesional.json",
+      "error": "Bad control character in string literal in JSON at position 657 (line 23 column 25)"
+    },
+    {
+      "file": "config\\social_credentials.example.json",
+      "key": "meta_business.app_id",
+      "line": 4,
+      "valuePreview": "",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\social_credentials.example.json",
+      "key": "meta_business.app_secret",
+      "line": 5,
+      "valuePreview": "",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\social_credentials.example.json",
+      "key": "meta_business.system_user_id",
+      "line": 6,
+      "valuePreview": "",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\social_credentials.example.json",
+      "key": "meta_business.system_user_token",
+      "line": 7,
+      "valuePreview": "",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\social_credentials.example.json",
+      "key": "meta_business.webhook_callback_url",
+      "line": 8,
+      "valuePreview": "",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\social_credentials.example.json",
+      "key": "meta_business.webhook_verify_token",
+      "line": 9,
+      "valuePreview": "",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\social_credentials.example.json",
+      "key": "instagram.primary_account.user_access_token",
+      "line": 16,
+      "valuePreview": "",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\social_credentials.example.json",
+      "key": "instagram.primary_account.long_lived_user_token",
+      "line": 17,
+      "valuePreview": "",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\social_credentials.example.json",
+      "key": "whatsapp_business.phone_number_id",
+      "line": 66,
+      "valuePreview": "",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\social_credentials.example.json",
+      "key": "whatsapp_business.waba_id",
+      "line": 67,
+      "valuePreview": "",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\social_credentials.example.json",
+      "key": "whatsapp_business.api_key",
+      "line": 68,
+      "valuePreview": "",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "meta_business.system_user_id",
+      "line": 4,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "meta_business.system_user_token",
+      "line": 6,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "meta_business.webhook.callback_url",
+      "line": 8,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "meta_business.webhook.verify_token",
+      "line": 9,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "instagram.gollos_chickens.user_access_token",
+      "line": 19,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "instagram.gollos_chickens.long_lived_user_token",
+      "line": 20,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "instagram.goio_store.user_access_token",
+      "line": 52,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "instagram.goio_store.long_lived_user_token",
+      "line": 53,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "facebook.gollos_chickens.app_id",
+      "line": 87,
+      "valuePreview": "1098...2623",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "facebook.gollos_chickens.app_secret",
+      "line": 88,
+      "valuePreview": "f10f...fc2f",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "facebook.gollos_chickens.page_access_token",
+      "line": 89,
+      "valuePreview": "EAAP...jwoT",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "facebook.goio_store.app_id",
+      "line": 111,
+      "valuePreview": "2161...6662",
+      "status": "vigente"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "facebook.goio_store.app_secret",
+      "line": 112,
+      "valuePreview": "CONF...PUES",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "facebook.goio_store.page_access_token",
+      "line": 113,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "whatsapp_business.gollos_chickens.waba_id",
+      "line": 135,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "whatsapp_business.gollos_chickens.phone_number_id",
+      "line": 136,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\social_credentials.json",
+      "key": "whatsapp_business.gollos_chickens.api_key",
+      "line": 138,
+      "valuePreview": "*******",
+      "status": "placeholder"
+    },
+    {
+      "file": "config\\webhook_config.json",
+      "error": "Bad control character in string literal in JSON at position 19 (line 2 column 17)"
+    }
+  ]
+}

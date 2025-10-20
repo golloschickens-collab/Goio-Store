@@ -1,0 +1,40 @@
+{
+  "tienda": {
+    "nombre": "My Store",
+    "dominio": "skhqgs-2j.myshopify.com",
+    "url": "https://skhqgs-2j.myshopify.com",
+    "productos_activos": 13
+  },
+  "productos_estrella": [
+    {
+      "titulo": "Botella reutilizable eco-friendly",
+      "precio": 30,
+      "precio_promocional": "24.00",
+      "stock": 50,
+      "url": "https://skhqgs-2j.myshopify.com/products/botella-reutilizable-eco-friendly",
+      "checkout_directo": "https://skhqgs-2j.myshopify.com/cart/47003923349752:1"
+    },
+    {
+      "titulo": "Botella Smart GO – Nunca olvides hidratarte",
+      "precio": 29.99,
+      "precio_promocional": "23.99",
+      "stock": 100,
+      "url": "https://skhqgs-2j.myshopify.com/products/botella-inteligente-hidratacin-go",
+      "checkout_directo": "https://skhqgs-2j.myshopify.com/cart/47072272875768:1"
+    },
+    {
+      "titulo": "Cafetera Cold Brew Express",
+      "precio": 29.99,
+      "precio_promocional": "23.99",
+      "stock": 100,
+      "url": "https://skhqgs-2j.myshopify.com/products/cafetera-cold-brew-express",
+      "checkout_directo": "https://skhqgs-2j.myshopify.com/cart/47072273039608:1"
+    }
+  ],
+  "mensajes": {
+    "whatsapp": "\n🔥 ¡OFERTA ESPECIAL HOY! 🔥\n\nBotella reutilizable eco-friendly\n\n💰 Precio especial: $24.00 USD\n~~Antes: $30.00~~\n🎁 ¡Ahorras $6.00!\n\n📦 Stock limitado: 50 unidades\n🚚 Envío disponible\n\n👉 COMPRA AHORA:\nhttps://skhqgs-2j.myshopify.com/products/botella-reutilizable-eco-friendly\n\n⏰ Oferta válida HOY solamente\n",
+    "email": "Descubre nuestros productos eco-friendly en skhqgs-2j.myshopify.com",
+    "redes": "🌿 Nueva tienda online! Productos sostenibles con envío a todo el mundo 🌍"
+  },
+  "fecha_creacion": "2025-10-11T08:21:34.451Z"
+}

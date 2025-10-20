@@ -1,0 +1,312 @@
+[
+  {
+    "title": "Kit Home Office Ergonómico",
+    "body_html": "<p><strong>Montaje premium para tu escritorio híbrido:</strong> soporte para laptop, mouse ergonómico y pad antifatiga para jornadas sin dolor.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Oficina",
+    "status": "draft",
+    "tags": ["ergonomía", "home office", "productividad"],
+    "options": [{ "name": "Modelo", "values": ["Estándar"] }],
+    "variants": [
+      {
+        "option1": "Estándar",
+        "sku": "GOIO-HO-001",
+        "price": "349.90",
+        "compare_at_price": "399.90",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 75,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000016",
+        "weight": 2.4,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.goio.store/products/home-office-kit/main.jpg",
+        "alt": "Kit Home Office Ergonómico – montaje completo"
+      }
+    ]
+  },
+  {
+    "title": "Purificador de Aire Compacto GO",
+    "body_html": "<p><strong>Filtro HEPA H13 + ionizador</strong> en un formato portátil ideal para dormitorios y escritorios.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Hogar",
+    "status": "draft",
+    "tags": ["purificador", "calidad de aire", "salud"],
+    "options": [{ "name": "Color", "values": ["Blanco"] }],
+    "variants": [
+      {
+        "option1": "Blanco",
+        "sku": "GOIO-AIR-002",
+        "price": "289.00",
+        "compare_at_price": "329.00",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 120,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000023",
+        "weight": 1.1,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.goio.store/products/purificador-compacto/main.jpg",
+        "alt": "Purificador de Aire Compacto GO"
+      }
+    ]
+  },
+  {
+    "title": "Botella Inteligente Hidratación GO",
+    "body_html": "<p><strong>Recordatorios luminosos + sensor de consumo</strong> para mantenerte hidratado todo el día.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Wellness",
+    "status": "draft",
+    "tags": ["hidratación", "smart", "wellness"],
+    "options": [{ "name": "Capacidad", "values": ["650 ml"] }],
+    "variants": [
+      {
+        "option1": "650 ml",
+        "sku": "GOIO-H2O-003",
+        "price": "179.00",
+        "compare_at_price": "219.00",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 150,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000030",
+        "weight": 0.45,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.goio.store/products/botella-inteligente/main.jpg",
+        "alt": "Botella Inteligente Hidratación GO"
+      }
+    ]
+  },
+  {
+    "title": "Lámpara LED Ambiente Premium",
+    "body_html": "<p><strong>Regulable por app y escenas preprogramadas</strong> para tu sala, dormitorio o set de streaming.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Iluminación",
+    "status": "draft",
+    "tags": ["led", "ambiente", "smart home"],
+    "options": [{ "name": "Formato", "values": ["Torre"] }],
+    "variants": [
+      {
+        "option1": "Torre",
+        "sku": "GOIO-LED-004",
+        "price": "259.90",
+        "compare_at_price": "299.90",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 90,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000047",
+        "weight": 2.1,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.goio.store/products/lampara-ambiente/main.jpg",
+        "alt": "Lámpara LED Ambiente Premium"
+      }
+    ]
+  },
+  {
+    "title": "Mini Proyector HD Portátil",
+    "body_html": "<p><strong>Cine en casa</strong> con 300 lúmenes ANSI, conexión WiFi/Bluetooth y soporte hasta 120 pulgadas.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Electrónica",
+    "status": "draft",
+    "tags": ["proyector", "home theater", "portátil"],
+    "options": [{ "name": "Color", "values": ["Negro"] }],
+    "variants": [
+      {
+        "option1": "Negro",
+        "sku": "GOIO-PROJ-005",
+        "price": "499.00",
+        "compare_at_price": "559.00",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 60,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000054",
+        "weight": 0.9,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.goio.store/products/mini-proyector/main.jpg",
+        "alt": "Mini Proyector HD Portátil"
+      }
+    ]
+  },
+  {
+    "title": "Set Bandas de Resistencia Pro",
+    "body_html": "<p><strong>Cinco niveles de resistencia</strong> + anclaje de puerta y guías de entrenamiento para rutinas completas en casa.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Fitness",
+    "status": "draft",
+    "tags": ["fitness", "bandas", "entrenamiento"],
+    "options": [{ "name": "Pack", "values": ["Completo"] }],
+    "variants": [
+      {
+        "option1": "Completo",
+        "sku": "GOIO-FIT-006",
+        "price": "149.90",
+        "compare_at_price": "189.90",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 180,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000061",
+        "weight": 0.65,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.goio.store/products/bandas-resistencia/main.jpg",
+        "alt": "Set Bandas de Resistencia Pro"
+      }
+    ]
+  },
+  {
+    "title": "Organizador Modular de Closet",
+    "body_html": "<p><strong>Sistema expandible</strong> con 6 módulos, ideal para apartamentos y espacios reducidos.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Organización",
+    "status": "draft",
+    "tags": ["organización", "closet", "hogar"],
+    "options": [{ "name": "Configuración", "values": ["6 Módulos"] }],
+    "variants": [
+      {
+        "option1": "6 Módulos",
+        "sku": "GOIO-ORG-007",
+        "price": "329.00",
+        "compare_at_price": "379.00",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 80,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000078",
+        "weight": 5.8,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.goio.store/products/organizador-modular/main.jpg",
+        "alt": "Organizador Modular de Closet"
+      }
+    ]
+  },
+  {
+    "title": "Cafetera Cold Brew Express",
+    "body_html": "<p><strong>Infusión en 10 minutos</strong> con doble filtro y jarra de vidrio borosilicato para sabores más suaves.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Gourmet",
+    "status": "draft",
+    "tags": ["café", "cold brew", "gourmet"],
+    "options": [{ "name": "Capacidad", "values": ["1 Litro"] }],
+    "variants": [
+      {
+        "option1": "1 Litro",
+        "sku": "GOIO-CAF-008",
+        "price": "199.90",
+        "compare_at_price": "239.90",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 110,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000085",
+        "weight": 1.3,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.goio.store/products/cold-brew/main.jpg",
+        "alt": "Cafetera Cold Brew Express"
+      }
+    ]
+  },
+  {
+    "title": "Robot Aspiradora Slim",
+    "body_html": "<p><strong>Perfil ultrafino</strong> con mapeo láser y control vía app para mantener pisos impecables.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Electrodomésticos",
+    "status": "draft",
+    "tags": ["robot aspiradora", "smart home", "limpieza"],
+    "options": [{ "name": "Modelo", "values": ["Slim S1"] }],
+    "variants": [
+      {
+        "option1": "Slim S1",
+        "sku": "GOIO-ROB-009",
+        "price": "799.00",
+        "compare_at_price": "899.00",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 45,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000092",
+        "weight": 3.2,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.goio.store/products/robot-slim/main.jpg",
+        "alt": "Robot Aspiradora Slim"
+      }
+    ]
+  },
+  {
+    "title": "Set Aromaterapia Relax",
+    "body_html": "<p><strong>Difusor ultrasónico</strong> + tres aceites esenciales premium (lavanda, eucalipto, vainilla).</p>",
+    "vendor": "Goio Store",
+    "product_type": "Bienestar",
+    "status": "draft",
+    "tags": ["aromaterapia", "relax", "bienestar"],
+    "options": [{ "name": "Presentación", "values": ["Kit Completo"] }],
+    "variants": [
+      {
+        "option1": "Kit Completo",
+        "sku": "GOIO-AROM-010",
+        "price": "169.00",
+        "compare_at_price": "209.00",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 140,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000108",
+        "weight": 0.75,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.goio.store/products/aromaterapia-kit/main.jpg",
+        "alt": "Set Aromaterapia Relax"
+      }
+    ]
+  }
+]

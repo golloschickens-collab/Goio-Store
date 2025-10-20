@@ -1,0 +1,43 @@
+{
+  "fase": "1",
+  "nombre": "Rutina Hormiguero - Fase 1",
+  "objetivo": "Implementar hábitos diarios basados en castas de hormigas",
+  "horario": [
+    {
+      "hora": "08:00",
+      "actividad": "Consejo ordinario breve (15 min)",
+      "responsables": ["Emperador", "Directores de ejército"],
+      "salida": "Agenda del día, decisiones iniciales"
+    },
+    {
+      "hora": "09:00",
+      "actividad": "Exploradoras investigan mercado y alertas",
+      "responsables": ["Ejército Inteligencia"],
+      "salida": "Registro en dashboard de oportunidades"
+    },
+    {
+      "hora": "10:30",
+      "actividad": "Obreras ejecutan campañas y contenidos",
+      "responsables": ["Ejército Comercial", "Ejército Creativo"],
+      "salida": "Publicaciones, actualizaciones de métricas"
+    },
+    {
+      "hora": "12:30",
+      "actividad": "Soldados verifican seguridad y credenciales",
+      "responsables": ["Ejército Técnico"],
+      "salida": "Log de credenciales, alertas resueltas"
+    },
+    {
+      "hora": "14:00",
+      "actividad": "Nodrizas entrenan soldados y documentan lecciones",
+      "responsables": ["Academia Imperial"],
+      "salida": "Reporte de mejoras, nuevas plantillas"
+    },
+    {
+      "hora": "18:00",
+      "actividad": "Cierre diario y actualización de métricas",
+      "responsables": ["Todos los ejércitos"],
+      "salida": "Actualización en conquista-001/metricas-*.json, resumen diario"
+    }
+  ]
+}

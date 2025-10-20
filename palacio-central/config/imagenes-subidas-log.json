@@ -1,0 +1,84 @@
+{
+  "fecha": "2025-10-12T03:03:00.903Z",
+  "exitosos": 12,
+  "fallidos": 1,
+  "detalles": [
+    {
+      "producto": "Botella reutilizable eco-friendly",
+      "status": "exitoso",
+      "imagen_url": "https://images.pexels.com/photos/4246221/pexels-photo-4246221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "shopify_image_id": 47586241446136
+    },
+    {
+      "producto": "Botella Smart GO – Nunca olvides hidratarte",
+      "status": "exitoso",
+      "imagen_url": "https://images.pexels.com/photos/3942821/pexels-photo-3942821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "shopify_image_id": 47586244395256
+    },
+    {
+      "producto": "Cafetera Cold Brew Express",
+      "status": "exitoso",
+      "imagen_url": "https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "shopify_image_id": 47586245935352
+    },
+    {
+      "producto": "Camiseta verde orgánica",
+      "status": "exitoso",
+      "imagen_url": "https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "shopify_image_id": 47586246656248
+    },
+    {
+      "producto": "Kit Home Office Ergonómico – Productividad sin dolor",
+      "status": "exitoso",
+      "imagen_url": "https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "shopify_image_id": 47586248524024
+    },
+    {
+      "producto": "Lámpara LED Ambiente Premium",
+      "status": "exitoso",
+      "imagen_url": "https://images.pexels.com/photos/1112598/pexels-photo-1112598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "shopify_image_id": 47586249375992
+    },
+    {
+      "producto": "Mini Proyector HD Portátil",
+      "status": "exitoso",
+      "imagen_url": "https://images.pexels.com/photos/7991428/pexels-photo-7991428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "shopify_image_id": 47586250555640
+    },
+    {
+      "producto": "Organizador Modular de Closet",
+      "status": "exitoso",
+      "imagen_url": "https://images.pexels.com/photos/6585758/pexels-photo-6585758.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "shopify_image_id": 47586252095736
+    },
+    {
+      "producto": "Purificador de Aire GO – Respira mejor en 5 min",
+      "status": "exitoso",
+      "imagen_url": "https://images.pexels.com/photos/4353618/pexels-photo-4353618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "shopify_image_id": 47586252980472
+    },
+    {
+      "producto": "Robot Aspiradora Slim",
+      "status": "fallido",
+      "error": "Shopify error 422: {\"errors\":{\"image\":[\"Could not download image: [\\\""
+    },
+    {
+      "producto": "Set Aromaterapia Relax",
+      "status": "exitoso",
+      "imagen_url": "https://images.pexels.com/photos/4202325/pexels-photo-4202325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "shopify_image_id": 47586255896824
+    },
+    {
+      "producto": "Set Bandas de Resistencia Pro",
+      "status": "exitoso",
+      "imagen_url": "https://images.pexels.com/photos/4162449/pexels-photo-4162449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "shopify_image_id": 47586256486648
+    },
+    {
+      "producto": "Test Product 1760039704476",
+      "status": "exitoso",
+      "imagen_url": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750",
+      "shopify_image_id": 47586257993976
+    }
+  ]
+}

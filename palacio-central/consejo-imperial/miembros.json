@@ -1,0 +1,17 @@
+{
+  "consejo": "Imperio Goio",
+  "version": "1.0.0",
+  "miembros": [
+    {
+      "codigo": "EMP-GOIO",
+      "nombre": "Emperador Goio",
+      "rol": "Supremo Comandante",
+      "ejercito_representado": "Imperio",
+      "responsabilidades": [
+        "Emitir órdenes supremas",
+        "Ratificar resoluciones del consejo"
+      ]
+    }
+  ],
+  "proximo_actualizacion": null
+}

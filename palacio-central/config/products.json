@@ -1,24 +1,462 @@
 [
   {
-    "title": "SmartCup AutoCalentable",
-    "body_html": "&lt;strong&gt;La taza que mantiene tu café perfecto todo el día&lt;/strong&gt; 🌟 Innovador y listo para enviar a todo el mundo.",
-    "vendor": "Proveedor X",
-    "product_type": "Hogar",
+    "title": "Kit Home Office Ergonómico",
+    "body_html": "<p><strong>Montaje premium para tu escritorio híbrido:</strong> soporte para laptop, mouse ergonómico y pad antifatiga para jornadas sin dolor.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Oficina",
+    "status": "draft",
     "tags": [
-      "café",
-      "taza",
-      "smart"
+      "ergonomía",
+      "home office",
+      "productividad"
+    ],
+    "options": [
+      {
+        "name": "Modelo",
+        "values": [
+          "Estándar"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "option1": "Estándar",
+        "sku": "GOIO-HO-001",
+        "price": "349.90",
+        "compare_at_price": "399.90",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 75,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000016",
+        "weight": 2.4,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/kit-home-office-ergonómico-professional-white-background.jpg",
+        "alt": "Kit Home Office Ergonómico - Vista principal"
+      },
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/kit-home-office-ergonómico-lifestyle-in-use.jpg",
+        "alt": "Kit Home Office Ergonómico - En uso"
+      }
     ]
   },
   {
-    "title": "Auriculares Traductor Instantáneo",
-    "body_html": "Traduce en tiempo real hasta 40 idiomas 🌟 Innovador y listo para enviar a todo el mundo.",
-    "vendor": "TechWorld",
-    "product_type": "Electrónica",
+    "title": "Purificador de Aire Compacto GO",
+    "body_html": "<p><strong>Filtro HEPA H13 + ionizador</strong> en un formato portátil ideal para dormitorios y escritorios.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Hogar",
+    "status": "draft",
     "tags": [
-      "auriculares",
-      "traducción",
-      "idiomas"
+      "purificador",
+      "calidad de aire",
+      "salud"
+    ],
+    "options": [
+      {
+        "name": "Color",
+        "values": [
+          "Blanco"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "option1": "Blanco",
+        "sku": "GOIO-AIR-002",
+        "price": "289.00",
+        "compare_at_price": "329.00",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 120,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000023",
+        "weight": 1.1,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/purificador-de-aire-compacto-go-professional-white-background.jpg",
+        "alt": "Purificador de Aire Compacto GO - Vista principal"
+      },
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/purificador-de-aire-compacto-go-lifestyle-in-use.jpg",
+        "alt": "Purificador de Aire Compacto GO - En uso"
+      }
+    ]
+  },
+  {
+    "title": "Botella Inteligente Hidratación GO",
+    "body_html": "<p><strong>Recordatorios luminosos + sensor de consumo</strong> para mantenerte hidratado todo el día.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Wellness",
+    "status": "draft",
+    "tags": [
+      "hidratación",
+      "smart",
+      "wellness"
+    ],
+    "options": [
+      {
+        "name": "Capacidad",
+        "values": [
+          "650 ml"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "option1": "650 ml",
+        "sku": "GOIO-H2O-003",
+        "price": "179.00",
+        "compare_at_price": "219.00",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 150,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000030",
+        "weight": 0.45,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/botella-inteligente-hidratación-go-professional-white-background.jpg",
+        "alt": "Botella Inteligente Hidratación GO - Vista principal"
+      },
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/botella-inteligente-hidratación-go-lifestyle-in-use.jpg",
+        "alt": "Botella Inteligente Hidratación GO - En uso"
+      }
+    ]
+  },
+  {
+    "title": "Lámpara LED Ambiente Premium",
+    "body_html": "<p><strong>Regulable por app y escenas preprogramadas</strong> para tu sala, dormitorio o set de streaming.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Iluminación",
+    "status": "draft",
+    "tags": [
+      "led",
+      "ambiente",
+      "smart home"
+    ],
+    "options": [
+      {
+        "name": "Formato",
+        "values": [
+          "Torre"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "option1": "Torre",
+        "sku": "GOIO-LED-004",
+        "price": "259.90",
+        "compare_at_price": "299.90",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 90,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000047",
+        "weight": 2.1,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/lámpara-led-ambiente-premium-professional-white-background.jpg",
+        "alt": "Lámpara LED Ambiente Premium - Vista principal"
+      },
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/lámpara-led-ambiente-premium-lifestyle-in-use.jpg",
+        "alt": "Lámpara LED Ambiente Premium - En uso"
+      }
+    ]
+  },
+  {
+    "title": "Mini Proyector HD Portátil",
+    "body_html": "<p><strong>Cine en casa</strong> con 300 lúmenes ANSI, conexión WiFi/Bluetooth y soporte hasta 120 pulgadas.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Electrónica",
+    "status": "draft",
+    "tags": [
+      "proyector",
+      "home theater",
+      "portátil"
+    ],
+    "options": [
+      {
+        "name": "Color",
+        "values": [
+          "Negro"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "option1": "Negro",
+        "sku": "GOIO-PROJ-005",
+        "price": "499.00",
+        "compare_at_price": "559.00",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 60,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000054",
+        "weight": 0.9,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/mini-proyector-hd-portátil-professional-white-background.jpg",
+        "alt": "Mini Proyector HD Portátil - Vista principal"
+      },
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/mini-proyector-hd-portátil-lifestyle-in-use.jpg",
+        "alt": "Mini Proyector HD Portátil - En uso"
+      }
+    ]
+  },
+  {
+    "title": "Set Bandas de Resistencia Pro",
+    "body_html": "<p><strong>Cinco niveles de resistencia</strong> + anclaje de puerta y guías de entrenamiento para rutinas completas en casa.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Fitness",
+    "status": "draft",
+    "tags": [
+      "fitness",
+      "bandas",
+      "entrenamiento"
+    ],
+    "options": [
+      {
+        "name": "Pack",
+        "values": [
+          "Completo"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "option1": "Completo",
+        "sku": "GOIO-FIT-006",
+        "price": "149.90",
+        "compare_at_price": "189.90",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 180,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000061",
+        "weight": 0.65,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/set-bandas-de-resistencia-pro-professional-white-background.jpg",
+        "alt": "Set Bandas de Resistencia Pro - Vista principal"
+      },
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/set-bandas-de-resistencia-pro-lifestyle-in-use.jpg",
+        "alt": "Set Bandas de Resistencia Pro - En uso"
+      }
+    ]
+  },
+  {
+    "title": "Organizador Modular de Closet",
+    "body_html": "<p><strong>Sistema expandible</strong> con 6 módulos, ideal para apartamentos y espacios reducidos.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Organización",
+    "status": "draft",
+    "tags": [
+      "organización",
+      "closet",
+      "hogar"
+    ],
+    "options": [
+      {
+        "name": "Configuración",
+        "values": [
+          "6 Módulos"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "option1": "6 Módulos",
+        "sku": "GOIO-ORG-007",
+        "price": "329.00",
+        "compare_at_price": "379.00",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 80,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000078",
+        "weight": 5.8,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/organizador-modular-de-closet-professional-white-background.jpg",
+        "alt": "Organizador Modular de Closet - Vista principal"
+      },
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/organizador-modular-de-closet-lifestyle-in-use.jpg",
+        "alt": "Organizador Modular de Closet - En uso"
+      }
+    ]
+  },
+  {
+    "title": "Cafetera Cold Brew Express",
+    "body_html": "<p><strong>Infusión en 10 minutos</strong> con doble filtro y jarra de vidrio borosilicato para sabores más suaves.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Gourmet",
+    "status": "draft",
+    "tags": [
+      "café",
+      "cold brew",
+      "gourmet"
+    ],
+    "options": [
+      {
+        "name": "Capacidad",
+        "values": [
+          "1 Litro"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "option1": "1 Litro",
+        "sku": "GOIO-CAF-008",
+        "price": "199.90",
+        "compare_at_price": "239.90",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 110,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000085",
+        "weight": 1.3,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/cafetera-cold-brew-express-professional-white-background.jpg",
+        "alt": "Cafetera Cold Brew Express - Vista principal"
+      },
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/cafetera-cold-brew-express-lifestyle-in-use.jpg",
+        "alt": "Cafetera Cold Brew Express - En uso"
+      }
+    ]
+  },
+  {
+    "title": "Robot Aspiradora Slim",
+    "body_html": "<p><strong>Perfil ultrafino</strong> con mapeo láser y control vía app para mantener pisos impecables.</p>",
+    "vendor": "Goio Store",
+    "product_type": "Electrodomésticos",
+    "status": "draft",
+    "tags": [
+      "robot aspiradora",
+      "smart home",
+      "limpieza"
+    ],
+    "options": [
+      {
+        "name": "Modelo",
+        "values": [
+          "Slim S1"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "option1": "Slim S1",
+        "sku": "GOIO-ROB-009",
+        "price": "799.00",
+        "compare_at_price": "899.00",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 45,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000092",
+        "weight": 3.2,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/robot-aspiradora-slim-professional-white-background.jpg",
+        "alt": "Robot Aspiradora Slim - Vista principal"
+      },
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/robot-aspiradora-slim-lifestyle-in-use.jpg",
+        "alt": "Robot Aspiradora Slim - En uso"
+      }
+    ]
+  },
+  {
+    "title": "Set Aromaterapia Relax",
+    "body_html": "<p><strong>Difusor ultrasónico</strong> + tres aceites esenciales premium (lavanda, eucalipto, vainilla).</p>",
+    "vendor": "Goio Store",
+    "product_type": "Bienestar",
+    "status": "draft",
+    "tags": [
+      "aromaterapia",
+      "relax",
+      "bienestar"
+    ],
+    "options": [
+      {
+        "name": "Presentación",
+        "values": [
+          "Kit Completo"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "option1": "Kit Completo",
+        "sku": "GOIO-AROM-010",
+        "price": "169.00",
+        "compare_at_price": "209.00",
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 140,
+        "fulfillment_service": "manual",
+        "requires_shipping": true,
+        "barcode": "7700000000108",
+        "weight": 0.75,
+        "weight_unit": "kg"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/set-aromaterapia-relax-professional-white-background.jpg",
+        "alt": "Set Aromaterapia Relax - Vista principal"
+      },
+      {
+        "src": "https://cdn.shopify.com/s/files/1/0000/0000/0000/files/set-aromaterapia-relax-lifestyle-in-use.jpg",
+        "alt": "Set Aromaterapia Relax - En uso"
+      }
     ]
   }
 ]

@@ -1,0 +1,20 @@
+{
+  "estrategias": [
+    {
+      "canal": "meta",
+      "copy": "Post de prueba para Meta",
+      "media": { "link": "https://goio.store/producto-demo" },
+      "trace_id": "demo-meta-1"
+    },
+    {
+      "canal": "tiktok",
+      "copy": "Idea de TikTok demo",
+      "trace_id": "demo-tt-1"
+    },
+    {
+      "canal": "whatsapp",
+      "copy": "Mensaje promocional demo vía WhatsApp",
+      "trace_id": "demo-wa-1"
+    }
+  ]
+}

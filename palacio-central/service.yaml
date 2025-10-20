@@ -1,0 +1,130 @@
+# 🔱 CLOUD RUN SERVICE CONFIGURATION (Declarativa)
+# Proyecto: Goio Imperios - Palacio Central
+# Uso alternativo: gcloud run services replace service.yaml
+
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: palacio-central
+  labels:
+    cloud.googleapis.com/location: us-central1
+    project: goio-imperios-prod
+  annotations:
+    run.googleapis.com/launch-stage: BETA
+    run.googleapis.com/ingress: all
+    run.googleapis.com/ingress-status: all
+spec:
+  template:
+    metadata:
+      annotations:
+        # Escalado
+        autoscaling.knative.dev/minScale: '0'      # Escala a 0 = $0 en idle
+        autoscaling.knative.dev/maxScale: '3'      # Máximo 3 instancias
+        
+        # CPU boost para cold starts
+        run.googleapis.com/cpu-boost: 'true'
+        
+        # Startup CPU boost
+        run.googleapis.com/startup-cpu-boost: 'true'
+        
+        # Session affinity (sticky sessions)
+        run.googleapis.com/session-affinity: 'false'
+        
+        # Execution environment
+        run.googleapis.com/execution-environment: gen2
+    spec:
+      containerConcurrency: 80  # Requests simultáneos por contenedor
+      timeoutSeconds: 300       # 5 minutos timeout
+      serviceAccountName: cloud-run-deployer@goio-imperios-prod.iam.gserviceaccount.com
+      
+      containers:
+      - name: palacio-central
+        image: us-central1-docker.pkg.dev/goio-imperios-prod/goio-repo/palacio-central:latest
+        
+        ports:
+        - name: http1
+          containerPort: 8080
+          protocol: TCP
+        
+        # Recursos
+        resources:
+          limits:
+            cpu: '1'
+            memory: 512Mi
+          requests:
+            cpu: '1'
+            memory: 512Mi
+        
+        # Variables de entorno
+        env:
+        - name: NODE_ENV
+          value: production
+        - name: PORT
+          value: '8080'
+        - name: LOG_LEVEL
+          value: info
+        - name: TZ
+          value: America/Lima
+        
+        # Secrets desde Secret Manager
+        - name: GEMINI_API_KEY
+          valueFrom:
+            secretKeyRef:
+              key: latest
+              name: GEMINI_API_KEY
+        
+        - name: SHOPIFY_ADMIN_TOKEN_PROD
+          valueFrom:
+            secretKeyRef:
+              key: latest
+              name: SHOPIFY_ADMIN_TOKEN_PROD
+        
+        - name: SHOPIFY_ADMIN_TOKEN_GLOBAL
+          valueFrom:
+            secretKeyRef:
+              key: latest
+              name: SHOPIFY_ADMIN_TOKEN_GLOBAL
+        
+        - name: META_ACCESS_TOKEN_GOLLOS
+          valueFrom:
+            secretKeyRef:
+              key: latest
+              name: META_ACCESS_TOKEN_GOLLOS
+        
+        - name: METRICS_TOKEN
+          valueFrom:
+            secretKeyRef:
+              key: latest
+              name: METRICS_TOKEN
+        
+        # Startup probe (verifica que el servicio inicie)
+        startupProbe:
+          httpGet:
+            path: /health
+            port: 8080
+            httpHeaders:
+            - name: User-Agent
+              value: GoogleHC/1.0
+          initialDelaySeconds: 0
+          timeoutSeconds: 5
+          periodSeconds: 10
+          successThreshold: 1
+          failureThreshold: 3
+        
+        # Liveness probe (verifica que el servicio siga vivo)
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+            httpHeaders:
+            - name: User-Agent
+              value: GoogleHC/1.0
+          initialDelaySeconds: 30
+          timeoutSeconds: 5
+          periodSeconds: 30
+          successThreshold: 1
+          failureThreshold: 3
+  
+  traffic:
+  - percent: 100
+    latestRevision: true

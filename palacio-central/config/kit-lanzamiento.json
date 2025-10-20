@@ -1,0 +1,146 @@
+{
+  "fecha_preparacion": "2025-10-12T05:07:48.545Z",
+  "urls_importantes": {
+    "admin_shopify": "https://skhqgs-2j.myshopify.com/admin",
+    "tienda_online": "https://skhqgs-2j.myshopify.com",
+    "verificar_pagos": "https://skhqgs-2j.myshopify.com/admin/settings/payments",
+    "productos": "https://skhqgs-2j.myshopify.com/admin/products",
+    "ordenes": "https://skhqgs-2j.myshopify.com/admin/orders",
+    "analytics": "https://skhqgs-2j.myshopify.com/admin/analytics"
+  },
+  "productos_destacados": [
+    {
+      "nombre": "Botella reutilizable eco-friendly Premium",
+      "precio": "$29.99",
+      "link": "https://skhqgs-2j.myshopify.com/products/botella-reutilizable-eco-friendly",
+      "descripcion_corta": "Botella de acero inoxidable, 600ml, mantiene temperatura 12h"
+    },
+    {
+      "nombre": "Botella Smart GO",
+      "precio": "$29.99",
+      "link": "https://skhqgs-2j.myshopify.com/products/botella-smart-go-nunca-olvides-hidratarte",
+      "descripcion_corta": "Botella inteligente con recordatorios de hidratación"
+    },
+    {
+      "nombre": "Cafetera Cold Brew Express",
+      "precio": "$29.99",
+      "link": "https://skhqgs-2j.myshopify.com/products/cafetera-cold-brew-express",
+      "descripcion_corta": "Café premium en casa, preparación rápida y fácil"
+    }
+  ],
+  "primeras_publicaciones": {
+    "instagram": {
+      "post_1": {
+        "imagen": "foto_producto_destacado.jpg",
+        "copy": "🌟 ¡Nuevo! Botella Premium Eco-Friendly 🌿\n\n💧 Mantiene tu bebida fría por 12 horas\n♻️ Libre de BPA y 100% reciclable\n🎁 Envío GRATIS en pedidos +$25\n\nSolo $29.99 → Link en bio 👆\n\n#EcoFriendly #Sostenible #VidaSaludable #Peru",
+        "hashtags": [
+          "#EcoFriendly",
+          "#Sostenible",
+          "#VidaSaludable",
+          "#Peru"
+        ]
+      },
+      "story_1": {
+        "tipo": "producto",
+        "copy": "¿Cuánta agua tomas al día? 💧\n\nEsta botella te ayuda a mantenerte hidratado ✨",
+        "sticker": "Swipe Up",
+        "link": "https://skhqgs-2j.myshopify.com/products/botella-reutilizable-eco-friendly"
+      }
+    },
+    "facebook": {
+      "post_1": {
+        "copy": "🌟 ¡LANZAMIENTO! Nueva colección de productos eco-friendly\n\nEstamos emocionados de presentar nuestra línea de productos sostenibles diseñados para tu estilo de vida saludable.\n\n✨ Productos destacados:\n🌿 Botella reutilizable de acero inoxidable - $29.99\n💧 Botella Smart con recordatorios - $29.99\n☕ Cafetera Cold Brew profesional - $29.99\n\n🎁 OFERTA DE LANZAMIENTO:\n✅ Envío GRATIS en pedidos mayores a $25\n✅ Garantía de satisfacción 100%\n✅ Productos de alta calidad\n\n👉 Compra ahora: [LINK A TU TIENDA]\n\n#EcoFriendly #Peru #VidaSaludable",
+        "target": "Amigos y grupos locales"
+      }
+    },
+    "whatsapp": {
+      "mensaje_broadcast": "¡Hola! 👋\n\nTe comparto algo emocionante:\n\nAcabo de lanzar mi tienda online de productos eco-friendly y sostenibles 🌿\n\nTengo productos increíbles como:\n• Botellas reutilizables premium\n• Cafetera Cold Brew\n• Y mucho más...\n\nCon ENVÍO GRATIS en pedidos +$25 🎁\n\n¿Te gustaría echar un vistazo?\n[LINK]\n\n¡Cualquier compra me ayuda mucho! 💚"
+    }
+  },
+  "estrategia_ventas": {
+    "semana_1": {
+      "objetivo": "Primeras 3-5 ventas",
+      "acciones": [
+        "Publicar en Instagram/Facebook (1 post al día)",
+        "Compartir en grupos de WhatsApp/Facebook",
+        "Enviar a familia y amigos cercanos",
+        "Ofrecer descuento especial a primeros compradores (10%)"
+      ],
+      "inversion": "$0 (todo orgánico)"
+    },
+    "semana_2": {
+      "objetivo": "10-15 ventas",
+      "acciones": [
+        "Continuar publicaciones orgánicas",
+        "Testimonios de primeros clientes",
+        "Lanzar Meta Ads con presupuesto bajo ($10-20/día)",
+        "Crear urgencia (stock limitado)"
+      ],
+      "inversion": "$140-280 en ads"
+    },
+    "mes_1": {
+      "objetivo": "25-40 ventas ($750-1,200)",
+      "acciones": [
+        "Escalar Meta Ads a $30/día",
+        "Colaboraciones con micro-influencers locales",
+        "Email marketing a clientes",
+        "Retargeting de visitantes"
+      ],
+      "inversion": "$900 en ads"
+    }
+  },
+  "metricas_clave": {
+    "conversion_objetivo": "2.5%",
+    "ticket_promedio": "$31.45",
+    "roi_minimo": "2x (recuperar inversión y duplicar)",
+    "ventas_dia_objetivo": "1-2 (primeros 15 días)"
+  },
+  "checklist_pre_lanzamiento": {
+    "tecnico": [
+      {
+        "item": "Verificar PayPal activo",
+        "completado": false
+      },
+      {
+        "item": "Compra de prueba exitosa",
+        "completado": false
+      },
+      {
+        "item": "Email de confirmación recibido",
+        "completado": false
+      },
+      {
+        "item": "Orden visible en admin",
+        "completado": false
+      }
+    ],
+    "contenido": [
+      {
+        "item": "Tomar foto de 1 producto para redes",
+        "completado": false
+      },
+      {
+        "item": "Escribir primera publicación",
+        "completado": false
+      },
+      {
+        "item": "Preparar link de tienda",
+        "completado": false
+      }
+    ],
+    "marketing": [
+      {
+        "item": "Lista de grupos de Facebook para publicar",
+        "completado": false
+      },
+      {
+        "item": "Lista de contactos WhatsApp",
+        "completado": false
+      },
+      {
+        "item": "Calendario de publicaciones (semana 1)",
+        "completado": false
+      }
+    ]
+  }
+}

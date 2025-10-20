@@ -1,0 +1,390 @@
+{
+  "fecha": "2025-10-12T08:51:21.767Z",
+  "productos_analizados": 12,
+  "productos_optimizados": 4,
+  "errores": 0,
+  "analisis_completo": [
+    {
+      "id": 9245926588664,
+      "titulo": "🌟 Botella reutilizable eco-friendly Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "botella-reutilizable-eco-friendly",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "5 imágenes",
+        "Múltiples imágenes",
+        "Precio: $29.99",
+        "Precio premium",
+        "Stock: 50"
+      ],
+      "prioridad": "ALTA",
+      "calidad": "EXCELENTE"
+    },
+    {
+      "id": 9249659158776,
+      "titulo": "🌟 Botella Smart GO – Nunca olvides hidratarte Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "botella-inteligente-hidratacin-go",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "5 imágenes",
+        "Múltiples imágenes",
+        "Precio: $29.99",
+        "Precio premium",
+        "Stock: 100"
+      ],
+      "prioridad": "ALTA",
+      "calidad": "EXCELENTE"
+    },
+    {
+      "id": 9245926064376,
+      "titulo": "🌟 Camiseta verde orgánica Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "camiseta-verde-organica",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "5 imágenes",
+        "Múltiples imágenes",
+        "Precio: $48.99",
+        "Precio premium",
+        "Stock: 100"
+      ],
+      "prioridad": "ALTA",
+      "calidad": "EXCELENTE"
+    },
+    {
+      "id": 9249659060472,
+      "titulo": "🌟 Kit Home Office Ergonómico – Productividad sin dolor Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "kit-home-office-ergonmico",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "5 imágenes",
+        "Múltiples imágenes",
+        "Precio: $29.99",
+        "Precio premium",
+        "Stock: 100"
+      ],
+      "prioridad": "ALTA",
+      "calidad": "EXCELENTE"
+    },
+    {
+      "id": 9249659322616,
+      "titulo": "🌟 Cafetera Cold Brew Express Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "cafetera-cold-brew-express",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "4 imágenes",
+        "Múltiples imágenes",
+        "Precio: $29.99",
+        "Precio premium",
+        "Stock: 100"
+      ],
+      "prioridad": "MEDIA",
+      "calidad": "EXCELENTE"
+    },
+    {
+      "id": 9249659191544,
+      "titulo": "🌟 Lámpara LED Ambiente Premium Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "lmpara-led-ambiente-premium",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "5 imágenes",
+        "Múltiples imágenes",
+        "Precio: $29.99",
+        "Precio premium",
+        "Stock: 100"
+      ],
+      "prioridad": "MEDIA",
+      "calidad": "EXCELENTE"
+    },
+    {
+      "id": 9249659224312,
+      "titulo": "🌟 Mini Proyector HD Portátil Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "mini-proyector-hd-porttil",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "5 imágenes",
+        "Múltiples imágenes",
+        "Precio: $29.99",
+        "Precio premium",
+        "Stock: 100"
+      ],
+      "prioridad": "MEDIA",
+      "calidad": "EXCELENTE"
+    },
+    {
+      "id": 9249659289848,
+      "titulo": "🌟 Organizador Modular de Closet Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "organizador-modular-de-closet",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "5 imágenes",
+        "Múltiples imágenes",
+        "Precio: $29.99",
+        "Precio premium",
+        "Stock: 100"
+      ],
+      "prioridad": "MEDIA",
+      "calidad": "EXCELENTE"
+    },
+    {
+      "id": 9249659126008,
+      "titulo": "🌟 Purificador de Aire GO – Respira mejor en 5 min Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "purificador-de-aire-compacto-go",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "5 imágenes",
+        "Múltiples imágenes",
+        "Precio: $29.99",
+        "Precio premium",
+        "Stock: 100"
+      ],
+      "prioridad": "MEDIA",
+      "calidad": "EXCELENTE"
+    },
+    {
+      "id": 9249659453688,
+      "titulo": "🌟 Robot Aspiradora Slim Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "robot-aspiradora-slim",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "5 imágenes",
+        "Múltiples imágenes",
+        "Precio: $29.99",
+        "Precio premium",
+        "Stock: 100"
+      ],
+      "prioridad": "MEDIA",
+      "calidad": "EXCELENTE"
+    },
+    {
+      "id": 9249659584760,
+      "titulo": "🌟 Set Aromaterapia Relax Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "set-aromaterapia-relax",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "5 imágenes",
+        "Múltiples imágenes",
+        "Precio: $29.99",
+        "Precio premium",
+        "Stock: 100"
+      ],
+      "prioridad": "MEDIA",
+      "calidad": "EXCELENTE"
+    },
+    {
+      "id": 9249659257080,
+      "titulo": "🌟 Set Bandas de Resistencia Pro Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "set-bandas-de-resistencia-pro",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "5 imágenes",
+        "Múltiples imágenes",
+        "Precio: $29.99",
+        "Precio premium",
+        "Stock: 100"
+      ],
+      "prioridad": "MEDIA",
+      "calidad": "EXCELENTE"
+    }
+  ],
+  "top_productos": [
+    {
+      "id": 9245926588664,
+      "titulo": "🌟 Botella reutilizable eco-friendly Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "botella-reutilizable-eco-friendly",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "5 imágenes",
+        "Múltiples imágenes",
+        "Precio: $29.99",
+        "Precio premium",
+        "Stock: 50"
+      ],
+      "prioridad": "ALTA",
+      "calidad": "EXCELENTE"
+    },
+    {
+      "id": 9249659158776,
+      "titulo": "🌟 Botella Smart GO – Nunca olvides hidratarte Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "botella-inteligente-hidratacin-go",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "5 imágenes",
+        "Múltiples imágenes",
+        "Precio: $29.99",
+        "Precio premium",
+        "Stock: 100"
+      ],
+      "prioridad": "ALTA",
+      "calidad": "EXCELENTE"
+    },
+    {
+      "id": 9245926064376,
+      "titulo": "🌟 Camiseta verde orgánica Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "camiseta-verde-organica",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "5 imágenes",
+        "Múltiples imágenes",
+        "Precio: $48.99",
+        "Precio premium",
+        "Stock: 100"
+      ],
+      "prioridad": "ALTA",
+      "calidad": "EXCELENTE"
+    },
+    {
+      "id": 9249659060472,
+      "titulo": "🌟 Kit Home Office Ergonómico – Productividad sin dolor Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "kit-home-office-ergonmico",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "5 imágenes",
+        "Múltiples imágenes",
+        "Precio: $29.99",
+        "Precio premium",
+        "Stock: 100"
+      ],
+      "prioridad": "ALTA",
+      "calidad": "EXCELENTE"
+    },
+    {
+      "id": 9249659322616,
+      "titulo": "🌟 Cafetera Cold Brew Express Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "cafetera-cold-brew-express",
+      "status": "active",
+      "puntuacion": 100,
+      "problemas": [],
+      "fortalezas": [
+        "Título descriptivo",
+        "Título premium",
+        "Incluye envío gratis",
+        "Descripción presente",
+        "Descripción detallada",
+        "4 imágenes",
+        "Múltiples imágenes",
+        "Precio: $29.99",
+        "Precio premium",
+        "Stock: 100"
+      ],
+      "prioridad": "MEDIA",
+      "calidad": "EXCELENTE"
+    }
+  ],
+  "estadisticas": {
+    "excelente": 12,
+    "buena": 0,
+    "regular": 0,
+    "deficiente": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "dominio": "goio.store",
+  "inicio_propagacion": "2025-10-12T00:06:48.545Z",
+  "estimado_finalizacion": "2025-10-14T00:06:48.545Z",
+  "verificaciones": [
+    {
+      "hora": 12,
+      "verificar": "DNS propagación inicial",
+      "completado": false
+    },
+    {
+      "hora": 24,
+      "verificar": "SSL certificado activo",
+      "completado": false
+    },
+    {
+      "hora": 48,
+      "verificar": "Dominio completamente funcional",
+      "completado": false
+    }
+  ],
+  "acciones_post_activacion": [
+    "Configurar Stripe USA",
+    "Sincronizar productos",
+    "Configurar redirecciones de mercado",
+    "Activar Meta Ads global"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "timestamp": "2025-10-10T18:06:16.981Z",
+  "territories": {
+    "peru": {
+      "name": "🇵🇪 Goio™ Store Perú",
+      "domain": "skhqgs-2j.myshopify.com",
+      "token": "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",
+      "currency": "USD",
+      "markets": [
+        "PE",
+        "BO",
+        "EC",
+        "CO"
+      ],
+      "payment_gateway": "Shopify_Payments",
+      "status": "operational"
+    },
+    "global": {
+      "name": "🇺🇸 Goio™ Global USA",
+      "domain": "goio-global.myshopify.com",
+      "token": "PENDING",
+      "currency": "USD",
+      "markets": [
+        "US",
+        "CA",
+        "GB",
+        "AU",
+        "DE",
+        "FR"
+      ],
+      "payment_gateway": "Stripe",
+      "status": "pending_setup"
+    }
+  },
+  "metrics": {
+    "peru": {
+      "products": 13,
+      "inventory_value": 36789.9,
+      "active_products": 13,
+      "orders_today": 2,
+      "revenue_today": 457,
+      "status": "✅ Operational"
+    },
+    "global": {
+      "products": 5,
+      "inventory_value": 12475.084999999997,
+      "active_products": 5,
+      "orders_today": 0,
+      "revenue_today": 0,
+      "status": "⚠️ Pending Setup"
+    },
+    "totals": {
+      "combined_inventory": 49264.985,
+      "potential_revenue": 985.2997,
+      "total_markets": 10
+    }
+  },
+  "next_sync": "2025-10-11T18:06:16.981Z"
+}

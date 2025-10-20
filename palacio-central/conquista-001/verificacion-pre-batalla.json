@@ -1,0 +1,40 @@
+{
+  "trace_id": "CONQUISTA-001",
+  "timestamp": "2025-10-12T09:40:43.875Z",
+  "verificaciones": {
+    "dominios": [
+      {
+        "url": "https://skhqgs-2j.myshopify.com",
+        "status": 403,
+        "ssl": true,
+        "tiempo_respuesta": 285
+      },
+      {
+        "url": "https://goiostore.com",
+        "status": 403,
+        "ssl": true,
+        "tiempo_respuesta": 55
+      }
+    ],
+    "ssl": [],
+    "productos": [
+      {
+        "nombre": "Botella Eco-Friendly Smart",
+        "url": "https://skhqgs-2j.myshopify.com/products/botella-eco-friendly-smart",
+        "disponible": false
+      },
+      {
+        "nombre": "Camiseta Orgánica Premium",
+        "url": "https://skhqgs-2j.myshopify.com/products/camiseta-organica-premium",
+        "disponible": false
+      },
+      {
+        "nombre": "Kit Home Office Completo",
+        "url": "https://skhqgs-2j.myshopify.com/products/kit-home-office-completo",
+        "disponible": false
+      }
+    ],
+    "pagos": []
+  },
+  "status": "REQUIERE_ATENCION"
+}

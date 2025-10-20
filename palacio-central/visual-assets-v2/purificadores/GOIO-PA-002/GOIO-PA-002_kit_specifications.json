@@ -1,0 +1,259 @@
+{
+  "sku": "GOIO-PA-002",
+  "product_name": "Purificador de Aire Profesional GO",
+  "category": "Purificadores",
+  "price": "S/299.90",
+  "processing_date": "2025-10-09T22:17:39.749Z",
+  "processing_time": 1,
+  "images_generated": [
+    {
+      "filename": "GOIO-PA-002_hero.jpg",
+      "type": "hero",
+      "purpose": "Imagen principal de catálogo con fondo blanco profesional",
+      "visual_composition": {
+        "background": "#FFFFFF puro sin texturas",
+        "product_positioning": "Centrado, ocupando 75% del frame",
+        "lighting": "Iluminación de estudio profesional, suave y uniforme",
+        "shadows": "Sombra sutil debajo del producto para dar profundidad",
+        "angle": "Ángulo frontal mostrando características principales",
+        "focus": "Producto completamente nítido, alta definición"
+      },
+      "technical_specs": {
+        "resolution": {
+          "width": 3000,
+          "height": 3000,
+          "aspect_ratio": "1:1"
+        },
+        "format": "JPG",
+        "quality": 90,
+        "max_size": "800KB",
+        "color_space": "sRGB",
+        "compression": "Optimizado para web manteniendo calidad"
+      },
+      "brand_elements": {
+        "logo_placement": "Esquina inferior derecha, sutil",
+        "logo_opacity": "15%",
+        "color_accuracy": "Colores fieles usando palette del producto",
+        "typography": "Sin texto overlay, imagen limpia"
+      },
+      "shopify_optimization": {
+        "alt_text": "Purificador de Aire Profesional GO - Vista principal del producto",
+        "seo_filename": "goio-pa-002_hero_main",
+        "mobile_optimized": true,
+        "retina_ready": true,
+        "lazy_loading": true
+      },
+      "quality_checkpoints": [
+        "Producto completamente visible y centrado",
+        "Colores fieles a la marca y material",
+        "Iluminación profesional sin sombras duras",
+        "Fondo blanco puro sin distracciones",
+        "Resolución óptima para zoom en PDP",
+        "Peso de archivo optimizado para carga rápida"
+      ]
+    },
+    {
+      "filename": "GOIO-PA-002_lifestyle1.jpg",
+      "type": "lifestyle",
+      "variant": "in_use_primary",
+      "purpose": "Producto en uso en contexto principal aspiracional",
+      "scene_composition": {
+        "environment": "Sala familiar",
+        "lighting": "Luz natural cálida, golden hour style",
+        "mood": "Aspiracional pero accesible, authentic lifestyle",
+        "human_element": "Persona usando producto de manera natural",
+        "props": "Elementos del ambiente que complementan la historia",
+        "color_harmony": "Palette coherente con branding Goio"
+      },
+      "storytelling": {
+        "narrative": "Usuario disfrutando los beneficios de Purificador de Aire Profesional GO",
+        "emotion": "Satisfacción, bienestar, modernidad",
+        "context": "Sala familiar",
+        "benefits_shown": [
+          "Doble filtro HEPA",
+          "Control app"
+        ],
+        "authenticity": "Escena creíble y relatable para target"
+      },
+      "technical_specs": {
+        "resolution": {
+          "width": 2400,
+          "height": 1600,
+          "aspect_ratio": "3:2"
+        },
+        "format": "JPG",
+        "quality": 85,
+        "max_size": "600KB"
+      },
+      "brand_integration": {
+        "product_visibility": "Claramente visible pero integrado naturalmente",
+        "brand_colors": "Presentes en detalles del ambiente",
+        "logo_placement": "Sutil en producto si aplicable",
+        "consistency": "Coherente con otros lifestyle images"
+      }
+    },
+    {
+      "filename": "GOIO-PA-002_lifestyle2.jpg",
+      "type": "lifestyle",
+      "variant": "environment_secondary",
+      "purpose": "Producto integrado en segundo contexto de uso",
+      "scene_composition": {
+        "environment": "Oficina corporativa",
+        "lighting": "Iluminación ambiental profesional",
+        "mood": "Funcional y elegante, uso cotidiano",
+        "focus": "Producto como parte natural del espacio",
+        "styling": "Minimalista, clean, moderno",
+        "perspective": "Ángulo que muestra integración al ambiente"
+      },
+      "storytelling": {
+        "narrative": "Purificador de Aire Profesional GO como parte de la rutina diaria",
+        "emotion": "Eficiencia, comodidad, estilo de vida",
+        "context": "Oficina corporativa",
+        "benefits_shown": [
+          "Sensores avanzados",
+          "Pantalla OLED"
+        ],
+        "target_relevance": "Relatable para diferentes segmentos"
+      },
+      "technical_specs": {
+        "resolution": {
+          "width": 2400,
+          "height": 1600,
+          "aspect_ratio": "3:2"
+        },
+        "format": "JPG",
+        "quality": 85,
+        "max_size": "600KB"
+      }
+    },
+    {
+      "filename": "GOIO-PA-002_detail.jpg",
+      "type": "detail",
+      "purpose": "Close-up de materiales y características técnicas premium",
+      "macro_composition": {
+        "focus_element": "Doble filtro HEPA",
+        "material_showcase": "Aluminio anodizado",
+        "lighting": "Iluminación dramática que resalta texturas",
+        "depth_of_field": "Enfoque selectivo en elemento clave",
+        "angle": "Ángulo que mejor muestra la característica",
+        "background": "Desenfocado para aislar el detalle"
+      },
+      "quality_indicators": {
+        "texture_definition": "Textura de material claramente visible",
+        "craftsmanship": "Acabados y construcción premium evidentes",
+        "functional_elements": "Botones, pantallas, sensores en detalle",
+        "brand_elements": "Logo o marca sutilmente visible",
+        "premium_feel": "Comunicar calidad y valor del producto"
+      },
+      "technical_excellence": {
+        "resolution": {
+          "width": 2000,
+          "height": 2000,
+          "aspect_ratio": "1:1"
+        },
+        "format": "PNG",
+        "quality": 95,
+        "max_size": "500KB",
+        "sharpness": "Máxima nitidez en área de enfoque",
+        "color_accuracy": "Reproducción fiel de materiales"
+      },
+      "storytelling_element": {
+        "quality_story": "Comunicar la atención al detalle",
+        "material_story": "Mostrar por qué vale la pena el precio",
+        "function_story": "Cómo el detalle mejora la experiencia",
+        "brand_story": "Coherente con posicionamiento premium"
+      }
+    },
+    {
+      "filename": "GOIO-PA-002_promo.jpg",
+      "type": "promotional",
+      "purpose": "Mockup listo para campañas publicitarias con branding completo",
+      "layout_composition": {
+        "product_hero": "Producto como elemento visual principal (40%)",
+        "headline_space": "Área dedicada para headline principal (25%)",
+        "copy_space": "Espacio para value proposition (20%)",
+        "cta_space": "Área para call-to-action (10%)",
+        "branding_space": "Logo y elementos de marca (5%)"
+      },
+      "copy_elements": {
+        "headline": "Purificador de Aire Profesional GO",
+        "value_proposition": "Doble filtro HEPA • Control app",
+        "price_display": "S/299.90",
+        "call_to_action": "Compra ahora con envío gratis",
+        "urgency_element": "Oferta limitada",
+        "social_proof": "Más de 1000 clientes satisfechos"
+      },
+      "brand_implementation": {
+        "primary_color": "#2563EB",
+        "secondary_color": "#1F2937",
+        "accent_color": "#10B981",
+        "logo_placement": "Prominente pero no dominante",
+        "typography": {
+          "headline_font": "Inter",
+          "body_font": "Poppins",
+          "weight_hierarchy": "Bold > Medium > Regular"
+        }
+      },
+      "visual_hierarchy": {
+        "primary_focus": "Producto y headline",
+        "secondary_focus": "Value proposition y precio",
+        "tertiary_focus": "CTA y branding",
+        "flow": "Producto → Headline → Beneficios → Precio → CTA"
+      },
+      "technical_specs": {
+        "resolution": {
+          "width": 1920,
+          "height": 1080,
+          "aspect_ratio": "16:9"
+        },
+        "format": "JPG",
+        "quality": 90,
+        "max_size": "1MB",
+        "text_readability": "Optimizado para diferentes tamaños"
+      },
+      "campaign_readiness": {
+        "facebook_ads": "Formato y proporciones optimizadas",
+        "instagram_ads": "Visual impact para feed y stories",
+        "google_ads": "Texto legible en diferentes tamaños",
+        "shopify_banners": "Integrable en diseño de tienda",
+        "email_marketing": "Atractivo para newsletters"
+      }
+    }
+  ],
+  "total_images": 5,
+  "file_structure": {
+    "hero": "GOIO-PA-002_hero.jpg",
+    "lifestyle1": "GOIO-PA-002_lifestyle1.jpg",
+    "lifestyle2": "GOIO-PA-002_lifestyle2.jpg",
+    "detail": "GOIO-PA-002_detail.jpg",
+    "promotional": "GOIO-PA-002_promo.jpg"
+  },
+  "brand_compliance": {
+    "color_palette_used": [
+      "#FFFFFF",
+      "#1F2937",
+      "#2563EB"
+    ],
+    "typography_applied": {
+      "primary_font": "Inter",
+      "secondary_font": "Poppins",
+      "heading_weight": "700",
+      "body_weight": "400",
+      "accent_weight": "600"
+    },
+    "logo_integrated": true,
+    "style_consistent": true
+  },
+  "technical_compliance": {
+    "shopify_optimized": true,
+    "mobile_responsive": true,
+    "web_optimized": true,
+    "file_sizes_optimized": true
+  },
+  "usage_guidelines": {
+    "hero": "Imagen principal en PDP Shopify",
+    "lifestyle": "Galería secundaria y marketing content",
+    "detail": "Zoom images y especificaciones técnicas",
+    "promotional": "Campañas publicitarias y banners"
+  }
+}

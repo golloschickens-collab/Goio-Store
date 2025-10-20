@@ -1,0 +1,107 @@
+{
+  "fecha": "2025-10-12T08:54:57.725Z",
+  "frontend_domain": "goiostore.com",
+  "total_productos": 12,
+  "productos_accesibles": 0,
+  "productos_no_accesibles": 12,
+  "porcentaje_exito": 0,
+  "productos": [
+    {
+      "id": 9245926588664,
+      "titulo": "🌟 Botella reutilizable eco-friendly Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "botella-reutilizable-eco-friendly",
+      "url_completa": "https://goiostore.com/products/botella-reutilizable-eco-friendly",
+      "accesible": false,
+      "status": 404
+    },
+    {
+      "id": 9249659158776,
+      "titulo": "🌟 Botella Smart GO – Nunca olvides hidratarte Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "botella-inteligente-hidratacin-go",
+      "url_completa": "https://goiostore.com/products/botella-inteligente-hidratacin-go",
+      "accesible": false,
+      "status": 404
+    },
+    {
+      "id": 9249659322616,
+      "titulo": "🌟 Cafetera Cold Brew Express Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "cafetera-cold-brew-express",
+      "url_completa": "https://goiostore.com/products/cafetera-cold-brew-express",
+      "accesible": false,
+      "status": 404
+    },
+    {
+      "id": 9245926064376,
+      "titulo": "🌟 Camiseta verde orgánica Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "camiseta-verde-organica",
+      "url_completa": "https://goiostore.com/products/camiseta-verde-organica",
+      "accesible": false,
+      "status": 404
+    },
+    {
+      "id": 9249659060472,
+      "titulo": "🌟 Kit Home Office Ergonómico – Productividad sin dolor Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "kit-home-office-ergonmico",
+      "url_completa": "https://goiostore.com/products/kit-home-office-ergonmico",
+      "accesible": false,
+      "status": 404
+    },
+    {
+      "id": 9249659191544,
+      "titulo": "🌟 Lámpara LED Ambiente Premium Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "lmpara-led-ambiente-premium",
+      "url_completa": "https://goiostore.com/products/lmpara-led-ambiente-premium",
+      "accesible": false,
+      "status": 404
+    },
+    {
+      "id": 9249659224312,
+      "titulo": "🌟 Mini Proyector HD Portátil Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "mini-proyector-hd-porttil",
+      "url_completa": "https://goiostore.com/products/mini-proyector-hd-porttil",
+      "accesible": false,
+      "status": 404
+    },
+    {
+      "id": 9249659289848,
+      "titulo": "🌟 Organizador Modular de Closet Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "organizador-modular-de-closet",
+      "url_completa": "https://goiostore.com/products/organizador-modular-de-closet",
+      "accesible": false,
+      "status": 404
+    },
+    {
+      "id": 9249659126008,
+      "titulo": "🌟 Purificador de Aire GO – Respira mejor en 5 min Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "purificador-de-aire-compacto-go",
+      "url_completa": "https://goiostore.com/products/purificador-de-aire-compacto-go",
+      "accesible": false,
+      "status": 404
+    },
+    {
+      "id": 9249659453688,
+      "titulo": "🌟 Robot Aspiradora Slim Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "robot-aspiradora-slim",
+      "url_completa": "https://goiostore.com/products/robot-aspiradora-slim",
+      "accesible": false,
+      "status": 404
+    },
+    {
+      "id": 9249659584760,
+      "titulo": "🌟 Set Aromaterapia Relax Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "set-aromaterapia-relax",
+      "url_completa": "https://goiostore.com/products/set-aromaterapia-relax",
+      "accesible": false,
+      "status": 404
+    },
+    {
+      "id": 9249659257080,
+      "titulo": "🌟 Set Bandas de Resistencia Pro Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "set-bandas-de-resistencia-pro",
+      "url_completa": "https://goiostore.com/products/set-bandas-de-resistencia-pro",
+      "accesible": false,
+      "status": 404
+    }
+  ],
+  "urls_marketing": []
+}

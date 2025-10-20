@@ -1,0 +1,170 @@
+{
+  "fecha": "2025-10-12T08:49:39.372Z",
+  "frontend_domain": "goiostore.com",
+  "backend_domain": "skhqgs-2j.myshopify.com",
+  "productos_totales": 13,
+  "productos_problematicos": [
+    {
+      "id": 9249658765560,
+      "titulo": "🌟 Test Product 1760039704476 Premium | Calidad Superior | Envío Gratis +$25",
+      "handle": "test-product-1760039704476",
+      "status": "active",
+      "problemas": [
+        "TÍTULO_GENÉRICO",
+        "HANDLE_GENÉRICO"
+      ],
+      "producto": {
+        "id": 9249658765560,
+        "title": "🌟 Test Product 1760039704476 Premium | Calidad Superior | Envío Gratis +$25",
+        "body_html": "\n✨ TEST PRODUCT 1760039704476\n\nThis is a test product created by the listing agent.\n\n🎁 BENEFICIOS ÚNICOS:\n• ✅ Calidad Premium Garantizada\n• ✅ Diseño Moderno y Funcional  \n• ✅ Durabilidad Excepcional\n• ✅ Satisfacción Garantizada\n• ✅ Envío GRATIS en pedidos +$25\n\n🚀 ESPECIFICACIONES:\nProducto de alta calidad diseñado para tu comodidad y estilo de vida.\n\n⚡ OFERTA ESPECIAL:\n¡Precio promocional por tiempo limitado!\n\n🛒 GARANTÍA DE SATISFACCIÓN:\n30 días de devolución sin preguntas. Tu satisfacción es nuestra prioridad.\n\n💯 CALIDAD VERIFICADA:\nMiles de clientes satisfechos. Calificación 4.8/5 estrellas.\n\n📦 ENVÍO RÁPIDO:\nRecibe en 3-5 días hábiles.\n\n🎯 ¡ORDENA AHORA Y AHORRA!\n        ",
+        "vendor": "Goio",
+        "product_type": "Test",
+        "created_at": "2025-10-09T14:55:03-05:00",
+        "handle": "test-product-1760039704476",
+        "updated_at": "2025-10-12T02:16:54-05:00",
+        "published_at": "2025-10-10T02:07:29-05:00",
+        "template_suffix": null,
+        "published_scope": "global",
+        "tags": "",
+        "status": "active",
+        "admin_graphql_api_id": "gid://shopify/Product/9249658765560",
+        "variants": [
+          {
+            "id": 47072272285944,
+            "product_id": 9249658765560,
+            "title": "Default Title",
+            "price": "29.99",
+            "position": 1,
+            "inventory_policy": "deny",
+            "compare_at_price": "41.00",
+            "option1": "Default Title",
+            "option2": null,
+            "option3": null,
+            "created_at": "2025-10-09T14:55:03-05:00",
+            "updated_at": "2025-10-11T20:02:00-05:00",
+            "taxable": true,
+            "barcode": null,
+            "fulfillment_service": "manual",
+            "grams": 500,
+            "inventory_management": "shopify",
+            "requires_shipping": true,
+            "sku": null,
+            "weight": 0.5,
+            "weight_unit": "kg",
+            "inventory_item_id": 49150600708344,
+            "inventory_quantity": 10,
+            "old_inventory_quantity": 10,
+            "admin_graphql_api_id": "gid://shopify/ProductVariant/47072272285944",
+            "image_id": null
+          }
+        ],
+        "options": [
+          {
+            "id": 11561554116856,
+            "product_id": 9249658765560,
+            "name": "Title",
+            "position": 1,
+            "values": [
+              "Default Title"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "id": 47592242151672,
+            "alt": "Test Product 1760039704476 - Vista principal white background",
+            "position": 1,
+            "product_id": 9249658765560,
+            "created_at": "2025-10-12T02:16:40-05:00",
+            "updated_at": "2025-10-12T02:16:40-05:00",
+            "admin_graphql_api_id": "gid://shopify/MediaImage/38093521682680",
+            "width": 1129,
+            "height": 750,
+            "src": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-356056_5f2085a8-c099-4abf-bd9f-8dfc801b1ac4.jpg?v=1760253400",
+            "variant_ids": []
+          },
+          {
+            "id": 47592243560696,
+            "alt": "Test Product 1760039704476 - Lifestyle uso diario",
+            "position": 2,
+            "product_id": 9249658765560,
+            "created_at": "2025-10-12T02:16:44-05:00",
+            "updated_at": "2025-10-12T02:16:44-05:00",
+            "admin_graphql_api_id": "gid://shopify/MediaImage/38093523190008",
+            "width": 1125,
+            "height": 750,
+            "src": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4009598_857c2ea1-30d6-4aa8-8072-4ea8b7047d3e.jpg?v=1760253404",
+            "variant_ids": []
+          },
+          {
+            "id": 47592246116600,
+            "alt": "Test Product 1760039704476 - Close-up tecnología",
+            "position": 3,
+            "product_id": 9249658765560,
+            "created_at": "2025-10-12T02:16:47-05:00",
+            "updated_at": "2025-10-12T02:16:47-05:00",
+            "admin_graphql_api_id": "gid://shopify/MediaImage/38093523550456",
+            "width": 516,
+            "height": 750,
+            "src": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4348078_0eead9b6-6f0f-4580-8dd1-da865405e01c.jpg?v=1760253407",
+            "variant_ids": []
+          },
+          {
+            "id": 47592247755000,
+            "alt": "Test Product 1760039704476 - En acción",
+            "position": 4,
+            "product_id": 9249658765560,
+            "created_at": "2025-10-12T02:16:51-05:00",
+            "updated_at": "2025-10-12T02:16:51-05:00",
+            "admin_graphql_api_id": "gid://shopify/MediaImage/38093524533496",
+            "width": 1260,
+            "height": 709,
+            "src": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-18471715_c792e970-0748-44f0-980c-6226a6d82a92.jpg?v=1760253411",
+            "variant_ids": []
+          },
+          {
+            "id": 47592248869112,
+            "alt": "Test Product 1760039704476 - Setup moderno workspace",
+            "position": 5,
+            "product_id": 9249658765560,
+            "created_at": "2025-10-12T02:16:54-05:00",
+            "updated_at": "2025-10-12T02:16:54-05:00",
+            "admin_graphql_api_id": "gid://shopify/MediaImage/38093525975288",
+            "width": 1125,
+            "height": 750,
+            "src": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-4226140_3404a21a-23df-4fd9-afbf-8497b446bb96.jpg?v=1760253414",
+            "variant_ids": []
+          }
+        ],
+        "image": {
+          "id": 47592242151672,
+          "alt": "Test Product 1760039704476 - Vista principal white background",
+          "position": 1,
+          "product_id": 9249658765560,
+          "created_at": "2025-10-12T02:16:40-05:00",
+          "updated_at": "2025-10-12T02:16:40-05:00",
+          "admin_graphql_api_id": "gid://shopify/MediaImage/38093521682680",
+          "width": 1129,
+          "height": 750,
+          "src": "https://cdn.shopify.com/s/files/1/0779/4779/7752/files/pexels-photo-356056_5f2085a8-c099-4abf-bd9f-8dfc801b1ac4.jpg?v=1760253400",
+          "variant_ids": []
+        }
+      }
+    }
+  ],
+  "acciones": {
+    "eliminados": 1,
+    "activados": 0,
+    "errores": 0
+  },
+  "estado_frontend": {
+    "accesible": true,
+    "status": 200,
+    "indicadores": {
+      "placeholders": true,
+      "productos_vacios": false,
+      "errores_404": true,
+      "mantenimiento": false
+    }
+  }
+}

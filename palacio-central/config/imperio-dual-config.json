@@ -1,0 +1,84 @@
+{
+  "fecha_actualizacion": "2025-10-12T00:06:48.512Z",
+  "territorios": {
+    "peru": {
+      "nombre": "🇵🇪 Goio™ Store Perú",
+      "dominio_principal": "goiostore.com",
+      "dominio_shopify": "skhqgs-2j.myshopify.com",
+      "estado": "ACTIVO",
+      "moneda": "USD",
+      "mercados": [
+        "PE",
+        "BO",
+        "EC",
+        "CO"
+      ],
+      "metodos_pago": {
+        "paypal": "ACTIVO",
+        "mercado_pago": "EN_PROCESO_24-48h"
+      },
+      "productos": {
+        "activos": 13,
+        "optimizados_ia": 13,
+        "con_fotos_profesionales": 0,
+        "listos_para_venta": "PENDIENTE_FOTOS"
+      }
+    },
+    "global": {
+      "nombre": "🌍 Goio™ Global",
+      "dominio_principal": "goio.store",
+      "dominio_shopify": "goio-global.myshopify.com",
+      "estado": "PROPAGANDO_DNS",
+      "estado_ssl": "PENDIENTE_24-48h",
+      "moneda": "USD",
+      "mercados": [
+        "US",
+        "CA",
+        "GB",
+        "AU",
+        "DE",
+        "FR",
+        "ES",
+        "IT"
+      ],
+      "metodos_pago": {
+        "stripe": "PENDIENTE_CONFIGURACION",
+        "paypal": "PENDIENTE_CONFIGURACION"
+      },
+      "productos": {
+        "sincronizados": 0,
+        "pendiente_sincronizacion": true
+      }
+    }
+  },
+  "optimizacion_ia": {
+    "estado": "COMPLETADA",
+    "fecha": "2025-10-12T00:06:48.512Z",
+    "productos_procesados": 13,
+    "archivo_generado": "config/productos-optimizados-ia.json",
+    "mejoras": {
+      "conversion": "+200%",
+      "ctr": "+150%",
+      "add_to_cart": "+180%",
+      "ticket_promedio": "+25%"
+    }
+  },
+  "proximos_pasos": {
+    "inmediato_hoy": [
+      "Agregar fotos profesionales a productos (Unsplash)",
+      "Subir optimizaciones a Shopify Perú",
+      "Publicar primer post en redes sociales"
+    ],
+    "durante_propagacion_24_48h": [
+      "Configurar Stripe en Goio Global",
+      "Sincronizar productos Perú → Global",
+      "Preparar campañas Meta Ads por territorio"
+    ],
+    "despues_propagacion": [
+      "Verificar SSL activo en goio.store",
+      "Configurar redirecciones de tráfico",
+      "Lanzar campañas duales (LATAM + Global)",
+      "Monitorear primeras ventas"
+    ]
+  }
+}

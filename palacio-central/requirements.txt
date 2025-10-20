@@ -2,3 +2,5 @@
 # Es necesario para que nuestro Agent.TrendHunter pueda ejecutar el script trends.py.
 
 pytrends
+requests
+pandas

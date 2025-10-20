@@ -1,0 +1,448 @@
+{
+  "fecha": "2025-10-12T05:21:00.565Z",
+  "total_productos": 13,
+  "imagenes_por_producto": 5,
+  "total_imagenes_generadas": 65,
+  "total_imagenes_subidas": 24,
+  "tasa_exito": "36.9%",
+  "productos": [
+    {
+      "producto": "Botella reutilizable eco-friendly",
+      "productId": 9245926588664,
+      "categoria": "botella",
+      "total_imagenes": 5,
+      "exitosas": 2,
+      "fallidas": 3,
+      "resultados": [
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Botella%20reutilizable%20eco-friendly%2C"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Botella%20reutilizable%20eco-friendly%2C%20lifestyle%20photography%2C%20person%20holding%20bottle%20outdoors%2C%20natural%20sunlight%2C%20adventure%2C%20mountains%20in%20background%2C%20active%20lifestyle%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246055764&nologo=true&enhance=true",
+          "shopify_id": 47589116641528,
+          "alt": "Botella reutilizable eco-friendly - Uso lifestyle"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"Image https:\\/\\/image.pollinations.ai\\/prompt\\/Bot"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Botella%20reutilizable%20eco-friendly%2C%20close-up%20macro%20photography%2C%20water%20droplets%2C%20reflective%20surface%2C%20premium%20details%2C%20luxury%20commercial%20shot%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246057764&nologo=true&enhance=true",
+          "shopify_id": 47589122670840,
+          "alt": "Botella reutilizable eco-friendly - Ángulo alternativo"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Botella%20reutilizable%20eco-friendly%2C"
+        }
+      ]
+    },
+    {
+      "producto": "Botella Smart GO – Nunca olvides hidratarte",
+      "productId": 9249659158776,
+      "categoria": "botella",
+      "total_imagenes": 5,
+      "exitosas": 0,
+      "fallidas": 5,
+      "resultados": [
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Botella%20Smart%20GO%20%E2%80%93%20Nunca"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Botella%20Smart%20GO%20%E2%80%93%20Nunca"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Botella%20Smart%20GO%20%E2%80%93%20Nunca"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Botella%20Smart%20GO%20%E2%80%93%20Nunca"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Botella%20Smart%20GO%20%E2%80%93%20Nunca"
+        }
+      ]
+    },
+    {
+      "producto": "Cafetera Cold Brew Express",
+      "productId": 9249659322616,
+      "categoria": "cafe",
+      "total_imagenes": 5,
+      "exitosas": 0,
+      "fallidas": 5,
+      "resultados": [
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Cafetera%20Cold%20Brew%20Express%2C%20co"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Cafetera%20Cold%20Brew%20Express%2C%20pr"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Cafetera%20Cold%20Brew%20Express%2C%20li"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"Image https:\\/\\/image.pollinations.ai\\/prompt\\/Caf"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"Image https:\\/\\/image.pollinations.ai\\/prompt\\/Caf"
+        }
+      ]
+    },
+    {
+      "producto": "Camiseta verde orgánica",
+      "productId": 9245926064376,
+      "categoria": "ropa",
+      "total_imagenes": 5,
+      "exitosas": 0,
+      "fallidas": 5,
+      "resultados": [
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"Image https:\\/\\/image.pollinations.ai\\/prompt\\/Cam"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Camiseta%20verde%20org%C3%A1nica%2C%20pr"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Camiseta%20verde%20org%C3%A1nica%2C%20ha"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"Image https:\\/\\/image.pollinations.ai\\/prompt\\/Cam"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"Image https:\\/\\/image.pollinations.ai\\/prompt\\/Cam"
+        }
+      ]
+    },
+    {
+      "producto": "Kit Home Office Ergonómico – Productividad sin dolor",
+      "productId": 9249659060472,
+      "categoria": "electronico",
+      "total_imagenes": 5,
+      "exitosas": 4,
+      "fallidas": 1,
+      "resultados": [
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Kit%20Home%20Office%20Ergon%C3%B3mico%20%E2%80%93%20Productividad%20sin%20dolor%2C%20professional%20product%20photography%2C%20white%20background%2C%20studio%20lighting%2C%20sleek%20modern%20design%2C%208k%20uhd%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246186420&nologo=true&enhance=true",
+          "shopify_id": 47589159174392,
+          "alt": "Kit Home Office Ergonómico – Productividad sin dolor - Vista principal"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Kit%20Home%20Office%20Ergon%C3%B3mico%20%E2%80%93%20Productividad%20sin%20dolor%2C%20lifestyle%20tech%20photography%2C%20modern%20minimalist%20desk%2C%20natural%20light%2C%20work%20from%20home%20setup%2C%20professional%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246187420&nologo=true&enhance=true",
+          "shopify_id": 47589161795832,
+          "alt": "Kit Home Office Ergonómico – Productividad sin dolor - Uso lifestyle"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Kit%20Home%20Office%20Ergon%C3%B3mico%20%E2%80%93%20Productividad%20sin%20dolor%2C%20close-up%20details%2C%20premium%20build%20quality%2C%20metallic%20finish%2C%20sharp%20focus%2C%20commercial%20grade%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246188420&nologo=true&enhance=true",
+          "shopify_id": 47589163925752,
+          "alt": "Kit Home Office Ergonómico – Productividad sin dolor - Detalles premium"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Kit%20Home%20Office%20Ergon%C3%B3mico%20%E2%80%93%20Productividad%20sin%20dolor%2C%20in%20use%20scenario%2C%20hands%20interacting%20with%20product%2C%20realistic%20lighting%2C%20daily%20life%20context%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246189420&nologo=true&enhance=true",
+          "shopify_id": 47589166514424,
+          "alt": "Kit Home Office Ergonómico – Productividad sin dolor - Ángulo alternativo"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"Image https:\\/\\/image.pollinations.ai\\/prompt\\/Kit"
+        }
+      ]
+    },
+    {
+      "producto": "Lámpara LED Ambiente Premium",
+      "productId": 9249659191544,
+      "categoria": "electronico",
+      "total_imagenes": 5,
+      "exitosas": 3,
+      "fallidas": 2,
+      "resultados": [
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"Image https:\\/\\/image.pollinations.ai\\/prompt\\/L%C"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/L%C3%A1mpara%20LED%20Ambiente%20Premium%2C%20lifestyle%20tech%20photography%2C%20modern%20minimalist%20desk%2C%20natural%20light%2C%20work%20from%20home%20setup%2C%20professional%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246221540&nologo=true&enhance=true",
+          "shopify_id": 47589171298552,
+          "alt": "Lámpara LED Ambiente Premium - Uso lifestyle"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/L%C3%A1mpara%20LED%20Ambiente%20Premium%2C%20close-up%20details%2C%20premium%20build%20quality%2C%20metallic%20finish%2C%20sharp%20focus%2C%20commercial%20grade%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246222540&nologo=true&enhance=true",
+          "shopify_id": 47589173231864,
+          "alt": "Lámpara LED Ambiente Premium - Detalles premium"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"Image https:\\/\\/image.pollinations.ai\\/prompt\\/L%C"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/L%C3%A1mpara%20LED%20Ambiente%20Premium%2C%20floating%20product%2C%20gradient%20background%2C%20modern%20tech%20aesthetic%2C%20clean%20and%20professional%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246224540&nologo=true&enhance=true",
+          "shopify_id": 47589179425016,
+          "alt": "Lámpara LED Ambiente Premium - Composición artística"
+        }
+      ]
+    },
+    {
+      "producto": "Mini Proyector HD Portátil",
+      "productId": 9249659224312,
+      "categoria": "electronico",
+      "total_imagenes": 5,
+      "exitosas": 0,
+      "fallidas": 5,
+      "resultados": [
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Mini%20Proyector%20HD%20Port%C3%A1til%2C"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Mini%20Proyector%20HD%20Port%C3%A1til%2C"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Mini%20Proyector%20HD%20Port%C3%A1til%2C"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Mini%20Proyector%20HD%20Port%C3%A1til%2C"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Mini%20Proyector%20HD%20Port%C3%A1til%2C"
+        }
+      ]
+    },
+    {
+      "producto": "Organizador Modular de Closet",
+      "productId": 9249659289848,
+      "categoria": "hogar",
+      "total_imagenes": 5,
+      "exitosas": 1,
+      "fallidas": 4,
+      "resultados": [
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Organizador%20Modular%20de%20Closet%2C%20home%20decor%20photography%2C%20styled%20interior%2C%20natural%20window%20light%2C%20cozy%20atmosphere%2C%20modern%20home%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246281140&nologo=true&enhance=true",
+          "shopify_id": 47589191614712,
+          "alt": "Organizador Modular de Closet - Vista principal"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Organizador%20Modular%20de%20Closet%2C%2"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Organizador%20Modular%20de%20Closet%2C%2"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Organizador%20Modular%20de%20Closet%2C%2"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Organizador%20Modular%20de%20Closet%2C%2"
+        }
+      ]
+    },
+    {
+      "producto": "Purificador de Aire GO – Respira mejor en 5 min",
+      "productId": 9249659126008,
+      "categoria": "electronico",
+      "total_imagenes": 5,
+      "exitosas": 0,
+      "fallidas": 5,
+      "resultados": [
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Purificador%20de%20Aire%20GO%20%E2%80%93"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Purificador%20de%20Aire%20GO%20%E2%80%93"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Purificador%20de%20Aire%20GO%20%E2%80%93"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Purificador%20de%20Aire%20GO%20%E2%80%93"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Purificador%20de%20Aire%20GO%20%E2%80%93"
+        }
+      ]
+    },
+    {
+      "producto": "Robot Aspiradora Slim",
+      "productId": 9249659453688,
+      "categoria": "electronico",
+      "total_imagenes": 5,
+      "exitosas": 5,
+      "fallidas": 0,
+      "resultados": [
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Robot%20Aspiradora%20Slim%2C%20professional%20product%20photography%2C%20white%20background%2C%20studio%20lighting%2C%20sleek%20modern%20design%2C%208k%20uhd%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246336015&nologo=true&enhance=true",
+          "shopify_id": 47589209014520,
+          "alt": "Robot Aspiradora Slim - Vista principal"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Robot%20Aspiradora%20Slim%2C%20lifestyle%20tech%20photography%2C%20modern%20minimalist%20desk%2C%20natural%20light%2C%20work%20from%20home%20setup%2C%20professional%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246337016&nologo=true&enhance=true",
+          "shopify_id": 47589210915064,
+          "alt": "Robot Aspiradora Slim - Uso lifestyle"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Robot%20Aspiradora%20Slim%2C%20close-up%20details%2C%20premium%20build%20quality%2C%20metallic%20finish%2C%20sharp%20focus%2C%20commercial%20grade%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246338016&nologo=true&enhance=true",
+          "shopify_id": 47589212717304,
+          "alt": "Robot Aspiradora Slim - Detalles premium"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Robot%20Aspiradora%20Slim%2C%20in%20use%20scenario%2C%20hands%20interacting%20with%20product%2C%20realistic%20lighting%2C%20daily%20life%20context%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246339016&nologo=true&enhance=true",
+          "shopify_id": 47589214683384,
+          "alt": "Robot Aspiradora Slim - Ángulo alternativo"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Robot%20Aspiradora%20Slim%2C%20floating%20product%2C%20gradient%20background%2C%20modern%20tech%20aesthetic%2C%20clean%20and%20professional%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246340016&nologo=true&enhance=true",
+          "shopify_id": 47589216813304,
+          "alt": "Robot Aspiradora Slim - Composición artística"
+        }
+      ]
+    },
+    {
+      "producto": "Set Aromaterapia Relax",
+      "productId": 9249659584760,
+      "categoria": "hogar",
+      "total_imagenes": 5,
+      "exitosas": 4,
+      "fallidas": 1,
+      "resultados": [
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Set%20Aromaterapia%20Relax%2C%20home%20decor%20photography%2C%20styled%20interior%2C%20natural%20window%20light%2C%20cozy%20atmosphere%2C%20modern%20home%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246367055&nologo=true&enhance=true",
+          "shopify_id": 47589220647160,
+          "alt": "Set Aromaterapia Relax - Vista principal"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Set%20Aromaterapia%20Relax%2C%20product%20photography%2C%20white%20background%2C%20studio%20quality%2C%20commercial%20shot%2C%208k%20resolution%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246368055&nologo=true&enhance=true",
+          "shopify_id": 47589222285560,
+          "alt": "Set Aromaterapia Relax - Uso lifestyle"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Set%20Aromaterapia%20Relax%2C%20close-up%20texture%2C%20premium%20materials%2C%20artisan%20quality%2C%20detailed%20craftsmanship%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246369055&nologo=true&enhance=true",
+          "shopify_id": 47589225136376,
+          "alt": "Set Aromaterapia Relax - Detalles premium"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"Image https:\\/\\/image.pollinations.ai\\/prompt\\/Set"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Set%20Aromaterapia%20Relax%2C%20minimalist%20composition%2C%20scandinavian%20interior%2C%20clean%20lines%2C%20natural%20materials%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246371055&nologo=true&enhance=true",
+          "shopify_id": 47589228871928,
+          "alt": "Set Aromaterapia Relax - Composición artística"
+        }
+      ]
+    },
+    {
+      "producto": "Set Bandas de Resistencia Pro",
+      "productId": 9249659257080,
+      "categoria": "fitness",
+      "total_imagenes": 5,
+      "exitosas": 5,
+      "fallidas": 0,
+      "resultados": [
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Set%20Bandas%20de%20Resistencia%20Pro%2C%20fitness%20product%20photography%2C%20gym%20environment%2C%20motivational%2C%20high%20energy%2C%20professional%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246400117&nologo=true&enhance=true",
+          "shopify_id": 47589231427832,
+          "alt": "Set Bandas de Resistencia Pro - Vista principal"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Set%20Bandas%20de%20Resistencia%20Pro%2C%20action%20shot%2C%20person%20exercising%2C%20outdoor%20workout%2C%20athletic%20lifestyle%2C%20dynamic%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246401117&nologo=true&enhance=true",
+          "shopify_id": 47589232902392,
+          "alt": "Set Bandas de Resistencia Pro - Uso lifestyle"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Set%20Bandas%20de%20Resistencia%20Pro%2C%20flat%20lay%2C%20complete%20fitness%20set%2C%20organized%20equipment%2C%20top%20view%2C%20motivational%20colors%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246402117&nologo=true&enhance=true",
+          "shopify_id": 47589236179192,
+          "alt": "Set Bandas de Resistencia Pro - Detalles premium"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Set%20Bandas%20de%20Resistencia%20Pro%2C%20close-up%20quality%2C%20durable%20materials%2C%20performance-focused%2C%20premium%20athletic%20gear%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246403117&nologo=true&enhance=true",
+          "shopify_id": 47589238538488,
+          "alt": "Set Bandas de Resistencia Pro - Ángulo alternativo"
+        },
+        {
+          "exito": true,
+          "url": "https://image.pollinations.ai/prompt/Set%20Bandas%20de%20Resistencia%20Pro%2C%20lifestyle%20fitness%2C%20home%20workout%20space%2C%20natural%20light%2C%20healthy%20living%2C%20professional%20commercial%20photography%2C%20high%20resolution%2C%20sharp%20focus%2C%20award%20winning%2C%20trending%20on%20unsplash%2C%20professional%20lighting%2C%20commercial%20quality%2C%20dslr%2C%20cinematic?width=1280&height=1280&seed=1760246404117&nologo=true&enhance=true",
+          "shopify_id": 47589241291000,
+          "alt": "Set Bandas de Resistencia Pro - Composición artística"
+        }
+      ]
+    },
+    {
+      "producto": "Test Product 1760039704476",
+      "productId": 9249658765560,
+      "categoria": "electronico",
+      "total_imagenes": 5,
+      "exitosas": 0,
+      "fallidas": 5,
+      "resultados": [
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Test%20Product%201760039704476%2C%20prof"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Test%20Product%201760039704476%2C%20life"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Test%20Product%201760039704476%2C%20clos"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Test%20Product%201760039704476%2C%20in%2"
+        },
+        {
+          "exito": false,
+          "error": "{\"errors\":{\"image\":[\"Could not download image: [\\\"\\/prompt\\/Test%20Product%201760039704476%2C%20floa"
+        }
+      ]
+    }
+  ]
+}

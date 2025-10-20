@@ -1,0 +1,50 @@
+{
+  "fecha": "2025-10-12T08:53:33.574Z",
+  "frontend": {
+    "accesible": true,
+    "status": 200,
+    "analisis": {
+      "tiene_productos": true,
+      "tiene_carrito": true,
+      "tiene_checkout": true,
+      "tiene_placeholders": true,
+      "tiene_errores": true,
+      "tiene_ssl": true,
+      "tiempo_carga": "N/A"
+    },
+    "score": 6
+  },
+  "productos": [
+    {
+      "handle": "botella-reutilizable-eco-friendly",
+      "accesible": false,
+      "error": 404,
+      "url_completa": "https://goiostore.com/products/botella-reutilizable-eco-friendly"
+    },
+    {
+      "handle": "camiseta-verde-organica",
+      "accesible": false,
+      "error": 404,
+      "url_completa": "https://goiostore.com/products/camiseta-verde-organica"
+    },
+    {
+      "handle": "kit-home-office-ergonmico",
+      "accesible": false,
+      "error": 404,
+      "url_completa": "https://goiostore.com/products/kit-home-office-ergonmico"
+    }
+  ],
+  "pagos": {
+    "moneda": "USD",
+    "pais": "PE",
+    "setup_required": false
+  },
+  "inventario": {
+    "total": 12,
+    "con_inventario": 12,
+    "sin_inventario": 0,
+    "porcentaje_con_stock": 100
+  },
+  "puntuacion": null,
+  "lista_para_vender": false
+}

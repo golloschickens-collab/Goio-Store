@@ -1,0 +1,35 @@
+{
+  "agent": "EmbajadorStripe_USA",
+  "territory": "Global",
+  "currency": "USD",
+  "payment_gateway": "Stripe",
+  "sync_with": "Goio_Store_Peru",
+  "reporting": true,
+  "status": "initializing",
+  "created_at": "2025-10-10T18:02:33.393Z",
+  "base_operations": {
+    "peru": {
+      "domain": "skhqgs-2j.myshopify.com",
+      "currency": "USD",
+      "payment_methods": [
+        "Shopify_Payments",
+        "PayPal"
+      ]
+    },
+    "usa_global": {
+      "domain": "goio-global.myshopify.com",
+      "currency": "USD",
+      "payment_methods": [
+        "Stripe",
+        "Apple_Pay",
+        "Google_Pay"
+      ],
+      "target_markets": [
+        "USA",
+        "Canada",
+        "Europe",
+        "Australia"
+      ]
+    }
+  }
+}

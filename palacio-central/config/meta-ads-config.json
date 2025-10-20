@@ -1,0 +1,47 @@
+{
+  "campaign_name": "Goio_Store_Conversion_2025",
+  "objective": "CONVERSIONS",
+  "daily_budget": 30,
+  "productos": [
+    {
+      "nombre": "Botella reutilizable eco-friendly",
+      "precio_original": 30,
+      "precio_promocional": 22.5,
+      "url": "https://skhqgs-2j.myshopify.com/products/botella-reutilizable-eco-friendly",
+      "headline": "Botella reutilizable eco-friendly - 25% OFF Solo HOY ⚡",
+      "descripcion": "🌿 Producto eco-friendly con envío gratis. ¡Ahorra 7.50!"
+    },
+    {
+      "nombre": "Botella Smart GO – Nunca olvides hidratarte",
+      "precio_original": 29.99,
+      "precio_promocional": 22.4925,
+      "url": "https://skhqgs-2j.myshopify.com/products/botella-inteligente-hidratacin-go",
+      "headline": "Botella Smart GO – Nunca olvides hidratarte - 25% OFF Solo HOY ⚡",
+      "descripcion": "🌿 Producto eco-friendly con envío gratis. ¡Ahorra 7.50!"
+    },
+    {
+      "nombre": "Cafetera Cold Brew Express",
+      "precio_original": 29.99,
+      "precio_promocional": 22.4925,
+      "url": "https://skhqgs-2j.myshopify.com/products/cafetera-cold-brew-express",
+      "headline": "Cafetera Cold Brew Express - 25% OFF Solo HOY ⚡",
+      "descripcion": "🌿 Producto eco-friendly con envío gratis. ¡Ahorra 7.50!"
+    }
+  ],
+  "audiencia": {
+    "edad_min": 25,
+    "edad_max": 55,
+    "ubicaciones": [
+      "España",
+      "México",
+      "Argentina",
+      "Colombia"
+    ],
+    "intereses": [
+      "Productos ecológicos",
+      "Vida saludable",
+      "Sostenibilidad",
+      "Zero waste"
+    ]
+  }
+}
