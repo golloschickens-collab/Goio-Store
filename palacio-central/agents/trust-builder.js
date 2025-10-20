@@ -15,7 +15,7 @@ class TrustBuilder {
     this.philosophy = 'La confianza vende. La duda mata conversiones.';
     
     this.genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    this.model = this.genAI.getGenerativeModel({ model: 'gemini-pro' });
+    this.model = this.genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
     
     this.shopifyConfig = {
       domain: process.env.SHOPIFY_STORE_URL?.replace('https://', '').replace('/', ''),
