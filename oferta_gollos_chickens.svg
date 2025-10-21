@@ -1,0 +1,57 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+    <defs>
+        <radialGradient id="bgGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+            <stop offset="0%" style="stop-color:#FFC107;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#C70039;stop-opacity:1" />
+        </radialGradient>
+        <filter id="textShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+            <feOffset dx="2" dy="2" result="offsetblur"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.5"/>
+            </feComponentTransfer>
+            <feMerge> 
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/> 
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Fondo -->
+    <rect width="1080" height="1080" fill="url(#bgGradient)" />
+
+    <!-- Título -->
+    <text x="540" y="150" font-family="Impact, Haettenschweiler, '''Arial Narrow Bold''', sans-serif" font-size="120" fill="white" text-anchor="middle" filter="url(#textShadow)" letter-spacing="2">¡OFERTA DEL DÍA!</text>
+
+    <!-- Contenedor principal -->
+    <rect x="50" y="220" width="980" height="600" rx="30" fill="rgba(255, 255, 255, 0.9)" stroke="#333" stroke-width="3"/>
+
+    <!-- Contenido de la oferta -->
+    <text x="100" y="350" font-size="70" font-weight="bold" fill="#333">INCLUYE:</text>
+    
+    <text x="150" y="450" font-size="60" fill="#555">✅ 1 Ala Broaster</text>
+    <text x="150" y="550" font-size="60" fill="#555">✅ 1 Hot Dog Ahumado</text>
+    <text x="150" y="650" font-size="60" fill="#555">✅ 1 Gaseosa Personal</text>
+
+    <!-- Círculo del Precio -->
+    <circle cx="800" cy="500" r="200" fill="#D90429" filter="url(#textShadow)"/>
+    <text x="800" y="460" font-family="Impact, sans-serif" font-size="60" fill="white" text-anchor="middle">POR SOLO</text>
+    <text x="800" y="560" font-family="Impact, sans-serif" font-size="130" fill="#FFC107" text-anchor="middle">S/ 16.00</text>
+    
+    <!-- Banner de Envío -->
+    <g transform="translate(600, 680) rotate(15)">
+        <rect x="-150" y="-40" width="300" height="80" fill="#28a745"/>
+        <text x="0" y="15" font-size="50" font-weight="bold" fill="white" text-anchor="middle">¡ENVÍO INCLUIDO!</text>
+    </g>
+
+    <!-- Pie de página / Llamada a la acción -->
+    <rect x="50" y="820" width="980" height="180" fill="rgba(0, 0, 0, 0.4)" />
+    
+    <!-- Logo de WhatsApp (simplificado) -->
+    <g transform="translate(100, 860) scale(0.2)">
+        <path fill="white" d="M190.5 430.2c-27.7-13.9-45.8-22.4-63.5-25.8-17.7-3.4-30.4 3.4-38.3 11.8-7.9 8.4-11.8 16.8-16.8 25.2-4.9 8.4-11.8 18.8-20.7 16.8-8.9-2-29.6-10.8-52.3-31.5-22.7-20.7-38.3-45.8-42.2-53.7-3.9-7.9 1-14.8 7.9-20.7 6.9-5.9 13.9-7.9 18.8-11.8 4.9-3.9 8.9-7.9 10.8-12.8 1.9-4.9 1-10.8-1-16.8-2-5.9-14.8-35.5-20.7-47.4-5.9-11.8-11.8-10.8-16.8-10.8h-14.8c-4.9 0-11.8 1-16.8 7.9-4.9 6.9-18.8 18.8-18.8 45.8 0 27 18.8 52.9 21.7 56.8 2.9 3.9 38.5 61.1 93.3 86 54.8 24.9 69.7 20 81.6 18.1 11.8-1.9 35.5-14.8 40.4-28.6 4.9-13.9 4.9-25.8 3.9-28.6-1-2.9-6.9-4.9-14.8-7.9z"/>
+    </g>
+    
+    <text x="250" y="930" font-family="Arial, sans-serif" font-size="70" font-weight="bold" fill="white">¡Pídelo ahora!</text>
+    <text x="650" y="930" font-family="'''Courier New''', Courier, monospace" font-size="70" font-weight="bold" fill="#25D366">+51 939 431 887</text>
+</svg>

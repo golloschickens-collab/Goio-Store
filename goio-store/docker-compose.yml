@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  goio-store:
+    build: .
+    container_name: goio-store
+    networks:
+      - edge
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.goio-store.rule=Host(`goio.store`, `www.goio.store`)"
+      - "traefik.http.routers.goio-store.entrypoints=websecure"
+      - "traefik.http.routers.goio-store.tls.certresolver=letsencrypt"
+      - "traefik.http.services.goio-store.loadbalancer.server.port=3000"
+      - "traefik.docker.network=edge"
+
+networks:
+  edge:
+    external: true

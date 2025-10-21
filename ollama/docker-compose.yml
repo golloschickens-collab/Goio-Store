@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    restart: unless-stopped
+    volumes:
+      - ollama-data:/root/.ollama
+    environment:
+      - OLLAMA_KEEP_ALIVE=5m
+    networks:
+      - edge
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.ollama.rule=Host(`ai.goio.store`) && (PathPrefix(`/`) || Path(`/`))"
+      - "traefik.http.routers.ollama.entrypoints=websecure"
+      - "traefik.http.routers.ollama.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.ollama.middlewares=auth@docker"
+      - "traefik.http.services.ollama.loadbalancer.server.port=11434"
+      - "traefik.docker.network=edge"
+
+volumes:
+  ollama-data:
+
+networks:
+  edge:
+    external: true

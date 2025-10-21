@@ -1,0 +1,12 @@
+Host gollos-root
+  HostName 91.98.114.207
+  User root
+  IdentityFile ~/.ssh/goio_hetzner_key
+  IdentitiesOnly yes
+  StrictHostKeyChecking no
+
+Host goio-store-oai
+  HostName 49.13.9.182
+  User oai
+  IdentityFile ~/.ssh/goio_hetzner_key
+  IdentitiesOnly yes

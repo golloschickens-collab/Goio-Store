@@ -1,0 +1,76 @@
+name: Métricas — Despliegue/Operación
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: Acción a ejecutar (deploy, undeploy, parse)
+        required: true
+        default: deploy
+      hosts:
+        description: Lista de hosts "host:delay,host:delay"
+        required: true
+        default: ai-masterkernel:2m,goio-store:5m,eco-eterno:7m,gollos-server-1:9m
+      ssh_user:
+        description: Usuario SSH
+        required: true
+        default: root
+      purge:
+        description: Con undeploy, eliminar binarios/units
+        required: false
+        default: 'false'
+      download_artifacts:
+        description: Con parse, descargar summary y subir artifact
+        required: false
+        default: 'true'
+      download_dir:
+        description: Carpeta local para descarga de summaries
+        required: false
+        default: metrics-artifacts
+
+jobs:
+  operate:
+    runs-on: [self-hosted, linux, infra]
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Runner hospedado: descomenta para usar llave SSH vía secreto
+      # - name: Setup SSH agent
+      #   uses: webfactory/ssh-agent@v0.9.0
+      #   with:
+      #     ssh-private-key: |
+      #       ${{ secrets.METRICS_SSH_KEY }}
+
+      - name: Ejecutar operación de métricas
+        shell: bash
+        env:
+          SSH_USER: ${{ inputs.ssh_user }}
+        run: |
+          set -euo pipefail
+          cd palacio-central
+          chmod +x scripts/deploy_metrics.sh
+          ACTION="${{ inputs.action }}"
+          HOSTS="${{ inputs.hosts }}"
+          DL_DIR="${{ inputs.download_dir }}"
+          PURGE_FLAG=""
+          if [[ "$ACTION" == "undeploy" && "${{ inputs.purge }}" == "true" ]]; then
+            PURGE_FLAG="--purge"
+          fi
+          DOWNLOAD_FLAG=""
+          if [[ "$ACTION" == "parse" && "${{ inputs.download_artifacts }}" == "true" ]]; then
+            mkdir -p "$DL_DIR"
+            DOWNLOAD_FLAG="--download $DL_DIR"
+          fi
+          echo "== Acción: $ACTION"
+          echo "== Hosts:  $HOSTS"
+          ./scripts/deploy_metrics.sh --hosts "$HOSTS" $PURGE_FLAG $ACTION $DOWNLOAD_FLAG
+
+      - name: Subir artefactos de métricas
+        if: ${{ inputs.action == 'parse' && inputs.download_artifacts == 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics-summaries
+          path: palacio-central/${{ inputs.download_dir }}/
+          if-no-files-found: warn

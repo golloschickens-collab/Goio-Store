@@ -1,0 +1,49 @@
+version: "3.9"
+
+name: goio_stack
+
+services:
+  palacio-central:
+    build:
+      context: ./palacio-central
+      dockerfile: Dockerfile
+    env_file:
+      - ./palacio-central/.env
+    ports:
+      - "30    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:3000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 6
+
+  goio-store:
+    build:
+      context: ./goio-store
+      dockerfile: Dockerfile
+    env_file:
+      - ./goio-store/.env
+    ports:
+      - "3002:3000"
+    networks: [goio_net]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:3000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 6
+
+  nginx:
+    image: nginx:stable
+    volumes:
+      - ./reverse-proxy/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - palacio-central
+      - goio-store
+    ports:
+      - "80:80"
+    networks: [goio_net]
+    restart: unless-stopped
+
+networks:
+  goio_net:
+    driver: bridge

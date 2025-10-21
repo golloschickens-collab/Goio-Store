@@ -41,7 +41,10 @@
     "elite:descriptions": "node agents/product-description-writer.js --auto-fix",
     "elite:images": "node agents/image-optimizer.js --auto-fix",
     "elite:trust": "node agents/trust-builder.js --auto-generate",
-    "elite:fix-all": "node agents/store-auto-fixer.js"
+    "elite:fix-all": "node agents/store-auto-fixer.js",
+    "knowledge:api": "node knowledge-api.js",
+    "knowledge:import": "node agents/knowledge-importer.js",
+    "knowledge:list": "node agents/knowledge-importer.js list"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
@@ -52,6 +55,7 @@
     "dotenv": "^16.4.5",
     "express": "^5.1.0",
     "graphql-request": "^7.2.0",
+    "multer": "^2.0.2",
     "node-fetch": "^2.7.0",
     "nodemon": "^3.1.10",
     "papaparse": "^5.4.1",
