@@ -34,59 +34,59 @@ class StorePerfectionMaster {
 
   async auditarTiendaCompleta() {
     console.log('\n' + '='.repeat(80));
-    console.log('🏆 AGENTE ELITE: STORE PERFECTION MASTER');
-    console.log('🎯 Misión: Tienda impecable, nivel profesional 10/10');
+    console.log('[ELITE] AGENTE: STORE PERFECTION MASTER');
+    console.log('[OBJETIVO] Tienda impecable, nivel profesional 10/10');
     console.log('='.repeat(80));
     
     const auditorias = [];
     
     // 1. PRODUCTOS - Perfección absoluta
-    console.log('\n📦 [1/10] Auditando productos...');
+    console.log('\n[1/10] Auditando productos...');
     const productosAudit = await this.auditarProductos();
     auditorias.push(productosAudit);
     
     // 2. DESCRIPCIONES - Copywriting nivel experto
-    console.log('\n✍️ [2/10] Analizando copywriting...');
+    console.log('\n[2/10] Analizando copywriting...');
     const copyAudit = await this.auditarCopywriting();
     auditorias.push(copyAudit);
     
     // 3. IMÁGENES - Calidad profesional
-    console.log('\n📸 [3/10] Evaluando calidad imágenes...');
+    console.log('\n[3/10] Evaluando calidad imagenes...');
     const imagenesAudit = await this.auditarImagenes();
     auditorias.push(imagenesAudit);
     
     // 4. PRECIOS - Estrategia óptima
-    console.log('\n💰 [4/10] Verificando estrategia pricing...');
+    console.log('\n[4/10] Verificando estrategia pricing...');
     const preciosAudit = await this.auditarPrecios();
     auditorias.push(preciosAudit);
     
     // 5. CHECKOUT - Experiencia perfecta
-    console.log('\n🛒 [5/10] Optimizando checkout...');
+    console.log('\n[5/10] Optimizando checkout...');
     const checkoutAudit = await this.auditarCheckout();
     auditorias.push(checkoutAudit);
     
     // 6. POLÍTICAS - Legal compliance
-    console.log('\n📜 [6/10] Verificando políticas legales...');
+    console.log('\n[6/10] Verificando politicas legales...');
     const politicasAudit = await this.auditarPoliticas();
     auditorias.push(politicasAudit);
     
     // 7. TRUST SIGNALS - Generar confianza
-    console.log('\n🛡️ [7/10] Analizando señales de confianza...');
+    console.log('\n[7/10] Analizando senales de confianza...');
     const trustAudit = await this.auditarTrustSignals();
     auditorias.push(trustAudit);
     
     // 8. SEO - Visibilidad máxima
-    console.log('\n🔍 [8/10] Optimizando SEO...');
+    console.log('\n[8/10] Optimizando SEO...');
     const seoAudit = await this.auditarSEO();
     auditorias.push(seoAudit);
     
     // 9. MOBILE - Experiencia móvil perfecta
-    console.log('\n📱 [9/10] Verificando responsive design...');
+    console.log('\n[9/10] Verificando responsive design...');
     const mobileAudit = await this.auditarMobile();
     auditorias.push(mobileAudit);
     
     // 10. PERFORMANCE - Velocidad óptima
-    console.log('\n⚡ [10/10] Midiendo performance...');
+    console.log('\n[10/10] Midiendo performance...');
     const performanceAudit = await this.auditarPerformance();
     auditorias.push(performanceAudit);
     
@@ -679,6 +679,7 @@ Responde en JSON:
 
   calcularScoreGeneral(auditorias) {
     const scores = auditorias.filter(a => a.score !== undefined).map(a => a.score);
+    if (scores.length === 0) return 0;
     return Math.round(scores.reduce((sum, s) => sum + s, 0) / scores.length);
   }
 
@@ -722,8 +723,8 @@ Responde en JSON:
     );
     
     console.log('\n' + '='.repeat(80));
-    console.log(`🏆 SCORE GENERAL: ${resultado.score_general}/100`);
-    console.log(`📊 ESTADO: ${resultado.estado}`);
+    console.log(`[RESULTADO] SCORE GENERAL: ${resultado.score_general}/100`);
+    console.log(`[ESTADO] ${resultado.estado}`);
     console.log('='.repeat(80));
     
     return resultado;
