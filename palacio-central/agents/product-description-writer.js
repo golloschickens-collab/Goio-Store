@@ -47,6 +47,19 @@ class ProductDescriptionWriter {
       }
     }
     
+    if (mejoras.length === 0) {
+      return {
+        timestamp: new Date().toISOString(),
+        productos_analizados: 0,
+        score_promedio_original: '0.0',
+        score_promedio_mejorado: '0.0',
+        mejora_porcentual: '0.0%',
+        mejoras: [],
+        auto_fix_aplicado: autoFix,
+        recomendacion: 'Sin productos para analizar'
+      };
+    }
+    
     const scorePromedio = mejoras.reduce((sum, m) => sum + m.score_original, 0) / mejoras.length;
     const scoreMejorado = mejoras.reduce((sum, m) => sum + m.score_mejorado, 0) / mejoras.length;
     

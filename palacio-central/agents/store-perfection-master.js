@@ -209,6 +209,7 @@ class StorePerfectionMaster {
     } catch (error) {
       return {
         categoria: 'PRODUCTOS',
+        score: 0,
         error: error.message,
         estado: '❌ ERROR'
       };
@@ -263,6 +264,16 @@ Responde en JSON:
       } catch (error) {
         console.error(`Error analizando producto ${producto.id}:`, error.message);
       }
+    }
+    
+    if (analisis.length === 0) {
+      return {
+        categoria: 'COPYWRITING',
+        score: 0,
+        productos_analizados: 0,
+        score_promedio: '0.0',
+        evaluacion: 'Sin productos para analizar'
+      };
     }
     
     const scorePromedio = analisis.reduce((sum, a) => sum + a.score, 0) / analisis.length;

@@ -57,6 +57,21 @@ class ImageOptimizer {
       }
     }
     
+    if (analisis.length === 0) {
+      return {
+        timestamp: new Date().toISOString(),
+        productos_analizados: 0,
+        score_promedio: '0.0',
+        total_imagenes: 0,
+        imagenes_sin_alt: 0,
+        imagenes_baja_resolucion: 0,
+        productos_sin_imagenes: 0,
+        fixes_aplicados: 0,
+        detalle: [],
+        recomendacion: 'Sin productos para analizar'
+      };
+    }
+    
     const scorePromedio = analisis.reduce((sum, a) => sum + a.score, 0) / analisis.length;
     
     return {
@@ -255,6 +270,7 @@ Responde SOLO con el ALT text, nada más.
   }
 
   generarRecomendacion(analisis) {
+    if (analisis.length === 0) return 'Sin productos para analizar';
     const sinImagenes = analisis.filter(a => a.total_imagenes === 0).length;
     const scorePromedio = analisis.reduce((sum, a) => sum + a.score, 0) / analisis.length;
     
