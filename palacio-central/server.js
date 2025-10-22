@@ -30,7 +30,13 @@ app.get('/', (req, res) => {
       'GET /audit - Ejecutar auditoría completa',
       'GET /fix - Ejecutar fix completo',
       'GET /reports - Ver reportes',
-      'GET /trace/:trace_id - Rastrear operación (Pilar 1 - Trazabilidad)'
+      'GET /trace/:trace_id - Rastrear operación (Pilar 1 - Trazabilidad)',
+      'GET /traffic/seo - Agente SEO traffic',
+      'GET /traffic/social - Agente social orgánico', 
+      'GET /traffic/email - Agente email marketing',
+      'GET /traffic/ads - Agente Facebook Ads',
+      'GET /traffic/retargeting - Agente retargeting',
+      'GET /traffic/all - Ejecutar todos los agentes de tráfico'
     ]
   });
 });
@@ -313,6 +319,232 @@ app.get('/reports', async (req, res) => {
     }
   } catch (error) {
     res.status(500).json({ error: error.message });
+  }
+});
+
+// ============================================
+// AGENTES DE TRÁFICO Y VENTAS
+// ============================================
+
+app.get('/traffic/seo', async (req, res) => {
+  if (isRunning) {
+    return res.status(409).json({ status: 'busy', message: 'Ya hay una operación en ejecución' });
+  }
+
+  const trace_id = generateTraceId('TRAFFIC-SEO');
+  isRunning = true;
+  
+  try {
+    res.json({ status: 'started', message: 'Agente SEO iniciado', trace_id });
+    
+    const { stdout } = await execAsync('node agents/seo-traffic-master.js');
+    
+    lastExecution = {
+      type: 'traffic-seo',
+      timestamp: new Date().toISOString(),
+      success: true,
+      output: stdout,
+      trace_id
+    };
+    
+    await logOperation(trace_id, 'traffic-seo', 'completado', { output: stdout });
+  } catch (error) {
+    lastExecution = {
+      type: 'traffic-seo',
+      timestamp: new Date().toISOString(),
+      success: false,
+      error: error.message,
+      trace_id
+    };
+    
+    await logOperation(trace_id, 'traffic-seo', 'error', { error: error.message });
+  } finally {
+    isRunning = false;
+  }
+});
+
+app.get('/traffic/social', async (req, res) => {
+  if (isRunning) {
+    return res.status(409).json({ status: 'busy', message: 'Ya hay una operación en ejecución' });
+  }
+
+  const trace_id = generateTraceId('TRAFFIC-SOCIAL');
+  isRunning = true;
+  
+  try {
+    res.json({ status: 'started', message: 'Agente Social iniciado', trace_id });
+    
+    const { stdout } = await execAsync('node agents/social-organic-master.js');
+    
+    lastExecution = {
+      type: 'traffic-social',
+      timestamp: new Date().toISOString(),
+      success: true,
+      output: stdout,
+      trace_id
+    };
+    
+    await logOperation(trace_id, 'traffic-social', 'completado', { output: stdout });
+  } catch (error) {
+    lastExecution = {
+      type: 'traffic-social',
+      timestamp: new Date().toISOString(),
+      success: false,
+      error: error.message,
+      trace_id
+    };
+    
+    await logOperation(trace_id, 'traffic-social', 'error', { error: error.message });
+  } finally {
+    isRunning = false;
+  }
+});
+
+app.get('/traffic/email', async (req, res) => {
+  if (isRunning) {
+    return res.status(409).json({ status: 'busy', message: 'Ya hay una operación en ejecución' });
+  }
+
+  const trace_id = generateTraceId('TRAFFIC-EMAIL');
+  isRunning = true;
+  
+  try {
+    res.json({ status: 'started', message: 'Agente Email iniciado', trace_id });
+    
+    const { stdout } = await execAsync('node agents/email-funnel-master.js');
+    
+    lastExecution = {
+      type: 'traffic-email',
+      timestamp: new Date().toISOString(),
+      success: true,
+      output: stdout,
+      trace_id
+    };
+    
+    await logOperation(trace_id, 'traffic-email', 'completado', { output: stdout });
+  } catch (error) {
+    lastExecution = {
+      type: 'traffic-email',
+      timestamp: new Date().toISOString(),
+      success: false,
+      error: error.message,
+      trace_id
+    };
+    
+    await logOperation(trace_id, 'traffic-email', 'error', { error: error.message });
+  } finally {
+    isRunning = false;
+  }
+});
+
+app.get('/traffic/ads', async (req, res) => {
+  if (isRunning) {
+    return res.status(409).json({ status: 'busy', message: 'Ya hay una operación en ejecución' });
+  }
+
+  const trace_id = generateTraceId('TRAFFIC-ADS');
+  isRunning = true;
+  
+  try {
+    res.json({ status: 'started', message: 'Agente Facebook Ads iniciado', trace_id });
+    
+    const { stdout } = await execAsync('node agents/fb-ads-master.js');
+    
+    lastExecution = {
+      type: 'traffic-ads',
+      timestamp: new Date().toISOString(),
+      success: true,
+      output: stdout,
+      trace_id
+    };
+    
+    await logOperation(trace_id, 'traffic-ads', 'completado', { output: stdout });
+  } catch (error) {
+    lastExecution = {
+      type: 'traffic-ads',
+      timestamp: new Date().toISOString(),
+      success: false,
+      error: error.message,
+      trace_id
+    };
+    
+    await logOperation(trace_id, 'traffic-ads', 'error', { error: error.message });
+  } finally {
+    isRunning = false;
+  }
+});
+
+app.get('/traffic/retargeting', async (req, res) => {
+  if (isRunning) {
+    return res.status(409).json({ status: 'busy', message: 'Ya hay una operación en ejecución' });
+  }
+
+  const trace_id = generateTraceId('TRAFFIC-RETARGETING');
+  isRunning = true;
+  
+  try {
+    res.json({ status: 'started', message: 'Agente Retargeting iniciado', trace_id });
+    
+    const { stdout } = await execAsync('node agents/retargeting-master.js');
+    
+    lastExecution = {
+      type: 'traffic-retargeting',
+      timestamp: new Date().toISOString(),
+      success: true,
+      output: stdout,
+      trace_id
+    };
+    
+    await logOperation(trace_id, 'traffic-retargeting', 'completado', { output: stdout });
+  } catch (error) {
+    lastExecution = {
+      type: 'traffic-retargeting',
+      timestamp: new Date().toISOString(),
+      success: false,
+      error: error.message,
+      trace_id
+    };
+    
+    await logOperation(trace_id, 'traffic-retargeting', 'error', { error: error.message });
+  } finally {
+    isRunning = false;
+  }
+});
+
+app.get('/traffic/all', async (req, res) => {
+  if (isRunning) {
+    return res.status(409).json({ status: 'busy', message: 'Ya hay una operación en ejecución' });
+  }
+
+  const trace_id = generateTraceId('TRAFFIC-ALL');
+  isRunning = true;
+  
+  try {
+    res.json({ status: 'started', message: 'Todos los agentes de tráfico iniciados', trace_id });
+    
+    const { stdout } = await execAsync('node agents/traffic-sales-orchestrator.js completo');
+    
+    lastExecution = {
+      type: 'traffic-all',
+      timestamp: new Date().toISOString(),
+      success: true,
+      output: stdout,
+      trace_id
+    };
+    
+    await logOperation(trace_id, 'traffic-all', 'completado', { output: stdout });
+  } catch (error) {
+    lastExecution = {
+      type: 'traffic-all',
+      timestamp: new Date().toISOString(),
+      success: false,
+      error: error.message,
+      trace_id
+    };
+    
+    await logOperation(trace_id, 'traffic-all', 'error', { error: error.message });
+  } finally {
+    isRunning = false;
   }
 });
 
