@@ -68,7 +68,10 @@ class ProductDescriptionWriter {
       productos_analizados: productos.length,
       score_promedio_original: scorePromedio.toFixed(1),
       score_promedio_mejorado: scoreMejorado.toFixed(1),
-      mejora_porcentual: ((scoreMejorado - scorePromedio) / scorePromedio * 100).toFixed(1) + '%',
+      mejora_porcentual: (() => {
+        const mejora = (scoreMejorado - scorePromedio) / scorePromedio * 100;
+        return (isNaN(mejora) || !isFinite(mejora) ? 0 : mejora).toFixed(1) + '%';
+      })(),
       mejoras: mejoras,
       auto_fix_aplicado: autoFix,
       recomendacion: autoFix ? 
