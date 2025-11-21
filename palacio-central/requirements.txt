@@ -1,6 +1,4 @@
-# Este archivo le dice a los servidores en la nube qué librerías de Python instalar.
-# Es necesario para que nuestro Agent.TrendHunter pueda ejecutar el script trends.py.
-
-pytrends
-requests
-pandas
+pytrends==4.9.2
+google-cloud-firestore==2.16.0
+google-cloud-aiplatform==1.56.0
+praw==7.7.1
